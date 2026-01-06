@@ -1,0 +1,25 @@
+{
+  "case_name": "2",
+  "case_number": "",
+  "case_path": "eval/data_sample/PsychEval/cbt/2.json",
+  "session_number": 1,
+  "session_file": "session_1",
+  "evaluation_results": {
+    "counselor": {
+      "HTAIS": 5.1923076923076925,
+      "RRO": 5.25,
+      "WAI": 6.666666666666667,
+      "Custom_Dim": 8.73076923076923,
+      "CTRS": 9.444444444444445
+    },
+    "client": {
+      "RRO": 5.0,
+      "PANAS": 2.25,
+      "SCL_90": 4.305555555555555,
+      "SRS": 7.5,
+      "BDI_II": 7.619047619047619
+    }
+  },
+  "session_count": 1,
+  "thread_id": "ThreadPoolExecutor-0_1"
+}
