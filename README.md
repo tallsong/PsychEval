@@ -1,8 +1,8 @@
 # PsychEval: A Multi-Session and Multi-Therapy Benchmark for High-Realism AI Psychological Counselor
 
-[![Paper](https://img.shields.io/badge/Paper-ArXiv-b31b1b.svg)](https://arxiv.org/html/2601.01802v1) **PsychEval** is a comprehensive benchmark designed to evaluate Large Language Models (LLMs) in the context of psychological counseling. Unlike existing benchmarks that focus on single-turn interactions or single-session assessments, PsychEval emphasizes **longitudinal, multi-session counseling** processes and **multi-therapy** capabilities.
+[**PsychEval**](https://arxiv.org/html/2601.01802v1) is a comprehensive benchmark designed to evaluate Large Language Models (LLMs) in the context of psychological counseling. Unlike existing benchmarks that focus on single-turn interactions or single-session assessments, PsychEval emphasizes **longitudinal, multi-session counseling** processes and **multi-therapy** capabilities.
 
-![PsychEval Framework](https://github.com/ECNU-ICALK/PsychEval/tree/main/figures/dialogue_construction.png)
+![PsychEval Framework](https://github.com/ECNU-ICALK/PsychEval/blob/main/figures/dialogue_construction.png)
 *Figure 1: Overview of the PsychEval framework and data construction pipeline.*
 
 ## 🌟 Key Features
@@ -21,7 +21,6 @@
 ## 📂 Dataset Structure
 
 The dataset simulates a complete counseling lifecycle. Each case is structured to reflect the progression of real-world therapy.
-
 
 
 ## Evaluation Framework
