@@ -1,8 +1,8 @@
 {
   "total_files": 2,
   "max_workers": 15,
-  "successful_evaluations": 16,
-  "failed_evaluations": 0,
+  "successful_evaluations": 0,
+  "failed_evaluations": 16,
   "stats": {
     "completed": 2,
     "failed": 0,
@@ -15,23 +15,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/1.json",
       "session_number": 1,
       "session_file": "session_1",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 7.403846153846154,
-          "RRO": 8.166666666666668,
-          "WAI": 6.875,
-          "Custom_Dim": 7.769230769230769,
-          "CTRS": 9.444444444444445
-        },
-        "client": {
-          "RRO": 7.118055555555555,
-          "PANAS": 3.0,
-          "SCL_90": 1.6944444444444444,
-          "SRS": 7.5,
-          "BDI_II": 2.8571428571428577
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 1: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_0"
     },
     {
@@ -40,23 +26,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/1.json",
       "session_number": 2,
       "session_file": "session_2",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 6.730769230769231,
-          "RRO": 7.291666666666666,
-          "WAI": 7.708333333333333,
-          "Custom_Dim": 9.076923076923077,
-          "CTRS": 9.444444444444445
-        },
-        "client": {
-          "RRO": 6.666666666666666,
-          "PANAS": 3.875,
-          "SCL_90": 1.6666666666666667,
-          "SRS": 10.0,
-          "BDI_II": 3.809523809523809
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 2: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_0"
     },
     {
@@ -65,23 +37,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/1.json",
       "session_number": 3,
       "session_file": "session_3",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 7.6923076923076925,
-          "RRO": 9.083333333333332,
-          "WAI": 6.458333333333333,
-          "Custom_Dim": 8.307692307692308,
-          "CTRS": 9.444444444444445
-        },
-        "client": {
-          "RRO": 8.57638888888889,
-          "PANAS": 6.125,
-          "SCL_90": 1.3333333333333333,
-          "SRS": 10.0,
-          "BDI_II": 2.53968253968254
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 3: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_0"
     },
     {
@@ -90,23 +48,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/1.json",
       "session_number": 4,
       "session_file": "session_4",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 5.1923076923076925,
-          "RRO": 8.833333333333332,
-          "WAI": 9.166666666666666,
-          "Custom_Dim": 8.923076923076923,
-          "CTRS": 10.0
-        },
-        "client": {
-          "RRO": 8.402777777777779,
-          "PANAS": 5.625,
-          "SCL_90": 1.2222222222222223,
-          "SRS": 10.0,
-          "BDI_II": 1.2698412698412698
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 4: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_0"
     },
     {
@@ -115,23 +59,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/1.json",
       "session_number": 5,
       "session_file": "session_5",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 7.596153846153846,
-          "RRO": 7.708333333333334,
-          "WAI": 8.333333333333334,
-          "Custom_Dim": 9.5,
-          "CTRS": 10.0
-        },
-        "client": {
-          "RRO": 7.5,
-          "PANAS": 6.0,
-          "SCL_90": 1.4722222222222223,
-          "SRS": 8.125,
-          "BDI_II": 2.3809523809523814
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 5: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_0"
     },
     {
@@ -140,23 +70,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/1.json",
       "session_number": 6,
       "session_file": "session_6",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 5.480769230769231,
-          "RRO": 7.5,
-          "WAI": 8.541666666666666,
-          "Custom_Dim": 8.384615384615385,
-          "CTRS": 10.0
-        },
-        "client": {
-          "RRO": 7.5,
-          "PANAS": 6.0,
-          "SCL_90": 0.9166666666666666,
-          "SRS": 10.0,
-          "BDI_II": 1.1111111111111112
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 6: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_0"
     },
     {
@@ -165,23 +81,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/1.json",
       "session_number": 7,
       "session_file": "session_7",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 7.596153846153846,
-          "RRO": 8.416666666666668,
-          "WAI": 9.375,
-          "Custom_Dim": 8.115384615384615,
-          "CTRS": 10.0
-        },
-        "client": {
-          "RRO": 7.673611111111111,
-          "PANAS": 7.375,
-          "SCL_90": 0.25,
-          "SRS": 10.0,
-          "BDI_II": 1.9047619047619047
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 7: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_0"
     },
     {
@@ -190,23 +92,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/2.json",
       "session_number": 1,
       "session_file": "session_1",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 5.1923076923076925,
-          "RRO": 5.25,
-          "WAI": 6.666666666666667,
-          "Custom_Dim": 8.73076923076923,
-          "CTRS": 9.444444444444445
-        },
-        "client": {
-          "RRO": 5.0,
-          "PANAS": 2.25,
-          "SCL_90": 4.305555555555555,
-          "SRS": 7.5,
-          "BDI_II": 7.619047619047619
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 1: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_1"
     },
     {
@@ -215,23 +103,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/2.json",
       "session_number": 2,
       "session_file": "session_2",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 8.461538461538462,
-          "RRO": 7.5,
-          "WAI": 7.5,
-          "Custom_Dim": 9.538461538461538,
-          "CTRS": 9.444444444444445
-        },
-        "client": {
-          "RRO": 6.041666666666666,
-          "PANAS": 3.125,
-          "SCL_90": 3.361111111111111,
-          "SRS": 7.5,
-          "BDI_II": 5.714285714285715
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 2: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_1"
     },
     {
@@ -240,23 +114,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/2.json",
       "session_number": 3,
       "session_file": "session_3",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 8.557692307692308,
-          "RRO": 7.291666666666666,
-          "WAI": 6.875,
-          "Custom_Dim": 8.26923076923077,
-          "CTRS": 10.0
-        },
-        "client": {
-          "RRO": 5.902777777777778,
-          "PANAS": 3.875,
-          "SCL_90": 3.75,
-          "SRS": 7.5,
-          "BDI_II": 4.761904761904761
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 3: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_1"
     },
     {
@@ -265,23 +125,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/2.json",
       "session_number": 4,
       "session_file": "session_4",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 8.365384615384615,
-          "RRO": 8.875,
-          "WAI": 6.458333333333333,
-          "Custom_Dim": 8.115384615384615,
-          "CTRS": 10.0
-        },
-        "client": {
-          "RRO": 7.222222222222222,
-          "PANAS": 4.25,
-          "SCL_90": 3.361111111111111,
-          "SRS": 7.5,
-          "BDI_II": 4.92063492063492
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 4: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_1"
     },
     {
@@ -290,23 +136,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/2.json",
       "session_number": 5,
       "session_file": "session_5",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 5.961538461538462,
-          "RRO": 8.416666666666668,
-          "WAI": 7.291666666666667,
-          "Custom_Dim": 8.884615384615385,
-          "CTRS": 10.0
-        },
-        "client": {
-          "RRO": 6.944444444444445,
-          "PANAS": 3.875,
-          "SCL_90": 3.6944444444444446,
-          "SRS": 10.0,
-          "BDI_II": 4.285714285714285
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 5: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_1"
     },
     {
@@ -315,23 +147,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/2.json",
       "session_number": 6,
       "session_file": "session_6",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 5.096153846153846,
-          "RRO": 8.416666666666668,
-          "WAI": 7.291666666666667,
-          "Custom_Dim": 8.461538461538462,
-          "CTRS": 10.0
-        },
-        "client": {
-          "RRO": 6.944444444444445,
-          "PANAS": 3.875,
-          "SCL_90": 3.0,
-          "SRS": 7.5,
-          "BDI_II": 4.603174603174603
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 6: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_1"
     },
     {
@@ -340,23 +158,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/2.json",
       "session_number": 7,
       "session_file": "session_7",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 7.788461538461538,
-          "RRO": 8.416666666666668,
-          "WAI": 6.875,
-          "Custom_Dim": 9.192307692307692,
-          "CTRS": 10.0
-        },
-        "client": {
-          "RRO": 7.083333333333334,
-          "PANAS": 3.0,
-          "SCL_90": 3.1666666666666665,
-          "SRS": 10.0,
-          "BDI_II": 3.8095238095238093
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 7: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_1"
     },
     {
@@ -365,23 +169,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/2.json",
       "session_number": 8,
       "session_file": "session_8",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 8.461538461538462,
-          "RRO": 9.291666666666668,
-          "WAI": 7.5,
-          "Custom_Dim": 9.76923076923077,
-          "CTRS": 10.0
-        },
-        "client": {
-          "RRO": 7.638888888888889,
-          "PANAS": 4.375,
-          "SCL_90": 2.5,
-          "SRS": 7.5,
-          "BDI_II": 3.333333333333334
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 8: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_1"
     },
     {
@@ -390,23 +180,9 @@
       "case_path": "eval/data_sample/PsychEval/cbt/2.json",
       "session_number": 9,
       "session_file": "session_9",
-      "evaluation_results": {
-        "counselor": {
-          "HTAIS": 8.076923076923077,
-          "RRO": 9.291666666666668,
-          "WAI": 8.75,
-          "Custom_Dim": 9.0,
-          "CTRS": 10.0
-        },
-        "client": {
-          "RRO": 7.951388888888889,
-          "PANAS": 6.625,
-          "SCL_90": 4.194444444444445,
-          "SRS": 10.0,
-          "BDI_II": 2.8571428571428577
-        }
-      },
-      "session_count": 1,
+      "error": "Unknown scheme for proxy URL URL('')",
+      "full_error": "Error evaluating session 9: Unknown scheme for proxy URL URL('')\nTraceback: Traceback (most recent call last):\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 373, in process_single_file_thread\n    results = loop.run_until_complete(self.evaluate_single(test_case))\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/asyncio/base_events.py\", line 649, in run_until_complete\n    return future.result()\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 661, in evaluate_single\n    evaluations = await asyncio.gather(*tasks)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/manager/evaluation_multi.py\", line 654, in run_evaluation\n    gpt_api = GPT5ChatClient(api_key=self.api_key, base_url=self.base_url, model=self.model_name, rps=16)\n  File \"/mnt/shared-storage-user/cl4mind/panqianjun/make_data/github/eval/utils/gpt5_chat_client.py\", line 74, in __init__\n    http_client = httpx.AsyncClient(proxy=proxies, timeout=600)  # 如需公司 CA，可以加 verify=\"/path/to/cacert.pem\"\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 1400, in __init__\n    proxy_map = self._get_proxy_map(proxy, allow_env_proxies)\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_client.py\", line 250, in _get_proxy_map\n    proxy = Proxy(url=proxy) if isinstance(proxy, (str, URL)) else proxy\n  File \"/root/miniconda3/envs/make_data/lib/python3.10/site-packages/httpx/_config.py\", line 214, in __init__\n    raise ValueError(f\"Unknown scheme for proxy URL {url!r}\")\nValueError: Unknown scheme for proxy URL URL('')\n",
+      "evaluation_results": {},
       "thread_id": "ThreadPoolExecutor-0_1"
     }
   ]

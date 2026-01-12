@@ -79,35 +79,59 @@ We establish a holistic assessment system utilizing 18 therapy-specific and shar
 ![Quality](https://github.com/ECNU-ICALK/PsychEval/blob/main/figures/quality.png)
 <!-- *Table 3: Data quality of our benchmark in terms of counselor-level and client-level metrics.* -->
 
+## Step 0: Convert data format
+To evaluate your own benchmark, you must convert your data into the required sessions format.
+
+*  Format Example: Please refer to the eval/manager/Simpsydial/prepared directory to see examples of the expected data structure.
+* Conversion Script: You can use eval/manager/Simpsydial/convert_simpsydial.py as a reference for writing your own conversion code.
+
+
 ## Step 1: Configure API Key
 The evaluation script relies on LLMs (e.g., Deepseek-v3.1 ) as judges. You need to configure your API keys.
 **Option A: Environment Variables (Recommended)**
 ```bash
 export CHAT_API_KEY="your-api-key"
 export CHAT_API_BASE="your-api-base-url"
-export CHAT_MODEL_NAME="gpt-4-turbo"
+export CHAT_MODEL_NAME="deepseek-v3.1-terminus"
 ```
 
-##  Running the Evaluation
+##  Step 2: Running the Evaluation
 1. Main Evaluation Script
 
 To execute the multi-dimensional evaluation, use the following command:
 ```python
-python3 -m eval.manager.evaluation_mutil
+python3 -m eval.manager.evaluation_mutil 
 ```
 
-2. Configuring Metrics
+2. Configuring Evaluation Metrics
 
-You can easily customize the evaluation metrics by modifying the method_cls list in the configuration file. Simply update the list with the desired metric classes to toggle specific evaluations.
+You can customize the active evaluation metrics by modifying the registration list in the main execution script. To enable or disable specific psychological scales (e.g., SCL-90, BDI-II), simply add or remove the corresponding classes from the `method_cls` loop.
 
-3. Baseline Reproduction & Data Conversion
-To reproduce results from other papers (e.g., Simpsydial), you must first convert the data format to ensure compatibility.
+**Configuration Example:**
 
-   Step 1: Format Conversion Run the dedicated conversion script:
-   ```python
-   python3 manager/Simpsydial/convert_simpsydial.py
-   ```
-   Step 2: Run Evaluation After conversion, proceed with the main evaluation script mentioned in step 1.
+```python
+# In the main function:
+# Modify this list to select which metrics to run
+target_metrics = [
+    HTAIS, 
+    RRO, 
+    WAI, 
+    Custom_Dim, 
+    CTRS, 
+    PANAS, 
+    SCL_90, 
+    SRS, 
+    BDI_II
+]
+
+for method_cls in target_metrics:
+    method_instance = method_cls()
+    eval_manager.register(method_instance)
+    print(f"  Registered: {method_instance.get_name()}")
+```
+
+
+
 
 
 

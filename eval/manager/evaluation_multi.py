@@ -1,7 +1,18 @@
 import sys
 import os
 
+proxy_vars = ["http_proxy", "https_proxy", "HTTP_PROXY", "HTTPS_PROXY", "all_proxy", "ALL_PROXY"]
+for key in proxy_vars:
+    # 如果环境变量存在，且值为空字符串，则删除它
+    if key in os.environ and not os.environ[key]:
+        del os.environ[key]
+        print(f"[系统提示] 已自动清理无效的空环境变量: {key}")
+
+
+
 sys.path.append(os.path.join(os.getcwd(), "eval"))
+
+
 
 from collections import defaultdict
 from typing import Dict, Any, DefaultDict, List, Tuple
@@ -21,6 +32,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 # os.environ["CHAT_API_KEY"] = ""
 # os.environ["CHAT_API_BASE"] = ""
 # os.environ["CHAT_MODEL_NAME"] = ""
+
+
 
 class ThreadSafeLogger:
     """线程安全的日志记录器，用于将所有print输出写入文件"""
