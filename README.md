@@ -40,6 +40,38 @@ The dataset simulates a complete counseling lifecycle. Each case is structured t
 <!-- *Table 3: Comparison with existing benchmarks in terms of statistical information.* -->
 
 
+
+## Repository Overview
+```
+. 
+├── data
+│   ├── bt
+│   ├── cbt
+│   ├── het
+│   ├── integrative
+│   ├── pdt
+│   └── pmt
+├── eval
+│   ├── data_sample
+│   ├── manager
+│   ├── methods
+│   ├── prompts_cn
+│   ├── results
+│   └── utils
+├── figures
+│   ├── case_extraction.png
+│   ├── dialogue_construction.png
+│   ├── feature_compare.png
+│   ├── quality.png
+│   ├── statistical_information_compare.png
+│   ├── statistical_information.png
+│   └── unified_counseling_flow.png
+├── LICENSE
+├── README.md
+└── requirements.txt
+```
+
+
 ## Evaluation Framework
 
 We establish a holistic assessment system utilizing 18 therapy-specific and shared metrics (e.g., WAI for alliance, CTRS for CBT competency, and SCL-90 for symptom reduction). Our results show that PsychEval achieves unprecedented clinical fidelity, nearly doubling the scores of prior models in technical adherence (e.g., CTRS: 9.19).
@@ -47,6 +79,14 @@ We establish a holistic assessment system utilizing 18 therapy-specific and shar
 ![Quality](https://github.com/ECNU-ICALK/PsychEval/blob/main/figures/quality.png)
 <!-- *Table 3: Data quality of our benchmark in terms of counselor-level and client-level metrics.* -->
 
+## Step 1: Configure API Key
+The evaluation script relies on LLMs (e.g., Deepseek-v3.1 ) as judges. You need to configure your API keys.
+**Option A: Environment Variables (Recommended)**
+```bash
+export CHAT_API_KEY="your-api-key"
+export CHAT_API_BASE="your-api-base-url"
+export CHAT_MODEL_NAME="gpt-4-turbo"
+```
 
 ##  Running the Evaluation
 1. Main Evaluation Script

@@ -18,9 +18,9 @@ import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # 填入API密钥和模型名称
-os.environ["CHAT_API_KEY"] = ""
-os.environ["CHAT_API_BASE"] = ""
-os.environ["CHAT_MODEL_NAME"] = ""
+# os.environ["CHAT_API_KEY"] = ""
+# os.environ["CHAT_API_BASE"] = ""
+# os.environ["CHAT_MODEL_NAME"] = ""
 
 class ThreadSafeLogger:
     """线程安全的日志记录器，用于将所有print输出写入文件"""
