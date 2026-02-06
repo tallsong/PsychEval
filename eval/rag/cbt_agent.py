@@ -9,8 +9,8 @@ from typing import Any, Dict, List, Optional, Tuple
 import json
 from pathlib import Path
 
-from .retriever import RAGRetriever, RetrievalResult
-from .session_memory import SessionMemory
+from .retriever import CBTRetriever, RetrievalResult
+from .session_memory import CBTSessionMemory
 from .knowledge_extractor import CBTKnowledgeExtractor
 
 
@@ -30,7 +30,7 @@ class CBTCounselorAgent:
     
     def __init__(
         self,
-        retriever: RAGRetriever,
+        retriever: CBTRetriever,
         llm_client: Optional[Any] = None,
         model_name: str = "deepseek-chat",
     ):
@@ -45,7 +45,7 @@ class CBTCounselorAgent:
         self.retriever = retriever
         self.llm_client = llm_client
         self.model_name = model_name
-        self.session_memory: Optional[SessionMemory] = None
+        self.session_memory: Optional[CBTSessionMemory] = None
         
         self.system_prompt_template = """你是一位经验丰富的认知行为治疗(CBT)咨询师。
 
@@ -87,7 +87,7 @@ class CBTCounselorAgent:
         main_problem: str,
         topic: str,
         core_beliefs: Optional[List[str]] = None,
-    ) -> SessionMemory:
+    ) -> CBTSessionMemory:
         """
         Initialize therapy with a new client
         
@@ -101,7 +101,7 @@ class CBTCounselorAgent:
         Returns:
             SessionMemory instance for this client
         """
-        self.session_memory = SessionMemory(case_id, client_name)
+        self.session_memory = CBTSessionMemory(case_id, client_name)
         self.session_memory.initialize_client(
             main_problem=main_problem,
             topic=topic,
@@ -351,7 +351,7 @@ class CBTCounselorAgent:
         
         self.session_memory.save(filepath)
     
-    def load_session_memory(self, filepath: str) -> SessionMemory:
+    def load_session_memory(self, filepath: str) -> CBTSessionMemory:
         """Load session memory from file"""
-        self.session_memory = SessionMemory.load(filepath)
+        self.session_memory = CBTSessionMemory.load(filepath)
         return self.session_memory

@@ -8,5 +8,15 @@
     ],
     "python.analysis.extraPaths": [
         "./**",
-    ]
+    ],
+    "chat.tools.terminal.autoApprove": {
+        "/^python -m py_compile eval/rag/het_knowledge_extractor\\.py eval/rag/het_retriever\\.py eval/rag/het_counselor_agent\\.py eval/rag/pdt_knowledge_extractor\\.py eval/rag/pdt_retriever\\.py eval/rag/pdt_counselor_agent\\.py && echo \"✓ All files compile successfully\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^timeout 120 python run_multi_therapy_demo\\.py 2>&1 \\| head -200$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
 }

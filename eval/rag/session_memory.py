@@ -41,7 +41,7 @@ class SessionContext:
     client_response_quality: Optional[str] = None  # positive, neutral, challenging
 
 
-class SessionMemory:
+class CBTSessionMemory:
     """Manages session-level memory and continuity"""
     
     def __init__(self, case_id: int, client_name: str = ""):
@@ -203,7 +203,7 @@ Client Summary:
         }
     
     @classmethod
-    def from_dict(cls, data: Dict[str, Any]) -> "SessionMemory":
+    def from_dict(cls, data: Dict[str, Any]) -> "CBTSessionMemory":
         """Load from dictionary"""
         memory = cls(data["case_id"])
         state_data = data["client_state"]
@@ -227,7 +227,7 @@ Client Summary:
             json.dump(self.to_dict(), f, ensure_ascii=False, indent=2)
     
     @classmethod
-    def load(cls, filepath: str) -> "SessionMemory":
+    def load(cls, filepath: str) -> "CBTSessionMemory":
         """Load session memory from JSON"""
         with open(filepath, 'r', encoding='utf-8') as f:
             data = json.load(f)

@@ -21,7 +21,7 @@ class RetrievalResult:
     relevance_scores: Dict[str, float]
 
 
-class RAGRetriever:
+class CBTRetriever:
     """
     Retrieval-Augmented Generation system for CBT counselor.
     

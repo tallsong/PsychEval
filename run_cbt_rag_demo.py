@@ -16,10 +16,10 @@ from typing import Optional, List
 
 from eval.rag import (
     CBTKnowledgeExtractor,
-    RAGRetriever,
+    CBTRetriever,
     CBTCounselorAgent,
 )
-from eval.rag.session_memory import SessionMemory
+from eval.rag.session_memory import CBTSessionMemory
 
 
 def step1_extract_knowledge(
@@ -46,7 +46,7 @@ def step1_extract_knowledge(
     return
 
 
-def step2_initialize_rag(knowledge_base_dir: str) -> RAGRetriever:
+def step2_initialize_rag(knowledge_base_dir: str) -> CBTRetriever:
     """
     Step 2: Initialize RAG retriever with knowledge base
     """
@@ -54,13 +54,13 @@ def step2_initialize_rag(knowledge_base_dir: str) -> RAGRetriever:
     print("STEP 2: INITIALIZE RAG RETRIEVER")
     print("="*80)
     
-    retriever = RAGRetriever(knowledge_base_dir)
+    retriever = CBTRetriever(knowledge_base_dir)
     print("\n✓ RAG retriever initialized!")
     return retriever
 
 
 def step3_demonstrate_retrieval(
-    retriever: RAGRetriever,
+    retriever: CBTRetriever,
 ) -> None:
     """
     Step 3: Demonstrate RAG retrieval with sample scenarios
@@ -111,7 +111,7 @@ def step3_demonstrate_retrieval(
     print("\n✓ Retrieval demonstration complete!")
 
 
-def step4_single_session_demo(retriever: RAGRetriever) -> None:
+def step4_single_session_demo(retriever: CBTRetriever) -> None:
     """
     Step 4: Demonstrate single session with CBT counselor agent
     """
@@ -193,7 +193,7 @@ def step4_single_session_demo(retriever: RAGRetriever) -> None:
     return counselor
 
 
-def step5_multisession_demo(retriever: RAGRetriever) -> None:
+def step5_multisession_demo(retriever: CBTRetriever) -> None:
     """
     Step 5: Demonstrate multi-session continuity
     """
@@ -256,7 +256,7 @@ def step5_multisession_demo(retriever: RAGRetriever) -> None:
     print("\n✓ Multi-session demo complete!")
 
 
-def step6_evaluation_framework(retriever: RAGRetriever) -> None:
+def step6_evaluation_framework(retriever: CBTRetriever) -> None:
     """
     Step 6: Demonstrate CTRS evaluation framework integration
     """

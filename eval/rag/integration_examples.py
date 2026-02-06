@@ -11,12 +11,12 @@ def example_1_basic_integration():
     """
     Run a CBT counseling session and evaluate with CTRS
     """
-    from eval.rag import CBTCounselorAgent, RAGRetriever
+    from eval.rag import CBTCounselorAgent, CBTRetriever
     from eval.methods.counselor_ctrs import CTRSEvaluator
     from eval.utils.llm_api import GPT5ChatClient
     
     # Initialize RAG system
-    retriever = RAGRetriever("eval/rag/knowledge_base")
+    retriever = CBTRetriever("eval/rag/knowledge_base")
     
     # Initialize counselor agent
     # Note: llm_client is optional - can use template responses without it
@@ -69,10 +69,10 @@ def example_2_multi_session():
     """
     Manage multiple sessions with persistent memory
     """
-    from eval.rag import CBTCounselorAgent, RAGRetriever
+    from eval.rag import CBTCounselorAgent, CBTRetriever
     from pathlib import Path
     
-    retriever = RAGRetriever("eval/rag/knowledge_base")
+    retriever = CBTRetriever("eval/rag/knowledge_base")
     counselor = CBTCounselorAgent(retriever)
     
     # Initialize client
@@ -150,11 +150,11 @@ def example_3_batch_processing():
     """
     Process multiple cases in batch mode for evaluation studies
     """
-    from eval.rag import CBTCounselorAgent, RAGRetriever
+    from eval.rag import CBTCounselorAgent, CBTRetriever
     from pathlib import Path
     import json
     
-    retriever = RAGRetriever("eval/rag/knowledge_base")
+    retriever = CBTRetriever("eval/rag/knowledge_base")
     
     # Define test cases
     test_cases = [
@@ -222,9 +222,9 @@ def example_4_custom_retrieval():
     """
     Use advanced retrieval features for specific scenarios
     """
-    from eval.rag import RAGRetriever
+    from eval.rag import CBTRetriever
     
-    retriever = RAGRetriever("eval/rag/knowledge_base")
+    retriever = CBTRetriever("eval/rag/knowledge_base")
     
     print("=" * 60)
     print("SCENARIO 1: Retrieve for specific cognitive pattern")
@@ -263,7 +263,7 @@ def example_5_manager_integration():
     """
     Integrate RAG with PsychEval's evaluation manager
     """
-    from eval.rag import CBTCounselorAgent, RAGRetriever
+    from eval.rag import CBTCounselorAgent, CBTRetriever
     from eval.manager.base_manager import BaseManager
     import json
     
@@ -273,7 +273,7 @@ def example_5_manager_integration():
         """
         
         def __init__(self, knowledge_base_dir: str):
-            self.retriever = RAGRetriever(knowledge_base_dir)
+            self.retriever = CBTRetriever(knowledge_base_dir)
             self.counselors = {}
         
         def create_counselor_session(self, case_id: int, case_data: dict):
@@ -335,8 +335,8 @@ def example_6_resume_session():
     """
     Load a previous session and continue from where it left off
     """
-    from eval.rag import CBTCounselorAgent, RAGRetriever
-    from eval.rag.session_memory import SessionMemory
+    from eval.rag import CBTCounselorAgent, CBTRetriever
+    from eval.rag.session_memory import CBTSessionMemory
     from pathlib import Path
     
     # Assume we have a saved session
@@ -347,10 +347,10 @@ def example_6_resume_session():
         return
     
     # Load session memory
-    memory = SessionMemory.load(str(session_file))
+    memory = CBTSessionMemory.load(str(session_file))
     
     # Create new agent
-    retriever = RAGRetriever("eval/rag/knowledge_base")
+    retriever = CBTRetriever("eval/rag/knowledge_base")
     counselor = CBTCounselorAgent(retriever)
     counselor.session_memory = memory
     
