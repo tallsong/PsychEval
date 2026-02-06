@@ -1,0 +1,5 @@
+
+*.md
+eval/rag/knowledge_base/*
+*.pyc
+__pycache__/
