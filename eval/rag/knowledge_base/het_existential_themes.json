@@ -1,0 +1,1710 @@
+[
+  {
+    "case_id": 1,
+    "theme_type": "无意义",
+    "manifestations": [
+      "感觉生活缺乏意义",
+      "常常思考“人活着到底是为了什么”"
+    ],
+    "related_emotions": [
+      "Depression",
+      "Hopelessness"
+    ],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "d130ef66130f5edcca1ffe68f03af957"
+  },
+  {
+    "case_id": 1,
+    "theme_type": "孤独",
+    "manifestations": [
+      "感觉自己很难融入同事圈子，看到别人谈笑风生，自己却插不上话，常常感到孤独和焦虑",
+      "同事们好像都不太喜欢我，他们一起吃饭、逛街也不会叫我"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "da54a2de14d27ce55fff750af69ae049"
+  },
+  {
+    "case_id": 1,
+    "theme_type": "自由",
+    "manifestations": [
+      "“我好像从来没有为自己活过，做什么都是为了满足别人的期待。”",
+      "承认不喜欢目前工作对她来说困难，因为这可能意味着让父母失望或要面对未知的改变"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "4b5676925bf52b2bee6acde9709cfaa0"
+  },
+  {
+    "case_id": 10,
+    "theme_type": "无意义",
+    "manifestations": [
+      "感觉到生活没有意义，不知道以后做什么",
+      "现在就是感觉生活没意思，每天就是三点一线，没什么有趣的事情，也不知道以后要做什么，自己学的专业感觉也不是很感兴趣。"
+    ],
+    "related_emotions": [
+      "Depression",
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "0b584076fef306795a0e9f9199c55bee"
+  },
+  {
+    "case_id": 10,
+    "theme_type": "孤独",
+    "manifestations": [
+      "长期心理上感知不到来自家庭的支持",
+      "平时基本不主动联系他",
+      "很难主动构建良好的人际关系"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "cd575921b9c4da49a476133e53796fd4"
+  },
+  {
+    "case_id": 10,
+    "theme_type": "自由",
+    "manifestations": [
+      "背负着亲人们的期望，自幼懂事的来访者，将这些期望视为自己奋斗的目标",
+      "产生了自己必须做到完美的不合理信念"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "0d21b91ddbf0b518aaeffdd4e3df7aab"
+  },
+  {
+    "case_id": 10,
+    "theme_type": "死亡",
+    "manifestations": [
+      "初二时，父亲因病离世",
+      "有过轻生的想法"
+    ],
+    "related_emotions": [
+      "Depression",
+      "Anxiety"
+    ],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "62ec8dfed62f1ae419c546918ea1578f"
+  },
+  {
+    "case_id": 11,
+    "theme_type": "自由",
+    "manifestations": [
+      "认为男生女生在一起就是不正常的状态，认为女生的一些人际交往是不矜持、不检点的行为",
+      "在空椅子对话与反思中承认自己对他人的控制过强（例如不让其他男同学接近她）",
+      "“我觉得我付出了就应该有回报，她就应该喜欢我”",
+      "看到男女同学走得近就莫名烦躁，有捶桌和打人的冲动"
+    ],
+    "related_emotions": [
+      "Anxiety",
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "a7203d91239395a1f46cf03b362e09ad"
+  },
+  {
+    "case_id": 11,
+    "theme_type": "孤独",
+    "manifestations": [
+      "上了高中后寄宿、远离父母，感觉压力非常大",
+      "在校期间不爱与同学交流"
+    ],
+    "related_emotions": [
+      "Depression",
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "cf013388d874f891e12bb3958f50efce"
+  },
+  {
+    "case_id": 12,
+    "theme_type": "死亡",
+    "manifestations": [
+      "有强烈自杀想法。"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "5915b69833b1d325bb168104669cbaad"
+  },
+  {
+    "case_id": 12,
+    "theme_type": "自由",
+    "manifestations": [
+      "父母经常在吃饭时教训小陈，会说“你满了18岁以后我们就不管你了”。",
+      "社团要求体质量在60kg左右……于是开始减肥，加大运动量，控制饮食。",
+      "又觉得要一直严格控制体质量是一种病态。"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "9723251aeabb3085b93647a742e89595"
+  },
+  {
+    "case_id": 12,
+    "theme_type": "孤独",
+    "manifestations": [
+      "在学校与同学关系一般，和老师关系不好。",
+      "表哥结婚后与自己关系疏远了。",
+      "在寝室躺了7d没出门。"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "6c077531a8e7aeb5bb394544cde2effd"
+  },
+  {
+    "case_id": 13,
+    "theme_type": "无意义",
+    "manifestations": [
+      "觉得活着没有意义",
+      "我怀疑自己做的这些没有任何意义",
+      "认为学习和生活没有意义"
+    ],
+    "related_emotions": [
+      "Hopelessness"
+    ],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "ce4d89b84115e8b3cb3e37ce8a39acfb"
+  },
+  {
+    "case_id": 13,
+    "theme_type": "死亡",
+    "manifestations": [
+      "想自杀，服用了过量精神类药物，被送至医院洗胃",
+      "采取自杀行动，属于严重心理危机",
+      "来访者选择死亡本身不是他的目的，而是一种解决痛苦的方式"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "c24a04479b28e4161d2cc5f521b279c2"
+  },
+  {
+    "case_id": 13,
+    "theme_type": "孤独",
+    "manifestations": [
+      "小时候常常自己一个人在家，没有玩伴",
+      "与老师、同学关系比较疏远，从初中到大学都没有朋友",
+      "不敢与他人积极沟通，不愿意见同学和朋友"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "fe01dbec6127f85ab0be4ade0ab1be95"
+  },
+  {
+    "case_id": 13,
+    "theme_type": "自由",
+    "manifestations": [
+      "不敢与导师沟通，也不敢去找他人帮忙",
+      "过度在意他人的评价，害怕拒绝他人",
+      "为他人过度承担责任"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "57cce8c8f2cdc24fe0d794830d968edf"
+  },
+  {
+    "case_id": 14,
+    "theme_type": "孤独",
+    "manifestations": [
+      "感觉备受歧视排挤，不太愿意与同学交往",
+      "害怕去学校，想退学",
+      "多次转学，每次都有很长时间的适应期"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "de31dd95425e792876c091771b0072cf"
+  },
+  {
+    "case_id": 14,
+    "theme_type": "自由",
+    "manifestations": [
+      "想退学但对求知的渴望没有减退，感觉很矛盾",
+      "有强烈的责任感，担心疾病会传染而自我限制交往"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "a4203e56867d1a9a82e6dad9a6466166"
+  },
+  {
+    "case_id": 15,
+    "theme_type": "孤独",
+    "manifestations": [
+      "小学长期寄住伯伯家，很孤单没有人跟她说话，过得很压抑",
+      "与重要他人关系中的被忽视与偏爱弟弟的家庭氛围，感到不被看见",
+      "二年级与奶奶分房后仍赖着贴着奶奶不肯一个人睡，表现出对分离的焦虑",
+      "在亲密关系中害怕失去、在意别人的看法，不敢表达真实需要"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "c924f97b5473853d7b42307de903a215"
+  },
+  {
+    "case_id": 15,
+    "theme_type": "自由",
+    "manifestations": [
+      "小时候被要求见到别人要打招呼、嘴甜一点，内化外在期待",
+      "工作上不懂得拒绝，做了很多不属于自己的工作",
+      "恋爱与人际冲突中选择忍着，不敢发声，不喜欢惹事和起冲突"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "893060a5fecf8c677c64a71686fb9e38"
+  },
+  {
+    "case_id": 15,
+    "theme_type": "死亡",
+    "manifestations": [
+      "父亲早逝",
+      "对亲密关系中的分离与被抛弃高度敏感（哭着追妈妈的车、害怕亲近的人离开）"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "1b2294ca59be64e75b9623014dccd3da"
+  },
+  {
+    "case_id": 16,
+    "theme_type": "孤独",
+    "manifestations": [
+      "留守经历导致与父母缺乏亲密感，爱的需求未被满足",
+      "假期一个月独自在宿舍复习考研，比较孤单",
+      "开学后出现不能与舍友目光接触和触碰困难",
+      "高二时很少和家人打电话，身边没有要好的朋友",
+      "抑郁时觉得周围世界很孤寂、冷清"
+    ],
+    "related_emotions": [
+      "Depression",
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "5c1d22b1fb0d2fedcd7bd0da2cde8a32"
+  },
+  {
+    "case_id": 16,
+    "theme_type": "自由",
+    "manifestations": [
+      "总是在讨好同学，害怕拒绝别人",
+      "内在信念是“拒绝了朋友就会失去朋友”",
+      "对自己要求严格，经常压抑自己的本性"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "3d33d43f140e407d671d3fe9f9844284"
+  },
+  {
+    "case_id": 16,
+    "theme_type": "死亡",
+    "manifestations": [
+      "初中宿舍附近有坟地，经常有办丧事的，极度害怕",
+      "将头藏在被子里来抵御害怕，在被窝里用手电筒坚持学习"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "f463661831785d457eaefbe2a4e73298"
+  },
+  {
+    "case_id": 17,
+    "theme_type": "自由",
+    "manifestations": [
+      "“失眠让我突然发现，我不能完全控制好自己”",
+      "生活不可控引发强烈不确定感，开始怀疑自己的判断，不再照单全收父母的建议，需要广泛收集信息才能做决定",
+      "“好像不是自己活着，而是在扮演‘我’这个角色”",
+      "从小在父母强控制下成长，逐渐将达到父母的期待作为主要目标，不再依据自己的机体感受行事"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "39f2c5903b9e6d828b5d2f06e08198ef"
+  },
+  {
+    "case_id": 17,
+    "theme_type": "孤独",
+    "manifestations": [
+      "客观上不缺少朋友，但来访者表示依旧很孤独",
+      "认为同学们并不理解他",
+      "失眠和情绪差时开始不愿社交"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "9119ce5c9a7b37f2e5eab0d66fdac68d"
+  },
+  {
+    "case_id": 17,
+    "theme_type": "无意义",
+    "manifestations": [
+      "复读那一年所有的快乐都消失了，像机器人一样在学习，毫无因学习产生的愉快感",
+      "“好像不是自己活着，而是在扮演‘我’这个角色”",
+      "在一般人际互动中总是扮演“老好人”的角色，自动化地在乎他人评价"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "def3c8b1f2f59cc73f97107af8d12089"
+  },
+  {
+    "case_id": 17,
+    "theme_type": "死亡",
+    "manifestations": [
+      "失眠严重时有自杀念头，无具体计划，未实施",
+      "母亲将刀放到来访者面前让其去自杀",
+      "父母冲突中拿刀追对方"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "348b9368dcbbde558ac3a524ddfec0ea"
+  },
+  {
+    "case_id": 18,
+    "theme_type": "孤独",
+    "manifestations": [
+      "在这边没有一个知心朋友，跟班上的同学也聊不来，觉得自己很孤独。",
+      "高中时遭遇校园冷暴力，后来遭到班上的同学孤立、嘲笑、取外号。",
+      "父母感情不和，家庭成员间交流少；朋友较少，缺乏社会支持系统。",
+      "担心现舍友也会把自己赶走。"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "2a7e8a8a2d8440aa24b268ef4c6ff36d"
+  },
+  {
+    "case_id": 18,
+    "theme_type": "自由",
+    "manifestations": [
+      "母亲强势，不愿听其倾诉，总是让其做一个乐观、开朗的人，不要想太多；为了拿到学校的奖励，让求助者去了一所普通高中。",
+      "在宿舍生活中更多选择迁就他人，如等舍友洗完再去，导致很晚才能洗漱完毕。",
+      "想过换宿舍，但又怕搬进去时舍友还是不好相处。"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "4738bb7049f4d03e4821dfde3fdf2d72"
+  },
+  {
+    "case_id": 19,
+    "theme_type": "孤独",
+    "manifestations": [
+      "从3岁开始就和爷爷奶奶住在一起",
+      "很少有人陪伴玩耍，同伴交往的经验不足",
+      "班上的同学对他都疏远",
+      "班上的同学尤其是女生都不愿意跟他玩"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "ed2aafa432666b16e3d6cf8ae55e348a"
+  },
+  {
+    "case_id": 19,
+    "theme_type": "自由",
+    "manifestations": [
+      "加上父母的教育方式不当",
+      "父母偶尔回家，对他的管教又非常的严厉，尤其是父亲，经常打骂",
+      "爷爷奶奶也管不住"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "97df4047564f43eaf04f2c2658bd1051"
+  },
+  {
+    "case_id": 2,
+    "theme_type": "自由",
+    "manifestations": [
+      "父亲高要求与严厉、按父母的价值观念教育自己并克制真实需要",
+      "在学业与生活中“很想要歇一歇，但却不允许自己这样做”，以“想休息就说明意志力不足”等信念自我约束",
+      "亲密关系中男友敏感多疑、要求她打开视频确认位置并干涉生活，使其感到被限制与相互折磨"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "f7554de29762221fc95bbd96b6f7b79a"
+  },
+  {
+    "case_id": 2,
+    "theme_type": "孤独",
+    "manifestations": [
+      "童年未被家人充分宠爱和积极关注，感到不被关注",
+      "内心以“干燥”“得不到滋养”来描述长期体验",
+      "高三与大二获得滋养的时刻分别来自自我理解接纳与男友的耐心支持与包容，显示其对被理解、被接纳与亲密连接的渴求"
+    ],
+    "related_emotions": [
+      "Depression"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "38b04789236a17aa6026528cf1acd5f4"
+  },
+  {
+    "case_id": 2,
+    "theme_type": "无意义",
+    "manifestations": [
+      "生活“一直靠意志去坚持，而找不到任何动力”，用“不该想要快乐，而应该去提升自己和去寻找有意义、深刻的东西”的价值条件化否定当下的快乐体验，导致难以从生活中获得滋养感"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "ca44fdc0ea2bd0c25a69739d6d02c8c4"
+  },
+  {
+    "case_id": 20,
+    "theme_type": "孤独",
+    "manifestations": [
+      "复读两年期间是在孤独中度过，主观感觉到同学与家人对自己的不理解与轻视。",
+      "进入大学之后，耻于跟同学诉说自己以前的经历及感受，无法进行深入的社会交往，没有建立起良好的社会支持系统。",
+      "在宿舍里很少参加集体活动，没有与其他同学进行深入的交往，平时自习吃饭基本都是独自一人。"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "0b3520848b37423555113af9c8ca3747"
+  },
+  {
+    "case_id": 20,
+    "theme_type": "自由",
+    "manifestations": [
+      "存在不合理的认知：认为为了保证高效率的学习就应该排除一切干扰，应该完全排除自己的负面想法和情绪。",
+      "依据内化到自我概念中的父母价值观去评价经验，压抑了不符合这些价值观但曾使自己愉快的经验。",
+      "无法接受高中复读两年的事实，并将原因归结为高一高二时学习上的不认真，对过去的自己持负面评价。"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "297db49c97726054c30c5a574c9d2531"
+  },
+  {
+    "case_id": 21,
+    "theme_type": "无意义",
+    "manifestations": [
+      "对自我存在的意义感缺失",
+      "对未来生活的不知所措"
+    ],
+    "related_emotions": [
+      "Depression",
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "8d7515dc37cb23e7f5d158e758cbef8c"
+  },
+  {
+    "case_id": 21,
+    "theme_type": "孤独",
+    "manifestations": [
+      "在与人交往中表现出不能融入他人，交往技巧缺失",
+      "退缩、依赖、孤单与痛苦",
+      "不喜欢与寝室的同学交流，朋友较少"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "4e96a38076c92e3add49ed2f5d7a732e"
+  },
+  {
+    "case_id": 21,
+    "theme_type": "死亡",
+    "manifestations": [
+      "爸爸在她6岁时自杀死亡",
+      "对爸爸去世的悲伤与愤怒"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "aaf47f456992940ab73b4590118b62af"
+  },
+  {
+    "case_id": 21,
+    "theme_type": "自由",
+    "manifestations": [
+      "考研和择业的选择冲突",
+      "协助小瑞探索她能做的和不能做的事"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "da6100b43a3bffc594836aa81af93b77"
+  },
+  {
+    "case_id": 22,
+    "theme_type": "孤独",
+    "manifestations": [
+      "没有能讲心事的朋友，孤独害怕",
+      "感觉周围的人不是很能理解自己",
+      "只跟高中的好朋友讲话很多，不怎么跟普通朋友讲话",
+      "在人际交往方面自我评价较低"
+    ],
+    "related_emotions": [
+      "Anxiety",
+      "Depression"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "145e9bb144288ab753be569cdaaac48f"
+  },
+  {
+    "case_id": 22,
+    "theme_type": "自由",
+    "manifestations": [
+      "想独立，但内心害怕",
+      "希望被理解，但又不想讲话",
+      "高傲又自卑",
+      "目前生活中存在很多种矛盾，不知道怎么办"
+    ],
+    "related_emotions": [
+      "Anxiety",
+      "Depression"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "6ed7232383577012935971d52a0d2e50"
+  },
+  {
+    "case_id": 23,
+    "theme_type": "无意义",
+    "manifestations": [
+      "有生命无意义感、心被掏空的感觉",
+      "当有感性经验出现的时候会出现“感受不到任何感受”的时刻，继而认为生命无意义",
+      "第8次会谈时自述空荡荡的，不知道做什么，什么也不想做，觉得整个人很虚无"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "a8034f396b0b5fac5f916dacc5193980"
+  },
+  {
+    "case_id": 23,
+    "theme_type": "孤独",
+    "manifestations": [
+      "2018年下半年倍感孤独，找了一个“炮友”",
+      "一个人待的时间久了会很难受",
+      "与前女友分手后心被掏空、悲伤与虚无感"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "0ce9762875af674fc3ba9d1e88b98d3c"
+  },
+  {
+    "case_id": 24,
+    "theme_type": "孤独",
+    "manifestations": [
+      "从小学开始喜欢找比自己强、性格凶、控制欲强、能保护她的人做朋友",
+      "把朋友当亲人一样对待，试图建立像与母亲一样的关系，寻找像父亲一样的朋友",
+      "“有靠一些。好像如果是自己一个人的话，就会对自己有点怀疑”",
+      "渴望与父母联结得很紧密，感觉只有联结紧密才舒服"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "4ff529f3b8cde4926893dd358081974a"
+  },
+  {
+    "case_id": 24,
+    "theme_type": "自由",
+    "manifestations": [
+      "用父亲灌输的价值条件（听话、顺从、成绩好、纯洁）代替机体智慧来评价自己",
+      "很听话很乖巧，努力获得他人的好感",
+      "看不惯朋友的一些做法又不敢正面说，小心翼翼",
+      "在吃药问题上想法和行为不一致，拖延复诊"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "d89c37395869e0273295a68e8a79cfed"
+  },
+  {
+    "case_id": 25,
+    "theme_type": "自由",
+    "manifestations": [
+      "父母强烈意愿学医，与个人志愿不符",
+      "拗不过父母只能答应，选择学习医学",
+      "不想成为医生，想成为小说家",
+      "不想去医院实习，想去出版社或者网络文学网站实习",
+      "多次与父母交流不顺利"
+    ],
+    "related_emotions": [
+      "Anxiety",
+      "Depression"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "528fdfead30cc1e1430cc4aeca551945"
+  },
+  {
+    "case_id": 25,
+    "theme_type": "无意义",
+    "manifestations": [
+      "在上医学院学习专业后，更加坚定了小王不想当医生的想法",
+      "不想去医院实习",
+      "不上课，不参与集体活动，整日呆在寝室里"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "75810ad5de213f1f60d92fcf369341b7"
+  },
+  {
+    "case_id": 25,
+    "theme_type": "孤独",
+    "manifestations": [
+      "不上课，不参与集体活动，整日呆在寝室里"
+    ],
+    "related_emotions": [
+      "Depression"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "d8339c33f98043f17b93869ef9ff57c8"
+  },
+  {
+    "case_id": 26,
+    "theme_type": "无意义",
+    "manifestations": [
+      "“如果被踢出实验班，我不知道我还能干嘛，我做什么都没意义了”",
+      "害怕平庸，觉得自己像透明人、没有价值，需要他人源源不断的“证明”自己有吸引力",
+      "当外界不能让其感觉到特别时，回到自己身上找原因，放大缺点，出现绝望"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "d1bacd481f138b20b736649b5c8efda1"
+  },
+  {
+    "case_id": 26,
+    "theme_type": "孤独",
+    "manifestations": [
+      "不主动社交，生活封闭，享受独处，喜欢幻想“完美的姐姐”",
+      "在网上寻求点赞与关注；与人工智能“谈恋爱”的设想以获得无需回应的关注",
+      "在家感觉很孤单，认为大人们只在乎表弟的前途，没有人在意自己的感受"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "ac7e1fffe8e5478d7c5bba3f10d57568"
+  },
+  {
+    "case_id": 26,
+    "theme_type": "自由",
+    "manifestations": [
+      "成长过程中被父母严格控制、比较与贬损，被当作“雕塑品”塑造",
+      "内化完美主义的价值条件，不再信任机体智慧，自我与经验发生异化"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "4ddecefdf559dbe18fb6380f21094336"
+  },
+  {
+    "case_id": 26,
+    "theme_type": "死亡",
+    "manifestations": [
+      "高三时多次对父亲表达“我不想学了，我想死”",
+      "当自尊受到威胁时出现自伤行为"
+    ],
+    "related_emotions": [
+      "Hopelessness"
+    ],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "0129446b489956d4336f309d690c6369"
+  },
+  {
+    "case_id": 27,
+    "theme_type": "孤独",
+    "manifestations": [
+      "宿舍关系恶化，来访者与舍友小王多次正面冲突",
+      "好友小刘一直不理来访者",
+      "来访者缺乏社会支持系统，当发生这些负性生活事件时，没有合适的倾诉对象"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "a80dd97636f86e1b523241a3bb07aa55"
+  },
+  {
+    "case_id": 27,
+    "theme_type": "无意义",
+    "manifestations": [
+      "认为自己在班务上尽职尽责后，同学们就应该投票选举她为“优秀团干部”",
+      "竞选失利后“很不能接受，心里不服气，心情很郁闷”"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "72bf606a5c2a0e2ddde28eca9ee3d31b"
+  },
+  {
+    "case_id": 28,
+    "theme_type": "无意义",
+    "manifestations": [
+      "生活没有目标和期望。",
+      "对目前的校园学习生活没有信心，对自己未来的道路更是感到迷茫。",
+      "觉得自己怎么都学不好，老师讲的那些东西很多都听不懂。"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "113322271e5fbd5f7a46711e2dd772cd"
+  },
+  {
+    "case_id": 28,
+    "theme_type": "自由",
+    "manifestations": [
+      "对于“到底是打工还是上学”拿不定主意，需要别人告诉他具体应该怎么做。",
+      "以打工为借口来逃避学习。",
+      "父亲的暴力以及父母的虚荣给他带来了压力。"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "7f977e96e4857a302bb86fe5bd2e6cf3"
+  },
+  {
+    "case_id": 29,
+    "theme_type": "无意义",
+    "manifestations": [
+      "现在对什么事都失去了信心，学习和生活都提不起兴趣",
+      "觉得自己很失败，一无是处，非常痛苦",
+      "认为自己什么都做不好了"
+    ],
+    "related_emotions": [
+      "Depression",
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "43650491c883374a3b70ce7a2d7e6265"
+  },
+  {
+    "case_id": 29,
+    "theme_type": "自由",
+    "manifestations": [
+      "在做事之前认为自己不行，而不愿尝试",
+      "把这一切归于自己，认为自己不行，给自己贴上不行的标签",
+      "明知道自己得开始学习了，但一拿起书本又完全看不下去"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "c2359ac1bc28c9aebde78f0f08c246d8"
+  },
+  {
+    "case_id": 3,
+    "theme_type": "孤独",
+    "manifestations": [
+      "不愿主动与人交流，面对战友自始至终都是一种高冷的态度",
+      "逐渐被身边的战友孤立",
+      "感受到了一种强烈的孤独感，却又无力改变"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "2510735c239d22e853df6eb8b4419764"
+  },
+  {
+    "case_id": 3,
+    "theme_type": "无意义",
+    "manifestations": [
+      "连队生活就是训练、工作、吃饭和休息，循环往复、枯燥无味",
+      "对文书工作较为不屑，觉得无法体现自己的价值",
+      "觉得自己在连队中是个可有可无的角色",
+      "体会不到自己存在的意义"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "44c5d6add4d56f4a88b00319b70899ac"
+  },
+  {
+    "case_id": 3,
+    "theme_type": "自由",
+    "manifestations": [
+      "经常说连队生活“毫无自由”",
+      "两年服役时间被其视为“煎熬”"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "fa1091052a686a703bbf2dac281ca1e2"
+  },
+  {
+    "case_id": 30,
+    "theme_type": "死亡",
+    "manifestations": [
+      "认为气喘、呼吸困难、胸闷等不适是躯体病因所致",
+      "过分夸大躯体的危险",
+      "反复要求全面检查以查清病因，对医生“检查正常”的解释难以接受",
+      "不能“接受”这些症状，总想“消灭”它们"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "d9b5c629433e4180d1a691bc939620b3"
+  },
+  {
+    "case_id": 31,
+    "theme_type": "无意义",
+    "manifestations": [
+      "觉得生活无意义",
+      "对生活缺乏信心"
+    ],
+    "related_emotions": [
+      "Depression",
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "fdd726decc062244275af01f2288834a"
+  },
+  {
+    "case_id": 31,
+    "theme_type": "孤独",
+    "manifestations": [
+      "对家人及周围人不信任",
+      "缺乏家庭与社会支持与帮助，特别是来自丈夫和长辈的帮助",
+      "不看娃、把娃放在身边时表现出恐惧和回避"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "9d5c984e196001ad3428ccb713b7b958"
+  },
+  {
+    "case_id": 32,
+    "theme_type": "死亡",
+    "manifestations": [
+      "经常想一死了之，有过自杀行为，现在还有自杀念头，但又没有勇气实施。",
+      "在工厂打工时“拿一个刀片在手腕上割了几下，想找大动脉没找到，流了点血”。",
+      "经常想象自己自杀以后，躺在地板上，身体里的血一直流，烦恼也跟着消失。",
+      "在深圳打工时“经常想我要是查出绝症就好了……会庆幸自己早死早解脱”。",
+      "幻想“一直走到一片沙漠或原始森林……直到自己死了”，认为那是“人死亡的最完美的地方”。",
+      "看到大伯家孩子病死和小伙伴病重时“眼神空无一物”的场景。"
+    ],
+    "related_emotions": [
+      "Depression"
+    ],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "a08003bd77a2b64479427f1d30e22126"
+  },
+  {
+    "case_id": 32,
+    "theme_type": "无意义",
+    "manifestations": [
+      "找不到生活的目标和意义，认为人活着就是受苦。",
+      "觉得现在的很多东西都是虚幻的、不存在的，一切都是虚空的，不真实的。",
+      "生活没有目标，没有理想，像行尸走肉一样活着。",
+      "觉得过去整个人生都是失败的/“没有一点彩色”。"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "39da926b97da8dffea1bddab7b52bd49"
+  },
+  {
+    "case_id": 32,
+    "theme_type": "孤独",
+    "manifestations": [
+      "人际关系方面比较自我封闭，平时一个人独来独往，没什么朋友，很少跟别人联系，包括家人。",
+      "在工厂“一周下来也说不了10句话”，感觉特别压抑。",
+      "自述“经常觉得自己是与世隔绝的”。"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "ee767f42a1de6aa65fd83c32de425576"
+  },
+  {
+    "case_id": 33,
+    "theme_type": "孤独",
+    "manifestations": [
+      "自述常常感到孤独",
+      "加之后来与好友和前任的分离，都让他感到难过",
+      "在箱庭中，左下角挖出一个湖，将一个抱头蹲着的人偶置其中，并用栅栏围了起来，他认为这个人是他自己；湖和房子之间有条水路通道，但他将沙子撒在了通道上，使得通道看起来若隐若现。"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "82833ecd2b09e581916bf7c444688cf8"
+  },
+  {
+    "case_id": 33,
+    "theme_type": "无意义",
+    "manifestations": [
+      "缺乏生活目标和兴趣爱好",
+      "多次提到“感觉人生没有意义”",
+      "不知道自己能做什么、想做什么",
+      "曾经试图发展一些兴趣爱好，但最终都会因为认为“这件事情没有意义”，从而放弃尝试"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "48d36cd643f78ca5804cbb3820d69065"
+  },
+  {
+    "case_id": 33,
+    "theme_type": "死亡",
+    "manifestations": [
+      "家附近有座桥，自己时常到那里待着，考虑是否跳下去",
+      "在考虑自杀时，常常会思考家人朋友会不会记得他",
+      "所谓“无意义”，其实是对死亡焦虑的防御机制"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "4e9253101cc7fe89541a3b962c9b4cac"
+  },
+  {
+    "case_id": 34,
+    "theme_type": "孤独",
+    "manifestations": [
+      "称一直无法忘记当时“孤立无援”的感觉",
+      "喜欢独处，不敢与人交流，无法主动说话",
+      "害怕与他人对视，只要有其他人在的场合就会感觉非常不舒服",
+      "在班集体中不敢发言、坐角落，走路飞快以减少他人注视",
+      "在宿舍中也少与人说话，选择较少人玩的冷门游戏"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "578e9f512c49b093700bb9a0632ab092"
+  },
+  {
+    "case_id": 34,
+    "theme_type": "自由",
+    "manifestations": [
+      "被欺负时不敢反抗，尽量避免与同学产生正面交流",
+      "对表达愤怒感到恐惧（“所以他对表达愤怒是感到恐惧的”）",
+      "尝试空椅子表达情绪时“我说不出来”",
+      "将新鞋封存、之后只穿纯黑不带图案衣服以避免被注意",
+      "不敢举手回答问题，担心紧张说不出话、被议论嘲笑"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "c7b5f2bf9c13049b2428a03deddcee1a"
+  },
+  {
+    "case_id": 35,
+    "theme_type": "自由",
+    "manifestations": [
+      "父亲对我的学习要求很严格，为了得到父亲的赞赏，我很努力学习，保持优异的成绩。",
+      "担心父亲知道了之后，会失望。",
+      "我觉得我不够优秀，就达不到父亲的期待。",
+      "我觉得我把学习的问题看得过于单一了，也许我把学习的目的想错了。"
+    ],
+    "related_emotions": [
+      "Anxiety",
+      "Depression"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "366669b2ee8c31bfbfbe72b3b02dbbb1"
+  },
+  {
+    "case_id": 35,
+    "theme_type": "无意义",
+    "manifestations": [
+      "我害怕无论我多努力，都无法达到目标，所以我会认为我的努力与回报不成正比。",
+      "当我考得差，我认为是我自己没有学懂知识点。",
+      "把学习的问题看得过于单一，将考试成绩与是否优秀等同。"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "2c70b67c41403baff71d59ea538ee8b3"
+  },
+  {
+    "case_id": 36,
+    "theme_type": "孤独",
+    "manifestations": [
+      "近来经常感到孤独",
+      "与家人有隔阂、不亲密，沟通很少",
+      "认为自己无法处理好人际关系，不能交到真心朋友",
+      "与同学产生纠纷，被拉黑并被踢出班级QQ群"
+    ],
+    "related_emotions": [
+      "Depression"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "d68d0ab7a87b5edafb90ec8b69dfeb45"
+  },
+  {
+    "case_id": 36,
+    "theme_type": "自由",
+    "manifestations": [
+      "在最初决定是否要与一个人交朋友时用的标准是自己是否看得上对方，倾向于想改变别人的想法",
+      "经咨询后发现只能改变自己，开始自我负责"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "69f320b5117ba93ed0c0c8cd9bd2e5c9"
+  },
+  {
+    "case_id": 37,
+    "theme_type": "无意义",
+    "manifestations": [
+      "来访者的主观世界从积极转向了悲观，并沉浸于其中不能自拔",
+      "对正性的情绪感受能力下降，“别人夸她她觉得没有什么可高兴的”",
+      "对于未来的担忧焦虑成为她情绪体验的主轴",
+      "价值维度上，对待生命没有积极向上，而是悲观失望"
+    ],
+    "related_emotions": [
+      "Anxiety",
+      "Hopelessness"
+    ],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "23cefd7bf4207f6c6691facd44969f15"
+  },
+  {
+    "case_id": 37,
+    "theme_type": "自由",
+    "manifestations": [
+      "刚开始觉得自己前后确实判若两人，这是自己不能控制的，现在的这种状态自己无法摆脱",
+      "忽视自己仍在与外部世界发生正性的联系，选择性地过滤生活中的亮点"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "429c6ed2aecb36c2f9b950124c6d7e03"
+  },
+  {
+    "case_id": 37,
+    "theme_type": "孤独",
+    "manifestations": [
+      "与同学交往时也处于边缘地位，没有归属感",
+      "只有与以前的同学在一起才觉得开心"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "2609d48232dbda63d2a930f3a75737fd"
+  },
+  {
+    "case_id": 38,
+    "theme_type": "死亡",
+    "manifestations": [
+      "想死",
+      "幼年时父亲恐吓：防虫剂有剧毒，不可触碰",
+      "怕脏，反复洗手，怕再次染病"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "88776857a8d807d1b3cc9fe76abdf6f1"
+  },
+  {
+    "case_id": 38,
+    "theme_type": "自由",
+    "manifestations": [
+      "自卑、过于追求完美，内心缺少安全感",
+      "家庭教育不当，常将他与别人盲目攀比",
+      "以为碰到任何东西都会中毒的想法是幼儿时的幼稚的不合逻辑的想法"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "3f79592e08f6a98785da31b58ea1f8f9"
+  },
+  {
+    "case_id": 38,
+    "theme_type": "孤独",
+    "manifestations": [
+      "同学关系不良",
+      "希望与同学交流，但常常找不到理想对象，怕受他人伤害",
+      "没有感情深厚的朋友，社会支持系统不完善",
+      "不想住宿舍"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "c46f445318a0ab48fbf596f2479c9206"
+  },
+  {
+    "case_id": 39,
+    "theme_type": "自由",
+    "manifestations": [
+      "在动员到行动处中断，难以付诸行动",
+      "知道自己想要什么、不想要什么，但当想要做的时候就会受到干扰，无法采取行动",
+      "担心自己达不到标准，对我提出的一些实验感到不满，但是又怕我批评她，所以会抑制自己提出异议的冲动",
+      "依赖于对方所说的和所感受到的东西来评价自己",
+      "“我是不够好的”“我要做得更好别人才会接纳我”"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "c4815c5c199d48a0bc08ad82473578eb"
+  },
+  {
+    "case_id": 39,
+    "theme_type": "孤独",
+    "manifestations": [
+      "三岁前寄养在乡下爷爷奶奶家，爷爷奶奶比较忽视L",
+      "父母经常吵架，父亲沉默，母亲挑剔高要求，几乎没有肯定和表扬",
+      "在生活中和朋友的相处常感觉自己被忽略，不被喜欢"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "c1c7a7f9e6020031c57a0741bc4c36cc"
+  },
+  {
+    "case_id": 4,
+    "theme_type": "死亡",
+    "manifestations": [
+      "直接索要毒药想要自杀，并曾尝试服毒自杀",
+      "刚喝了一瓶啤酒，现正躺在河边的石凳上，靠近河边",
+      "“我想死”"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "5a5ff24a1453cf0ff1b8580bfba243a9"
+  },
+  {
+    "case_id": 4,
+    "theme_type": "自由",
+    "manifestations": [
+      "来访者认为自己无能为力，试图否认自己拥有选择的自由，把自己对生活的责任推到咨询师的身上"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "8e9a6fa2cecae1492eee3433fca6d900"
+  },
+  {
+    "case_id": 4,
+    "theme_type": "无意义",
+    "manifestations": [
+      "我活着干什么呢，我太懒了，什么也不想干，什么也干不成”；",
+      "感觉自己的生活毫无价值",
+      "羡慕“每天都上班下班，茫茫碌碌”的生活，认为那样“有意义有价值”"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "f68b8f5fd2c8e61e5c6f6a483816e224"
+  },
+  {
+    "case_id": 40,
+    "theme_type": "孤独",
+    "manifestations": [
+      "在与同事聚餐的场合显得格格不入，沉默寡言。",
+      "平时在工作中较少与同事交谈，只在必须沟通时才交流。",
+      "怕成为他人关注的焦点，一开口紧张、脸红、冒汗、呼吸急促。"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "448d07f101dc7e62d268426fc3ff41e8"
+  },
+  {
+    "case_id": 40,
+    "theme_type": "自由",
+    "manifestations": [
+      "7岁时父母吵架后共餐沉默，她想安慰父母却不敢开口，将家庭和解的责任揽到自己身上。",
+      "由此形成“口才不好、很没用”的自我评价。"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "5c3b32411051cb07c52f71ccae5af71a"
+  },
+  {
+    "case_id": 41,
+    "theme_type": "孤独",
+    "manifestations": [
+      "身边没有知心的朋友，宁愿独来独往",
+      "时常有抽离感，感觉没有参与到任何人的生活中",
+      "看到同学成群结队渴望友情；与室友、同学没有话聊",
+      "原生家庭亲子关系疏远；在家里反而觉得尴尬",
+      "幼儿园意象中感到“一个人对抗整个世界”"
+    ],
+    "related_emotions": [
+      "Depression"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "c74bee0be420b69d4aa49371fcfcfbbf"
+  },
+  {
+    "case_id": 41,
+    "theme_type": "无意义",
+    "manifestations": [
+      "感觉生活没有目标，对未来没有方向",
+      "很长时间没有什么情绪，每天都很麻木，开心不起来",
+      "做事情提不起兴趣，上课没有意思，听不进去",
+      "感觉自己像是空心的树，痛苦又无力解决"
+    ],
+    "related_emotions": [
+      "Depression"
+    ],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "d189bf9b655cead3bd0e065c6f78a7d5"
+  },
+  {
+    "case_id": 41,
+    "theme_type": "死亡",
+    "manifestations": [
+      "之前想到过死亡，现在也会想",
+      "感觉死亡是一个很悲壮、很浪漫的事情"
+    ],
+    "related_emotions": [
+      "Depression"
+    ],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "472bad90f7ba8c93b3823377f41c662f"
+  },
+  {
+    "case_id": 42,
+    "theme_type": "无意义",
+    "manifestations": [
+      "觉得生活没有意思",
+      "很迷茫，已经没有自己独立的三观了，只剩下焦虑",
+      "深深的自我怀疑"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "af80057f6e3da5ff18e33c16fa7f0205"
+  },
+  {
+    "case_id": 42,
+    "theme_type": "自由",
+    "manifestations": [
+      "想要改变却无从改变的无力感",
+      "每次吵完我就想出去，但又被拉着不让出去",
+      "对前任的纠缠无力脱身，不知如何是好"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "24914f9e9acac1921eaf9a83bd549566"
+  },
+  {
+    "case_id": 42,
+    "theme_type": "死亡",
+    "manifestations": [
+      "和我父母说不想活了，但是我没有自杀的想法，只是想发泄一下，逃避一下",
+      "一过性自杀观念"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "cb738899cc5dde12baed4a45587e3dc9"
+  },
+  {
+    "case_id": 43,
+    "theme_type": "孤独",
+    "manifestations": [
+      "原生家庭不和谐、父母经常争吵，缺乏母爱与温暖，缺少亲情支持",
+      "害怕见到母亲及听到与她相关的事情，遇到母亲情绪不好时把自己关在房间里",
+      "在学校不愿意和同学进行交流，对各种活动的兴趣不高",
+      "对未来感到迷茫，内心矛盾、痛苦"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "b9c808b95e412f5ff75fa185e88d5bd1"
+  },
+  {
+    "case_id": 43,
+    "theme_type": "无意义",
+    "manifestations": [
+      "自我评价消极，认为“自己不会被别人喜欢，不值得被爱”，觉得自己无价值",
+      "认为父母离婚是因为自己，产生强烈的自责和“都是因为我”的观念",
+      "在学校特别在意他人对自己的评价，动力不足"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "c649edb5be9c502640d3f95146cfee44"
+  },
+  {
+    "case_id": 44,
+    "theme_type": "孤独",
+    "manifestations": [
+      "在学校时也多是独来独往，缺乏人际互动和支持。",
+      "和宿舍的舍友有矛盾，由于不善于表达自己的感受和缺乏社交技巧，小Y的情绪状态不能被舍友理解。",
+      "每当这样的情况出现小Y总是告诉自己不要想太多，但当得到的回应不是自己想要的时，就会回避和这位朋友的接触，以此来保护自己避免伤害。",
+      "让其感到很孤独和绝望，内心也非常痛苦和煎熬。"
+    ],
+    "related_emotions": [
+      "Depression"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "67f471f06f3a0a237c487f75cb91470a"
+  },
+  {
+    "case_id": 44,
+    "theme_type": "无意义",
+    "manifestations": [
+      "对所学专业小Y并不感兴趣学起来很痛苦。",
+      "高考失利未能考上理想的大学，面临迷茫感，对自己的未来感到不确定。",
+      "认为自己是不被爱的、不值得爱。"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "4fc97e1e46d53d1648d51276b5b405a8"
+  },
+  {
+    "case_id": 44,
+    "theme_type": "自由",
+    "manifestations": [
+      "中考时的目标被家人和亲戚质疑和贬低。",
+      "高考失利想复读家里不同意。",
+      "想转专业因为才大一还不能进行大类分流。"
+    ],
+    "related_emotions": [
+      "Depression"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "ddd32faa66a7b6348bee85e2ee0448db"
+  },
+  {
+    "case_id": 44,
+    "theme_type": "死亡",
+    "manifestations": [
+      "会受到环境的影响诱发自杀意念，例如看到高楼就会想跳楼、过马路时想冲到车流中。",
+      "频率为一周2次，并有详细自杀计划。"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "170d529834f011a971b6528868ac5363"
+  },
+  {
+    "case_id": 45,
+    "theme_type": "孤独",
+    "manifestations": [
+      "小时候玩伴较少，与妹妹关系平淡。",
+      "从初中开始住校，朋友一直较少。",
+      "与家人的交流沟通很少；与老师和同学的关系淡薄。",
+      "在极度恐惧下，感到了人情淡漠，觉得没有人关心自己，感到很无助。"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "9c4faef90e33889fefe07195dba34f37"
+  },
+  {
+    "case_id": 45,
+    "theme_type": "无意义",
+    "manifestations": [
+      "从网吧出来会觉得很空虚。",
+      "觉得入学几个月来，一直适应不了大学的生活。"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "cb0d523386084e0bc6e1c882ff357a2f"
+  },
+  {
+    "case_id": 46,
+    "theme_type": "无意义",
+    "manifestations": [
+      "外婆突然离开了我，我真觉得生活仿佛失去了本来的意义",
+      "我的生活该怎么办？"
+    ],
+    "related_emotions": [
+      "Depression"
+    ],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "eb294428bc2d62e1547beed828a7b374"
+  },
+  {
+    "case_id": 46,
+    "theme_type": "死亡",
+    "manifestations": [
+      "外婆去世",
+      "我真想和外婆一起离开这个世界",
+      "不敢面对现实（他人反映）"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "3b0c98fbfb7c88d3e08b233b872ad064"
+  },
+  {
+    "case_id": 47,
+    "theme_type": "死亡",
+    "manifestations": [
+      "父亲在其上中学时因交通事故意外去世，家庭发生重大变故、家庭破碎",
+      "父亲离开后债主上门催债，生活秩序被打乱，母亲无力照顾其心理需求"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "5fdbd047c3d491cf776093b476ff99e7"
+  },
+  {
+    "case_id": 47,
+    "theme_type": "孤独",
+    "manifestations": [
+      "近两个月感到孤单和莫名的焦虑",
+      "不愿意跟人交往，尤其不愿意跟家人沟通",
+      "白天反锁在房间睡觉或玩游戏，晚上彻夜不眠",
+      "只有与闺蜜在一起或者离家外出时焦虑感才会减轻"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "dd1643ca4c64422d02bed6c757225808"
+  },
+  {
+    "case_id": 47,
+    "theme_type": "自由",
+    "manifestations": [
+      "被送入半军事化管理的私立学校，受到严格与惩罚性管理（如正午“晒太阳”直至晕倒）",
+      "在向母亲求救无果后学会与现实妥协，出现讨好、撒谎和诬陷等不良品性"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "c35a59211f326032da25a824b55291ed"
+  },
+  {
+    "case_id": 48,
+    "theme_type": "死亡",
+    "manifestations": [
+      "不想住宿舍，想死",
+      "内心感到十分痛苦（自杀念头较强）"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "c6660575856bd6e9e60615b42e898d71"
+  },
+  {
+    "case_id": 48,
+    "theme_type": "孤独",
+    "manifestations": [
+      "没有感情深厚的朋友，社会支持系统不完善",
+      "同学关系不良",
+      "被老师批评、被同学误解与老师公开羞辱经历"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "70c0a7789116d8078d197f6c4b0d040a"
+  },
+  {
+    "case_id": 48,
+    "theme_type": "自由",
+    "manifestations": [
+      "幼年时父亲恐吓防虫剂有剧毒，形成“碰到任何东西都会中毒”的错误认知",
+      "过于追求完美，内心缺少安全感"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "f64af3c8dc5a2604b67fd617901fea02"
+  },
+  {
+    "case_id": 49,
+    "theme_type": "孤独",
+    "manifestations": [
+      "在叙述中反复出现“空荡荡的感觉、没有人爱、没有家”。",
+      "被抛弃的感觉太难受，缺乏归属感。",
+      "班上很孤僻，没有朋友。"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "92f155c75b65bcb5649fe19c4b48e61d"
+  },
+  {
+    "case_id": 49,
+    "theme_type": "死亡",
+    "manifestations": [
+      "有一次想过死，拼命把头往墙上撞。"
+    ],
+    "related_emotions": [
+      "Hopelessness"
+    ],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "e34155afa08b8153173aaff131a58730"
+  },
+  {
+    "case_id": 5,
+    "theme_type": "死亡",
+    "manifestations": [
+      "19岁时奶奶去世，随着爷爷再娶，“旧家庭”也开始分崩离析",
+      "最近频繁梦到奶奶"
+    ],
+    "related_emotions": [
+      "Depression"
+    ],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "77d7f4396339e8138ec0d87fb08abaa3"
+  },
+  {
+    "case_id": 5,
+    "theme_type": "无意义",
+    "manifestations": [
+      "觉得生活没有意义"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "db12858b774e417d0f2cc145265710ae"
+  },
+  {
+    "case_id": 5,
+    "theme_type": "孤独",
+    "manifestations": [
+      "上了大学后，也感觉没有人关心自己、关注自己",
+      "老师让我们闭上眼睛，感受自己与身边人的联结,但我却无法感受到这种联结",
+      "与舍友的关系也有些紧张"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "016392cd355f6ec763222cfb6037779a"
+  },
+  {
+    "case_id": 5,
+    "theme_type": "自由",
+    "manifestations": [
+      "有时明明知道应该这样做,但是身体却付诸不了行动",
+      "存在动员与行动间的阻断"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "30138c36351d80fc218c5d4e62346ca8"
+  },
+  {
+    "case_id": 50,
+    "theme_type": "无意义",
+    "manifestations": [
+      "对即将来临的大学生活产生的焦虑、迷茫的心态"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "75080bdf28d2f3fef7c91d773b6048d3"
+  },
+  {
+    "case_id": 50,
+    "theme_type": "自由",
+    "manifestations": [
+      "未公布的考试成绩和对阅卷是否客观公正的担忧，也是无法预期与控制的因素"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "c129692353b369a48282135092cda568"
+  },
+  {
+    "case_id": 6,
+    "theme_type": "孤独",
+    "manifestations": [
+      "从小缺少父母的关爱，家庭重要情感缺失，家庭成员之间缺少正常的关心与交流",
+      "进入大学后感觉自己与周围的人格格不入，不愿主动与人交流，宿舍关系紧张",
+      "想要融入集体但在心理上又排斥和他们相处，几乎每天都待在图书馆，直到睡觉时间才回寝室"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "0e0a75c8dd3da5f313de961368201075"
+  },
+  {
+    "case_id": 6,
+    "theme_type": "自由",
+    "manifestations": [
+      "渴望获得所有人的认可，但又希望保持自己特立独行的个性，当两者无法兼得时容易产生人际焦虑",
+      "在经历两次高考失利后产生“自己必须做到完美，否则就会被否定”的负性假设",
+      "父母脾气暴躁，控制欲强，与父母关系不好"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "e11f10b4892ae7128c857f764e786212"
+  },
+  {
+    "case_id": 7,
+    "theme_type": "孤独",
+    "manifestations": [
+      "大学首次住集体宿舍，与舍友相处出现矛盾，事后长时间缓不过来并自责",
+      "多段恋爱分手经历，高三被发现恋爱带来极大压力，第三段恋情分手后觉得在感情方面很无力，否定自己",
+      "以后就再也不敢开始新的恋情，对个人感情没有安全感"
+    ],
+    "related_emotions": [
+      "Depression",
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "cf21eb8eeba4bcacae3fe47eef2b9b52"
+  },
+  {
+    "case_id": 7,
+    "theme_type": "自由",
+    "manifestations": [
+      "家教比较严格，要求对父母的话言听计从，从小个人想法被否定（如想成为宇航员被否定）",
+      "对他人的批评过度敏感，自我否定，做任何事情都紧张不安、担心自己做不好",
+      "对“大学生活应该是轻松美好”“我应该和舍友没有矛盾”等绝对化要求的不合理信念"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "a664d66e48ec153226f5124e516c649e"
+  },
+  {
+    "case_id": 7,
+    "theme_type": "无意义",
+    "manifestations": [
+      "厌学，对任何事情都没有兴趣",
+      "生活懒散、生活不规律，经常不吃饭，偶尔吃饭也只是吃一点"
+    ],
+    "related_emotions": [
+      "Depression"
+    ],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "fd1e0fd95c0d53640c569d2735073e7d"
+  },
+  {
+    "case_id": 7,
+    "theme_type": "死亡",
+    "manifestations": [
+      "出现过自杀的念头，但因认为不负责任且没有勇气而未采取实质行为"
+    ],
+    "related_emotions": [],
+    "intervention_direction": "通过自我探索和反思实现个人成长",
+    "extraction_hash": "6324b04390132d34ecf8152c77646fba"
+  },
+  {
+    "case_id": 8,
+    "theme_type": "孤独",
+    "manifestations": [
+      "在家庭感受不到多少亲情，重要他人支持缺失",
+      "中学遭遇霸凌与排挤，高中被老师当众羞辱后愈发与人疏离",
+      "没有朋友，不想与人相处，能躲就躲，走路低着头",
+      "不信任他人，人际敏感与回避"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "5e94f66725da17cf9f7e2ef83ec58906"
+  },
+  {
+    "case_id": 8,
+    "theme_type": "无意义",
+    "manifestations": [
+      "觉得自己活得像行尸走肉",
+      "认为自己一无是处、糟糕至极、注定悲剧"
+    ],
+    "related_emotions": [
+      "Depression"
+    ],
+    "intervention_direction": "帮助来访者探索生活的意义和个人价值",
+    "extraction_hash": "53f02b198b2dfaaa91ad047346e02b11"
+  },
+  {
+    "case_id": 9,
+    "theme_type": "孤独",
+    "manifestations": [
+      "小学阶段没有朋友，住在托管所，生病输液时阿姨不在场，独自等待输液完成",
+      "每年寒暑假结束都十分抗拒离开父母去上学，异地求学的分离体验强烈",
+      "在咨询中担心咨询师没有认真倾听，咨询结束时不愿离开、反复索要反馈以获得情感联结与接纳",
+      "在人际中害怕自己不被接纳，难以信任他人，被部分拒绝便认为不被喜欢"
+    ],
+    "related_emotions": [
+      "Anxiety",
+      "Anxiety"
+    ],
+    "intervention_direction": "促进真诚的人际连接和归属感",
+    "extraction_hash": "db7a9b8b15176b866301c47150f73053"
+  },
+  {
+    "case_id": 9,
+    "theme_type": "自由",
+    "manifestations": [
+      "二年级被父母转学到异地，来访者并未参与此重大决定",
+      "家人强势，常替其做决定，过度侵入其人际边界，较少尊重其想法与感受",
+      "自我同一性尚未建立，有时不能区分自己和他人的需要，对未来发展方向模糊"
+    ],
+    "related_emotions": [
+      "Anxiety"
+    ],
+    "intervention_direction": "帮助来访者承认和行使个人选择权",
+    "extraction_hash": "db1cd581cbca7a710ff4afc80ce21a55"
+  }
+]

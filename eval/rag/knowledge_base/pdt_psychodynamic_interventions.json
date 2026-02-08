@@ -1,0 +1,3611 @@
+[
+  {
+    "case_id": 1,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”），请来访者确认其姓名为‘李静’。; 任务：共同拟定初步议程，围绕情绪低落、空虚感、亲密关系困扰，收集近期典型情境（时间、地点、诱因、情感反应）。",
+    "therapist_response": "建立治疗联盟与初步评估（从零开始）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "49246b9170422e2158db8a902567ea48"
+  },
+  {
+    "case_id": 1,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：复盘上次的初步评估与来访者对咨询期待，核对记录的主诉与情绪线索。; 任务：引导自由联想与叙述成长经历，尤其是早年分离与照料者的关系，捕捉此时此地的情感波动。",
+    "therapist_response": "动力性评估与设置协商（稳定框架）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "95d8c9b8e569b502cd9a4149bcc93420"
+  },
+  {
+    "case_id": 1,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：核对上次达成的设置与感受，询问一周间是否出现“不想来”的念头与情绪波动。; 任务：在此时此地观察与标注阻抗迹象（沉默、转移话题、情感回避），将其与对咨询师的初步依赖联系起来。",
+    "therapist_response": "识别治疗阻抗与依赖焦虑的初步解释（此时此地）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "0e23d9f49615c72dcd021c17a30dddec"
+  },
+  {
+    "case_id": 1,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：追踪上次谈到的‘不想来’与早年分离，整理一周内浮现的“莫名其妙”的生活片段。; 任务：细节扩大与情境重建，逐一刻画片段中的分离情境与被激发的情感（空虚、无助、怨恨）。",
+    "therapist_response": "分离主线的情感聚焦与片段整合",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "4ef9c7909cec017fcb79783a7aca98a2"
+  },
+  {
+    "case_id": 1,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检视上一节的分离片段整合带来的感受与变化。; 任务：引入空椅技术，邀请对父亲说话，聚焦当下情感与身体反应；温和点名其回避‘父亲是否爱你’的提问。",
+    "therapist_response": "面质压抑与处理对父亲的情感（空椅技术）",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "dbf5d28704247c9596510d2713093f5a"
+  },
+  {
+    "case_id": 1,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：反馈上次空椅后的情绪反应与一周状态（如情绪波动、哭泣、怨恨被唤起）。; 任务：在咨询被告知短暂中断/谈到结束意向的情境下，细致记录来访者的反应（迟到、另约、称明显好转、寻求其他帮助），并在此时此地共同观察。",
+    "therapist_response": "此时此地的移情—反移情与投射性认同",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b2b9b3b654a99d42d449c0304339d5e0"
+  },
+  {
+    "case_id": 1,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：复盘上次关于中断与投射性认同的处理效果，评估设置稳定对情绪的影响。; 任务：具体回顾三段恋爱与“只发生性关系但不是恋爱”的关系样式，描绘理想化—贬低的转换点与诱因。",
+    "therapist_response": "整合理想化—贬低与关系疏离，增强自体稳定",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "227aba5967a3ca7f9f1247ea9dba3880"
+  },
+  {
+    "case_id": 1,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：总结核心变化（情绪缓解、情感觉察增强、自主感提高），评估过去两周在关系与学习/求职中的应用。; 任务：讨论即将到来的结束，识别分离提示刺激与情感反应（空虚、惆怅、牵挂），制定应对策略（如自我安抚、主动联结、结构化作息）。",
+    "therapist_response": "结束准备：处理分离焦虑与移转到现实",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "f4e56b03182f0fabdcfaaafdb68b0d98"
+  },
+  {
+    "case_id": 1,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：共同回顾近一年的治疗历程、关键转折（分离主题、父亲情感、投射性认同、分裂整合）。; 任务：在此时此地容纳告别的情感（愉悦、感激、牵挂），以双方同意的方式结束（如拥抱），并确认后续联系的边界（可通过电子邮件）。",
+    "therapist_response": "正式结束与巩固：告别仪式与未来导向",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "dbd7a85760f77eb6046875fa7fbb17f6"
+  },
+  {
+    "case_id": 10,
+    "intervention_type": "Defense Analysis",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“请先说说您的情况，我应该如何称呼您？”“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”），并确认来访者姓名为：张琪。; 任务：详细描述半夜醒来害怕的具体场景、触发因素（如“听到鬼叫”“看鬼片后”）、行为反应（找人同睡、避免黑暗），初步识别恐惧维持链条。",
+    "therapist_response": "初次访谈与全面评估：建立治疗联盟、开放式探索主诉与背景",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "cad277115ec461c0d532452365db8613"
+  },
+  {
+    "case_id": 10,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查上次放松练习与同伴陪行的执行情况与感受，记录夜间醒来与恐惧减轻的变化。; 任务：放松引导与意象重构——在安全状态下回看“半夜醒来害怕”的意象，遇到恐惧即停止并再次放松循环3次，降低情绪唤起。",
+    "therapist_response": "深化评估与意象练习：连接童年经验，锚定自体安抚",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "e0138485dfcc62b5f480b1900bd15bf3"
+  },
+  {
+    "case_id": 10,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查意象练习与暴露作业的效果，来访者报告不再明显怕鬼与半夜醒来减少。; 任务：情绪监测与功能分析——记录清晨早醒后心情低落的时间、强度与自动思维（“一天没意思”“没有前途”“孤独”）。",
+    "therapist_response": "从恐惧到抑郁的转换识别与自我激励：巩固“成长”动机",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "aac8342380e33bfbfbb1f7f9fba15f8d"
+  },
+  {
+    "case_id": 10,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：梳理近期夜间恐吓短信事件的应对：当场体验以愤怒而非恐惧回应；事后轻度害怕的余波。; 任务：此时此地（Here-and-Now）情绪加工——区分愤怒、恐惧与无力感，识别愤怒背后“自我力量提升”的信号。",
+    "therapist_response": "巩固自我力量与此时此地的情绪调节：愤怒与恐惧的区分",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "7b6201165da83c271cb6b757c1150618"
+  },
+  {
+    "case_id": 10,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：承接上次的预约主题，进入当前依恋对象的关系叙述——“想被看见、时刻被陪伴”与“对方同时对别人也好”的冲突体验。; 任务：面质与澄清（Confrontation & Clarification）关系中“被忽视—被抛弃”的自动化归因，识别绝对化语言与控诉式表达。",
+    "therapist_response": "依恋与移情的识别，处理关系中的压抑与自伤冲动",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "23f563e085e85a144091f93c83854d2d"
+  },
+  {
+    "case_id": 10,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：三天后来电的复燃情况——出现夜间醒来、需要同学陪睡并抱着唱摇篮曲才能入睡；咨询师提供支持性解释与正常化“成长有波折”。; 任务：将“外化为鬼”的焦虑进行功能分析，区分真实威胁与内在恐惧，重启安全核查与自体安抚练习。",
+    "therapist_response": "处理退行与夜间恐惧的波动：外化焦虑与依恋安抚的重建",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "bd4b7cae7eb5300566eb538060c36fa7"
+  },
+  {
+    "case_id": 10,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：间隔数月后复诊与暑期良好状态；近期与男友相处中的不被理解感与争吵场景。; 任务：伴侣互动结构化讨论——邀请男友参与（若可行），明确双方性格差异、期待与沟通风格（倾听 vs 教育）。",
+    "therapist_response": "伴侣关系工作与客体关系整合：互相理解与差异的承载",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "31e56c12b58d035c7db8b926122aeefc"
+  },
+  {
+    "case_id": 10,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：系统梳理从“怕鬼”到“抑郁识别”“依恋与自伤干预”“关系整合”的阶段性变化，总结最有效的自我安抚与沟通策略。; 任务：制定复发预防计划——夜间醒来应对流程（放松-外部核查-自体安抚）、高压期联络清单（同伴/咨询热线）、危机约定（不自杀不割腕，先求助）。",
+    "therapist_response": "整合与告别：技能回顾、复发预防与自主成长计划",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "485b13cad6aea641260ae05236116090"
+  },
+  {
+    "case_id": 11,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”；“请问怎么称呼您？我可以叫您李欣吗？”）; 任务：共同梳理近期困扰的时间线（心情低落、睡眠与身体发凉、与舍友目光和触碰困难），初步识别影响学习和考研准备的因素",
+    "therapist_response": "建立治疗联盟与摄入性评估",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ebbb4a1828816ed24dd84318ed36886e"
+  },
+  {
+    "case_id": 11,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查并讨论上次情绪日志与人际接触记录，确认最困扰的场景（与舍友目光接触与触碰困难）; 任务：以房-树-人投射绘画作为温和的突破口，请李欣描述画中家庭成员、位置与感受，观察其对奶奶与弟弟的关注",
+    "therapist_response": "加深关系与投射性探索：家庭与早期分离体验",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "2b0a54f6396ff26ad1c28082d62444ea"
+  },
+  {
+    "case_id": 11,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：讨论上次绘画与家庭叙述所引发的情绪；复盘本周记录的与亲密互动时的生理与情绪反应; 任务：在“此时此地”尝试安全的目光接触练习，追踪焦虑强度与身体发凉的瞬间，命名情绪与自动想法",
+    "therapist_response": "当前症状与亲密回避：识别压抑与此时此地体验",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "3050a80d9916806b5aca04973104ffc1"
+  },
+  {
+    "case_id": 11,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查上次情绪记录表与目光接触练习的体验，评估压抑与回避的变化; 任务：梳理“奶奶—父母—弟弟”的关系时间线与关键事件，描绘自我与他人意象（温暖、恐惧、嫉妒、被忽略）",
+    "therapist_response": "早期客体关系与嫉妒—担心的两面呈现",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ed125a093fefaeabc81749e6d83deb16"
+  },
+  {
+    "case_id": 11,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：呈现两件难以拒绝的具体情境，复盘情绪、想法与行为；识别“我怕他受伤—所以不拒绝”的解释链; 任务：用合理情绪疗法(REBT)区分事实、评价与结果；挑战“拒绝=失去朋友”的非理性信念，生成更平衡的替代信念",
+    "therapist_response": "人际界限与拒绝练习：识别合理化与讨好模式",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "97b2babe65fade29511f50e05c0bac77"
+  },
+  {
+    "case_id": 11,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检视本周拒绝练习的结果与情绪反应，确认哪些情境激发了“害怕失去”的强烈体验; 任务：引导李欣表述其核心愿望与恐惧，连接到早期被忽略的情感需求与当下人际策略",
+    "therapist_response": "核心冲突揭示与自责—强迫的认知整合",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "e2e723d2bb7d249bcea63cbc27804590"
+  },
+  {
+    "case_id": 11,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查上次的“力量与美好经历”清单与每日练习的感受，标注自我肯定的变化; 任务：在咨询室通过回忆与叙述，把艰难（恐惧、孤寂、发凉）与美好（小伙伴、老师照顾、奶奶关心）并置，练习不再否定过去",
+    "therapist_response": "自我接纳与整合：把苦涩与美好并置",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "cc563219d1296a153fcacc63f9877a49"
+  },
+  {
+    "case_id": 11,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：总体复盘八次会谈的关键节点、技能与认知变化，评估近期与长期目标的达成度; 任务：共同制定复发预防计划——识别早期预警信号（目光回避、身体发凉、强迫反复想、过度讨好）、对应调节策略",
+    "therapist_response": "巩固、复发预防与结束",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "17cbebc5891034a352f1e405d8ad67e3"
+  },
+  {
+    "case_id": 12,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）。务必确认姓名：李某。; 任务：了解近期困扰的具体情境与频率（如喝水、睡眠、人际交流中的不适），并记录一周内的困扰事件与感受。",
+    "therapist_response": "建立治疗联盟与初步评估（Intake）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "45d1a23a5126e881687a2c6736108487"
+  },
+  {
+    "case_id": 12,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：检查第1次记录与SCL-90结果，确认目前问题未见精神病性症状，强调来访者对问题有自知力并主动求助。; 任务：进行心理教育，区分“事件本身”与“对事件的解释”（认知模型的基本框架），说明当前属于一般心理问题，避免过度病理化。",
+    "therapist_response": "评估反馈与目标设定（区分问题性质、达成共识）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "9192cb5b074a8a4b70863b0e199dc473"
+  },
+  {
+    "case_id": 12,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：检查第2次“成长时间线”，鼓励自由联想与详细叙事，关注当时的情绪（不安、恐惧、失望）与被忽视体验。; 任务：围绕童年沟通缺失与不确定信息（就医未解释）带来的安全感受损，识别与命名情感（担心、害怕、孤独）。",
+    "therapist_response": "童年与青春期经历的心理意义探索（自由联想与叙事）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "03a5233738c0b1e53dcfa3dc6995d86c"
+  },
+  {
+    "case_id": 12,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查第3次记录的两类触发场景与ABC表，标注“自动化思维”（如“他们在说我”“水不安全”）与行为反应（试探、冷淡/离开、一次性喝完/放弃）。; 任务：面质（Confrontation）与澄清（Clarification）这些反应的功能——用于获得“即时安全感”但强化怀疑与回避循环。",
+    "therapist_response": "识别与面质当前的自动化模式与防御（此时此地的功能分析）",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "7dcdea1ca2631adbfb5a94cd6eab7351"
+  },
+  {
+    "case_id": 12,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查第4次的行为实验体验；在咨询室此时此地观察来访者对咨询师的试探、避让或冷淡反应，标注移情线索。; 任务：基于客体关系理论进行解释（Interpretation）：连接童年“沟通缺失—不确定—不安全”经验与当下“他人不可靠”的内部模板，理解怀疑与距离的自我保护功能。",
+    "therapist_response": "此时此地的移情与客体关系解释（安全与信任的核心议题）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "fd94b39bcda580a9b8424fc705aef663"
+  },
+  {
+    "case_id": 12,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查第5次关于核心愿望与恐惧的讨论，确认来访者已能在关系中进行小幅度尝试与请求澄清。; 任务：制定并实施一周的快速脱敏计划：每日在可控环境下将水杯放置桌面，观察同学走动后按“安全验证—延迟—小口饮水—情绪调节”的步骤进行饮水；记录紧张程度与成功率。",
+    "therapist_response": "快速脱敏与人际参与训练（安全再学习与适应增强）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1d9028f4e40d88d9f661613faf1998d5"
+  },
+  {
+    "case_id": 12,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查第6次快速脱敏与人际参与的记录，评估进展与困难，识别成功经验的关键策略。; 任务：整合三线技术（动力性理解—认知重评—行为练习）为个人化“工具卡”：触发识别、替代性解释、暴露/延迟、情绪调节、关系中的请求澄清。",
+    "therapist_response": "整合技能与巩固改变化框（复盘与强化）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c84e28df74366206cf8d8e999c8e7b7e"
+  },
+  {
+    "case_id": 12,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：整体治疗历程的收获与待续目标，梳理从评估到动力性理解、认知重评与行为脱敏的链条。; 任务：复发预防计划定稿——列出个人高危情境、早期预警信号与应对步骤（工具卡使用、寻求同伴或校内资源支持、加访频次的自我约定）。",
+    "therapist_response": "结束与复盘、复发预防计划（维持与自助）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "53b512d8ce5e8f6f64bd5fe8fb269060"
+  },
+  {
+    "case_id": 13,
+    "intervention_type": "Confrontation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名（陈某）、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）; 任务：共同构建安全与保密框架，初步评估自伤风险与可行的安全承诺（如遇到强烈冲动时的求助与替代行为）",
+    "therapist_response": "建立治疗联盟与初步评估（含温和面质以澄清性经历认知）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "22853d3bd7012caaea844b4ab0e59c1a"
+  },
+  {
+    "case_id": 13,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：首访中对性经历叙述的澄清与感受，检查安全承诺的执行情况; 任务：绘制重要他人关系时间轴（父亲、母亲、弟弟、老师、男友），标注关键情感（害怕、愤怒、羞耻、怜悯）与转折事件",
+    "therapist_response": "问题概念化与目标设定：系统梳理成长经历与不安全感来源",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "98961413b4726ad4a6d85c725dafebe5"
+  },
+  {
+    "case_id": 13,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：成长经历整理后的感受与现实检验的初步收获; 任务：此时此地观察——谈到被忽视与被打的记忆时，觉察身体与表情反应；记录对咨询师的期待与担忧",
+    "therapist_response": "处理不安全感与现实检验：引入客体关系与此时此地观察",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c9e7564dc499b10f7c2c951a70cd51c1"
+  },
+  {
+    "case_id": 13,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：上次对自体—客体表征与现实检验的体会，检查哀伤处理后的情绪波动; 情境：具体回忆最近一次见到漂亮物品而想毁坏的片段，描述诱发事件、情感与身体反应",
+    "therapist_response": "识别与干预愤怒转移：处理毁坏物品的冲动",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "0ffd31d80ca03a639581c90ade799c66"
+  },
+  {
+    "case_id": 13,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：上次对“转移”的领悟与替代性宣泄练习效果; 情境：具体描述一次“考验”男友的过程（试探性要求、反复确认），记录当时的恐惧与期望",
+    "therapist_response": "识别投射与“考验”行为：重建亲密关系中的沟通与边界",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "df77f654901f770ced72aa850d721924"
+  },
+  {
+    "case_id": 13,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：亲密关系中“考验”行为的改变尝试与感受; 情境：详述最近一次自责或自伤冲动的前因后果与内心对话（“都是我的错”“我不是好孩子”）",
+    "therapist_response": "解释自罪感与攻击转向自身：修通超我苛责与自伤冲动",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "9e6e2795ebfd2093ea92cfffbe58baf2"
+  },
+  {
+    "case_id": 13,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：上次对“转向自身”的领悟与安全计划执行情况; 此时此地情境：来访者提出以后可以靠自己调节、无需继续咨询；记录语句的疏离与客观化倾向",
+    "therapist_response": "此时此地的移情处理：解释结束冲动的合理化与关系恐惧",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "83d0fa208b0c26def99a632002165cc5"
+  },
+  {
+    "case_id": 13,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：上次对结束冲动的移情解释与关系实验的体验; 任务：连接早期师生关系与“寻找/接受侵害”的泛化模式，识别如何在成年关系中重复",
+    "therapist_response": "整合失效关系模式与巩固改变：边界与选择的练习",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "7a644afcf54f7bd955ceeb57b8efdf76"
+  },
+  {
+    "case_id": 13,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：整个治疗中的关键领悟与行为改变（现实检验、哀伤处理、转移、投射、转向自身、移情解释）; 任务：巩固——总结个人“预警信号—防御—替代行为”链条，形成自我调节清单",
+    "therapist_response": "回顾与开放式结束：总结技能与复发预防",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "5d86d10c6193e417305952062566b396"
+  },
+  {
+    "case_id": 13,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：开放式结束后的生活尝试与近期困扰；总结前期工具的使用情况; 情境：男友眼疾加重引发的恐惧与承担幻想，识别是否再次参与自我损害型关系",
+    "therapist_response": "再访：支持与深化自我价值表征与关系选择（开放式随访）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "7c24910cc7c552c98b9729668f3ef07a"
+  },
+  {
+    "case_id": 14,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“张某，是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”），并询问生活与工作近况、人际与恋爱经历的总体情况。; 任务：共同建立安全、保密与边界的治疗框架，明确双方的权利与义务（频率、时长、保密、作业与反馈）。",
+    "therapist_response": "建立治疗联盟与初步评估（Intake），明确目标与框架",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "f96a4e3b3733160a59e5699edf2dac28"
+  },
+  {
+    "case_id": 14,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检视上次达成的咨询契约与安全框架，确认本次进入生理反应观察与渐隐训练的准备度与边界。; 任务：按照渐隐训练的既定流程呈现男性裸体画面—性别模糊裸体画面—女性裸体画面，记录各环节的生理唤起与情绪体验；在此时此地观察来访者语言与姿态变化，标记潜在的移情线索。",
+    "therapist_response": "渐隐训练与此时此地体验：观察生理反应与移情雏形",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "da20ee6942e863f35582ba49ae741ba4"
+  },
+  {
+    "case_id": 14,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查上次家庭作业（了解男女性爱方式）与训练记录，复盘不同刺激下的生理与情绪反应。; 任务：继续在男性—性别模糊—女性的序列中进行渐隐训练，关注回避、快速转题、压抑情绪的倾向，邀请其对被拒绝经历做简要叙述，并逐步深化情感词汇。",
+    "therapist_response": "继续渐隐训练与情感加工：面对回避与压抑",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b4f20322654d717e280ca127cbe3add0"
+  },
+  {
+    "case_id": 14,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：与来访者一起整理上次训练中的情绪笔记与被拒经历片段，确认其当前情绪承载能力。; 任务：引导来访者回忆童年性别角色的体验（被当女孩看待、父母冲突、与母亲亲密），进行再体验与叙事重构，连接当下的自我感受。",
+    "therapist_response": "成长经历回溯与角色扮演：重构性别角色并处理父性惩罚性移情",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "03aaec6a21daf19027e80d7aeebdc444"
+  },
+  {
+    "case_id": 14,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查角色扮演与氨水厌恶练习的体验与效果，讨论来访者对咨询师的此时此地感受变化。; 任务：系统化识别核心冲突三元组（愿望—恐惧—防御目标），连接到具体行为（自我惩戒皮筋、强调男性化）与情绪（羞耻、恐惧、无力）。",
+    "therapist_response": "命名核心冲突与防御结构，落实自我约束作业并评估风险",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "489a865e1d9daca92842170fe6b5cf89"
+  },
+  {
+    "case_id": 14,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查自我约束（皮筋）作业与安全预案执行情况，评估情绪与行为变化。; 任务：安排异性恋男性的行为示范（穿着、打扮、举止、交往方式），由来访者进行模仿练习；同时在此时此地识别对“被指导/被监督”的感受，以避免再次落入惩罚性移情。",
+    "therapist_response": "行为示范与现实整合：男性化脚本练习与婚恋期待的具体化",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b2cb1dc28ee9b85d5614f73450646882"
+  },
+  {
+    "case_id": 14,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：系统梳理第2–第6次的训练、角色扮演、示范与现实整合的有效环节，归纳来访者认为最有帮助的策略与失败教训。; 任务：整合“愿望—恐惧—防御目标”的核心冲突图谱，标记高风险情境与早期预警信号（如被拒回忆、被监督感、过度自责）。",
+    "therapist_response": "阶段性整合与复发预防：巩固技能与制定自助手册",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "2bb69cba0e3e236d55762d99ded22ba6"
+  },
+  {
+    "case_id": 15,
+    "intervention_type": "Defense Analysis",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、年龄、教育与职业、家庭与社会状况、婚姻状况、既往就医与睡眠史、当前主诉与期待（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）; 任务：建立安全的会谈框架与保密约定，说明咨询流程与可能的方向，邀请自由联想而非清单式盘问",
+    "therapist_response": "建立治疗联盟与初步评估（从零开始）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1eb817cbbcae72c7589ff3795e6362a7"
+  },
+  {
+    "case_id": 15,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检查上次的睡眠日志与初始测评数据，确认主要困扰与目标; 任务：描绘‘躺床后开始担心’的链条，区分事件（A）、信念（B）、结果（C），练习ABCDE辩论不合理信念（例如‘至少要睡够8小时’‘失眠危害极大’）",
+    "therapist_response": "识别与矫正失眠的非理性认知（REBT入门）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "e5e3701c810620048d5339292072e582"
+  },
+  {
+    "case_id": 15,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检视上周ABCDE作业与睡眠卫生执行情况，汇总来访者归纳出的不合理信念清单; 任务：针对列出的认知（如‘8小时标准’‘失眠是心理癌症’等）进行辩论与重构，强化‘多样化睡眠需求’‘失眠可治且不等于器质性损害’",
+    "therapist_response": "纠正睡眠认知与行为；识别‘担心—合理化’与‘理智化’防御",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "49d9bb97583a51972be8b7cfb0cb8e98"
+  },
+  {
+    "case_id": 15,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：核查与舍友的客观睡眠反馈及放松训练体验，注意主观与客观差异带来的认知调整; 任务：在‘此时此地’描绘不安全感出现的瞬间，链接宿舍冲突与童年父母争吵的记忆，理解移情如何把当前情境等同于过去的威胁",
+    "therapist_response": "探索不安全感的移情与客体关系；情绪表达与此时此地的安全",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "08f0173030c944e67e6346720a0c9ac8"
+  },
+  {
+    "case_id": 15,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查上周记录的‘安全—恐惧—控制行为’相关事件与自我对话，整合认知与情绪线索; 任务：将核心愿望（安全与放松）与核心恐惧（冲突与失眠危害）在图式层面显性化，识别其如何驱动合理化、理智化、退行与转移等防御",
+    "therapist_response": "整合核心冲突；重建安全感与自我效能",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "db3af200861182241d9820fd24ba9b46"
+  },
+  {
+    "case_id": 15,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查‘十件最焦虑的事情’清单与标注的非理性信念、已应用的放松与‘顺其自然’策略的效果; 任务：构建个体化焦虑层级（从低到高），在每一级练习ABCDE、放松与地面化，记录情绪强度与应对成效",
+    "therapist_response": "巩固合理认知与行为；焦虑层级与复发预防训练（上）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "bab4c7f6f3ee0475b5a2cce823f87db5"
+  },
+  {
+    "case_id": 15,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：整体复盘过去咨询的关键转折（认知矫正、放松训练、移情与客体关系的理解、核心冲突整合），评估目标达成度; 任务：实施AIS、SAS、SDS复测并与基线对比，讨论睡眠与情绪改善的主客观一致性",
+    "therapist_response": "阶段性总结与结案；长期复发预防计划（下）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ae46ff7af0b9b0b9e38f6f4e7e386271"
+  },
+  {
+    "case_id": 16,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“赵某，是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）; 任务：初步评估当前情绪、躯体症状与人际功能；梳理发病经过与求助动机",
+    "therapist_response": "初步评估与联盟建立，放松训练与作业安排",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "29aa865ec6bf490fd824b6cd1bafd1c3"
+  },
+  {
+    "case_id": 16,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾作业：检视每日放松练习记录，讨论效果与障碍; 任务：进行社交恐惧与焦虑的心理教育，说明认知-情绪-行为关系与治疗流程、要求（坚持作业）",
+    "therapist_response": "心理教育与目标细化，启动情绪监控",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1ded54aad75c0bc2372e31841712e4c7"
+  },
+  {
+    "case_id": 16,
+    "intervention_type": "Connection Making",
+    "situation": "回顾作业：检视情绪监控表与放松练习记录，标注目光接触/发言情景的焦虑曲线与回避; 任务：此时此地观察当咨询师邀请对视时的反应，标记语言/身体信号（低头、停顿、“可能、好像”）",
+    "therapist_response": "识别自动化思维与此时此地的移情（目光与公众暴露），初步修正不合理认知",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "248176294643430c4f82fe468f24ccf6"
+  },
+  {
+    "case_id": 16,
+    "intervention_type": "Confrontation",
+    "situation": "回顾作业：汇总上次行为实验与短聊暴露的体验，比较预测与实际评价的差距; 任务：引导赵某复盘权威场景（被警告/被评价），识别压抑与顺从的自动反应（语速放慢、简短回答、“我会注意”）",
+    "therapist_response": "减少回避与暴露训练，权威情境的压抑与自我监控；修正两性交往信念",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ebaa2e3456c41c0d9bbda3c2b2cc592e"
+  },
+  {
+    "case_id": 16,
+    "intervention_type": "Confrontation",
+    "situation": "回顾作业：检视上次小组发言与两性交往信念辩论的结果，评估回避与羞耻的变化; 任务：与赵某共同建立1–8级恐惧反应层次表（从与他人相处不交流到回答老师提问），匹配每级想象场景与生理/情绪指标（与期刊第五次内容一致）",
+    "therapist_response": "构建系统脱敏层级与核心冲突澄清；识别理智化防御",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c435e9c6db98349e683882964556e9aa"
+  },
+  {
+    "case_id": 16,
+    "intervention_type": "Interpretation",
+    "situation": "回顾作业：复盘第1–3级想象脱敏记录与情绪恢复曲线，评估放松技巧运用; 任务：推进第4–6级想象脱敏（与同学说话、与陌生男性说话、小组发言），每级均进行放松与评分",
+    "therapist_response": "逐级想象脱敏进阶与此时此地移情解释；巩固新的自我-他人表征",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "fe4855a6a0ed5771b97bcfbad346552b"
+  },
+  {
+    "case_id": 16,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾作业：检视第4–6级想象脱敏的效果与移情处理的收获; 任务：现实暴露迁移——第6–8级（在小组发言、班级发言、回答老师提问），事前设定可行目标、事中使用放松与积极自我对话，事后收集同伴与老师反馈",
+    "therapist_response": "现实暴露与社交技能训练，巩固认知重构与自我效能",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "aa9feb0ac909ef4f797941eecc518e5e"
+  },
+  {
+    "case_id": 16,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾作业：总结现实暴露与社交技能训练的效果，统计焦虑下降与正向反馈; 任务：制定个人化复发预防方案（情绪监控、放松、认知重评、自我对话、分级暴露清单）",
+    "therapist_response": "巩固技能与复发预防计划制定",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "812389c77e0940ce408d4f8d8984bdff"
+  },
+  {
+    "case_id": 16,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾作业：检视复发预防计划的可行性，确认每项工具的使用步骤与触发条件; 任务：治疗总结——回顾从初诊到现实暴露的关键节点，提炼个人有效策略与对自我/他人新理解",
+    "therapist_response": "结束与巩固：复盘成长、终结与随访安排",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "bc27b4a0159371f594917addee1a7e46"
+  },
+  {
+    "case_id": 17,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）。; 任务：明确咨询框架、保密原则、双方的权利与义务；说明后续可能采用的支持性心理治疗、认知领悟疗法、新精神分析疗法的整体思路。",
+    "therapist_response": "建立治疗联盟与初步评估",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "91d3fe8bdc525addb134210c7661d672"
+  },
+  {
+    "case_id": 17,
+    "intervention_type": "Connection Making",
+    "situation": "回顾上次：检查自我观察日志，梳理症状出现的时段、场景与诱因，明确最困扰的时刻。; 任务：支持性心理教育——解释强迫症的心因性机制与回避-焦虑的维持循环；强调把注意力从症状转回学习与生活的重要性。",
+    "therapist_response": "初步概念化与支持性干预入门（放松与日常节律）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "003da1cb9863cefe23899143d9377095"
+  },
+  {
+    "case_id": 17,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾上次：练习放松与自我暗示的频率与效果；检查一周日程执行度与返校接触的体验。; 任务：识别并记录当想到返校或外出时的自动化念头与身体感受（焦虑、心悸、头晕），进行当下呼吸放松以降低生理性高唤起。",
+    "therapist_response": "支持性心理治疗：现实检验与分步暴露（返校与外出）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "dc36600ac64f0cd6d6caa33430260c1d"
+  },
+  {
+    "case_id": 17,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾上次：暴露记录的焦虑评分变化与事实结果，辨识哪些情境最易触发退缩与合理化。; 任务：认知领悟——明确“虽然十八岁，但仍以儿童方式应对成年问题”的逻辑；列举具体情境并对比成人式应对的可能选择。",
+    "therapist_response": "认知领悟疗法：区分儿童方式与成人方式；处理社交羞耻与投射",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "e8081d36a847a76744659f3a8dde8096"
+  },
+  {
+    "case_id": 17,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次：社交微暴露执行与反馈；识别成人式应对带来的实际变化。; 任务：书写“给童年自我的信”——描述童年被过度照顾的经历、对恐惧的体验与依恋需求；由成人自我表达承诺与安抚，确立内在照护者位置。",
+    "therapist_response": "新精神分析疗法：整合童年自我与成人自我；处理“念头不等于行为”与核心冲突",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "8694e65181898c7350734ca8d039a07e"
+  },
+  {
+    "case_id": 17,
+    "intervention_type": "Confrontation",
+    "situation": "回顾上次：自我安抚与成人式选择的执行情况；返校与社交参与的进展与反馈。; 任务：技能整合——巩固呼吸放松、自我暗示、现实检验、社交微暴露、成人式自我对话的流程化步骤。",
+    "therapist_response": "巩固技能与复发预防规划",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "bb18e52796c91ed05f710be04bee1b92"
+  },
+  {
+    "case_id": 18,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景与主诉，询问来访者姓名（李娜）、年龄、学业与职务、人际现状与就医情况，如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”; 任务：初步了解当前情绪与功能状态（睡眠、学习、社交），评估药物服用与效果，以非评判式态度建立安全的会谈框架。",
+    "therapist_response": "建立治疗联盟与初步评估（摄入性会谈）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "cb3abcec2b506778a24a4aec969efbbb"
+  },
+  {
+    "case_id": 18,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查上次记录的事件与情绪日记，澄清近期宿舍与班级互动中的困扰点与身体-情绪反应。; 任务：绘制“一周情绪轨迹图”，标注时间、场景、人物（舍友、同学、老师、男朋友）与主观感受，区分事实与解释。",
+    "therapist_response": "情绪-事件追踪与社会支持识别",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "10e302dc423f8b3fe84a700e4c986414"
+  },
+  {
+    "case_id": 18,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：对照情绪轨迹与现场叙述，梳理最近一次“感觉被忽视”的互动，区分客观事实与主观推断。; 任务：此时此地练习“暂停-观察-命名”（命名感受、身体反应、自动念头），咨询师进行澄清与面质，指出将内心孤独感归因于他人的倾向。",
+    "therapist_response": "移情与防御识别（投射）：当被冷落时的敏感反应",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "a3051ac39137d3da8d9246bb2a1775fd"
+  },
+  {
+    "case_id": 18,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检视上次作业在被忽视情境中的变化；总结是否减少了贴标签式质问与其情绪影响。; 任务：角色重演——以班长/团支书的具体情景，重演他人提出要求与自己的内在对话，识别“必须完美”的内化声音。",
+    "therapist_response": "内摄的严苛他人与完美主义自我要求（角色情境）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "72bf24c42f42def0b2ca2be32448fd0e"
+  },
+  {
+    "case_id": 18,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查团队协作中的界限表达作业效果，识别回应与自我感受的变化。; 任务：围绕一次与男朋友的争执进行情境重构，区分事实、情绪与解释；识别“都是我不好”的自动语句。",
+    "therapist_response": "自责与转向自身：亲密关系冲突中的情绪调节",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "85f678cac0f75cef4d590ff9752b5e0b"
+  },
+  {
+    "case_id": 18,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：整合此前三类自动反应与其情境，观察其共同指向的关系主题。; 任务：此时此地聚焦——在咨询关系中辨识“我是否被你喜欢/会不会被拒绝”的瞬间念头与情感，咨询师进行解释，连接到早年被寄养及严苛期待的经验。",
+    "therapist_response": "整合核心冲突与此时此地的移情解释",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "8baed5d79c49673df475dc2dbf8962b2"
+  },
+  {
+    "case_id": 18,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：总结7次咨询的关键变化与有效策略（情绪-事件追踪、澄清/面质/解释、界限与自我关怀练习、核心冲突地图）。; 任务：巩固方案——制定复发预防清单（触发预警信号、支持网络、应对步骤），明确遇到人际紧张时的优先策略与自我照料计划。",
+    "therapist_response": "巩固、复盘与复发预防",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "621c3c2c86c6a987a33ac5173dc6959e"
+  },
+  {
+    "case_id": 19,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）。请询问姓名并以“陈宇”记录。; 任务：共同建立安全、稳定的咨询框架，解释咨询流程与保密原则；简要介绍荣格学派梦工作如何用于理解情绪与人际困境。",
+    "therapist_response": "初次会谈：建立联盟与开放式评估",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "395e300b661af686f76f3f8d08d160eb"
+  },
+  {
+    "case_id": 19,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查并讨论上次的情绪/人际记录与带来的初始梦；确认治疗框架与安全感是否足够。; 任务：工作初始梦（如阅兵式、权威意象），鼓励自由联想，识别被唤起的情绪与关系需求；咨询师以共情与镜映回应。",
+    "therapist_response": "启动梦工作与安全框架：回顾成长史与情绪识别",
+    "targeted_conflict": "Unconscious conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "be8a80a1950b0f88e41e48e3a566026d"
+  },
+  {
+    "case_id": 19,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查上次四栏反思表与近期梦；特别聚焦一次表白失败后的反应与当时情绪强度。; 任务：识别“情感隔离”的运行方式（理性化、强调没关系、快速平复），区分事件叙事与被压下的受伤/失落感。",
+    "therapist_response": "关系受挫与情感隔离的识别：从表白失败经验切入",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "797729c0cff1f4aa641bf7c9576ba1ed"
+  },
+  {
+    "case_id": 19,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检视未寄出的信的感受与收获，分享近期梦（僵尸、地铁站象征），连接低能量与现实处境。; 任务：对梦进行象征解析——地铁站（地下/低能量）、僵尸（浑浑噩噩的状态），识别压力下的“退行”路径（短期逃避、游戏寻慰）。",
+    "therapist_response": "解析僵尸梦与退行防御：从低能量与逃避到受控投入",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "988be0abf27ff44a08070c00ff36883b"
+  },
+  {
+    "case_id": 19,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检查“压力—退行—替代行为”监测表效果与困难。; 任务：采用MSSM法（涂鸦—故事）外化情绪，咨询师进行镜映与共情，帮助陈宇在安全情境中体验并命名情绪。",
+    "therapist_response": "MSSM涂鸦与镜映：发现资源、学习情绪表达与压抑防御",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "439637f59521e5a731a73276f76720de"
+  },
+  {
+    "case_id": 19,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查“情绪标注+温和表达练习”的体验与效果，回顾涂鸦中的资源线索。; 任务：以核心冲突模型梳理“愿望—恐惧—防御”的循环，连接到具体人际场景（被比较、被忽视、表白受挫）。",
+    "therapist_response": "把比较压力转化为发展动力：初步接触核心冲突",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "3bfa8a346a60ae5c870551372ceeb679"
+  },
+  {
+    "case_id": 19,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查核心冲突自评与发展计划执行情况，讨论成功与困难的具体情境。; 任务：在此时此地觉察对咨询师的期待与反应（投射性认同/移情），区分内在客体形象与现实他者的差异。",
+    "therapist_response": "有效沟通与此时此地的移情/客体关系再检视",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "17c55ce6b174b9993f19da91c5671ff4"
+  },
+  {
+    "case_id": 19,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：检查上次沟通脚本的应用情况与人际反馈；分享近期梦（地铁与麻将、平等位置），连接内在变化。; 任务：解析梦中“同桌打麻将”的平等象征，桥接到现实中更平衡的互动体验与自体位置调整。",
+    "therapist_response": "麻将梦与平等位置的整合：增强自我与联结的可持续性",
+    "targeted_conflict": "Unconscious conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "2dc4be5fa729d0e3adbc20452de42def"
+  },
+  {
+    "case_id": 19,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：整理整个阶段的关键里程碑（梦的变化、情绪表达、核心冲突识别、客体关系调整、沟通脚本应用）。; 任务：定稿“巩固与预防”计划——高风险触发（被比较、被忽视、学业压力）、早期信号（情感隔离/退行/压抑）、对策（表达、联结行动、限时娱乐、寻求支持）。",
+    "therapist_response": "总结与复发预防：巩固自体调节与关系技能迁移",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "2f461b1692fe835c8d53d2e97b55ab77"
+  },
+  {
+    "case_id": 2,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名（确认为“李白”）、主诉与期待（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）; 任务：评估当前社交恐惧的具体情境、频率与强度（例：与同学、异性交往时的紧张、语无伦次、心跳加速、口吃等）",
+    "therapist_response": "建立治疗联盟与初步评估",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "d9a1cb12de68a6a51406d6f42a488ab5"
+  },
+  {
+    "case_id": 2,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查上次关于基本信息与当前症状的讨论，评估放松练习的效果与来访者的舒适度; 任务：在轻松、非控制的氛围中进行成长史的自由叙述与联想，标记当时的情绪与念头",
+    "therapist_response": "成长经历的深度访谈与问题地图初拟",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "73adb251fa5deec3dc4a0462d181e297"
+  },
+  {
+    "case_id": 2,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检视上一周的“事件-情绪-身体反应”记录，挑选与母亲相关的条目进行讨论; 任务：围绕母亲进行自由联想，鼓励表达复杂情感（愤怒、失望、渴望、内疚），允许停顿与沉默",
+    "therapist_response": "母亲主题下的自由联想与阻抗识别",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "5e324ca953888cabc70169b71ddae301"
+  },
+  {
+    "case_id": 2,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：总结母亲主题中的压抑与回避出现的节点，关联其对当前人际恐惧的影响; 任务：围绕“父亲的空白”进行自由联想，允许表达被抛弃感与愤怒，尝试区分事实空白与情感充盈",
+    "therapist_response": "父亲主题与客体关系的初步映射",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "cc65c6584fafca4f25947accfff37485"
+  },
+  {
+    "case_id": 2,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：讨论“给父亲的信”中的未满足需求与情感，并连接到外婆与家庭氛围的影响; 任务：自由联想外婆的语言与态度，辨识内化的批判性声音（严苛超我）及其在社交场景中的重演",
+    "therapist_response": "外婆的苛责与羞辱的内化检视",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "f20a8ff96397efccc92d4f9a470baf78"
+  },
+  {
+    "case_id": 2,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：检视一周内“被批评/羞辱”触发记录与替代性回应的效果; 任务：围绕寄养与校园羞辱进行自由联想，允许细节浮现并以安全节奏停留与离开",
+    "therapist_response": "寄养创伤的重访与压抑的解析（舅舅/老师）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "a4a01d10c972962f2c71670b13f4b58b"
+  },
+  {
+    "case_id": 2,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：讨论上一节的“体验—意义—回应”记录，并连接到恋爱中的依赖与回避; 任务：在此时此地识别并处理移情（如将治疗者体验为可能拒绝/控制的他者），追踪否认或“但是”出现的时刻与功能",
+    "therapist_response": "男朋友主题的移情处理与核心冲突的解释",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "caea3a85c0ad7d2717157f309a86e221"
+  },
+  {
+    "case_id": 2,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：总结上次“三步法”社交练习的体验，评估移情识别、防御选择与替代回应的效果; 任务：阐释本能需求与自我/超我的冲突，识别何时自我能更好地调节本能（增强自我）",
+    "therapist_response": "修通与扩通：强化自我与建立更成熟的防御",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "8207f7433a13378a615c7d9ba6f9b7ba"
+  },
+  {
+    "case_id": 2,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：全程复盘——从成长史、母亲/父亲/外婆/寄养、男友与移情，到自我强化与成熟防御的建立; 任务：制定复发预防清单（早期信号、应对步骤、支持资源、会谈自助提示语）",
+    "therapist_response": "结束与复发预防：巩固改变与未来计划",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "10ee8dc475602ffb20b5beb0bff82ed4"
+  },
+  {
+    "case_id": 20,
+    "intervention_type": "Confrontation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”），并询问姓名与称呼偏好（例如：“我们可以如何称呼您？小成可以吗？”）。; 任务：收集生活作息、人际关系、学习状态与近期睡眠/头痛的情况，建立初步问题图谱。",
+    "therapist_response": "初步评估与治疗联盟建立",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "269a39c07d41228ba6883be17f087ce9"
+  },
+  {
+    "case_id": 20,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查上次的评估要点与边界约定，记录宿舍作息冲突的细节与焦虑评分。; 任务：以叙事方式回看成长史中的暴力与恐惧事件，标注其对当前社交焦虑的可能影响。",
+    "therapist_response": "情境化主诉与早期经历的初步联系；目标细化与评估",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "7c22a6211d71aaf4b006b860308a928d"
+  },
+  {
+    "case_id": 20,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：记录上次约定的沉默观察，来访者在沉默时的身体感受、念头与冲动。; 任务：在会谈中允许沉默，共同描述“此时此地”的不适，咨询师以平稳柔和语气验证并正常化沉默带来的不适。",
+    "therapist_response": "此时此地的移情与沉默：识别“被审视/会生气”的恐惧",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ee15fcd9606e2a6499e7e392b05de848"
+  },
+  {
+    "case_id": 20,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检视上次在沉默中的体验与实验反馈，记录焦虑评分变化。; 任务：围绕“不能原谅自己的软弱”，具体化哥哥的指责与母亲的唠叨情景，分离事实与内在批评者的声音。",
+    "therapist_response": "自我批评与对母亲/哥哥的反应：识别‘转向自身’防御",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "fcfd9dabbc7e7696f3841fada56e7974"
+  },
+  {
+    "case_id": 20,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：整合上次对愧疚与照顾意向的讨论，收集一例“被电击”的比喻或类似体验。; 任务：围绕“被电击的虫子”隐喻，描绘靠近母亲的愿望与回避的自动反应，标出触发—感受—行为链。",
+    "therapist_response": "核心冲突呈现：靠近—照顾与“被电击”的恐惧的双重驱力",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "cc8cc2f69a8733d7b9f3eb4cece3eec7"
+  },
+  {
+    "case_id": 20,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检视上次在宿舍实施微尝试的体验与结果，记录触发与情感波动。; 任务：具体化最近一次与哥哥的互动，捕捉同时“害怕—挑衅”的双重反应与其目标（为父亲打抱不平）。",
+    "therapist_response": "三角关系与客体关系重演：父亲—哥哥—母亲与“害怕—挑衅”的两面",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "2d9b939e41fd6d1ed404a0120bb24b00"
+  },
+  {
+    "case_id": 20,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：总结上一阶段关于三角关系与界限练习的效果，记录一例成功或困难。; 任务：对自我优点与不足进行双列清单（如自省力强、积极 vs 现实处理能力欠缺），并连接到与哥哥/母亲的互补。",
+    "therapist_response": "自我整合与优势发现：从自我批评到现实技能与自省的平衡",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c1dcb5c46b27bd8bcf043cf24cd642e7"
+  },
+  {
+    "case_id": 20,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查近一两周的焦虑评分与微尝试执行情况，记录一次成功的主动沟通。; 任务：探索来访者梦中两条鱼绕成太极的画面，联结“优点—缺点”“靠近—回避”的两面，识别彼此平衡。",
+    "therapist_response": "梦的加工与象征整合：太极两鱼与自我的双面",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "56e06dac276f6cf2ec07cbaf2f574624"
+  },
+  {
+    "case_id": 20,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：综合整个阶段的变化——初始焦虑评分7-8分至当前自评4-5分的趋势；总结关键领悟与有效策略。; 任务：制定复发预防计划：识别高风险情境（沉默、被审视、室友作息冲突、家庭冲突话题），提前拟定移情与防御的自助提示。",
+    "therapist_response": "复盘巩固与复发预防：移情识别、界限与层级暴露计划",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "6c2ab330625a8ccdde9c139d701f288e"
+  },
+  {
+    "case_id": 21,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（例如：“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”“请先介绍一下你，陈晓雨。”）; 任务：澄清近期情绪低落与心慌的发生频率、强度、持续时间以及对学习与人际的影响，收集当前家庭与宿舍的人际互动样态。",
+    "therapist_response": "建立联盟与初步评估（Intake）",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "221e91381f61d2400c931bfe40e0f1d7"
+  },
+  {
+    "case_id": 21,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查上次设定的目标与边界感受；核对来访者对咨询频率、结构的适应度与安全感。; 任务：绘制症状与情境的时间线（高中至大三），定位触发点与家庭、人际互动中的共性情绪（心慌、低落、烦躁）。",
+    "therapist_response": "厘清症状轨迹与关系困扰的早期图谱；形成初步概念化",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1e0557f051f04da1b57d826fc6b0a56b"
+  },
+  {
+    "case_id": 21,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查上次关于现场互动的观察作业；请来访者反馈在上次会谈中的紧张点与沉默体验。; 任务：在此时此地刻意保留微小沉默，邀请来访者觉察内心自动化反应（快速填充、语速加快、条理化），标注“预期”防御的启动条件与主观控制感。",
+    "therapist_response": "此时此地：沉默焦虑与提前准备的控制（识别“预期”型防御）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "7d55e2edc3be0b766c9dc8878477ec1f"
+  },
+  {
+    "case_id": 21,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检视“沉默练习”的体验，归纳对空白耐受的小幅变化与困难。; 任务：围绕“唯一/之一”展开对话，探讨成年关系的不可完全确定与对控制的渴望；区分稳定性需求与控制性意图。",
+    "therapist_response": "关系中的确定性与“唯一/之一”的解释；链接早期分离印记（核心冲突的初步理解）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "a12aa9861568a1f67f79c414687ca0c2"
+  },
+  {
+    "case_id": 21,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：承接上次对“唯一/之一”的理解，检查其在人际中的具体体现与情感张力。; 任务：在此时此地探讨“刻意准备/不准备话题”是否为迎合咨询框架的工作状态；面质合理化叙述背后的情感回避（累、担心暴露脆弱）。",
+    "therapist_response": "迎合—合理化的识别与面质；客体关系的浮现与修通",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ad1a80a780b5f7c5c2a5d876db6db7af"
+  },
+  {
+    "case_id": 21,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：边界练习的效果与人际反应；观察迎合减少后出现的焦虑与自我怀疑。; 任务：在此时此地以更长的沉默/延迟回应为素材，邀请来访者识别是否出现“你是不是不关心我？”的质问与烦躁，将主观恐惧与对方意图区分开来。",
+    "therapist_response": "投射与父亲意象的移情：在沉默中承载被忽视的恐惧",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "86165356f10d2fc313020ca56d6a2da5"
+  },
+  {
+    "case_id": 21,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：在沉默情境中的投射识别与修正经验；检视抽离冲动是否降低。; 任务：以“是否继续/结束咨询”的讨论为触发，识别非此即彼的表述与全好/全坏的分裂视角，观察此时此地的情绪强度与控制需求。",
+    "therapist_response": "绑定与抽离的二元化：识别分裂并促进整合",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "f5231900b3aeb5e45dbd81c49cbfbb7e"
+  },
+  {
+    "case_id": 21,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：汇总核心干预阶段的收获（对空白的耐受、对迎合的觉察、投射修正、分裂整合）并评估情绪稳定度变化。; 任务：制定个人化复发预防清单（高风险情境→预警信号→应对策略），将会谈中有效微流程（澄清—验证—再解释）固化为自助脚本。",
+    "therapist_response": "技能整合与巩固：沉默耐受、边界设定与投射修正",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "881446eeea8c75275d3e5bd678c65f5a"
+  },
+  {
+    "case_id": 21,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：检查上次复发预防清单的可行性与使用感受，微调应对策略与支持系统安排。; 任务：比较以往关系的被动结束与此次咨询的主动选择与同频沟通，识别分裂与抽离倾向是否减弱。",
+    "therapist_response": "结束与复发预防计划敲定：比较以往结束模式与此次咨询结束",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "7ab1bb2f196ac359d76ed6c29d826484"
+  },
+  {
+    "case_id": 22,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”），并询问姓名：赵强。; 任务：收集生活史与目前困扰的具体情境（首次出现冲动、回避社交、主动辍学等的时间线）。",
+    "therapist_response": "初次评估与建立治疗联盟",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "9c28032c25bca3e091aa19fd92f70f90"
+  },
+  {
+    "case_id": 22,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：总结上次访谈的要点与安全协议；确认赵强的治疗期待与优先目标。; 任务：共同拟定工作焦点（性相关困扰与社交回避），约定记录一周内与异性接触的情境、念头与情绪。",
+    "therapist_response": "问题梳理与治疗契约深化",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "028fd1731308bfa0ccb8a3aa6481a236"
+  },
+  {
+    "case_id": 22,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检查上次的简记，辨认会谈中出现的“不是的”“不对”等瞬间反应。; 任务：在此时此地觉察当我提出不同观点（不简单将其归为“性变态”）时的情绪与身体体验，暂停-描述-命名。",
+    "therapist_response": "处理否认与此时此地移情；启动宣泄与教育性作业",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "39227a77a0318c376be6e38abd528cbc"
+  },
+  {
+    "case_id": 22,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：检查“模拟恋爱”和影片观看的作业执行情况与情绪记录。; 任务：描绘独处、反锁前后的内心对话，区分冲动、恐惧与超我的道德压力。",
+    "therapist_response": "探索压抑与自我封闭：从“反锁”到可控接近",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "12cadc1a139866d33ac848ffa8671d52"
+  },
+  {
+    "case_id": 22,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：检查社交练习与作业记录，标注出现“没有感觉”“我知道这些”的片段。; 任务：区分事件内容与情绪反应，尝试用具体词汇标注情绪强度与身体信号。",
+    "therapist_response": "识别情感隔离与“没感觉”的叙述方式",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c282a496144e47e8129fd9a660adc92d"
+  },
+  {
+    "case_id": 22,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：呈现并细化“一见钟情”幻想的场景、对白与主被动角色分配。; 任务：识别幻想的防御功能（理想化、被动性）与其如何替代现实接近与风险承担。",
+    "therapist_response": "处理理想化幻想：从唯美场景到现实行动",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "3b573ed3a10fba3bcd44041aa5b01c6e"
+  },
+  {
+    "case_id": 22,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：讨论日常接近尝试的结果与感受；辨认出现“家庭经济条件不好、长得也不好”等结论的时刻。; 任务：对质（Confrontation）合理化：区分事实与推断，识别它如何为回避行动提供“正当理由”。",
+    "therapist_response": "检视合理化与成长经历：父亲来访与自我评价",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "3f6fa91f075efe3f713bc49ea62ebaec"
+  },
+  {
+    "case_id": 22,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：整合前七次的观察材料，标注“渴望—害怕—防御”的链条在不同情境中的运行。; 任务：此时此地的移情解析：当我探问“为何执着于‘性变态’”时，你如何体验被看见/被否定？",
+    "therapist_response": "揭示核心冲突与移情解释：自卑的被看见",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ab10ecf97337cb3114908b842cad504c"
+  },
+  {
+    "case_id": 22,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检视“去标签化”小实验与社交练习的结果，识别成功经验与触发点。; 任务：在治疗室内进行角色扮演（普通对话/主动表达），捕捉羞耻、紧张及其可容纳性。",
+    "therapist_response": "整合领悟与新关系体验：去标签化的尝试",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ea6cf40042000b1f2e6eb0808271148d"
+  },
+  {
+    "case_id": 22,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：总结整个治疗中有效的策略与易复发的防御模式，形成个人化预警清单。; 任务：制定复发预防计划：高风险情境识别（独处、与年轻女性单独接触、被否定），对应的应对脚本与支持线路。",
+    "therapist_response": "巩固与复发预防：维持改变与自我照料",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "6c39cc58ca900db2ceb2cc5a5f2e0061"
+  },
+  {
+    "case_id": 23,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、主诉与期待，并询问姓名（黄某）、年龄、就读与生活情况、目前压力源与求助动机（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）。; 任务：介绍咨询框架、双方权责与保密原则，商定频率与时长，并签订咨询协议。",
+    "therapist_response": "建立治疗联盟与初步评估（摄入性会谈与测评）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "52139e0c0c5f45cbbb1f946758d2edf4"
+  },
+  {
+    "case_id": 23,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：复盘上次咨询要点与测评结果，确认“入学适应障碍”的初步诊断与短期目标。; 任务：围绕童年与成长经历的叙述进行开放式探索，注意在谈及儿时经历时的情绪与非言语表现（如紧张、哭诉），保持温和与支持性态度。",
+    "therapist_response": "童年经历解析与当前困扰的关联；巩固联盟与协商具体目标",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "670633906dff2c5f19abac38bca95cd8"
+  },
+  {
+    "case_id": 23,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：查看自我分析报告与一周记录的触发—反应事件，提炼核心信念与自动化反应。; 任务：运用ABC模型澄清诱发事件（A）、信念（B）、情绪与行为后果（C）；示例聚焦“被同学误解”“我不太行”的自动念头。",
+    "therapist_response": "识别并矫正不合理信念（RET），放松训练；识别并干预自动化互动模式与防御",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "9ee332072318136b0b3ecebf6d60390f"
+  },
+  {
+    "case_id": 23,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：检查RET与RSA作业、放松练习的效果；评估课堂暴露与人际沟通的具体变化。; 任务：与“不合理信念”进行辩论，聚焦“自己是个无用的人”“拒绝会被讨厌”等核心主题，促进自我接纳与现实评估。",
+    "therapist_response": "辩论不合理信念与自我接纳；处理此时此地的移情与客体关系；练习人际技能与拒绝",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "a86b26a341de8b2cdc4eaff4ad6ab6dc"
+  },
+  {
+    "case_id": 23,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：检查近期作业与行为实验的体会，总结从咨询开始到现在的关键变化与收获。; 任务：复盘有效的认知与行为策略（RET辩论、放松训练、拒绝与表达技能），制定个人化维持方案与自我监测清单。",
+    "therapist_response": "巩固新观念与技能、复发预防与结束咨询",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "785a66f3e13e6da1dd37800cc8196d12"
+  },
+  {
+    "case_id": 24,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”），请询问来访者姓名（李可）并确认年龄、在校状态、家庭结构与健康史。; 任务：共拟初步会谈契约（频率、时长、保密与预约规则），解释咨询框架以降低不确定性。",
+    "therapist_response": "初次评估与建立治疗联盟",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1236f57151eeae42b4d3e1f447b462b1"
+  },
+  {
+    "case_id": 24,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：核对上次的日志记录与初步信息，梳理其生涯困扰的关键情境与对人际评价的敏感点。; 任务：共拟短期目标（澄清生涯方向）与中期目标（改善对网暴与排挤的应对），明确优先级。",
+    "therapist_response": "聚焦主诉与初步目标对齐；观察理性化呈现的沟通风格",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "6a164ae921e2f6b31217ff8f85a90f01"
+  },
+  {
+    "case_id": 24,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：讨论“情境-思维-感受”记录，选取1-2个她在谈及感受时转向事实的片段，共同观察当下互动中的相似性。; 任务：咨询师觉察自身在对话中情感被切断的体验，以假设性、非评判的方式反馈，并邀请她核对。",
+    "therapist_response": "觉察反移情与识别理智化防御（此时此地的沟通模式）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "3c9f1774872610594ea1bca6a34352da"
+  },
+  {
+    "case_id": 24,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：核对上次的记录与本周关于预约确认的日志，具体化她重复核对时间与细节的情境与感受。; 任务：咨询师以共情言语化其“预约可能不算数”的担忧，邀请其检视这种不确定体验与过往人际的联系，但不强行追溯。",
+    "therapist_response": "思考反移情，理解对预约的反复确认（不确定性与预期性防御）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "f27da721853a6486feb54278c4e7e9e9"
+  },
+  {
+    "case_id": 24,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：再次核对上次达成的设置与边界如何影响其安全感，确认预约敏感是否缓解。; 任务：当她期待我给出直接方案时，以反映其“渴望强有力他者指导”的目光与紧张姿态，保持中立不过度建议。",
+    "therapist_response": "处理反移情并引入母亲主题；开启成长经历的叙述",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "771167851b063871cdac46085f4ade3e"
+  },
+  {
+    "case_id": 24,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：延续上次的成长叙述，选取一段她在会谈中持续独白、较少回应的片段，观察此时此地双方的体验。; 任务：咨询师以此时此地为素材，温和面质“我说话时你像听不见一样继续说”，并探索她让对方“听不见”的需要与恐惧。",
+    "therapist_response": "诠释移情与客体关系模板；识别投射性认同与话语主导",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "017a9ebb76ff424eeaf789137fea2ea6"
+  },
+  {
+    "case_id": 24,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检视上次关于投射性认同与客体关系的理解，连接其在等候区看到其他来访者时的感受与行为（如摔笔、迅速离场）。; 任务：在此时此地的安全框架内，允许并命名嫉妒、被排斥与愤怒；探讨这些情绪指向的核心愿望（留在二元关系）与恐惧（被排斥）。",
+    "therapist_response": "在三元关系中处理嫉妒与被排斥感；触及核心冲突",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "326de3372b500b9e4f29e182aacd9ab1"
+  },
+  {
+    "case_id": 24,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：总结上阶段对核心冲突与三元关系的工作所得，确认她在学校与预约中的变化（更少反复确认、情绪更可标注）。; 任务：制定个体化“情绪调节工具包”：情绪标注词汇表、暂停-呼吸-回应流程、与可信他者求助步骤。",
+    "therapist_response": "巩固自我调节与边界感；复盘技能与新理解",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "3064f85734991c19e08828f1badc653e"
+  },
+  {
+    "case_id": 24,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：评估过去一周的工具包使用与高风险情境的应对，梳理有效与需要调整的部分。; 任务：制定“预警与应对”清单：识别四类触发（触及情感与家庭、预约变动、不被回应的时刻、看到他者关系）对应的自我安抚与关系沟通步骤。",
+    "therapist_response": "复发预防与结束工作；维持三元关系的自我支持",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "65476e7b91057ca5e44d1b023420f089"
+  },
+  {
+    "case_id": 25,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”），并请王某确认称呼。; 任务：初步评估当前风险与安全（曾想过自杀的历史、近期睡眠与头痛状况、是否有自伤念头），建立危机应对与联系约定。",
+    "therapist_response": "建立治疗联盟与初步评估（Intake）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "847208b7389b9ba327e4495381e1a8bf"
+  },
+  {
+    "case_id": 25,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：汇总上次日志与要点，确认我们理解的困扰与会谈契约是否贴合王某的感受。; 任务：共绘“症状-事件”时间线：从高三“三连冠”到期中考崩溃、至今的头痛与失眠；标注触发情境与当时的想法与身体感受。",
+    "therapist_response": "梳理症状时间线与成长经历的早期影响；观察叙述风格",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "444386f7f9ba44fdc984bb82e5c8af4a"
+  },
+  {
+    "case_id": 25,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检视时间线作业中的关键节点，注意王某在触及感受时如何转向事实或抽象概念。; 任务：在此时此地觉察“靠近—不适”的瞬间（例如当咨询师试图整合片段时王某转向理智化），以镜映与命名帮助他识别情感隔离的运作。",
+    "therapist_response": "识别与处理“情感隔离”：此时此地的移情与叙述碎片的整合",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "3f322d4615d2956565cf049bcdb0e4f3"
+  },
+  {
+    "case_id": 25,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检视一周记录中涉及他人期待与学习压力的片段，王某如何以“应该、必须”压下感受。; 任务：澄清“他人的愿望/期待”在王某心中如何内摄为超我要求；区分现实要求与内在苛责。",
+    "therapist_response": "他人期待与自我压抑：识别‘压抑’与超我要求",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "d02cf10504b0a82ed0889288e7f6d141"
+  },
+  {
+    "case_id": 25,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：复盘上周“应该/必须”与被压下的感受练习中的体验，连接至亲密与享乐话题。; 任务：澄清并面质道德化语句与座右铭（如“不愧屋漏”），探索其与欲望和恐惧的关系。",
+    "therapist_response": "道德化与反向形成：围绕亲密、享乐与性冲动的冲突",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "a1d21c9482d51dd955840b3650636593"
+  },
+  {
+    "case_id": 25,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检视近一周在尝试愉悦或靠近交流时出现的自我定位变化（把自己拉回“学生”角色、谈作息细节），标注退行迹象。; 任务：在此时此地练习容纳短暂的被理解与被支持的体验，观察随之而来的不适、羞耻或罪疚。",
+    "therapist_response": "依赖与退行：在关系靠近时的自我定位与安全",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "7a0680995cd75c1288235c457d95e397"
+  },
+  {
+    "case_id": 25,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：总结近四次关于情感隔离、压抑、反向形成与退行的观察，连接其共同指向的内在冲突。; 任务：绘制“真小孩—伪大人”的双轨图：分别写下自我表征、他人表征与连接情感，识别两套系统如何在不同情境被激活并相互拉扯。",
+    "therapist_response": "整合核心冲突与客体关系：真小孩与伪大人的对话",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c7b6859208213e7f2f66e6376fda6027"
+  },
+  {
+    "case_id": 25,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检视‘真小孩—伪大人’记录与照料行动的体验，识别哪些选择更贴近真实感而不过度激活恐惧。; 任务：与王某共同制定两到三项小步的生活实验（例如选择一个低压力的社团体验、安排一项自我享受的活动、在关系中表达一个小需求），明确可行性与安全边界。",
+    "therapist_response": "巩固新的自我定位：从假自我到更真实与有创造性的日常选择",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "97d4ab98748a083fd79c2e72878f535a"
+  },
+  {
+    "case_id": 25,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：复盘生活实验的成效与困难，识别成功维持真实选择的条件与失败情境。; 任务：制定复发预防计划：列出躯体化、睡眠问题与四类防御的早期预警信号与应对策略（澄清、命名、暂停、求助）。",
+    "therapist_response": "复盘与复发预防：维持抱持与真实选择的路径",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "a083b36d1a5402a30e2dbdc2ab221852"
+  },
+  {
+    "case_id": 26,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名（小A）、工作与学习经历、亲密关系与家庭氛围、当前困扰与期待（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）。; 任务：澄清晨会汇报的具体触发因素（人员构成、汇报流程、评语风格）、生理与情绪反应、回避或应对方式。",
+    "therapist_response": "初次访谈与全面评估；建立治疗联盟",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "f14dd76c8d8837af8e65f0a08cc6c953"
+  },
+  {
+    "case_id": 26,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检查上次收集到的情境细节、基线量表结果与咨询目标；明确VR自助练习的动机与顾虑。; 任务：共同制定VR暴露的层级（从支持型到挑剔型再到愤怒型反馈），设定暴露频率与时长，约定自我监测表（主观焦虑SUDS、心率、语速、眼神接触）。",
+    "therapist_response": "问题概念化与VR暴露导入；制定练习阶梯与监测方案",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b52129378f74767112d689f8f2a13d24"
+  },
+  {
+    "case_id": 26,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检查上一节的首次VR练习记录，尤其是不同反馈下的语言特征与自我评价走向。; 任务：在VR中按层级暴露于“中年妇女”（母亲原型）的支持/挑剔/愤怒反馈，录像并即时标注主观焦虑SUDS、语速、停顿与目光变化。",
+    "therapist_response": "引发核心恐惧：面对“中年妇女”（母亲原型）的支持/挑剔/愤怒反馈；识别自我批评的自动化防御",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "88e18c74a6f43b3c5adfca1c1e212e9f"
+  },
+  {
+    "case_id": 26,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检视上一节在愤怒型反馈下的录像与标注，确认自我贬低语句与情绪峰值的时点。; 任务：使用幽默版“中年妇女”VR（愤怒表情+搞笑发夹）进行反复练习，记录幽默加入后焦虑/羞耻/无力的变化，观察自我表征是否从“傻瓜”转向“可以被看见而不被毁灭的人”。",
+    "therapist_response": "创造新体验：在愤怒情境中加入幽默元素以修复自我/他人意象",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "519ee8310ac171ab675e7b73cf55fb87"
+  },
+  {
+    "case_id": 26,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：整合上一节记录的愿望与恐惧片段，指出其在不同反馈下的波动与防御选择。; 任务：在支持/挑剔/幽默反馈间切换，练习以“被看见且不自我贬低”为目标的替代反应（稳定语速、明确结构、目光接触），并标注愿望满足与恐惧容纳的瞬间。",
+    "therapist_response": "核心冲突工作：链接愿望—恐惧—防御并在VR中测试新选择",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "cda2f59c90f80a26e7af0379a94cbecd"
+  },
+  {
+    "case_id": 26,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查上一节关于“继续练习”时的内在记录，识别否认/逃离的语言与身体信号。; 任务：进入“虚拟会议室”场景（中年妇女+中年男性+同事），在出现否认/逃离冲动时进行当场面质与动机澄清（“此刻你在保护什么？”），并练习微步推进（分段汇报、约定时间点继续）。",
+    "therapist_response": "场景迁移至虚拟会议：处理“否认/逃离”的回避防御与父权客体关系",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "fc9a2cb1718e148c46666707ba53c44d"
+  },
+  {
+    "case_id": 26,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：系统复盘近期真实晨会与VR练习的数据（SUDS、语速、停顿、目光接触、完成度），评估替代脚本的有效性。; 任务：巩固正向反馈与幽默元素的可迁移用法，制定“晨会前—中—后”的自我支持流程（准备、启动、收尾）。",
+    "therapist_response": "巩固新体验与技能迁移：复盘真实晨会与VR练习整合",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1c9c5457dd62bd2f828037f46cf85f20"
+  },
+  {
+    "case_id": 26,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：确认近期症状与功能改善，复盘最有效的VR模块（支持/挑剔/愤怒+幽默、会议场景）与现实迁移成效。; 任务：制定复发预防计划——包含复发触发清单、早期预警信号、分级干预（微暴露、脚本复练、幽默插入、寻求同伴支持），以及量表自评的定期监测。",
+    "therapist_response": "复发预防与结束计划：制定个性化维护方案与自助练习节律",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ba4dedd67628a093b37114b83b462c9e"
+  },
+  {
+    "case_id": 27,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景与主诉，确认来访者姓名（张宇）、年龄、在读年级与专业、家庭结构与当前人际状态、就医与测评史、当前困扰与期待（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）。; 任务：进行当下安全与危机评估（谈近2周的自杀意念、是否有计划与手段、自救动机、可用支持资源），共同制定初步安全计划（如遇到强烈冲动时的求助步骤与校园资源）。",
+    "therapist_response": "初次评估与建立治疗联盟",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "8062eb50adbfa3ba341a4a98e11ef4af"
+  },
+  {
+    "case_id": 27,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：共同查看第1次作业“情绪—情境记录”，选取1–2个具体事件，细化诱发因素、即时念头与身体反应，标注本周睡眠状况与放松练习执行情况。; 任务：以时间线为骨架，初步整理“现阶段核心困扰地图”（学习/注意力、睡眠、情绪与无意义感、人际与恋爱、家庭），明确短期目标（如睡眠改善、课业专注度提升、降低自杀意念强度）。",
+    "therapist_response": "初步问题图谱与睡眠/焦虑支持的细化",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "822fa300b7b443cff852bea8ac550e9f"
+  },
+  {
+    "case_id": 27,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检查第2次睡眠与放松执行记录，选取一段情绪波动事件，核对其与睡眠/疲惫的关系。; 任务：以“关键时间线索”框架，细化两个节点——幼年被接回前后的强烈躯体反应，高二暗恋失败后无意义感与自杀意念的上升；将当时的场景、人物、感受、念头逐步从“事实”转向“情感词”。",
+    "therapist_response": "澄清关键时间线与识别阻抗（情感隔离）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "d67cd495369946798cdaca84f4623cf5"
+  },
+  {
+    "case_id": 27,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：重访第3次的关键时间线与阻抗识别，评估“情感词”的可用度与谈及童年片段时的可承受性。; 任务：以最近一次暧昧或表白情境为材料，重建互动细节（对方反应、自己的内心对话、身体反应），识别“全好/全坏”的分裂式评估与不确定性引发的危机感。",
+    "therapist_response": "识别客体关系与此时此地的移情；处理恋爱中的分裂",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "d15dc2e82e03356cc2a5e1cfbc650648"
+  },
+  {
+    "case_id": 27,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查第4次“灰度耐受”练习的执行与体验，复盘一次未拉黑而是延迟决策的尝试及其情绪变化。; 任务：把“读研读博、年薪百万”的宏大逻辑拆解为具体场景与内心感受，识别在压力与羞辱感上升时转向条理化推演的理智化防御。",
+    "therapist_response": "解释核心冲突与自恋性理想；识别理智化防御",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "8961960a8c847b7922c90d4026b0b5a4"
+  },
+  {
+    "case_id": 27,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：评估第5次的“现实检验与自尊调节”微实验执行情况，记录本周获得的小型正向反馈与其主观意义。; 任务：在成长叙事中主动搜寻被忽略的温暖片段与社会支持资源，将过去的黑白叙事补充为有色多维故事（家庭中的被关照时刻、亲属支持、人际中的被邀请体验、与姐姐的信任）。",
+    "therapist_response": "整合积极资源与重构生命故事",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "dadcfdb5bc0788f351d0a4dcf7f69167"
+  },
+  {
+    "case_id": 27,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：检视第6次的“每周三个微小希望事件”与资源运用清单，评估其对情绪与行为的影响。; 任务：现实检验——在人际与学习两个维度设置一周可达目标（如与舍友主动开场一次、完成英语学习计划），记录执行率与情绪曲线。",
+    "therapist_response": "巩固改变与现实检验（关系、学业与情绪管理）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "69ba881c8a387d0c0e8350ceba58e020"
+  },
+  {
+    "case_id": 27,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：整体回顾8次咨询的关键节点与能力增长（情感命名、阻抗识别、分裂整合、理智化减弱、资源唤醒）。; 任务：制定个性化复发预防计划（触发情境清单——恋爱不确定、学业压力、单独昏暗房间；可能防御——分裂/情感隔离/理智化；可用策略——情感命名、灰度耐受、呼吸放松、现实检验、求助清单与紧急联系人）。",
+    "therapist_response": "复盘与复发预防计划；结束与告别",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "de6e5dbc167a3dd6afc44510a345c3ed"
+  },
+  {
+    "case_id": 28,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（例如：“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）。询问并记录来访者姓名（高某）、年龄、教育与家庭状况、当前学习生活状态与医史。; 任务：建立安全、抱持性的咨询框架；澄清保密边界与会谈结构，邀请自由联想与具体叙述其近半年社交恐惧的症状表现与影响。",
+    "therapist_response": "建立治疗联盟与初步评估（Intake）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "50aec1dd769586625bf360f80dd569cf"
+  },
+  {
+    "case_id": 28,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：复盘上次对主诉与基本信息的初步评估，确认并细化近期与长期咨询目标。; 任务：详细采集生活史与成长经历，围绕家庭结构与抚养风格、学校过往体验、进入大学后的室友与课堂经历进行叙述与澄清。",
+    "therapist_response": "生活史与成长经历的探索，明确目标与初始作业",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "0ffdf813a0c4e9e8acb4d0b7d6abab57"
+  },
+  {
+    "case_id": 28,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：检查上次家庭作业（社交情境记录、睡眠与情绪记录），标出高紧张场景与自动化思维。; 任务：心理教育——讲述社交恐惧与焦虑的一般知识、症状机制、治疗安排与作业要求，强调治疗并非一帆风顺，需要坚持与逐步挑战。",
+    "therapist_response": "社交恐惧的心理教育与移情识别（投射）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b6c6316d1e16b0dcb839cb5dbedf6819"
+  },
+  {
+    "case_id": 28,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：检查上次暴露作业与情绪监控表，评估紧张梯度与思维变化，强化任何正向尝试与微小进步。; 任务：针对回避行为进行治疗——解释回避的致病机理，继续安排中等强度的现实暴露练习，并即时记录“触发—思维—情绪—行为”链条。",
+    "therapist_response": "回避行为的暴露练习与防御识别（理智化、转向自身）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "debedc80f50d55bec17fb08118edd670"
+  },
+  {
+    "case_id": 28,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检查第4次的暴露作业与记录，总结有效的自我安抚与认知重评策略，肯定可迁移的经验。; 任务：教授并巩固放松技术（腹式呼吸/渐进性肌肉放松），将放松前置到每次暴露前后使用，提升生理层面的自控与耐受。",
+    "therapist_response": "放松训练与恐惧等级构建，巩固新的人际体验",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "01f62518e7998b8a0d9f1672a999723f"
+  },
+  {
+    "case_id": 28,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：总结三阶段咨询过程中的关键收获与变化，复盘暴露练习、认知重评与放松训练的有效经验。; 任务：制定复发预防计划——识别高风险情境与早期预警信号，列出个性化应对策略（放松、自我对话、寻求支持、逐级暴露），明确自我监控与跟进安排。",
+    "therapist_response": "复盘与巩固，复发预防与终结",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "34ac1ea36382947229d576d9076ee907"
+  },
+  {
+    "case_id": 29,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名（请问您的名字是？我可以称呼您为爱蜜莉吗？）、年龄、工作与受教育经历、家庭与婚姻状况、当前居住与社会支持、过往医疗与心理史、主诉与期待。; 任务：建立安全的治疗框架（频次、时长、费用、保密与界限），邀请自由联想并允许停顿，以降低初始紧张。",
+    "therapist_response": "初步评估与建立治疗联盟",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1fc085ba6efdcb77e6ec2dbd0664554a"
+  },
+  {
+    "case_id": 29,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：总结第1次关于基本背景与求助目标的发现，确认“当好母亲”与情绪稳定为近期核心目标。; 任务：共同完善治疗契约（每周频次、迟到/缺席处理、费用与边界），使关系可预期、可承受。",
+    "therapist_response": "框架澄清、资源盘点与目标细化",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "f109ada57b35a96e3e14320f88ca5b1d"
+  },
+  {
+    "case_id": 29,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查第2次的情绪监测作业，聚焦分离/不确定情境下的波动与求助方式。; 情境：在会谈中微调时间与边界，观察此时此地的反应（如担心休假、迟到的想象），辨认“你会抛弃我”的自动念头。",
+    "therapist_response": "澄清分离触发与投射性认同：此时此地的移情工作",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c3d9bd2942a26c0a8f60b5e5c8c2860f"
+  },
+  {
+    "case_id": 29,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检视第3次的分离安全计划执行与体验；辨识在一周内出现的理想化—贬损的摆动。; 任务：点名并书写“全好/全坏”语言与行为线索，练习在会谈中同时容纳正负印象与复杂性。",
+    "therapist_response": "面质理想化/贬损的交替（分裂）与边界稳定",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "6e973340d27408f99819bfa7996d2418"
+  },
+  {
+    "case_id": 29,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：整理过去一周的梦与饮食行为记录，标注羞耻、内疚与自我攻击的时刻。; 情境：讨论反复出现的“恶心/秽物”梦与被评判外貌时的感受，连接叔叔事件与当下身体控制的意图（调节距离/吸引注意）。",
+    "therapist_response": "将梦与身体症状连结到客体关系与核心冲突；识别自我攻击",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "dead10d91c7bf57215bd965051d2bff4"
+  },
+  {
+    "case_id": 29,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查第5次的客体关系图谱与自我攻击作业，关注谈及女性幻想时的“恶心/罪疚”。; 任务：以探询与共情的语气区分“祖母的内在声音”与“自己的欲望”，标注何时在心中“让祖母活着”。",
+    "therapist_response": "处理祖母内在化与女性性欲的冲突；区分内在禁令与自身欲望",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "8b88bd283b67063b041e2405a51d9983"
+  },
+  {
+    "case_id": 29,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：梳理第6次在性欲与祖母内在化上的区分收获，标注一周内对治疗师的理想化/怀疑并存时刻。; 情境：在会谈中直接讨论对咨询师的好感与顾虑，练习将理想伴侣幻想与现实他者区分，同时保留关系的复杂性。",
+    "therapist_response": "此时此地的情欲移情下的整合：允许爱与恨并存",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "cbcb4983161269bf92f2c339f79f9fca"
+  },
+  {
+    "case_id": 29,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：整合第3—7次的关键技能（澄清、面质、解释、情绪记录），回看最近一次小型分离/误解的应对。; 任务：演练“意外缺席/迟到”脚本，应用分离安全计划与复杂化叙事，监测互补性反移情的变化。",
+    "therapist_response": "巩固分离容忍与安全计划；技能泛化",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "23b8b6392f69bb522e086087ba0cc80b"
+  },
+  {
+    "case_id": 29,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：检视第8次的演练与预案，总结本阶段最有效的自助与求助策略。; 任务：共同完成个人化复发预防手册（触发—防御—替代行为—支持资源—自我同情语句—现实检验清单）。",
+    "therapist_response": "复发预防与结束准备：传承“不接受绝望”的遗产",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "6853f317c4c59f8554cbabc669148230"
+  },
+  {
+    "case_id": 3,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“我们今天以您的节奏开始，可以先请您告诉我您的姓名‘李航’，是什么促使您此时来咨询？您期待通过咨询得到哪些改变？”）; 任务：询问并澄清基本信息：年龄、职业、教育经历、婚姻与家庭状况、社会支持与风险、既往病史与用药史等，并在来访者许可下记录。",
+    "therapist_response": "建立治疗联盟与初步评估（从零起步）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "d2b51f3631671bf7f481361af7c5e494"
+  },
+  {
+    "case_id": 3,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：简要回顾上次达成的联盟与设置，确认会谈目标与作业完成情况。; 任务：引导‘李航’完整叙述最近的一个梦（如村庄修桥等），不打断、不急于解释。",
+    "therapist_response": "梦的自由联想与关键意象收集",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "e7956b7abfdfca3499f689bcf6196e5f"
+  },
+  {
+    "case_id": 3,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查梦与情绪记录；回看上次梦工作中与‘怀疑/否定’相关的片段。; 任务：在此时此地，当触及‘自我怀疑/自我否定’时，邀请‘李航’放慢、描述当下的情绪、躯体感觉与想法；若出现迅速转回‘行动/目标’话题，温和标注这种转移。",
+    "therapist_response": "识别并命名对‘自我怀疑’的防御与此时此地的移情",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "272a9ec2705c31257829dbbe7a1ef91a"
+  },
+  {
+    "case_id": 3,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：检视‘情绪→行动’记录，讨论一次成功停留情绪的经历与一次困难情境。; 任务：重访梦中‘摄影师—不配合的孩子’片段；采用‘角色互换/两椅想象’短练习，让‘李航’分别从摄影师与孩子的视角表达想法与感受，捕捉挫败、控制与被控制的主题。",
+    "therapist_response": "从梦意象到人际图式：摄影师与‘不配合的孩子’",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "71f205a74cd8c2a31f025dd0f2413efc"
+  },
+  {
+    "case_id": 3,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：讨论‘摄影师—孩子’在现实中的一次记录，梳理其结果与感受。; 任务：在此时此地，提炼‘李航’的核心愿望（更真实地跟随内在声音、维持行动性）与核心恐惧（失控、受挫、被规范束缚），形成可被其认可的动力学 formulation。",
+    "therapist_response": "整合核心冲突：在内在驱力与外在规范之间寻找动态平衡",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "5d01fae76dffb2f54947ed484f8c469a"
+  },
+  {
+    "case_id": 3,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：分享‘暂停—感受—选择’在真实场景中的应用与反馈，识别有效与卡顿点。; 任务：共同设计一个低风险的‘礼貌表演/摆拍’情景（如工作中的礼貌性请求、家庭中的体面表达），进行角色扮演与语言打磨，关注内在触发的‘假/真’冲突。",
+    "therapist_response": "现实中的‘礼貌表演’：在不失自我的前提下试探社会规范；识别合理化",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c666159b871fab443f555b7fb697ba68"
+  },
+  {
+    "case_id": 3,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：汇总阶段二的关键收获（识别压抑与合理化、防御的功能与代价、核心冲突的命名、‘暂停—感受—选择’与‘礼貌表演’的可行度）。; 任务：制作‘双轨调节’清单：A轨（内在自我）—觉察、命名、安抚；B轨（对外互动）—礼貌且不失真表达、边界与弹性。",
+    "therapist_response": "巩固整合：情感容纳与关系调节的个人化方案",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "313cd152a82e9178d803dfca57fdee58"
+  },
+  {
+    "case_id": 3,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：对整个过程的意义进行双向评估：哪些时刻最有帮助？哪些仍具挑战？; 任务：制定复发预防图谱：高风险触发（规范审视/自我怀疑）—常见防御（压抑/合理化）—替代策略（停留—命名—选择/礼貌但真实的表达）。",
+    "therapist_response": "复发预防与终结：早期预警、支持系统与后续安排",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "24f8d55e5d16255e728521c7f53ac258"
+  },
+  {
+    "case_id": 30,
+    "intervention_type": "Defense Analysis",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）; 询问并记录基本资料：姓名（房某）、年龄（21岁）、职业/学业（某高校在校大学生）、教育经历、婚姻状况、家庭结构与重要关系、社会关系现状、医学史与睡眠状况。",
+    "therapist_response": "建立治疗联盟与初步评估",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "bc5497a26983969832c2207a4c1244b5"
+  },
+  {
+    "case_id": 30,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：总结上次初评的重点与来访者的期望，核对睡眠、情绪与日间功能的变化。; 任务：以可理解的语言科普抑郁症“三低”与用药规律、可能的早期不适，强调遵医嘱与复诊的重要性。",
+    "therapist_response": "医学科普与双重治疗联盟（药物+心理）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c3b6b1793f1e51871a7823645e7ecc75"
+  },
+  {
+    "case_id": 30,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：确认用药与睡眠的最新情况，评估上次科普带来的理解与安心度。; 任务：采用自由联想与非结构化叙述，梳理早年家庭与学校经验，记录关键事件与当时的主观感受与意义。",
+    "therapist_response": "自由联想与成长史初探：建立问题的历史脉络",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "9c04abc674e2f8bd2a7c68eaebcc7dc9"
+  },
+  {
+    "case_id": 30,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：整理上次时间线中的关键节点与感受词，确认来访者的情绪承受度。; 情境重建：细化“母亲计划不带两个孩子离开”的场景，聚焦当时的恐惧、紧抓与求生意志的体验。",
+    "therapist_response": "成长创伤的具象化与意义化：‘被抛下’与情感失调",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "033a82cdf9260e5df6bdcdf366a5c932"
+  },
+  {
+    "case_id": 30,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：核对上一节对早期“被抛下”体验的理解，连接其与当前选择的关系。; 任务：围绕“零薪酬打工”进行澄清—面质—解释三步，探索背后的自尊威胁与被拒绝恐惧。",
+    "therapist_response": "自我体验与自尊调节：面质‘零薪酬打工’的合理化",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "2b155c8ef6943af2c429173599993562"
+  },
+  {
+    "case_id": 30,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：总结对“零薪酬打工”背后动机的洞见，观察其对自尊与选择的影响。; 任务：温和面质来访者否认愤怒的自动化反应，协助标注愤怒的身体线索与触发情境。",
+    "therapist_response": "防御识别与修通：否认愤怒与分裂性评价",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "54983396fca476a11428902b009c542e"
+  },
+  {
+    "case_id": 30,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：讨论一周记录中的否认与分裂片段，确认最具代表性的互动场景。; 角色扮演：重演“室友巧克力”事件，咨询师扮演室友，来访者练习换位思考与感受探询。",
+    "therapist_response": "此时此地的移情与角色扮演：投射与对咨询师的否认/质问",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "172d5aed183e2e92218bacb4236063f9"
+  },
+  {
+    "case_id": 30,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：整合上次角色扮演与核心冲突的理解，确认其在人际中的具体改变。; 任务：将父母与自我表征并置对照，练习把“既好又坏”整合进叙事，减少单一化归因。",
+    "therapist_response": "客体关系整合与沟通训练：与父母的理解与修复",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "6ed9ad58ed0cde5b269c0e46cb832e13"
+  },
+  {
+    "case_id": 30,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：总结近期在睡眠、人际与学习上的改善，评估哪些策略最有帮助。; 任务：识别与讨论对结束的情绪（不舍、担心、感激），解释把咨询师当作“理想的妈妈”的移情意义与示范功能。",
+    "therapist_response": "结束与复发预防：处理分离、巩固自我与人际改善",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "d16d34ce48e9cbc4902e1af98f35977e"
+  },
+  {
+    "case_id": 31,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名与身份、主诉与期待（如“我们今天可以从了解你开始：你叫什么名字？你现在的学习与生活是怎样的？”“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）; 任务：共同梳理目前最困扰的议题（围绕“我是不是应该恨爸爸”“接受爸爸的爱会伤害妈妈吗”），以来访者语言为主线记录关键情境与情绪反应",
+    "therapist_response": "初始访谈与联盟建立：开放式探索背景、主诉与期待，确定初步焦点",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "21cfd7926ea5be691bca745b3b456213"
+  },
+  {
+    "case_id": 31,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查上次达成的初步目标与体验记录，来访者分享近期与父亲联系时的心情与躯体感受; 任务：以具体情境为单位，区分“我应该恨爸爸”（认知判断）与“我其实感到温暖/愧疚/害怕”（真实情感），用低速与具象化语言协助落地到体验层面",
+    "therapist_response": "澄清“接受父爱=伤害母亲”的认知混淆，初步区分‘应该’与‘感受’",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b54a573ce2e15626fce2661191801e75"
+  },
+  {
+    "case_id": 31,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检查上次作业，逐段对比‘脑子里想的’与‘心里实际感到’的差异，标注出现“应该/不应该”的时刻与效果; 任务：降低抽象度，邀请描述一次具体来电的场景（地点、语句、语气、身体反应），以慢速、短句支持其接触被回避的情绪",
+    "therapist_response": "识别并调节理智化防御：从抽象‘应该’回到具体体验与身体感受",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "9061a53af87e75793cbbf1eb970d9988"
+  },
+  {
+    "case_id": 31,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：从上次体验化记录中挑选一段，与“用道理抵消情绪”的理智化样本进行对照，观察其短期缓解与长期代价; 任务：角色与关系板（你与父亲、父亲与母亲、你与母亲），逐一命名‘关系不一样，角色不一样，要求也不一样’，以场景化问答加深理解",
+    "therapist_response": "重构客体关系与边界：区分‘父女’与‘夫妻’关系，并理解反向形成",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "797b05390a9fed840673e15c05c5bff0"
+  },
+  {
+    "case_id": 31,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检视上次角色—关系板的理解与小步行动的执行情况，标注并存情绪的书写体验; 任务：明确愿望—恐惧双线叙事（我想接受父爱/我怕让妈妈受伤而被不要），在咨询室内以短句与停顿容纳矛盾情感",
+    "therapist_response": "整合愿望与恐惧：在接受父爱中规划与母亲的告知与界限对话，处理压抑",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "2b3895a4b5e9f92d36f1cb70fd1ffe31"
+  },
+  {
+    "case_id": 31,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查端午节计划与与母亲沟通的实际执行与感受，评估哪些策略最有帮助; 任务：复发预防图谱——为三类触发情境分别制定对策（出现‘应该/不应该’时的降抽象表、出现‘我必须恨爸爸’时的并存情绪卡、需要告知母亲时的三步沟通脚本）",
+    "therapist_response": "技能巩固与复发预防：构建情绪调节与界限维护的自助方案",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "d5c05aa309c678f1b8e470fa9ca6dafb"
+  },
+  {
+    "case_id": 31,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：总结整个治疗历程中的关键时刻与突破，重述从‘应该/不应该’到‘并存情绪与清晰边界’的变化; 任务：个人支持语与原则卡片——写下三句在困难时对自己说的话，以及两条核心原则（如‘关系不一样，要求也不一样’）",
+    "therapist_response": "整合与结束：回顾成长、巩固自我叙事与告别安排",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "bbdcf3304337ddc8d1ba710ee548e482"
+  },
+  {
+    "case_id": 32,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）。; 任务：建立安全的会谈框架与保密原则，说明咨询边界与会谈安排；询问是否同意必要时进行家属沟通。",
+    "therapist_response": "初次访谈与建立治疗联盟（全面评估）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "37966fe7a8aab0694dd06deee230f943"
+  },
+  {
+    "case_id": 32,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次：总结首访的关键信息与共识，确认治疗目标与会谈框架，复盘厌食相关记录。; 任务：进行意象对话/自由联想，引导描述浮现的意象（如房子、火灾等），仅记录与澄清，不做即时解释。",
+    "therapist_response": "初步洞察与意象对话（保持支持性、避免过早解释）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b5858ea8aa5ffbe8773649f35a85dff6"
+  },
+  {
+    "case_id": 32,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次：梳理意象对话线索（如“钢铁房子”“火灾”）与与父亲相处的描述。; 任务：在此时此地追踪当谈到母亲时出现的情绪与行为变化，标记压抑与回避的时刻。",
+    "therapist_response": "识别阻抗与防御：当谈及母亲时的压抑与回避",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "4d60a9c4480423cde35726c14263c061"
+  },
+  {
+    "case_id": 32,
+    "intervention_type": "Confrontation",
+    "situation": "回顾上次：检查自我观察作业，复盘当谈到母亲时的压抑与回避。; 任务：进行沙盘摆放，允许自由选择人物与距离；观察“小柱与父亲在一起、与母亲相隔却遥遥相望”的构型。",
+    "therapist_response": "沙盘疗法呈现客体关系：依恋母亲与与父亲的联结",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "df5540cfa6936903a14165f732eda4ab"
+  },
+  {
+    "case_id": 32,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次：总结沙盘呈现的母女距离与依恋张力，反馈愿意进行家属信息核实的决定。; 任务：与父亲进行家属面谈或电话核实家庭史，澄清母亲离开的真实原因与长期来信。",
+    "therapist_response": "解释与澄清：家庭史核实与“独立=背叛”的纠缠",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "7136aac36312577aed1e609af061df47"
+  },
+  {
+    "case_id": 32,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次：整合家庭史与“独立≠背叛”的新理解。; 任务：面质与解释核心冲突：一方面强烈渴望与母亲连接、追求独立；另一方面害怕像母亲那样“伤害父亲”，因此选择压抑与疏离。",
+    "therapist_response": "核心冲突整合与症状意涵：愿望、恐惧与防御（转移为厌食）",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "e2845f5c2c9db48ba3e3d30e4b31ef90"
+  },
+  {
+    "case_id": 32,
+    "intervention_type": "Confrontation",
+    "situation": "回顾上次：评估阅读与写信后的情绪释放、与父亲的沟通变化、进食小步实验的反馈。; 任务：巩固自我表征的修正：“我可以同时爱父亲，也可以想念母亲”，编织新的自我—他人叙事。",
+    "therapist_response": "巩固新关系模型与替代性情感表达",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "36afc610392748232f16d8a81b87c59b"
+  },
+  {
+    "case_id": 32,
+    "intervention_type": "Connection Making",
+    "situation": "回顾上次：确认预警信号与应对步骤，回顾进食记录与关系沟通变化。; 任务：复发预防方案定稿：包含情绪监测、进食计划、遇到母亲话题时的自我支持话语与求助路径（学校心理中心/家庭支持）。",
+    "therapist_response": "复发预防与结束：维持计划与告别",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b197ba1928092affdf7d127c18cf68d3"
+  },
+  {
+    "case_id": 33,
+    "intervention_type": "Confrontation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名“李婉晴”、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）; 任务：询问并记录静态特质（年龄、在读年级与学习压力、家庭成员与分工、当前同伴关系与班级适应、既往病史与近期身体状况、婚姻与重要关系状态）",
+    "therapist_response": "建立治疗联盟与初步评估（Intake）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "daa41c80d6e7fdd8d540e53e7ccecc9e"
+  },
+  {
+    "case_id": 33,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：复盘上次初步评估的要点与达成的共识，确认姓名“李婉晴”、主诉与期待，并请来访者补充遗漏信息; 任务：以非评判方式解释此次会谈为高考前心理调研性质，降低被贴标签的焦虑与敏感",
+    "therapist_response": "细化问题与设定合作框架，稳定情绪与信任",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b1e63d4406371fbd15f13f10caf736d8"
+  },
+  {
+    "case_id": 33,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：承接上次的图卡探索约定，简要说明OH卡的由来、规则与边界，确认自愿与可暂停; 任务：让来访者带着情感洗牌并用左手抽取6张图卡，逐张回答“看到了什么/想到了什么/联系现实生活得到的启发”",
+    "therapist_response": "投射工作与早期客体关系的探索（OH卡）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "2ce8f6c497c39a3ded27a568b8a6620a"
+  },
+  {
+    "case_id": 33,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：复盘上次OH卡故事（父子、规则、希望）与结尾卡中的沟通期待，链接到当前学业与自我评价; 任务：温和面质“身体异感—考试成绩—理想自我”之间的单一因果链，邀请来访者阐述并重复其核心陈述“除非身体好了”",
+    "therapist_response": "自我防御机制：面质与解释“除非身体好了”的合理化",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "7412e9497e74d551352b5f4198673435"
+  },
+  {
+    "case_id": 33,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：讨论《万物理论》的观后感，链接“能否主宰身体”与当下的能动性体验，回看“除非身体好了”陈述是否有所松动; 任务：在此时此地辨识理智化（使用“笑阈”“脑部犯晕”等术语）的出现时机与功能，尝试以具体情绪词替代机制解释（羞耻、被视为奇怪的无奈）",
+    "therapist_response": "此时此地的理智化与主客体整合；移情修通与医疗协作",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "fd3a1de6166630a9914ddb07f82cf03f"
+  },
+  {
+    "case_id": 33,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：总结近两周就医结果、身体与学习的最新变化，验证自我观察与现实检验的提升; 任务：复盘并巩固四类防御识别与替代策略清单（压抑—允许沉默与选择权、投射—检验证据与寻找第三方视角、合理化—双路径归因与行动微目标、理智化—命名情绪并保持适度机制解释）",
+    "therapist_response": "巩固自我观察与制定复发预防计划",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "36affb28b94e33acee6ae691d5a34aca"
+  },
+  {
+    "case_id": 34,
+    "intervention_type": "Defense Analysis",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名（李敏）、年龄、教育、家庭、医疗史、主诉与期待（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）; 任务：共同绘制症状时间线，尤其对比在家与在校时疑病担心的频率与强度，记录伴随情绪与行为（称重、测温、查资料等）",
+    "therapist_response": "建立治疗联盟与初步评估；对比在家与在校的症状差异",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "078140ea1e706f626450117df6b4c59c"
+  },
+  {
+    "case_id": 34,
+    "intervention_type": "Interpretation",
+    "situation": "回顾作业：检查在家与在校触发记录，标注最显著的家庭互动与情绪波动; 情境：讨论近期考试压力大时身体不适却未联想到绝症的经历，识别注意焦点与现实检验提高的可能性",
+    "therapist_response": "连接家庭语境与症状意义的初步理解；启动家庭沟通与支持性重构",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "90e1e81fa10d7ef5a9981e38b17df486"
+  },
+  {
+    "case_id": 34,
+    "intervention_type": "Interpretation",
+    "situation": "回顾作业：反馈与父母非健康话题对话的体验，辨识焦虑的变化与家庭反应; 任务：在此时此地觉察当谈到“检查/疾病”时的身体与情绪反应，邀请自由联想至姐姐去世与父母悲痛的记忆",
+    "therapist_response": "阐释焦点冲突与在家-学校差异的象征意义；初步移情觉察",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "272227f3d0b89479c1d87cffb0ac4b20"
+  },
+  {
+    "case_id": 34,
+    "intervention_type": "Confrontation",
+    "situation": "回顾作业：检视写给父母的未寄信中的核心感受与愿望，识别“想安抚父母”的动机; 任务：重演分析（此时此地）：当治疗师询问健康近况时，观察李敏是否自动加速语速、重复担心等，以识别认同性的防御",
+    "therapist_response": "识别并处理在家触发时的“仿同/认同”防御与移情再现",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "173255744a0054dfad94394b4bcf8923"
+  },
+  {
+    "case_id": 34,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾作业：汇报新的回应脚本在家中的尝试效果，评估焦虑与亲密度的变化; 任务：绘制两套客体关系图（在家/在校），标注自体与他人意象及链接情感，比较二者差异",
+    "therapist_response": "客体关系图谱与自体表征重构：在家与在校的双重内在模型",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "a39fb58def388c416f2fc4b36483078f"
+  },
+  {
+    "case_id": 34,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾作业：评估在家实施“在校模型”的行为改变带来的焦虑与互动质量变化; 任务：识别理智化——记录一周内出现“用数据确保安全”的片段，区分信息使用与焦虑驱动的过度监测",
+    "therapist_response": "识别并修通“理智化”与“合理化”防御；制订检查与数据使用的现实策略",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "e227dec712bef01f4ffc65e2bd671618"
+  },
+  {
+    "case_id": 34,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾作业：检查理智化与合理化的替代策略执行效果与情绪波动，修订边界; 任务：复盘核心领悟——把“担心=保护父母与自体”的意义与客体关系图谱整合成个人化叙事",
+    "therapist_response": "巩固动力性领悟与行为边界；家庭沟通方案化",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "86394582d8a60faffd3ab0adfce35029"
+  },
+  {
+    "case_id": 34,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：评估家庭协议试行情况与情绪、功能的持续改善；确认有效策略清单; 任务：复发预防计划——识别高风险情境（在家、被建议检查、被评价外形等）、早期预警信号、应对步骤与社会支持",
+    "therapist_response": "终结与复发预防；自助方案与预警系统",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "e388fc77e3f2bcbe5881608ba17c5c1e"
+  },
+  {
+    "case_id": 35,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）；明确记录来访者姓名：李某。; 任务：共同建立安全的咨询框架（时间、保密、界限、紧急联系与危机评估），营造抱持性的氛围，降低警惕与紧张。",
+    "therapist_response": "初步评估与建立治疗联盟",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "902ecf247798d7d5c9e1fb0e4f8922e9"
+  },
+  {
+    "case_id": 35,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次作业与结论：检查每日情绪记录，标记高波动时段与触发性事件，确认咨询框架的舒适度与安全感。; 任务：将来访者的目标细化为可观察的近期目标（如：每周与同学进行一次正向互动；在情绪波动时能用1种自我安抚策略），明确评估指标与合作契约。",
+    "therapist_response": "明确目标与框架，初步情绪与日常功能评估",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "be03c5bf77bd22e515e678ed38944e9c"
+  },
+  {
+    "case_id": 35,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次作业：检查“情绪观察表”和“人际事件记录卡”，标记与成长经历相关的情绪与记忆片段。; 任务：以非评判的方式整理成长叙事（父母离异、母亲外出、外婆偏爱、城市求学适应、校园霸凌），帮助来访者命名与分辨情绪（伤心、愤怒、恐惧、失望）。",
+    "therapist_response": "叙事探索与情绪识别：成长经历与当下困扰的连接",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "54749126acacff60eb3416d8d639435f"
+  },
+  {
+    "case_id": 35,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾上次作业：检查每日自我肯定练习的执行与感受；复盘一次现实中的小型人际事件与当天的情绪曲线。; 任务：在“此时此地”的互动中识别来访者对探索的回避或否认（例如频繁说“我没事”“不需要”），以面质与澄清的方式温柔指出，同时保持抱持与尊重。",
+    "therapist_response": "此时此地的移情与阻抗：识别并温和面质“否认”，引入放松与运动",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "627f8d7f72d1b6621115b79b5200602a"
+  },
+  {
+    "case_id": 35,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次作业：深呼吸与正念练习的频率与效果、运动落实情况；复盘一次与咨询师的互动中否认减少的片段。; 任务：绘制“自我—他人意象图”（外婆、母亲、同学、重要他人），标注典型情境、情感、期望与回避，帮助区分内在图式与现实他人的差异。",
+    "therapist_response": "客体关系图谱：自我与他人意象的澄清",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "02b8e766430f29e28639240a4ddd543e"
+  },
+  {
+    "case_id": 35,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次作业：检查“自我—他人意象图”的使用体验与新增观察；复盘一次现实互动中意象与情绪的对应。; 任务：将客体关系材料整合为核心冲突结构——识别“愿望”（被稳定关照与接纳）、“恐惧”（再度被不喜欢或被抛弃/欺负）、“防御”（压抑、攻击、疏离/保持距离）。",
+    "therapist_response": "核心冲突的整理与解释：愿望—恐惧—防御的循环",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "5ac26f206b2e367ee8dd09ac3a326655"
+  },
+  {
+    "case_id": 35,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次作业：复盘一例校园互动，标注“愿望—恐惧—防御”的具体呈现；检查情绪调节与自我安抚的使用。; 任务：角色扮演典型挑衅场景，识别投射性解释（把对方视为加害者）发生的瞬间信号；训练停—看—想—再回应的四步法。",
+    "therapist_response": "同伴关系中的投射与反击：替代性反应与边界训练",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "da2a366911ec089f7d714151a3cb4116"
+  },
+  {
+    "case_id": 35,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾上次作业：校园角色扮演的效果与现实应用反馈；回看一次未升级的互动并标注有效策略。; 任务：在支持性关系中探索对母亲的复杂情感（渴望、失望、愤怒与理解），区分母亲的现实处境与内在意象，减少一概而论的归因。",
+    "therapist_response": "重新构建亲密模板：理解母亲并尝试和解",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "fd603afd455f18359a34ffba9c48f64d"
+  },
+  {
+    "case_id": 35,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾上次作业：母亲相关的低风险接近或书信练习的体验与自我安抚效果；总结近期校园互动的改进点。; 任务：整合已学技能（情绪识别、呼吸与正念、运动、自我肯定、边界与替代性反应），制定个人化“复发预防计划”。",
+    "therapist_response": "巩固与迁移：技能整合、复发预防与学校适应计划",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "f605d18fa836cb653c628467610a137d"
+  },
+  {
+    "case_id": 35,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾上次作业与整体咨询历程：总结从初始困扰到当前变化的关键节点与自我功能提升（联盟、情绪识别、关系技能、和解尝试）。; 任务：制定维持计划（每周运动与正念、每日自我肯定、情绪与人际事件记录）、明确遇到困难时的求助路径（班主任/心理老师/亲友）。",
+    "therapist_response": "终结与维持：回顾变化，制定后续自助与支持资源",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "589430be190f88539c5816de4cd8f80d"
+  },
+  {
+    "case_id": 36,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）。; 任务：共同澄清本次求助聚焦的人际恐惧与相关影响（在家、外出、与异性互动、出现幻听的情境）。",
+    "therapist_response": "建立治疗联盟与初步评估（从零起步）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b6570c67c4bc9c335b1057aaf8c1cce8"
+  },
+  {
+    "case_id": 36,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：核对第1次的诊断理解与作业完成度，提炼生活史中的关键线索（不深入细节、维持安全感）。; 讨论点：通过具体对话与类比（如“大人 vs 三岁小孩听到口袋里掏出老虎”的例子），帮助来访者辨识“把偶然当必然”的思维与症状的幼稚性。",
+    "therapist_response": "识别症状的“幼稚性”与大我/小我二元，自我观察与认知领悟的启动",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "02590c41aacc1410d453a75d645b9272"
+  },
+  {
+    "case_id": 36,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：作业检查——在家与父兄的相处是否更自然、遇到男性时的自动念头与情绪记录。; 技术：空椅子法——先扮演“小我”陈述症状的合理性，再扮演“大我”以理性与现实证据批判其幼稚性，形成内在对话的可视化。",
+    "therapist_response": "空椅子技术：强化成人立场，分化“大我/小我”并巩固初步改善",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "0b52efd0d06d0d252eac6b9337bbf1ff"
+  },
+  {
+    "case_id": 36,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：空椅子练习与在外情境的自动念头记录，梳理何时更容易被“小我”接管。; 技术：此时此地的面质与澄清——当来访者认为他人“在看穿/针对”时，邀请描述具体证据，辨别推论与事实。",
+    "therapist_response": "行为实验与防御识别：针对“被看穿/被针对”的投射与压抑",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1ac827bfd67613a3574b5705c62f3adb"
+  },
+  {
+    "case_id": 36,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：行为实验/调查的结果与他人反馈（被证明“并未看穿/并未针对”），体验到轻松与紧张下降的部分。; 讨论点：标注此前在被询问性经历时出现的否认与回避，理解其保护功能（避免羞辱与被评判）。",
+    "therapist_response": "克服阻抗与儿童性经验的再诠释（否认→承认→自我宽容）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "afef694ee648f3551ef62ba188fd6f7c"
+  },
+  {
+    "case_id": 36,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：在披露成长经历与调查后的感受变化，辨识羞耻与恐惧的核心主题仍在何时被激活。; 技术：在此时此地观察与命名移情（如担心被咨询员评判），解释其来源于早年的他人意象与自我意象的重演。",
+    "therapist_response": "客体关系与核心冲突的识别与解释；此时此地的移情探查",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "0ca2fabbcfeeaaf52990a350e2ea4479"
+  },
+  {
+    "case_id": 36,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：核心冲突与客体关系图式在一周内的触发记录及成人立场的应用效果。; 任务：制定分级暴露层级（家门口散步—与老年男性对视—在商店购物—在人多处停留—与同龄异性简短互动），每步配套“领悟语句+证据搜集”。",
+    "therapist_response": "巩固领悟与扩展现实检验：分级暴露与人际通行练习",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "0ab8e5b0f4bbc17fb5918033afde5ec0"
+  },
+  {
+    "case_id": 36,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：暴露层级的完成度与主观不适度变化，盘点最有效的领悟语句与现实检验证据类型。; 任务：整合“成人立场—自体分化—防御识别—现实检验—行为实验”的复盘模板，形成每周自我监测表。",
+    "therapist_response": "复盘技能与复发预防计划，治疗总结与结束",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "8da967707a719e8f3aed129c36c8ae82"
+  },
+  {
+    "case_id": 37,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“王慧，欢迎你来。是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）。; 任务：进行初步心理评估与临床访谈，梳理症状的出现时间线、触发情境（课堂、街上、电视）、对学习与生活的影响。",
+    "therapist_response": "建立治疗联盟与初步评估（介绍认识领悟疗法与框架）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c68bb3801a7c8fc711a1c3f6c8cbee0e"
+  },
+  {
+    "case_id": 37,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次作业：共同阅读并梳理回忆录中的关键片段（尤以10岁事件为中心），记录当时的自动化认知与身体感受（脸红、发热、羞耻）。; 讨论：区分“当时的儿童式看法”与“现在的成人式理解”，通过苏格拉底式提问与引导性对话探究视角差异（如“你现在是成人还是儿童的看法？”）。",
+    "therapist_response": "回顾作业与识别儿童式道德化视角（促成初步领悟）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "cbc9af12e6491ddba0ce35ee0299e271"
+  },
+  {
+    "case_id": 37,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次作业与结论：患者报告症状显著减轻与“明白了”体验；共同检视记录表中的触发点（课堂、街上、电视）与即时自我对话。; 任务：在治疗现场与近期生活中标记三类防御的出现时机、语言表达与身体信号（脸红、紧张），形成“触发-反应-后果”链条。",
+    "therapist_response": "症状缓解后的防御识别与触发情境地图（此时此地观察）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "8ed0cae12feb3297e8e9daba495a5529"
+  },
+  {
+    "case_id": 37,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次练习：汇总一周中出现“道德化”语言的场景与感受变化，识别反向形成的启动语句与身体线索。; 面质与解释：指出“过度道德化”如何与“孩子式的自我—他人表征”相互强化，解释其保护功能与成本（紧张、退缩）。",
+    "therapist_response": "面质与解释反向形成：从“道德化”到成人式理解",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "fa01dbba5af278272882c789950e87be"
+  },
+  {
+    "case_id": 37,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次练习：筛选出现“他让我不自在”的情境，区分外在刺激与内在感受的界限。; 解释：指出投射如何把不被承认的好奇与紧张归咎外部，短期减少自责，但长期维持症状循环。",
+    "therapist_response": "探讨投射与愿望-恐惧-防御的关系（深化领悟）",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "3581e07d87b4c2feb8ed8b1b98eb5519"
+  },
+  {
+    "case_id": 37,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾上次作业：检视将内在体验“收回”的三次练习成效与困难，识别仍倾向快速压抑的节点与语言。; 解释与面质：指出压抑如何短期降低焦虑却阻断领悟与情绪加工，形成“越压越返”的症状循环。",
+    "therapist_response": "识别压抑与允许感受的成人式容纳（巩固与泛化）",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "e0380ae1934b0ec8c0da20ee6b168fdd"
+  },
+  {
+    "case_id": 37,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：总结三类防御（反向形成、投射、压抑）的识别与替代策略，巩固成人式语言与容纳流程的关键要点。; 整合：复盘愿望—恐惧—防御图式的个体版本，明确高风险情境清单（课堂、街上、电视），制定对应处置卡的使用节奏。",
+    "therapist_response": "整合领悟与复发预防计划（自我监测与修通持续化）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "a1f50efc98b366ad23dc005466a17d04"
+  },
+  {
+    "case_id": 38,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）。请确认来访者姓名为王强。; 澄清问题性质：回顾既往泌尿外科与性病门诊检查与化验均正常，初步界定为心因性勃起障碍。",
+    "therapist_response": "建立治疗联盟与初步评估（Intake）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "48fecea09115639d293f89236096521b"
+  },
+  {
+    "case_id": 38,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次的家庭作业（个人生长经历回忆录），以自由叙述方式呈现发展史，关注羞耻、负罪与焦虑等核心情感。; 探讨“8、9岁母亲为其脱衣洗澡”的体验所带来的难堪与“罪过”感对当前婚姻中的可能影响线索，暂不下定论。",
+    "therapist_response": "叙述成长经历与症状关联的初步整合（不触及核心冲突的解释）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "84169bf5122b77b5cc568bc3ea1f5eae"
+  },
+  {
+    "case_id": 38,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次发展史要点与情感反应，确认无器质性病因基础。; 此时此地工作移情：帮助王强识别将妻子体验为“母亲”的不恰当等同，链接到8、9岁母亲为其脱衣洗澡的记忆与羞耻。",
+    "therapist_response": "认识—领悟：解释移情、客体关系与核心冲突；从“儿童模式”向“成人模式”转化",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "0c8937ead977c476539638d07f45766f"
+  },
+  {
+    "case_id": 38,
+    "intervention_type": "Interpretation",
+    "situation": "回顾与巩固上次的领悟与自我定位，确认妻子愿意协作进入练习阶段。; 为夫妻讲解性生理与性心理的基本知识，澄清“合法、被许可的亲密”的安全框架与边界。",
+    "therapist_response": "夫妻协作与性心理/性行为技术指导；在此时此地替代防御、恢复亲密",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "244df80aa26e0b086f2dfd777510404b"
+  },
+  {
+    "case_id": 38,
+    "intervention_type": "Connection Making",
+    "situation": "回顾夫妻练习的过程与结果，王强与妻子反馈“已顺利完成性交，性功能恢复”，共同总结关键促进因素与有效步骤。; 巩固新自我表征与关系脚本：将“成人丈夫—被许可的亲密”作为核心定位；总结有效的情绪调节与沟通方式。",
+    "therapist_response": "复盘巩固与复发预防计划；维持成人亲密与自体整合",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "271d31310441e0afcaa2e77dc5788656"
+  },
+  {
+    "case_id": 39,
+    "intervention_type": "Defense Analysis",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（例如“可以请您先介绍一下自己吗？您的名字是王芳？是什么促使您此时来咨询？您希望通过咨询获得哪些改变？”）; 任务：明确恐惧症状的具体表现、频率、起始时间与影响范围（工作、家庭、社交），形成初步问题清单。",
+    "therapist_response": "建立治疗联盟与初步评估（Intake）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "93ba4a1f8d60f2395b43b06ddcd4eb0c"
+  },
+  {
+    "case_id": 39,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：总结上次会谈的要点与感受，确认初步目标与会谈框架对您是否足够安全和可控。; 任务：共建症状时间线，标注出现高峰的情境与当时的思维/情感/身体反应，区分慢性恐惧与急性触发。",
+    "therapist_response": "整理症状时间线与功能分析，明确近期诱因",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b9dd7328177354b5f1c4d6f87183d576"
+  },
+  {
+    "case_id": 39,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查上次时间线作业中的关键节点与感受，特别是童年事件回忆后的情绪波动与安全感。; 任务：引导形成“早期事件如种子、成人期灾难与医院刺激为板机”的假说，邀请来访者用自己的语言描述其合理性与疑问。",
+    "therapist_response": "链接成长经历与成人期触发：‘种子—板机’模型",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "a38c4ed2d8b87b9b95bf85b910afba8c"
+  },
+  {
+    "case_id": 39,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：总结‘种子—板机’模型的共识与疑虑，确认谈到灾难与医院题材时的可承受度。; 任务：以通俗语言讲解‘固着（fixation）’概念，探讨某一主题的认知与情感如何停留在童年水平，并请来访者举例说明“像小孩子”的具体表现。",
+    "therapist_response": "解释‘固着’与客体关系再演：恐惧如何卡在童年水平",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "112026e4db4121a184eb146b8b20ce93"
+  },
+  {
+    "case_id": 39,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：核对上次关于‘固着’与客体关系的理解，回看本周是否出现“像小孩子”的瞬间与其影响。; 任务：在安全框架内微量接近童年事件细节，记录出现“记不清、想转移”的时刻，标注主观危险感与身体反应。",
+    "therapist_response": "防御机制工作（I）：压抑与回避对童年记忆的影响",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "77a944854d32d78c3d52f50abc1b6d66"
+  },
+  {
+    "case_id": 39,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检查上次对压抑与回避的观察记录，讨论其在本周生活中的具体影响。; 任务：绘制‘独处触发—退行—寻求陪伴—短期缓解/长期维持恐惧’的循环图。",
+    "therapist_response": "防御机制工作（II）：退行与依赖——独处时的安全感重建",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ce0d3ba0185bc3ac7f4399300c9d16bf"
+  },
+  {
+    "case_id": 39,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：复盘独处分级暴露与自我安抚脚本的执行情况，评估成人自我功能的变化。; 任务：面质与重构‘合理化’的链条，区分事实性风险与情感性推论，练习替代性叙述（承认恐惧同时选择可承受的接触）。",
+    "therapist_response": "防御机制工作（III）与整合：合理化、现实检验与核心冲突的情感性领悟",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "8ca2b4a3fd0baeda25470e93d75e0072"
+  },
+  {
+    "case_id": 39,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：整合上次情感性领悟后的变化，确认在医院/灾难素材与独处场景中的可承受暴露层级。; 任务：完成个性化暴露与自我安抚脚本（包含预备、暴露中、暴露后复盘三个阶段），将领悟转化为可操作步骤。",
+    "therapist_response": "巩固领悟与技能化：暴露脚本、哀伤加工与自我支持",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "eedaf5f2fbde19cb2a7a1c3df4843090"
+  },
+  {
+    "case_id": 39,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：评估整体改善与剩余挑战，复盘分级暴露与自我安抚脚本的应用成效。; 任务：制定个性化复发预防计划：列出高风险情境与早期预警信号（压抑、退行、合理化），配套即时干预步骤与求助渠道。",
+    "therapist_response": "复发预防与结束性工作：自我监测、移情回顾与维持计划",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "e83ffc04a10ce60a5cebd21e4a7c628d"
+  },
+  {
+    "case_id": 4,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景与主诉，询问姓名（宋某）、年龄、学业与职业学校适应状况、家庭结构与早期分离经历、当前社交与学习受损情况及就医/测评经历；提问“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”; 建立保密与时间框架：说明咨询时间、费用、请假规则与保密例外，增强安全与可预期性。",
+    "therapist_response": "建立治疗联盟与初步评估（从零开始）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "8d1ef1b35c98228aadddf300624af654"
+  },
+  {
+    "case_id": 4,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾上次要点：确认对保密、时间设置与合作方式的理解，核实核心主诉与功能受损的优先级。; 反馈标准化测评（依据病史所含SCL-90、SAS、SDS结果）与初步诊断为社交恐惧，澄清与正常羞涩的区别。",
+    "therapist_response": "测评反馈与目标协商，制定综合治疗路径",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "0954c4d1a615727359486ab59513a1ae"
+  },
+  {
+    "case_id": 4,
+    "intervention_type": "Interpretation",
+    "situation": "承接：简短回顾测评反馈与目标，核对上周情境记录卡的填写与疑问。; 自由联想：围绕“初二看前座女生—老师拍桌子—被严厉目光看穿”的链条，邀请在安全环境中描述当时的身体感觉、画面与未说出口的想法。",
+    "therapist_response": "自由联想与情绪宣泄；识别与异性交往相关的非理性思维",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "a5f7a0d81aa6fa9b0c4f221f50e73fbf"
+  },
+  {
+    "case_id": 4,
+    "intervention_type": "Interpretation",
+    "situation": "承接：回顾上次自由联想与记录卡，标注出现频率高的情境与自动思维。; 核心冲突工作：帮助命名“渴望靠近—害怕被看穿/羞辱”的内在对立，联系青春期对异性的自然需要与内在禁令。",
+    "therapist_response": "连接童年经验与当下关系：核心冲突、客体关系与防御识别",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "7f09c82300938d17d5c6a18a0e0b42dd"
+  },
+  {
+    "case_id": 4,
+    "intervention_type": "Confrontation",
+    "situation": "承接：复盘与父母的沟通与记录卡，梳理“靠近—害怕被看穿”的情绪曲线与回避链条。; 想象暴露：在咨询室内引导想象“身处人多场所被注视”的场景，标注SUDS（主观痛苦单位）随时间的变化。",
+    "therapist_response": "行为矫正：想象暴露与放松训练，启动系统脱敏",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "f9711c1642da8814bd01c52b55e27500"
+  },
+  {
+    "case_id": 4,
+    "intervention_type": "Connection Making",
+    "situation": "承接：回顾一周想象/现实暴露与致电练习的数据（持续时间、SUDS、是否使用放松），识别恐惧峰值与习惯化拐点。; 合理化识别：捕捉“我不看别人就没人看我”等原则化叙述，区分真实安全评估与防御性辩解；进行证伪讨论（列证—反证—更平衡的替代信念）。",
+    "therapist_response": "现实暴露与认知矫正：识别并修通合理化防御",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1d218d9af95512dfa365352b2460b76d"
+  },
+  {
+    "case_id": 4,
+    "intervention_type": "Connection Making",
+    "situation": "承接：反馈现实暴露的进展与家中互动，识别家庭互动中可能触发的内在“审视—羞耻”回路。; 家庭系统排列（或家庭会谈）：在安全结构中呈现家庭位置与互动脚本，协助父母理解其特性对宋某不安全感的影响。",
+    "therapist_response": "家庭会谈与内化客体修通：系统排列与情绪表达",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c2d1b605cba3e48b8dd8c3e0b67f7343"
+  },
+  {
+    "case_id": 4,
+    "intervention_type": "Interpretation",
+    "situation": "承接：整合近三周现实暴露、家庭支持与放松训练数据，标注最有效与最困难的情境类型。; 情绪技能：教授/强化识别—命名—允许—调节（R-N-A-R）流程，结合呼吸/肌放松/正念用于社交前—中—后不同阶段。",
+    "therapist_response": "整合情绪调节与人际技能，巩固新模式与自我接纳",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "42c23e66c1e6acbe5fab7814d8ef1dc6"
+  },
+  {
+    "case_id": 4,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "承接：复盘过去阶段目标达成度（恐惧降低、学习与社交恢复、家庭互动改善），提炼最有帮助的技术与时刻。; 复测与对比：再次完成SCL-90等自评工具（若具备条件），对比前后变化，识别尚存脆弱点（如在课堂被点名时的峰值反应）。",
+    "therapist_response": "效果复盘与再测评，巩固自我效能",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "801413bda77dd755f92584d00e6bb091"
+  },
+  {
+    "case_id": 4,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "承接：回顾一周内在校园/家庭的实际应用案例，验证复发预防清单的可行性，微调暴露与放松频次。; 复发预防手册定稿：包含高风险情境地图、分级暴露计划、每日情绪—行为记录模板、家庭与同伴支持清单以及求助途径（复诊/电话随访）。",
+    "therapist_response": "复发预防计划与结束工作",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "72f071d1a561cb060e0411719dbc913c"
+  },
+  {
+    "case_id": 40,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）。明确询问姓名“请问我可以称呼您为‘陈宇’吗？”; 任务：邀请陈宇描述其目前的困惑、焦虑、不安，在咨询室中的期待与安全感体验。",
+    "therapist_response": "建立治疗联盟与初步评估（Intake）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "7fa8e534ed77294c9cbbc1d1902faac0"
+  },
+  {
+    "case_id": 40,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：上次的初步评估与情绪记录，辨识一周内引发焦虑与厌恶的具体情境（心理课话题、舍友互动、网络冲突）。; 任务：在此时此地关注语速、坐姿与紧迫感，帮助陈宇命名并容纳情绪（恐惧、厌恶、紧张）。",
+    "therapist_response": "继续联盟与情绪疏导；梳理大学适应与人际冲突的表层困扰",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "0a0f3747b10a6184adb9110a9422c4e5"
+  },
+  {
+    "case_id": 40,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检查并讨论上周记录的触发-反应链样本，点选1–2个典型情境（如看到艾滋相关消息后反复求证）。; 任务：理清事件链与生理-情感-认知-行为各环节，识别“必须确认”“我一定要”等强迫性语句。",
+    "therapist_response": "识别强迫触发与反复确认；此时此地的依赖性移情",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "6fb5533efab8b697c74ba7fc6ebf9025"
+  },
+  {
+    "case_id": 40,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：延迟确认练习与触发-反应日志的观察，评估焦虑曲线与失败感。; 任务：围绕社团、比赛、军训加强排的情境，命名嫉妒、紧张、羞耻与比较；将情绪与行为分离，减少情感隔离的倾向。",
+    "therapist_response": "同侪竞争中的情绪容纳与不确定性容忍",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "950aaae48e6a3e3dfeeeab4f6517635a"
+  },
+  {
+    "case_id": 40,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：情绪暴露与不确定性容忍练习，评估有效与困难点。; 任务：时间线访谈母亲的教养风格（惩罚式→改变为倾听），识别内化的“不能错一步”“不应该开心”等超我语句。",
+    "therapist_response": "母子关系、惩罚式教养与过强超我的识别",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "6b50e5b9b1df57568ae7e25f24a18ace"
+  },
+  {
+    "case_id": 40,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：不发送的信与内在对话记录，提炼最核心的愿望与恐惧语句。; 任务：解释性链接——渴望通过维持确定性与控制来获得安全与被接纳；害怕不确定与出错，认为失败会带来惩罚/羞辱。",
+    "therapist_response": "核心冲突解释：以最坏情境获取确定感；重构担忧的功能",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "e1cfe08e9b6f634c22c7a2950653fe5a"
+  },
+  {
+    "case_id": 40,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：担忧配额练习、决策时的确认冲动观察与自我决定的体验。; 任务：复盘拍照事件与被冷落经历，识别边界设定的僵硬与“不要/不允许”指令性用语，观察情感隔离。",
+    "therapist_response": "人际边界与情感隔离的修通；将动态应用于当下关系",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "a652331b966af77c5d3e71adbd552bf8"
+  },
+  {
+    "case_id": 40,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：柔性边界练习与自我调节策略清单，评估哪些方法最有效、哪些情境仍困难。; 任务：讨论“担忧的意义”，区分适度担忧与过度排斥担忧，赋予担忧适度的功能价值。",
+    "therapist_response": "巩固阶段：担忧的再定义与自我力量增强",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "62fff1f0fb4db743a1e758763bda2140"
+  },
+  {
+    "case_id": 40,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：复发预警清单与应对计划草案，完善细节与实际使用场景（身份/学习/人际）。; 任务：总结治疗链条（身份→高期待→过强超我→排斥担忧→强迫策略），明确个人选择与后果，增强自我责任。",
+    "therapist_response": "终结与复发预防计划（巩固成果与分离处理）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c70158b7187ede12c83f368294dfb1d6"
+  },
+  {
+    "case_id": 41,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "核实与展开：以开放式提问请小田具体描述近一年的失眠与焦虑如何影响学习与生活（如入睡困难、易醒、整夜不眠的主观感受），以及促使此时求助的原因。; 评估：施测AIS、SAS、SDS，询问既往医疗检查情况；确认未见器质性原因。",
+    "therapist_response": "建立治疗联盟与全面初评（失眠与焦虑）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "d16bbb0c8a6dab96d555b606e2ff3cec"
+  },
+  {
+    "case_id": 41,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：查看睡眠与焦虑监测记录，梳理一周的入睡困难、夜间觉醒与白天功能状态。; 识别信念：引导小田具体回答“你所认为的正常睡眠是什么样的？”并记录其规则化要求（如必须睡够8小时、失眠危害极大）。",
+    "therapist_response": "识别与记录关于睡眠的自动化思维与不合理信念（REBT-ABCDE入门）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "aba01ac9e98427d24a78f7be56e7cb8a"
+  },
+  {
+    "case_id": 41,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：汇总上次REBT作业单，归纳其关于睡眠的主要不合理认知与行为（如提前上床、延长午睡、睡前多项目助眠）。; 睡眠知识：讲解个体差异与睡眠时长、失眠与健康的关系，澄清“失眠不是心理癌症”。",
+    "therapist_response": "睡眠知识与行为训练，系统重建睡眠相关认知",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "65233d5b67bccbc45dfb97ea44dca8ee"
+  },
+  {
+    "case_id": 41,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：反馈与舍友的观察比对结果，讨论主观“整夜未眠”与他人观察到的片段性睡眠之间的差异。; 此时此地：识别治疗现场或日常中的“不安全感”信号（身体僵硬、呼吸不顺），标注触发场景与情感。",
+    "therapist_response": "识别“不安全感”的来源与移情重演；初步处理宿舍冲突与童年经验",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "498de41a8d9e24991e39178595e6911a"
+  },
+  {
+    "case_id": 41,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：总结过去一周在冲突情境下的“安全脚本”与放松训练使用情况，评估有效性与障碍。; 关系修通：在想象暴露中重演宿舍冲突或父母争吵片段，练习成熟自体的回应（自我安抚、寻求支持、设定界限、澄清沟通）。",
+    "therapist_response": "巩固认知重建与关系意义的修通，练习成熟自体与冲突应对",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "4672e238d10202c6fad3b7d9cd838579"
+  },
+  {
+    "case_id": 41,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：评估近两周睡眠与情绪变化，记录入睡时间、觉醒次数、日间功能；复盘最有效的认知替代与行为策略。; 强化：通过正强化肯定积极行为与改善（连续睡2-3小时、入睡更易、觉醒减少），总结可持续的“个人工具箱”。",
+    "therapist_response": "巩固技能与自我效能，复盘成功经验与认知-行为内化",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ee85ca4d79863996ee988a711be80666"
+  },
+  {
+    "case_id": 41,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：总结整个咨询过程中的关键转折与收获（认知重建、睡眠卫生、放松训练、关系修通），确定最有效的策略。; 复发预防：制定“早期预警信号—应对步骤”清单（睡前担忧上升、白天逃课睡觉、冲突时紧张），对应的认知-行为-关系干预。",
+    "therapist_response": "复发预防与终结：巩固、随访与危机应对",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "daacdcf82270044b4a084d75be7e111a"
+  },
+  {
+    "case_id": 42,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "任务：以开放式、合作式提问探索主诉与期待（例如“最近失眠最困扰你的是什么？”“什么促使你现在来咨询？”“你希望通过咨询获得哪些改变？”）。; 任务：在不重复机械核对姓名、性别的前提下，基于预检信息进一步详询生活与学习背景，包括年龄、年级与班型、家庭成员与关系、与同学的互动、健康史与既往就医检查状况。",
+    "therapist_response": "建立治疗联盟与初始评估；围绕失眠主诉开展全面探索与目标协商",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "21c18ac58d6858a3ce007c90ae6b54bd"
+  },
+  {
+    "case_id": 42,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：检查一周睡眠日志与作息调整的执行情况，识别入睡延长的具体时段与诱发因素。; 任务：共同制定近期目标（每晚入睡时间较基线缩短10–20分钟），明确可操作的衡量标准。",
+    "therapist_response": "明确问题与制定方案；纠正与口吃、死亡相关的不合理认知并启动课堂朗读的分级暴露",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "39ae215e5a16a058c0f79327ce0476fc"
+  },
+  {
+    "case_id": 42,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：检查分级朗读作业的执行与情绪评分，识别最难的环节与成功经验；回顾睡眠日志的入睡时长变化。; 任务：讲解系统脱敏原理（用全身放松替代焦虑），进行示范并带领练习：依次放松前臂、头面部、颈肩背、胸腹与下肢，强调面部肌肉放松与呼吸节律。",
+    "therapist_response": "系统脱敏与放松训练；引入睡前生理调节与睡眠行为干预",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "9ed4fc92938a3e07095dfebefb36925f"
+  },
+  {
+    "case_id": 42,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：评估放松训练的掌握与睡眠日志变化，核查入睡潜伏期是否缩短；回顾朗读暴露进展。; 任务：建立与考试相关的焦虑等级（SUDS 0–10），列出触发事件（模拟考、排名公布、老师提问、实验班换位等），按强度排序形成暴露层级。",
+    "therapist_response": "焦虑分级与考试情境暴露；识别此时此地的关系意象（客体关系）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "5f703cb77d322f56a511bd1990993f20"
+  },
+  {
+    "case_id": 42,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：考试情境暴露与SUDS记录，评估羞耻/恐惧的变化；回顾睡前放松与入睡潜伏期趋势。; 任务：在此时此地关系中识别“渴望被接纳—害怕被否定”的双线索，区分来自课堂/考试与健康焦虑的不同触发源。",
+    "therapist_response": "处理移情与核心冲突；把安全需求与评价恐惧整合进认知—行为框架",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "4fc1149f74c99b51f6a8b1adba196865"
+  },
+  {
+    "case_id": 42,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：总结最近两周入睡时间与夜间觉醒变化，评估睡眠下限与波动；回顾中强度暴露的执行与情绪调节质量。; 任务：巩固睡眠行为策略（固定起床、限制床上清醒、睡前例行程序、放松常规），根据日志优化细节（如提前结束晚间学习、拉开运动与睡前间隔）。",
+    "therapist_response": "巩固技能与睡眠计划；在真实情境中测试与调整策略",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "aa31d730d40d4f5c2daeab639e8c3e1f"
+  },
+  {
+    "case_id": 42,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：整体疗程成效（入睡时间、睡眠质量、课堂发言与考试情境的情绪评分变化），巩固有效策略与关键里程碑。; 任务：制定复发预防计划（考试周睡眠与放松安排、健康焦虑的事实核查清单、课堂发言的维持性暴露频率）。",
+    "therapist_response": "总结与终结；制定个体化复发预防与自我维护计划",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "5d3847180bee9e11f94771b884ad3e40"
+  },
+  {
+    "case_id": 43,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾与核实：基于预检内容，以开放式提问具体化“临睡前担心与心慌”的时间线、诱因与影响（如丈夫晚归后的复发、数心跳、第二天工作受影响）。; 探索背景：完整梳理除姓名与性别外的静态信息（年龄、婚姻与育儿状况、与公婆同住、教育与工作、家庭成员结构），补充既往就诊史与药物使用、对药物依赖的担心。",
+    "therapist_response": "建立治疗联盟与全面初始评估（聚焦睡眠与广泛性焦虑）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "3cc91da50aae5ff393a049c57edcd586"
+  },
+  {
+    "case_id": 43,
+    "intervention_type": "Defense Analysis",
+    "situation": "承接回顾：复盘上次的设定与初始目标，核对本周睡前担心、求证与躯体关注的变化；记录“提前到达”“资历质疑”“带茶点被拒后的反应”。; 此时此地：邀请描述看到胸牌与被拒茶点时的即时感受与联想，区分事实与感受，标注所用的应对与防御（理智化/情感隔离）。",
+    "therapist_response": "稳固设置与处理早期阻抗（资历质疑与边界跨越），聚焦症状叙述",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b518c20b8c098a2968fc266057f5c3dd"
+  },
+  {
+    "case_id": 43,
+    "intervention_type": "Interpretation",
+    "situation": "承接回顾：在稳定联盟的基础上，从本周的症状记录过渡到成长经历的自由联想，尤其是父母关系、分住与兄长优待的叙述。; 叙事重建：以时间线梳理从小学、初中到中专、考研的关键节点，标注当时的感受与自我意义（如“要证明自己不笨”）。",
+    "therapist_response": "从症状叙述过渡到早期经历的探索（进入家庭与成长史）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "6c9113422b8c274ba9a91279ddaf886b"
+  },
+  {
+    "case_id": 43,
+    "intervention_type": "Interpretation",
+    "situation": "承接回顾：将上次叙述的“父亲偏爱哥哥”“母亲迁怒”与本次会谈中的资历质疑、提前到达的控制感进行对照，识别“被评判/被忽视”的模板。; 此时此地练习：当治疗师保持沉默或设限时，捕捉来访者的即时反应，标注其体验的客体影像（母亲/父亲）与自我表征（不够好/需讨好）。",
+    "therapist_response": "识别关系模板与移情（客体关系的此时此地加工）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ca32625a960c089c5cb2964e6e9c9756"
+  },
+  {
+    "case_id": 43,
+    "intervention_type": "Interpretation",
+    "situation": "承接回顾：复盘上次识别的关系模板，聚焦谈及父亲与被问感受时的说理倾向，记录具体语句（如“人在的时候做事情才有意义”）。; 面质与情感引导：温和面质解释化的语段，邀请定位具体感受（悲伤、怨、遗憾、内疚），允许短暂停留在情绪中而不立即理性化。",
+    "therapist_response": "面质理智化与情感隔离，进入情感层面（父亲议题与丧失）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "78a7c935b68c0eda77cfc5d0aa8a6487"
+  },
+  {
+    "case_id": 43,
+    "intervention_type": "Interpretation",
+    "situation": "承接回顾：把上次的情感加工结果汇总为“渴望被重视—害怕被拒—以理智化与控制守住安全”的结构化理解。; 罪责与防御：探讨对偏爱哥哥的亲人离世的内疚/报应式想法如何被压抑并经由躯体表达（胃窦炎、过度体检）。",
+    "therapist_response": "形成核心冲突理解：渴望—恐惧—防御目标与躯体化",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "86d66ac2bc766e8227b087859f871d6f"
+  },
+  {
+    "case_id": 43,
+    "intervention_type": "Confrontation",
+    "situation": "承接回顾：将核心冲突带入现实关系，复盘与丈夫的求证—安抚循环与晚归触发的躯体化，观察此时此地的分离议题反应。; 母女互动：探讨女儿由婆婆照料的模式，与自身原生母女关系的相似性，面质回避亲密接触的行为（情感隔离的传递）。",
+    "therapist_response": "现实关系中的重演与修通：夫妻与母女互动（移情与设限）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "85c5fdaadc24c6fe4ee2038f892f6e41"
+  },
+  {
+    "case_id": 43,
+    "intervention_type": "Interpretation",
+    "situation": "承接回顾：总结过去数周在求证减少、情感命名与自我安抚上的具体进展，明确哪些策略最有效（例如睡前固定仪式、情绪标注）。; 技能清单：制定情绪自我调节与关系设限的操作化清单（命名情绪、5分钟停留、替代行为、减少求证次数的阶梯）。",
+    "therapist_response": "技能巩固与复发预防计划（分离预告）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "a8f119ed7b70c9798359ccb60d8ad221"
+  },
+  {
+    "case_id": 43,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "承接回顾：以时间线回看近一年的（在本计划中为9次）治疗要点与成长：从症状容纳→成长史→客体关系→核心冲突→现实修通→复发预防。; 分离加工：体验告别中的不舍、感激与可能的不安，练习以情感表达替代理智化或躯体化，巩固自我调节。",
+    "therapist_response": "结束与分离处理（回顾与自我探索维持）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "17f4120a4938039c746c94fcde27c392"
+  },
+  {
+    "case_id": 44,
+    "intervention_type": "Defense Analysis",
+    "situation": "核实与展开预检主诉：我在预检表中看到您因为体重被取笑，临近考试想到返校更害怕，近半年有失眠与自杀念头，能具体讲讲这些经历和最近的状态吗？; 开放式探索背景：学习与学校环境、与同学互动、休学安排与返校考位信息；当前与父母的相处方式与支持感受；是否存在可用的校园或家庭支持资源。",
+    "therapist_response": "建立治疗联盟与初始评估（聚焦返校恐惧与自杀风险）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "46cf81ae6fda159a4469fd51a59de928"
+  },
+  {
+    "case_id": 44,
+    "intervention_type": "Confrontation",
+    "situation": "回顾与整合：复盘上次记录的3个困扰情境（触发、情绪与念头），整理其共同模式与可改变点。; 设定短期目标（2–4周）：睡眠改善（如固定就寝时间与放松仪式）、返校应对准备（路线/座位/休息点）、情绪监测（每日1次情绪打分）。",
+    "therapist_response": "巩固咨询关系、设定短期目标并布置家庭作业",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ba9369e1e458a43799d1a275b924f735"
+  },
+  {
+    "case_id": 44,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾家庭作业：反馈与父母聊天的感受与变化；呈现复习计划与模拟试卷，识别进步与困难。; 面质合理化：当谈到“过去几年都没能减下来”的说法时，区分事实与预设，识别“因为…所以…”的自我辩解结构。",
+    "therapist_response": "作业反馈与行为计划微调，初步识别防御（合理化）与亲子客体表征",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "777e1cc3acaf2962f6f665ec980dffa2"
+  },
+  {
+    "case_id": 44,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾恐惧等级单：从最低等级开始（家中与亲友聊天），在放松状态中暴露并维持，每一等级达到稳定放松后再升级。; 放松训练：呼吸与肌肉放松，配合情境想象，记录心率/紧张评分以监测反应。",
+    "therapist_response": "系统脱敏与放松训练，催眠中回收自我自豪感并加工同伴客体关系",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "bf1edbe3bb6f802d9053e946588e26ef"
+  },
+  {
+    "case_id": 44,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾最近暴露练习：总结校园走廊/楼梯的放松评分与自我安抚语句的有效性，识别进步与卡点。; 识别并重定向自责：当出现“都是我的错”或自我伤害念头时，练习情绪调节步骤（暂停→命名情绪→区分触发与意义→转向支持性行动）。",
+    "therapist_response": "面向自责与自我伤害的情绪转向，巩固返校应对与人际边界",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "d765063e749694b8a2a005524c42eb08"
+  },
+  {
+    "case_id": 44,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾与总结：梳理从初评到暴露与情绪调节的有效策略清单（放松训练、积极自体唤起、人际应对脚本）。; 风险信号与应对：明确个人高危触发（返校、楼梯、人群、亲友谈及体型），制定快速干预步骤与求助路径（父母/学校/医疗）。",
+    "therapist_response": "整合技能与复发预防，巩固自我效能与支持系统",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ef4d9b73ae47741754c5bf4b2d8d899f"
+  },
+  {
+    "case_id": 45,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "核实并展开主诉：以开放式问题引导王琳详细叙述眩晕、呕吐的出现时间线、在教室加重的情境与过去两个月的就医经历。; 探索家庭与学习环境：梳理父母与姥爷的督促方式、老师建议休学的经过，讨论她对复学的期待与顾虑（对“既希望好又担心复学”的矛盾进行命名）。",
+    "therapist_response": "建立治疗联盟与全面初评（学业压力与躯体化）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "fa21f1e585af17ab663a85baf893d892"
+  },
+  {
+    "case_id": 45,
+    "intervention_type": "Interpretation",
+    "situation": "达成“小约定”：在结果可控范围内给予积极暗示与选择权（是否告知母亲），减少内在矛盾对技术效果的干扰。; 三调放松：进行呼吸、肌肉与意象的放松，为象征操作建立可承受的生理与心理基础。",
+    "therapist_response": "移空技术：症状聚焦与超距移动，降低眩晕影响度",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b11e8d4bff735af9b587113f9ff570cf"
+  },
+  {
+    "case_id": 45,
+    "intervention_type": "Defense Analysis",
+    "situation": "复盘移空后变化：记录影响度维持在2分、复学进展与课堂体验，确认疗效延续。; 开放式时间线回溯：围绕“第一次晕倒当天”进行自由联想与细节重构，容纳“记不清/不想说”的阻抗并进行情绪标记。",
+    "therapist_response": "随访与事件回溯：将“错题本”与躯体化的关系意识化",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "bf09dd02f40aaab5bbf9e11b094d605b"
+  },
+  {
+    "case_id": 45,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾随访后的复学体验：识别在教室/考试/作业中的具体触发点与身体信号，记录出现频率与强度。; 此时此地观察：当谈论复学时即时觉察身体不适与回避请求，命名并区分“转移”的运作与真实生理负荷。",
+    "therapist_response": "复学中的此时此地：处理教室触发的躯体化转移与分级暴露",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "087a090c952e8f6e85ff0ec3de54595a"
+  },
+  {
+    "case_id": 45,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾上次暴露进展：检查教室情境中的触发与调节效果，识别何时谈及“错题/失败”会引发回避与压抑。; 面质与澄清：温和面质“记不清/不想说”的自动反应，解释其保护性意图与副作用（信息隔离、维持恐惧）。",
+    "therapist_response": "面质与加工：识别压抑、防止回避错题与羞耻",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b77256b3464567b086cfecb020b8a521"
+  },
+  {
+    "case_id": 45,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾阶段二的关键改变：总结眩晕影响度降低、复学进展、对错题与羞耻的加工成果。; 复发风险图谱：列出高风险场景（考试周、错题集中整理、老师批评、家庭督促升级）与对应的早期信号（头晕苗头、恶心、想回避）。",
+    "therapist_response": "整合与巩固：制定复发预防与早期预警脚本",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "9b856db4283d913e42f9b016b028cb88"
+  },
+  {
+    "case_id": 45,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "阶段性回顾：对比初始、移空后与随访至今的变化，肯定王琳的主动性与自我效能。; 技能整合复盘：演练一次完整的“早期预警—脚本应对—复盘”流程，确保可独立使用。",
+    "therapist_response": "总结与结束：回顾变化、巩固自我效能与告别",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "13753ff59effd02885574ad654505efd"
+  },
+  {
+    "case_id": 46,
+    "intervention_type": "Confrontation",
+    "situation": "开放式核实主诉并细化症状：我在预检表中看到您最近睡眠不好、焦虑评分较高（76分），能具体讲讲最近一周的睡眠和头痛在什么情境下加重？; 探索背景：合作式询问原生家庭同住的日常互动、工作压力与支持来源，补全教育、婚姻、社会支持与医疗随访信息。",
+    "therapist_response": "建立治疗联盟与初始评估（焦虑与康复期压力）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "829a1d56bdf9bb82fadbc3c7a0835526"
+  },
+  {
+    "case_id": 46,
+    "intervention_type": "Interpretation",
+    "situation": "回顾作业：共同查看睡眠/情绪日志与本周身心波动，识别最显著的压力情境。; 引导宣泄与体验：允许并容纳强烈情绪体感受，标注身体部位与情感词，练习情绪命名。",
+    "therapist_response": "情绪宣泄与触梦启动：此时此地的体验与首个梦素材",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "88c3948a42547829651d157b8599a840"
+  },
+  {
+    "case_id": 46,
+    "intervention_type": "Interpretation",
+    "situation": "回顾作业：检视首幅梦的绘画体验（颜色、线条、身体感觉），标注最强烈的镜头。; 象征探索：讨论海、船、上升与俯视意象对‘稳定/失重’的影响，连接当周现实触发。",
+    "therapist_response": "触梦深化：‘启航’的象征与自体稳定化",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "34714a907f8544314b52c98cd442c56f"
+  },
+  {
+    "case_id": 46,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾作业：分享最新梦绘经历与在咨询室的信任/舒适体验变化。; 此时此地工作：辨识对咨询师的积极移情，区分‘被看见/被陪伴’的感受与依赖。",
+    "therapist_response": "积极移情的辨识与运用：认同作为过渡性防御",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "09d58df5a1f165fac4e7f3273062026d"
+  },
+  {
+    "case_id": 46,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾作业：检视‘被看见/被陪伴’记录与其后行为，评估依恋与自主的平衡。; 梦的工作：呈现‘拆线/纱布’伤口梦，细化感受（恐惧、坚定）与关键镜头。",
+    "therapist_response": "伤口呈现：识别并松动‘否认’防御",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "9b3f9eb8eb5357af14951a539aac8818"
+  },
+  {
+    "case_id": 46,
+    "intervention_type": "Confrontation",
+    "situation": "回顾作业：总结‘否认’触发日志与替代回应的效果。; 成长脉络：深入讨论原生家庭中的规则与权威经验，辨识压抑的语言风格（概括化、回避感受）。",
+    "therapist_response": "规则与权威话题：从压抑到更真实的表达；‘内在清理’的力量",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "65ac9e150024cf0807807ffa4e4a772f"
+  },
+  {
+    "case_id": 46,
+    "intervention_type": "Interpretation",
+    "situation": "回顾作业：汇总‘表达情感’与‘压抑减少’的两次练习体验与结果。; 梦的对峙：解析‘蛇’意象与砍断蛇头的动作，标注恐惧与力量的并存。",
+    "therapist_response": "与权威的对峙与核心冲突整合：蛇与男性力量",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "bd4f71a83146a56cd9720aed9501ef0c"
+  },
+  {
+    "case_id": 46,
+    "intervention_type": "Confrontation",
+    "situation": "回顾上次：检查与权威的低风险互动实验的反馈与体会。; 技能复盘：总结梦的工作（三步：呈现-绘制-语言转译）、情绪命名与地面技术的使用时机。",
+    "therapist_response": "巩固与复发预防：技能整合与终结工作",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "5d7912fc25e0192d6b8b9f40665cd55c"
+  },
+  {
+    "case_id": 47,
+    "intervention_type": "Defense Analysis",
+    "situation": "引导性任务：以开放式、合作式提问围绕主诉展开（例如：我在预检信息中看到您最近被侵入性想法困扰，能说说这些想法何时最明显、对生活影响最大的时刻吗？）; 任务：全面探索并核实基本背景（职业角色、教育经历、婚姻/分居状况、家庭结构、社会评价、医疗史与当前躯体状况），在叙述中避免清单式盘问。",
+    "therapist_response": "初始评估与建立治疗联盟；澄清主诉与期望",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1ae833c7e6cd85fb10a330f8d62b1a9e"
+  },
+  {
+    "case_id": 47,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检查并讨论“想法出现日记”的观察收获，识别最常见的诱发情境与情绪变化。; 任务：共同书写初步治疗目标层次（短期：降低侵入性想法频率；中期：理解其心理意义；长期：提高关系中的稳定与自我整合）。",
+    "therapist_response": "共识化治疗目标与治疗设置；开放式探索当下反应",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "2078145f5f68c6e62ab234598d61cab5"
+  },
+  {
+    "case_id": 47,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：复盘此前会谈中他对具体方法建议（如行为管理或“带着它们去生活”）的即时反应，原话记录、情绪强度与身体感受。; 任务：此时此地的面质（Confrontation）与澄清（Clarification）——指出“全要/全不要”的二元化语句，帮助其辨识分裂的运作。",
+    "therapist_response": "识别防御与阻抗：分裂与对“方法”的强拒",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "837d5ede357b1cf24292a283336fb435"
+  },
+  {
+    "case_id": 47,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：从“成长时间线”中选取三个关键节点（幼儿园、初中、婚后），描绘事件、当时的情感与关系背景。; 任务：在叙述性主题中点名情感（羞耻、焦虑、愤怒），对“代词/省略”的语言进行温和面质，鼓励具体化。",
+    "therapist_response": "探索早期成长经历与性化的部分客体连接；处理自我暴露中的情感隔离",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "6becc607c5f2a5cfa038d13899f587e2"
+  },
+  {
+    "case_id": 47,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检视最近一次会谈中出现的‘理想化—贬低’摆动（例如对治疗效果、对妻子/领导的看法），标注触发点与感受。; 任务：此时此地对移情进行解释（Interpretation）：当治疗师不能满足“完美消除”期待时，你如何从‘好客体’转为‘坏客体’？",
+    "therapist_response": "整合客体关系与自我意象：理想化/贬低的摆动与移情解释",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "75551755a2d91d0ca67962aa836127eb"
+  },
+  {
+    "case_id": 47,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：将近期的切断倾向（离婚推进、考虑辞职）与‘避免被看清/被贬低’的核心恐惧连接起来，描述情绪与关系意义。; 任务：此时此地练习‘停—看—说’：当出现“切断/掩盖”的冲动，先停顿，观察羞耻/愤怒/焦虑，再以需求语言表达（而非行动替代）。",
+    "therapist_response": "核心冲突的初步阐明与行为化（转移）的识别；关系中的分离与切断",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "485d84e3d54bef34fbb8149c9eb33536"
+  },
+  {
+    "case_id": 47,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：整合前期四类防御在不同情境下的表现与触发，评估其变化与对侵入性想法的影响。; 任务：此时此地讨论终止/间隔的感受与联想，识别将治疗师体验为‘无法满足的坏客体’的时刻，并进行移情解释。",
+    "therapist_response": "巩固阶段：整合防御与关系模式，处理分离与终止议题",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "f612e7e43e3d91de447f9603bf1e7b04"
+  },
+  {
+    "case_id": 47,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：总结治疗所得（对防御的识别、客体关系整合、核心愿望与恐惧的命名），评估侵入性想法的频次与强度变化。; 任务：制定复发预防计划——早期预警信号（分裂加剧/理智化升级/情感隔离/切断冲动）、自助步骤（替代脚本、情绪命名、分级接触）、社会支持与求助路径。",
+    "therapist_response": "复发预防与自助—求助流程；结束前回顾与迁移",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "9647a7b03d998409bd3320c961bd5635"
+  },
+  {
+    "case_id": 48,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾与核实：我在预检表中看到您近10年对50岁以上男性也会出现性冲动且事后苦恼，能从您日常的经历具体讲讲哪些情境最容易触发吗？; 开放式探索：梳理工作、居住与婚姻状态（外出务工、两地分居）与冲动波动的关系；补充教育背景、社会支持网络、家庭互动与性生活近况。",
+    "therapist_response": "建立治疗联盟与全面初评，澄清求助目标",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1037dfe4b31d0ffe02b5ff95436da81d"
+  },
+  {
+    "case_id": 48,
+    "intervention_type": "Confrontation",
+    "situation": "回顾作业：共同整理上周记录的触发清单（外出务工、两地分居、接触老年男性等），标注冲动强度、行为倾向与事后情绪（后悔、羞耻）。; 目标细化：将“大目标”分解为可衡量的子目标（如两周内在强触发情境中延迟行为5–10分钟、增加与妻子沟通频次、改善睡眠与作息）。",
+    "therapist_response": "细化触发与目标，建立共识与工作结构",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b64c86dab0781e147f459f7782e528dd"
+  },
+  {
+    "case_id": 48,
+    "intervention_type": "Interpretation",
+    "situation": "回顾作业：从成长经历材料中选取最早的相关片段（7、8岁地里看见父亲小便）进行详细叙述，包括当时的感受（羡慕、兴奋）与未行动的原因（不敢）。; 自由联想与澄清：鼓励围绕该记忆的画面、身体感受、意义感的自由联想，澄清当下与早年体验之间的相似性与差异性。",
+    "therapist_response": "连结童年经验与当下冲动的关系（引入成长经历1）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "6dcdc6cd2ca855552cfdec108c90dbdc"
+  },
+  {
+    "case_id": 48,
+    "intervention_type": "Confrontation",
+    "situation": "回顾作业与体验：详细叙述同床触摸事件的时间、环境、感受与行为（兴奋、勃起、射精、满足），辨识其作为强快感记忆在当下的再现路径。; 面质与澄清：运用“奶瓶喝水”“在松土挖坑顶”的比喻，区分儿童与成人的满足方式；请来访者自行归类其当前行为倾向属于哪一类。",
+    "therapist_response": "澄清成人—儿童性满足方式的区分，面质理智化与父亲意象的客体关系",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "eb495b39cb89d33027dc66de01c7084d"
+  },
+  {
+    "case_id": 48,
+    "intervention_type": "Interpretation",
+    "situation": "回顾前两次的要点：列出“儿童方式”与“成人方式”的对照表，标注各自的短期收益与长期代价。; 核心解释：将愿望（触摸亲近老年男性）—恐惧（被笑话/被否定）—防御（退行/理智化）三者整合为一条动力链，明确何时应转向成人身份的选择。",
+    "therapist_response": "整合核心冲突（愿望—恐惧—防御）并巩固成人身份选择",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "308e5ca3005a95810451ca62e47e8d90"
+  },
+  {
+    "case_id": 48,
+    "intervention_type": "Confrontation",
+    "situation": "回顾作业：检查在两处高触发情境中应用“延迟—分散—成人替代”的结果与困难，评估冲动强度与事后后悔的变化。; 关系工作：讨论与妻子的现实约束（两地分居）与可能的亲密修复方案（沟通频率、视频亲密、共同计划与承诺），减少疏离感。",
+    "therapist_response": "回到现实关系与角色，巩固成人化满足路径",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "65a05645c42d378cf02a1051b36515ab"
+  },
+  {
+    "case_id": 48,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾与整合：总结从第1次至今的关键转折（识别退行—面质理智化—成人选择），评估症状频率/强度、事后后悔的变化。; 个人手册：共同编制“成人化满足路径”应对手册（触发清单、预警信号、三步法、寻求支持通道、危机应对流程）。",
+    "therapist_response": "复盘技能与制定复发预防计划",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "6ddb5a282e3aeeb44ae26c6081499fc3"
+  },
+  {
+    "case_id": 49,
+    "intervention_type": "Confrontation",
+    "situation": "引导性任务：基于预检信息，以开放式提问深入当前困扰（例如：“我在资料中看到你最近情绪低落、在家有自伤情况，能讲讲最近一次你觉得最难受的时刻发生了什么吗？”）; 任务：完整探索基本背景并校准信息（学习与生活：在校表现、请假与返校、注意力与记忆；家庭成员与互动；睡眠、饮食与胃痛；近期医学诊断与服药状况）",
+    "therapist_response": "建立治疗联盟与初始全面评估（以非评判的开放式探索承接预检信息）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "bc3f30cc3457189a1fa833c746d6fa9e"
+  },
+  {
+    "case_id": 49,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查上次的安全联络清单与风险监测框架，确认是否出现高风险情境与触发记录; 任务：在无条件积极关注下叙述家庭互动，允许模糊与停顿，不强迫细节；识别“把父母看成全坏/全好”的二元化表述",
+    "therapist_response": "倾听接纳与家庭叙事：在安全框架下增加对父母态度的觉察与“寻找例外”",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "2aff9edada0c16ebaadb2aa9b176d85e"
+  },
+  {
+    "case_id": 49,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查上次的家庭事件-情绪-行为链与“例外”经验（父母非全坏）; 任务：以近期校园经历为材料，标注情绪（害怕、紧张、羞怯等）、身体感觉与行为（回避、寻求同桌安全）",
+    "therapist_response": "认识情绪与此时此地的投射：在校园场景中识别“被监视/被议论”的触发链",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "292cb43ff41fd9574bf4fa2704bf2ac6"
+  },
+  {
+    "case_id": 49,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检查情绪记录与触发链，确认自伤/自杀意念是否降低；复盘校园场景中的“他们都在说我”的投射识别练习; 任务：讨论网络与异性交往的边界与具体风险（隐私、肢体接触、情感依赖、脱离现实），评估“他真的懂我”的理想化表述",
+    "therapist_response": "调整对异性交往的信念与边界：识别理想化与网络安全风险，迁移正向社交技能",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "774013829973e711f6a060bf03589bbb"
+  },
+  {
+    "case_id": 49,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：检查上次的社交迁移微任务执行体验（在班级尝试的问候/合作），识别情绪与身体反应; 任务：制作成长时间线（分离—更替—同伴—首次自伤），标注关键事件的情绪图谱（恐惧、无助、愤怒、羞耻）与对应行为",
+    "therapist_response": "回溯成长经历与依恋线索：梳理早期分离、教师更替与首次自伤之间的关联",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c9c39f1ad8ab1112dbc028004b8d7de2"
+  },
+  {
+    "case_id": 49,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查成长时间线与独立表达微任务，评估退行防御的变化; 任务：用两段近期与父母或教师的互动片段，标注自我意象与他人意象，并识别此时此地（Here and Now）的移情反应",
+    "therapist_response": "识别与命名客体关系：在治疗室内外观察移情与分裂的重演并进行温和解释",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "0ec26290f6676ecc91e531fbe0e20bab"
+  },
+  {
+    "case_id": 49,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查上次的客体关系图与角色互换体验，复盘分裂整合的进展; 任务：三列整合练习（愿望-恐惧-防御/行为）：将具体情境分别归入愿望、恐惧与防御目标的对应栏，找出可替代的健康策略",
+    "therapist_response": "命名并整合核心冲突：将愿望、恐惧与防御目标对齐到安全计划",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "40bcc91623ee870777608a09f777f3c0"
+  },
+  {
+    "case_id": 49,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：整体回顾8次会谈的关键节点（联盟建立—家庭例外—情绪识别—网络边界—成长时间线—客体关系—核心冲突整合）; 任务：巩固四类防御的识别信号与替代策略（把分裂的二元化语言转为具体差异点、用成人语气替代退行、用现实检核削弱幻想、把投射的泛化改为自我感受命名）",
+    "therapist_response": "技能巩固与结束工作：复盘、强化独立表达与社交迁移，制定复发预防与随访计划",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "e86fb0a7a2baa891a03b0336c363bea0"
+  },
+  {
+    "case_id": 5,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "建立会谈框架：介绍保密与会谈方式，邀请自由表达，说明意象对话可能作为后续的一种选择。; 开放式探索：请来访者以自己的节奏描述“胡思乱想”最困扰的具体场景（如宿舍关系中被忽视、担心被抛弃等）。",
+    "therapist_response": "建立治疗联盟与初步评估；澄清“胡思乱想”的范围并设定合作目标",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "985eadf1b5712d1522f8fc08194ec66c"
+  },
+  {
+    "case_id": 5,
+    "intervention_type": "Connection Making",
+    "situation": "回顾作业：检查上次记录的1–2个“胡思乱想”场景，澄清触发—想法—情绪—行为链。; 意象对话引导（安全控制）：邀请来访者想象一个“胡思乱想”的小女孩，观察其年龄、表情、与母亲的互动，在可承受范围内描述情景并觉察情绪（悲伤、自责、恐惧）。",
+    "therapist_response": "启动意象对话，联系自责与“被抛弃”的早期记忆；从创伤线索回到当下困扰",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "15b743bec847af38831f5be2e4c02619"
+  },
+  {
+    "case_id": 5,
+    "intervention_type": "Interpretation",
+    "situation": "复盘与聚焦：逐一梳理来访者记录的两类片段（被忽视与被“出卖”），标注自动想法、情感与当下身体反应。; 此时此地与面质（在联盟基础上）：观察会谈中不敢直视、紧张等现象，以温和方式指出并邀请觉察当下的防御启动。",
+    "therapist_response": "识别宿舍互动中的投射与“虚伪自我”的整合（意象对话）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "2923390a62622e1e9cd08ee7e5a1f9b8"
+  },
+  {
+    "case_id": 5,
+    "intervention_type": "Defense Analysis",
+    "situation": "复盘与修正：检查上次“I语言”尝试的体验与结果，讨论成功与困难点。; 功能分析：拆解讨好/过度道歉在短期降低焦虑与长期损伤自尊/关系的双刃剑功能，澄清其作为防御的代价与收益。",
+    "therapist_response": "应对被忽视情境中的反向形成：从讨好与过度道歉到自我主张",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "92eee2e25f0adb8ac64140be6d79f8fc"
+  },
+  {
+    "case_id": 5,
+    "intervention_type": "Confrontation",
+    "situation": "回顾上次作业：检查“自我主张脚本”的实践与体验，识别何时焦虑上升、何时又回到讨好或回避。; 此时此地聚焦：咨询师温和指出当谈到家庭/被抛弃时来访者出现的沉默、转题或表情收敛，邀请来访者觉察体感与情绪（如紧张、害怕被“凶”）。",
+    "therapist_response": "此时此地处理否认防御与母亲客体的移情轮廓",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "5d85050e757d6a0a2e8f72f7ab9eb176"
+  },
+  {
+    "case_id": 5,
+    "intervention_type": "Interpretation",
+    "situation": "回顾与整合：检视上一周在敏感话题上延长停留的体验，巩固对否认启动点的识别。; 核心冲突卡片：与来访者共同写下‘愿望—恐惧—防御目标’三栏，举宿舍与家庭各一例进行对应（如愿望被看见→恐惧被抛弃→防御讨好/否认）。",
+    "therapist_response": "核心冲突与客体关系成图：愿望—恐惧—防御的循环",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "f88d089a5b65a43b20248b584fb4d97c"
+  },
+  {
+    "case_id": 5,
+    "intervention_type": "Confrontation",
+    "situation": "承上复盘：回顾一条已练习的循环中断（如被忽视→讨好）在真实情境的实践与反馈，评估有效要素与未覆盖情境。; 工具箱整合：将‘I语言表达’、非投射自我表露、地面化（呼吸/感官定向）、延长停留、客体关系自我监测等打包为个人化流程。",
+    "therapist_response": "技能巩固与情绪调节：从洞见到稳定实践",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "2404edfc9fdd296584e3afd321485375"
+  },
+  {
+    "case_id": 5,
+    "intervention_type": "Interpretation",
+    "situation": "全程回顾：重温从‘被抛弃感—自责’到识别投射/反向形成/否认、防御替代与自体整合的变化轨迹，肯定努力与成长。; 巩固与计划：确认个性化工具箱、复发预警图与支持网络（同学/辅导员/咨询资源），设置自我随访节点。",
+    "therapist_response": "回顾与结束：维持计划与未来支持",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "db193f1033de588a77636e00c03bfb71"
+  },
+  {
+    "case_id": 50,
+    "intervention_type": "Interpretation",
+    "situation": "建立安全与保密框架：说明保密原则、咨询流程与双方责任，回应其“担心隐私被知晓”的顾虑以降低初始阻抗。; 引导性探索主诉：从“常觉得他人在关注并评价自己”入手，邀请具体描述近一周发生的相关情境与感受强度。",
+    "therapist_response": "建立治疗联盟与初始评估：接纳宣泄、开放式探索主诉与背景",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "283b4204e03cd4faf1e78020e44bf57d"
+  },
+  {
+    "case_id": 50,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次会谈的测评与情绪宣泄要点，确认其对保密与咨询关系的信任感是否提升。; 细化情绪状态：记录焦虑/羞耻出现的具体情境、身体反应与自动化念头，区分“被关注”与“被传播/评价”的差异。",
+    "therapist_response": "情绪状态评估与问题澄清：明确恐惧内容与根源，设定咨询目标与作业",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "d6c1b58f097e19e646f2cd8fa1b5a826"
+  },
+  {
+    "case_id": 50,
+    "intervention_type": "Connection Making",
+    "situation": "回顾作业：从至少3个ABC样本中选取与“被传播/被评价”相关的情境，重建事件链与主观叙事。; 精神分析取向探索：链接童年性诱惑事件与师评的羞耻/自卑，识别“被看见=被羞辱”的图式雏形。",
+    "therapist_response": "追溯羞耻来源与负性自我形象；识别客体关系与此时此地模式",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1acd85e51ec9fb80ad17c07a3fcbc22a"
+  },
+  {
+    "case_id": 50,
+    "intervention_type": "Confrontation",
+    "situation": "回顾上次的行为实验与客体关系识别，汇总证据对“读心化/灾难化”进行现实检验反馈。; ABC深入：从样本中抽取核心信念（如“被看见=被羞辱”“优秀会伤害他人”），识别应对层的自责逻辑。",
+    "therapist_response": "理性情绪疗法ABC模型：抽取并挑战核心非理性信念，初步陈述核心冲突",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ecdadaa43332c93273d2da41ab348e3e"
+  },
+  {
+    "case_id": 50,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾上次的核心冲突与理性重建成果，确认其对“被关注/被评价”的耐受度是否提升。; 森田疗法原则讲解：强迫思维的普遍性、停止控制的悖论（池塘比喻），强调“顺应自然地接受情绪，以应当做的事为目的去行动”。",
+    "therapist_response": "森田疗法导入：接受强迫思维与情绪，重建行动优先的生活原则",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "e0e97e69387a9d5a3c3b75f6e707629c"
+  },
+  {
+    "case_id": 50,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次“念头允许+行动优先”练习的具体记录，评估对强迫思维的耐受与回到行动的成功率。; 自我牵连教育：区分普遍自我牵连现象与强迫化的持续与泛化，识别“读心化”触发与维持。",
+    "therapist_response": "森田疗法实践深化：识别自我牵连与读心化，在此时此地保持行动优先",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1e11f50650cda01cb416b315e052acf0"
+  },
+  {
+    "case_id": 50,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾上次此时此地的行为实验与社交开放练习，统计成功率与阻碍点。; 事件重建：针对“红薯干被拒”的具体情境，区分他人稳定风格与对自我的特殊性期待，识别“反黄金法则”（别人应该像我对待他那样对待我）。",
+    "therapist_response": "处理具体社交事件与非理性规则：反黄金法则修正与现实归因",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "4c691cc56ed8a934078407076d648554"
+  },
+  {
+    "case_id": 50,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：对八次会谈的认知、情绪、行为变化进行整合，肯定其努力与进步（测评结果与主观反馈）。; 技能巩固：复盘REBT（识别-反驳-替代）与森田（允许-行动）两条主干路径的关键步骤与自助语句。",
+    "therapist_response": "巩固与复发预防：回顾进展、强化技能、制定维护计划",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "f887ec0b6e2ce44c951a7ee3044ae4df"
+  },
+  {
+    "case_id": 6,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景与主诉，确认姓名（如“我们从您的基本情况开始，怎么称呼您？——小云”），年龄、在读情况、家庭与人际、既往就诊与睡眠史、当下的主要困扰与期待。; 任务：共同确认咨询设置与边界（频次、时长、迟到与取消规则），并签订或重申知情同意与保密原则以建立安全框架。",
+    "therapist_response": "建立治疗联盟与初步评估（Intake）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "9a464e099293c3e1eb9f2d8d45a43c3c"
+  },
+  {
+    "case_id": 6,
+    "intervention_type": "Connection Making",
+    "situation": "回顾与承接：简要回顾上次的焦虑与睡眠评估要点，确认咨询设置的理解与舒适度。; 任务：生命时间线梳理——以自由叙述与追问方式重构关键成长事件（分离、忽视、霸凌、被猥亵），记录当时的认知解释与当下回忆时的身心反应。",
+    "therapist_response": "成长叙事与问题地图的初步构建",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "944bf7e4eebd305090760ec02a87659d"
+  },
+  {
+    "case_id": 6,
+    "intervention_type": "Connection Making",
+    "situation": "回顾与承接：复盘上次的成长史线索，挑选1–2个具情感色彩的场景进入此时此地的工作。; 任务：在咨询室观察互动线索（如对视回避、微笑作为保护色、抱玩偶以获安全、不表达不满），将其作为移情与客体关系的“现场材料”。",
+    "therapist_response": "此时此地的关系观察与客体关系（移情）识别",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "7badd427624b0f5dffacb6fe441fa319"
+  },
+  {
+    "case_id": 6,
+    "intervention_type": "Confrontation",
+    "situation": "回顾与承接：总结上次现场观察的移情线索与关系模式（如“被评价/竞争—被忽视”），对比本次出现的具体防御表现。; 任务：在此时此地邀请小云觉察“连续的但是”和“情绪词缺席”的当下体验，标注理智化与情感隔离的触发情境与功能。",
+    "therapist_response": "防御机制的觉察与温和面质：理智化与情感隔离",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "fd84e1f81398112c890c308a3b1e2b8c"
+  },
+  {
+    "case_id": 6,
+    "intervention_type": "Interpretation",
+    "situation": "回顾与承接：复盘上次对理智化/情感隔离的觉察，确认它们在“被评价—竞争”主题下的保护角色。; 任务：从现实素材进入诠释——讨论与闺蜜跑步事件中的“偷偷卷—竞争感”，连接童年与弟弟“争宠—永远是输”的叙事，命名此时此地的比较/警惕。",
+    "therapist_response": "核心冲突的诠释：被看见的渴望与对评价/竞争的恐惧",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "57a173742bbbe4c946863142207b9c9a"
+  },
+  {
+    "case_id": 6,
+    "intervention_type": "Confrontation",
+    "situation": "回顾与承接：总结上次的核心冲突诠释与压抑的关系工作，关注本次是否出现以微笑/玩笑弱化痛苦的倾向。; 任务：现场识别幽默的触发点与意图（降低被评价尴尬、维持关系和谐），区分善意幽默与情感回避型幽默。",
+    "therapist_response": "防御的功能与限度：幽默的使用与情感接触",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "5111347b4b9cb79f06f132b745bb79cc"
+  },
+  {
+    "case_id": 6,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾与承接：总结前几次对防御与核心冲突的工作要点，确认在现实生活中的自我体验变化（如“事情早晚会做完”的新认知、睡眠改善的主观感受）。; 任务：一周追踪—在遇到既定目标或考核时记录焦虑评分、身体感受、自动比较/警惕的出现频率与强度，观察“理智化→感受停留”的转换。",
+    "therapist_response": "巩固洞见与现实评估：焦虑/睡眠的改变与自我一致性练习",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "7b3378db57a695fdce7da8f540a924e6"
+  },
+  {
+    "case_id": 6,
+    "intervention_type": "Connection Making",
+    "situation": "回顾与承接：评估上一阶段焦虑评分、睡眠质量与自我关照的落实情况，盘点最有效的微技能（情感停留、身体标注、减少比较）。; 任务：治疗收获总结—列出3条关于自我与关系的新理解（如竞争模式的识别、对被评价的恐惧如何被理智化保护）。",
+    "therapist_response": "结束准备与整合：内化新的自我与关系体验",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b41b497bf0f9ee8c7a925a591c17d5aa"
+  },
+  {
+    "case_id": 6,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾与承接：确认上次拟定的复发预防清单，检视是否贴合自身、是否有需要补充的触发情境与早期信号。; 任务：情境演练—选择1–2个高风险场景（考试周、被评价/比较情境）进行预演，练习“情感停留—身体标注—降低理智化速度—允许表达需求”。",
+    "therapist_response": "复发预防与告别：演练自助方案与分离体验的加工",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "e04de15bf1aa157c320d250ce272329a"
+  },
+  {
+    "case_id": 7,
+    "intervention_type": "Confrontation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”），请确认姓名为“李敏”。; 任务：共同回顾当前学习、睡眠、人际与家庭关系的困扰，梳理近一周重要事件与情绪起伏。",
+    "therapist_response": "建立治疗联盟与初步评估：从零开始的开放式探索",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "54b24f13a9353e71cd8183c5beb4ad5e"
+  },
+  {
+    "case_id": 7,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾上次：确认并记录初步目标、压力来源与睡眠情况，若已开始自我观察，检查记录内容与可行性。; 任务：教授并练习一项生理性放松与专注技巧（如呼吸放松/躯体扫描），用于课堂紧张的即时调节。",
+    "therapist_response": "目标细化与压力调节准备：框架稳固与作业约定",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1eee2f6840885725b6a6e3010515558d"
+  },
+  {
+    "case_id": 7,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次日志与放松练习效果：梳理一周内课堂紧张的具体情境与即时反应。; 任务：引导轻度催眠/放松（坐姿、闭眼、呼吸引导），进入可承受的内在专注状态后进行自由联想，围绕“课堂—老师—被评判”的意象展开。",
+    "therapist_response": "催眠与自由联想：课堂紧张的移情探索与对权威的抗拒",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "49d3f2cbd2d264a3105756de31c00fb1"
+  },
+  {
+    "case_id": 7,
+    "intervention_type": "Confrontation",
+    "situation": "回顾上次：课堂情境中的移情线索与防御识别成效，检查稳态程序的使用频率与效果。; 任务：邀请来访者讲述近期的梦或片段，聚焦“被注视/被评判/无助”的象征，追问梦中人物与母亲意象的联结。",
+    "therapist_response": "梦的工作：分离性创伤与情感隔离的识别与承载",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "f833145f707c336e1858f68201330e6b"
+  },
+  {
+    "case_id": 7,
+    "intervention_type": "Interpretation",
+    "situation": "回顾上次：梦的象征与现实母女互动的对照，检查“安全接触创伤”协议的适用性与修订点。; 任务：解析外貌相关的梦/白日幻想，识别“只要整容就会好”的转移逻辑，将内在自我否定与母亲批评的内化联结起来。",
+    "therapist_response": "梦的工作与躯体化/转移：外貌与整容念头背后的母女冲突与核心愿望",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "321ba130ff2e86600e5bd66ca788eb7f"
+  },
+  {
+    "case_id": 7,
+    "intervention_type": "Confrontation",
+    "situation": "回顾上次：外貌议题与核心冲突图示的使用体验，检查在母亲批评情境中的新反应脚本实施情况。; 任务：在此时此地识别与面质否认（如绝对化言辞、“从来”“一直”），并区分象征性真理与事实真相，进行温和的现实检验。",
+    "therapist_response": "此时此地与关系重演：面对“不是亲生”的否认与分离焦虑的修通",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ad3578cb50d199b51280447fc09fbf68"
+  },
+  {
+    "case_id": 7,
+    "intervention_type": "Connection Making",
+    "situation": "回顾第3–6次的关键节点：课堂移情线索、梦的工作、外貌议题与否认叙述，评估每项技术的可用性与适配度。; 任务：汇总四类防御的触发—信号—旧反应—新脚本的对照卡片，形成个人化应对手册。",
+    "therapist_response": "整合与巩固：复盘防御识别、移情处理与自体调节",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1537438290b3fd1ccb400db5b7969b01"
+  },
+  {
+    "case_id": 7,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾前次微目标与自我监测结果，总结最有效的策略与需要加强的环节。; 任务：制定复发预防计划（校园—家庭—亲密关系情境的触发地图、早期预警信号、替代脚本、稳态化步骤、支持资源联系人）。",
+    "therapist_response": "复发预防计划与终结：情境预演、支持系统与随访",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "52231d9d682c2e8ed05ff5e8d0cb60c5"
+  },
+  {
+    "case_id": 8,
+    "intervention_type": "Interpretation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名、主诉、期待与目标（如“是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”“请告诉我你的姓名：李明”）; 任务：共同梳理近两周的情绪、学习与人际变化的具体情境，标注发生时间线与关键人物",
+    "therapist_response": "初步评估与治疗联盟建立",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "299d83261963dea5f3da99072bbeb0de"
+  },
+  {
+    "case_id": 8,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：总结第1次的背景与主诉；核对姓名、基本资料与咨询约定是否清晰; 任务：以时间线方式细化成长经历与校园欺凌事件的关键节点与当时的自我感受和行为反应",
+    "therapist_response": "拓展成长史与风险监测，巩固联盟",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "e93b124ef7977e8e43079738c1943fe6"
+  },
+  {
+    "case_id": 8,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查第2次的记录表，挑选一例“被触发—第一反应—后续感受”的片段; 情境：在此时此地观察咨询师的坐姿、语气等是否引发“规矩/面子”的感受；鼓励李明用第二人称直接描述体验（如“我看到你跷腿时想到……”）",
+    "therapist_response": "此时此地的移情：面子与家族规矩（行为模式#1）",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "7d283e40a93f801ba5acf76a0d60a44b"
+  },
+  {
+    "case_id": 8,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：总结第3次关于“规矩/面子”的发现，连接到同学互动中的位置感与自尊体验; 任务：重访首发事件（班长去哪儿、女生嘲笑“xxx长这么丑还问问题”），用慢速和停顿标注羞耻、愤怒、孤独的片段",
+    "therapist_response": "羞辱与回避：“那没有什么”的压抑（行为模式#2）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "6963e3df7159a0973ddc2219f9b0b3a6"
+  },
+  {
+    "case_id": 8,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检视第4次的记录与作业，挑选一次“被忽视—情绪词—身体感受”的三层反应; 任务：此时此地练习——当被邀请更深入表达时，观察出现的理智化与情感隔离；治疗师以情感回应替代内容回应（如“我听到你说很难受”）",
+    "therapist_response": "情感隔离与理智化的松动（行为模式#3）",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ffe8e8fbfbbba84749bdb661de4ed815"
+  },
+  {
+    "case_id": 8,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：总结第5次对理智化与情感隔离的体验，确认在更深入表达时的安全感变化; 任务：绘制“关系地图”——把父亲、母亲、舅舅三角关系与自体感受放在同一画面，标注情感与信念（如“我要乖/遵守规定”）",
+    "therapist_response": "客体关系与核心冲突：乖巧以获爱 vs 自主（含行为模式#6）",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "91c5b6b1494cc85d6ba4cca5e62cc3a2"
+  },
+  {
+    "case_id": 8,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：讨论第6次的“提出小需求”的体验与结果，检视“被接纳—被拒绝”的真实反馈; 情境：复盘课堂座位事件的时间线、对话与身体激活；区分“规则维护”与“关系修复”的意图",
+    "therapist_response": "边界、规则与外化的攻击性（行为模式#5）并观察结束时的抱持需求（行为模式#4）",
+    "targeted_conflict": "Underlying wish and need",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "ad146ae18345e99380e439ad04e3d15c"
+  },
+  {
+    "case_id": 8,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：评估第7次在会谈结束前的情绪与身体感受记录，讨论“想多待一会儿”的意义; 任务：此时此地的依恋工作——在拉窗帘/密闭感的讨论中命名“安全/被抱持”的体验与其边界（这里与外面的差异）",
+    "therapist_response": "结束与抱持：密闭空间的依恋意义与梦的象征整合",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "8ab1d863cc2a7b8d19fa7141f381966f"
+  },
+  {
+    "case_id": 8,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：整合第8次的梦的象征与抱持体验，盘点过去各次会谈的有效工具清单; 任务：复发预防计划——识别高风险触发（嘲笑/被忽视、权威/规矩、结束/告别），为每类触发配置一条具体应对路径（情绪标注—提出小需求—角色排演—寻求支持）",
+    "therapist_response": "巩固与复发预防：终结工作与未来计划",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c84ee6d11f8a3715294648a43b9142d8"
+  },
+  {
+    "case_id": 9,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "引导性任务：以开放式、合作式提问探索基本背景、姓名与当前困扰与期待（如“李明，是什么促使你此时来咨询？”“你希望通过咨询获得哪些改变？”）。; 任务：建立安全可达的框架（说明紧急电话联络安排），降低模糊与不确定，明确我方保护立场（如“我不会伤害你，也不会让别人伤害你”）。",
+    "therapist_response": "初次评估与建立治疗联盟（安全、可达与开放探索）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "60087c47a1e36ed5f477fbfcf0200ed9"
+  },
+  {
+    "case_id": 9,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检查上次关于安全框架与可达性的协议执行情况，并确认短期目标为恢复进食与睡眠。; 任务：在全夜餐馆进行支持性暴露与示范进食（由咨询师先吃；来访者观察—咖啡—吐司—完整早餐），并以具体化语言命名恐惧与生理感觉。",
+    "therapist_response": "危机稳定：在真实情境中处理进食恐惧与安全感（外部支持与象征意义命名）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "6182473e37bdb881316a77b0da9bdcd5"
+  },
+  {
+    "case_id": 9,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检视餐馆作业进展与恐惧记录，巩固安全线索与分步尝试的有效性。; 任务：要求购买并阅读一本Playboy，在会谈中允许他批评内容与咨询师的选择，鼓励具体观察而非抽象化；识别出现的羞耻与罪恶感。",
+    "therapist_response": "引入性材料以缓解阅读抑制：允许批判、具体观察并连接安全与常态",
+    "targeted_conflict": "Defense mechanisms",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "67dc80bbfddbdeaba1b82df3b76de1a2"
+  },
+  {
+    "case_id": 9,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：总结上次阅读作业体验与情绪记录，确认在谈论性材料时的安全与自我表达的边界。; 任务：邀请李明叙述手部疤痕的来历与家族版本，逐步核对事实，连接“燃烧地狱”的幻觉意象与“被灼烧”的真实经历，强化现实锚定。",
+    "therapist_response": "童年创伤的事实校正与母亲意象的分辨：处理理想化与合理化，链接幻觉意象与早期经验",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c961b3b0dc419ffd98563e15fae48ee9"
+  },
+  {
+    "case_id": 9,
+    "intervention_type": "Defense Analysis",
+    "situation": "回顾：检查上次关于母亲相关材料的情绪与防御记录，评估事实校正后的幻觉变化与安全感。; 任务：重建并细化与权威人物的对话情景（坚持ECT/贬低心理治疗），识别其带来的“必然毁灭”感，区分当下现实与旧的内在威胁表征。",
+    "therapist_response": "负性移情与权威恐惧的澄清：强化保护与现实检验（ECT与否的争论）",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "c28743b5f9c2d3116d275bd76b4e35b5"
+  },
+  {
+    "case_id": 9,
+    "intervention_type": "Psychodynamic Facilitation",
+    "situation": "回顾：评估上次在权威触发情境中的脚本使用与保护性承诺对恐惧减轻的效果。; 任务：试行躺椅设置并实时命名“模糊”引发的此时此地移情；若恐惧飙升则回退为面对面以维持安全感。",
+    "therapist_response": "在躺椅上处理“模糊”与此时此地移情：客体关系的识别与整合",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "4843d410a62ed67e163cbd43ba56133b"
+  },
+  {
+    "case_id": 9,
+    "intervention_type": "Interpretation",
+    "situation": "回顾：检查躺椅设置与客体关系图谱的使用体验，评估对分裂与负性填充的识别与整合进展。; 任务：将写作阻滞与性羞耻、完美化追求和被惩罚恐惧链接到核心愿望—恐惧—防御目标；解释“思想/感受许可、行为可控”的原则以重塑内在监督者（superego）。",
+    "therapist_response": "核心冲突的解释与功能性目标推进：写作阻滞与对日常享乐的罪疚",
+    "targeted_conflict": "Underlying fear and anxiety",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "9aaeb698f90a9ec4daf39be1ab83ba1a"
+  },
+  {
+    "case_id": 9,
+    "intervention_type": "Confrontation",
+    "situation": "回顾：检查上次写作与享乐计划的执行与罪疚/恐惧曲线，确认有效的自我安抚与现实检验策略。; 任务：为躯体化/幻觉再现建立分步应对流程（命名—区分象征/现实—自我安抚—必要时电话联系—复盘诱因），并以演练的方式巩固。",
+    "therapist_response": "技能巩固与复发预防：识别躯体化与象征性重演并制定应对流程",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "1b9bc32d40382b6730c04c01949fa338"
+  },
+  {
+    "case_id": 9,
+    "intervention_type": "Connection Making",
+    "situation": "回顾：评估上次复发预防流程与触发—回应卡片的使用情况，强化有效步骤并修订不足。; 任务：制定婚姻与亲子互动中的具体沟通与支持计划（界限、分享、共同活动与自我照顾），并识别旧客体意象被触发的时刻与自我安抚语句。",
+    "therapist_response": "人际关系巩固与结束准备：婚姻与父子修复、角色边界与分享",
+    "targeted_conflict": "Complex intrapsychic conflict",
+    "goal": "通过揭示无意识冲突与防御机制，促进内部整合",
+    "extraction_hash": "b28b49df2eb086938f359643d9293487"
+  }
+]

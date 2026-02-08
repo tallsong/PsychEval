@@ -1,0 +1,1127 @@
+[
+  {
+    "case_id": 1,
+    "self_representation": "我是很被动地承受分离的人",
+    "object_representation": "他是冷漠、会随时离开的、不负责任的他者",
+    "linking_affect": "被抛弃感",
+    "relational_pattern": "Passive Submission to Potential Abandonment",
+    "transference_potential": "Likely paternal/maternal transference patterns",
+    "extraction_hash": "2a0e4b9947be51dc4d4c099af7bc4fb8"
+  },
+  {
+    "case_id": 1,
+    "self_representation": "我是会轻易地将自己交给对方的人",
+    "object_representation": "他起初是被理想化的完美者，随后变成特别坏、不能满足我需求的人",
+    "linking_affect": "失望与怨恨",
+    "relational_pattern": "Dependent Attachment with Idealization",
+    "transference_potential": "Likely positive transference with idealization risk",
+    "extraction_hash": "3c44c6a358f69d14d99e2fbb5933b7ae"
+  },
+  {
+    "case_id": 10,
+    "self_representation": "无助的被抛弃的孩子",
+    "object_representation": "不可靠、会抛弃或忽视的父母形象",
+    "linking_affect": "恐惧、绝望、孤独",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "ae6ba0eaf289cb4376d1679972e160a6"
+  },
+  {
+    "case_id": 10,
+    "self_representation": "需要被照顾的脆弱小女孩",
+    "object_representation": "无法时刻照顾、容易忽视和教育她的恋人/同伴",
+    "linking_affect": "压抑、愤怒、失望",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "f7ca14d047c308538c12658eaea61028"
+  },
+  {
+    "case_id": 11,
+    "self_representation": "比较自卑，总是认为自己有错，认为自己有病",
+    "object_representation": "父母在其小的时候就在外打工，很少回家，把更多的爱给了弟弟，与你缺乏亲密感",
+    "linking_affect": "嫉妒、害怕、孤寂、焦虑",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "2aa50de5e41694469d2128a22ea3ead2"
+  },
+  {
+    "case_id": 11,
+    "self_representation": "需要通过讨好来维系关系的自己，不能勇于表达自己，缺乏自信",
+    "object_representation": "“拒绝了朋友就会失去朋友”的他人意象",
+    "linking_affect": "不安、害怕失去、纠结",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "8f224763da39f7dcdc2fb079ebd37f17"
+  },
+  {
+    "case_id": 12,
+    "self_representation": "孤独、缺乏安全感的长期留守儿童，容易受伤的被忽视者",
+    "object_representation": "不可靠、沟通缺失的照料者（父母与年长亲属），难以信任他人",
+    "linking_affect": "不安、恐惧、失望",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "3c10aff0e3ac6bb6b760cd1bb361e528"
+  },
+  {
+    "case_id": 12,
+    "self_representation": "随时可能被议论与否定的脆弱个体",
+    "object_representation": "会窃窃私语、可能在说自己的他人（同学/家人）",
+    "linking_affect": "怀疑、紧张、焦虑",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "c0214f6cab0f26610f9f60197750e414"
+  },
+  {
+    "case_id": 13,
+    "self_representation": "“不被欢迎生出来”的人，从小到大一直在孤军奋战",
+    "object_representation": "父亲脾气暴躁，经常打母亲也打她；父母偏爱弟弟",
+    "linking_affect": "害怕、愤怒、嫉妒",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "f9e976d3d334d78d62cb7634353b0d28"
+  },
+  {
+    "case_id": 13,
+    "self_representation": "“有罪的人”，不够纯洁；“我确实一直都觉得我配不上一个没有缺陷的人”",
+    "object_representation": "与任何人在一起都很累，很怕那人看到自己的缺点后会厌倦，会先离开自己；她老要变换着方式考验他",
+    "linking_affect": "羞耻、内疚、害怕",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "f42cf7c8c34ec9864d7f515202a076a4"
+  },
+  {
+    "case_id": 13,
+    "self_representation": "“做过第三者”，觉得是可耻的，心中充满了罪恶感",
+    "object_representation": "老师老要对她有性表示；有时觉得那老师是在欺负她，同时又觉得那老师很可怜",
+    "linking_affect": "羞耻、反感、怜悯、矛盾",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "92bdf041efe576f6fdc3d4e2e5e79dd6"
+  },
+  {
+    "case_id": 14,
+    "self_representation": "无助、被动、易被伤害的孩子/受害者",
+    "object_representation": "强势、控制性、可能施暴的父性客体",
+    "linking_affect": "憎恨与恐惧、无力感",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "1c4b9479df9cefdfee0a70ad594f2158"
+  },
+  {
+    "case_id": 14,
+    "self_representation": "渴望被接纳的追随者，女性化、被动",
+    "object_representation": "易变、拒绝、玩乐态度的男性伴侣",
+    "linking_affect": "痛苦、失望、孤独",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "7c69e50b61209a36c895b6335c0e666f"
+  },
+  {
+    "case_id": 14,
+    "self_representation": "与母亲亲密、同情并依恋的孩子",
+    "object_representation": "受伤但温柔的照顾者/需要被保护的母亲",
+    "linking_affect": "怜悯、依恋、温情",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "209b9842434c9285a304b9a57bfc6b9c"
+  },
+  {
+    "case_id": 15,
+    "self_representation": "我是在亲近的人发生矛盾时会紧张、很难放松、像“小女孩”一样害怕的旁观者。",
+    "object_representation": "亲近的人会吵架，让我感到不安全的他者。",
+    "linking_affect": "紧张、不安全感、恐惧",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "1fb0f1d2b17f01ab582a7d2b92b62df2"
+  },
+  {
+    "case_id": 15,
+    "self_representation": "我是对不安全的环境特别敏感、容易因他人矛盾而失眠的人。",
+    "object_representation": "舍友/宿舍是紧张压抑、可能突然大吵的环境与他者。",
+    "linking_affect": "压抑、焦虑",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "0eb830ba34315009edefa51a8f92bad5"
+  },
+  {
+    "case_id": 16,
+    "self_representation": "觉得处处不如人，有自卑感；“我是个怪物”",
+    "object_representation": "同学会嘲笑我、会讨厌我",
+    "linking_affect": "羞耻、恐惧、紧张不安",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "875f256b5ed029950a4de695e38c507a"
+  },
+  {
+    "case_id": 16,
+    "self_representation": "容易犯错、会被当众批评的人",
+    "object_representation": "老师是会批评和惩罚我的权威",
+    "linking_affect": "害怕、不安、羞耻",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "41dac39b70dc1b33e76aa18f6c939bf4"
+  },
+  {
+    "case_id": 17,
+    "self_representation": "我是需要被照顾、胆小怕事的孩子。",
+    "object_representation": "父母是过分照顾、过度保护的照顾者。",
+    "linking_affect": "依恋与恐惧",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "233de8b359532069d45c2e4c24e3044e"
+  },
+  {
+    "case_id": 17,
+    "self_representation": "我是在人多时拘谨、容易发窘的胆怯者。",
+    "object_representation": "他人是会笑话我、令我窘迫的群体。",
+    "linking_affect": "羞耻、恐惧",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "f9a21134bbfc09d4d4de7f568f42eecf"
+  },
+  {
+    "case_id": 17,
+    "self_representation": "我是容易遭遇灾祸的脆弱者。",
+    "object_representation": "外界（学校/社会/道路）是充满危险的场所。",
+    "linking_affect": "焦虑、恐惧",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "929c854e57d895289d6704fc2dd8ee0a"
+  },
+  {
+    "case_id": 18,
+    "self_representation": "我是被父母遗弃的孤独的孩子。",
+    "object_representation": "他人（父母/姨母）不能给予关爱，在学业上非常严苛。",
+    "linking_affect": "孤独、难过",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "b67e61dfebae6881b3ed0286609d9c01"
+  },
+  {
+    "case_id": 18,
+    "self_representation": "我不讨人喜欢。",
+    "object_representation": "舍友和同学会对我挑剔或冷淡，我对他人态度的反馈极其敏感。",
+    "linking_affect": "焦虑、自责",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "026ce1e2df74964ffd1773af0b28a450"
+  },
+  {
+    "case_id": 19,
+    "self_representation": "我是寄人篱下、容易被忽视的不被喜欢的人",
+    "object_representation": "他人（同学/室友）是看不起我、会忽视我的人",
+    "linking_affect": "自卑、孤独、被忽视的失落",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "b5b37760dd81cc38073c7ce3fbc3fb68"
+  },
+  {
+    "case_id": 19,
+    "self_representation": "我是需要乖巧讨好才能获得照顾的孩子",
+    "object_representation": "母亲/照料者是强势、挑剔、比较苛责的照料者",
+    "linking_affect": "紧张、压抑、不满",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "043b894ede47a88b899c25772581759b"
+  },
+  {
+    "case_id": 19,
+    "self_representation": "我是被冷淡期待却难以被看见的孩子",
+    "object_representation": "父亲是少言、疏离、期望高但不回应的权威者",
+    "linking_affect": "失望、疏离、孤独",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "249cd53cc36c4ce1aacbb6cafb09188e"
+  },
+  {
+    "case_id": 2,
+    "self_representation": "我是很不重要、没人爱的被遗弃者",
+    "object_representation": "他人（外婆、母亲、舅舅、老师）是冷漠、苛责、拒绝与控制者",
+    "linking_affect": "恐惧与羞耻",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Likely paternal/maternal transference patterns",
+    "extraction_hash": "cc7023a39c60537a349e093351ba3e9a"
+  },
+  {
+    "case_id": 2,
+    "self_representation": "我是离不开他、害怕被抛弃的依赖者",
+    "object_representation": "他是可以拯救我但终会离开的拒绝者",
+    "linking_affect": "焦虑、依赖与失落",
+    "relational_pattern": "Dependent Attachment with Idealization",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "7d12f53cfeeb1421909b42074b21125c"
+  },
+  {
+    "case_id": 20,
+    "self_representation": "小心翼翼、愧疚的忍让者，害怕麻烦他人的人。",
+    "object_representation": "强势、审视、容易生气并可能惩罚自己的他者（权威/室友/咨询师）。",
+    "linking_affect": "恐惧、愧疚、不安",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "8de6e0ee72d4579e1ce539e49f8ddce1"
+  },
+  {
+    "case_id": 20,
+    "self_representation": "想靠近并照顾却又害怕被伤害的孩子/照顾者。",
+    "object_representation": "需要被照顾但易怒、会“电击”的母亲。",
+    "linking_affect": "矛盾、恐惧、怜爱/愧疚",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "adaa684d29457d1757c42b8ab69eecdf"
+  },
+  {
+    "case_id": 20,
+    "self_representation": "软弱的被要求者，同时带着为父亲打抱不平的挑衅冲动。",
+    "object_representation": "替代父亲角色的强势控制者、看不上父亲的哥哥。",
+    "linking_affect": "恐惧、愤怒、矛盾",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "b3333ed6043991b28b6e7ae283528789"
+  },
+  {
+    "case_id": 20,
+    "self_representation": "愿意理解与接纳他人的调解者。",
+    "object_representation": "不够合格但希望被接纳的父亲。",
+    "linking_affect": "同情、忠诚、内疚",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "f629ce9883aeadb9af313e17756eefcd"
+  },
+  {
+    "case_id": 21,
+    "self_representation": "我是弱小、敏感、渴望依赖却得不到稳定支持的孩子。",
+    "object_representation": "她是既亲近又把我往外推、不可完全依赖的母亲。",
+    "linking_affect": "焦虑、害怕、失望",
+    "relational_pattern": "Dependent Attachment with Idealization",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "2dc63ffac52a2ef906c4f537ccc70e3e"
+  },
+  {
+    "case_id": 21,
+    "self_representation": "我是被疏远、不被看见的女儿。",
+    "object_representation": "他是长期缺席、疏离、不可靠的父亲。",
+    "linking_affect": "被遗弃感、愤怒、失望",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "cd3d615b55c147827636fb44aa7983e4"
+  },
+  {
+    "case_id": 21,
+    "self_representation": "我是需要关系又害怕靠近、躲在城堡里的人。",
+    "object_representation": "他们是可能打扰、限制、带有功利性的他人或圈子。",
+    "linking_affect": "矛盾、厌烦、恐惧绑定",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "6b59211acb16064f85702fa6f4a0d736"
+  },
+  {
+    "case_id": 22,
+    "self_representation": "我是因为学习、说话的声音、长相而自卑、不敢主动接触女生的人",
+    "object_representation": "她们（女生）会斥责、拒绝我，肯定没有女生喜欢我",
+    "linking_affect": "羞耻、恐惧、渴望",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "0b36b9751239bdf71a00995261e66224"
+  },
+  {
+    "case_id": 22,
+    "self_representation": "我是被否定、不被理解的患者",
+    "object_representation": "医生是不理解、否认我的人（认为我不是性变态）",
+    "linking_affect": "愤怒、不耐烦、怀疑",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "4533ef0cb488ed882c5abf2a1dcf0e91"
+  },
+  {
+    "case_id": 22,
+    "self_representation": "我是可能做出出格行为而被赶走的人",
+    "object_representation": "他人是会赶走/排斥我的群体",
+    "linking_affect": "焦虑、害怕",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "e83cc2f023c1f2c4626204bb0b115b9c"
+  },
+  {
+    "case_id": 23,
+    "self_representation": "小心翼翼、害怕做错事情而被骂的孩子",
+    "object_representation": "严格训斥、很少夸奖的妈妈",
+    "linking_affect": "恐惧、紧张",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "c30fd2301d061d7e3406a5b6ac2f4fac"
+  },
+  {
+    "case_id": 23,
+    "self_representation": "在与同学交流时很自卑，不敢积极的表现自己（觉得自己一点用也没有）",
+    "object_representation": "身边的同学非常优秀、学习轻松、敢于绽放和表现自己；总是被人误解的他人",
+    "linking_affect": "自卑、失落、压力",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "6848755432d1417215a054150577cae2"
+  },
+  {
+    "case_id": 24,
+    "self_representation": "被网暴排挤的无助受害者、随时可能被欺负的弱小个体。",
+    "object_representation": "不可预测、冷漠甚至带有恶意的攻击者/拒绝者（同伴与部分师长）。",
+    "linking_affect": "恐惧、焦虑、愤怒与绝望。",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Likely paternal/maternal transference patterns",
+    "extraction_hash": "9a2c0b2095e9dfb5ae2d6297e7610adb"
+  },
+  {
+    "case_id": 24,
+    "self_representation": "需要被照顾、无法独自应对的婴儿般的孩子。",
+    "object_representation": "强有力的、但可能随时将其排挤出关系的“母亲”（被置于母亲角色的女性咨询师/母亲）。",
+    "linking_affect": "强烈的依恋渴望与期待，伴随对被排斥与中断的担忧。",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "3b45b21651193302f2920776ea4b8c31"
+  },
+  {
+    "case_id": 25,
+    "self_representation": "恐惧不安、孤独无助的“真小孩”。",
+    "object_representation": "他人“不明白我的感受、没有人支持我的行动”，母子间的交流总存在“时差”。",
+    "linking_affect": "悲伤、孤单、无助；愤怒与不满。",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "36a1637663e7659bed7133c127740a7c"
+  },
+  {
+    "case_id": 25,
+    "self_representation": "执拗倔强、独立自主的“伪大人”，严于律己的“学霸”。",
+    "object_representation": "包括父母、老师、同学在内的“他人的愿望，或者他认为的别人的期待”。",
+    "linking_affect": "压力、焦虑、崩溃。",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "0402f4ae5a1b573af55ff9b4d227f9dc"
+  },
+  {
+    "case_id": 26,
+    "self_representation": "像个什么都做不好的傻瓜",
+    "object_representation": "她（母亲原型/中年妇女）是挑剔、审视、易愤怒的权威",
+    "linking_affect": "恐惧",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "9e83c4463ef46d0593dfc7ea65e88d3c"
+  },
+  {
+    "case_id": 26,
+    "self_representation": "在权威面前不善于展现自己的内向者",
+    "object_representation": "他（父亲/权威人士）是拘谨、不苟言笑的评判者",
+    "linking_affect": "焦虑",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "1ea435814754ba5341ebed94c6d7975d"
+  },
+  {
+    "case_id": 27,
+    "self_representation": "弱小无助只能被动承受伤害的自己",
+    "object_representation": "严苛、攻击性、会惩罚和言语攻击的父母，家是黑暗与恐惧的来源",
+    "linking_affect": "恐惧、窒息感、无助",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "62751732eec95c32aee9a8ead2cfee7a"
+  },
+  {
+    "case_id": 27,
+    "self_representation": "需要被同龄人拯救与保护的依赖者",
+    "object_representation": "“值得依靠、能带自己离开现在的家庭”的拯救者，同时可能成为拒绝者",
+    "linking_affect": "渴望、焦虑、绝望",
+    "relational_pattern": "Dependent Attachment with Idealization",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "ab76b50464dbbf693fa7d39753623ab4"
+  },
+  {
+    "case_id": 28,
+    "self_representation": "处处不如人、容易丢脸的被排斥者",
+    "object_representation": "炫耀、自我优越、在心里嘲笑自己的同伴",
+    "linking_affect": "羞耻、恐惧、孤独",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "79c4cd2b2e2b1879dfa5ea3d9c61e1f6"
+  },
+  {
+    "case_id": 28,
+    "self_representation": "需要被认可但不敢表达的孩子",
+    "object_representation": "严厉、不苟言笑、令人生畏的父亲",
+    "linking_affect": "紧张、畏惧",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "6bf2bc9b9c7242ee5f212c95485cb4a8"
+  },
+  {
+    "case_id": 29,
+    "self_representation": "被抛弃的孩子",
+    "object_representation": "冷酷无情的、会抛弃她的照顾者",
+    "linking_affect": "恐惧、绝望",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "90221c7beeef7d1b5d28259237595e9a"
+  },
+  {
+    "case_id": 29,
+    "self_representation": "无助、索取关注的孩子",
+    "object_representation": "被耗竭、无力照顾的父母/养育者",
+    "linking_affect": "失望、内疚",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "c2981c0158acccf44cab965e9da479d6"
+  },
+  {
+    "case_id": 29,
+    "self_representation": "渴望被关心与理想亲密的孩子/恋人",
+    "object_representation": "完美的照顾者/理想伴侣",
+    "linking_affect": "依恋、渴望",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Likely positive transference with idealization risk",
+    "extraction_hash": "3e6cd856753a3e02477ea8690d0d006b"
+  },
+  {
+    "case_id": 3,
+    "self_representation": "我是容易自我怀疑、过于重视他人意见的人。",
+    "object_representation": "他人/世界是充斥明文规范和隐形约定的审视者，常以期许与标准要求我“表演”。",
+    "linking_affect": "内疚与焦虑",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "61075df158c1e1332e89e6767449953d"
+  },
+  {
+    "case_id": 3,
+    "self_representation": "我是试图组织和引导他人的摄影师。",
+    "object_representation": "他是不配合、粗鲁的孩子/他者，会否定我并拒绝配合。",
+    "linking_affect": "挫败",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "abbfefdf61ce39d18e44be8fc87b930f"
+  },
+  {
+    "case_id": 30,
+    "self_representation": "我是随时可能被抛下、得不到稳定关爱的女儿",
+    "object_representation": "母亲是矛盾、易责骂、情绪不稳定的主要照顾者",
+    "linking_affect": "恐惧、愤怒、失望",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "000daf80267b72a93fde5e8168412cb3"
+  },
+  {
+    "case_id": 30,
+    "self_representation": "我是不被重视、常被责骂的孩子",
+    "object_representation": "父亲是蛮不讲理、偏爱姐姐的拒绝者",
+    "linking_affect": "怨恨、失望",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "4786c296d50e04a96a65df586b3c2111"
+  },
+  {
+    "case_id": 30,
+    "self_representation": "我是被排斥、没人喜欢的同学",
+    "object_representation": "室友/同学是疏远、挑剔、故意与我作对的人",
+    "linking_affect": "自卑、愤怒、委屈",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "165d6b3358b3aa2e3d2e264403618b9c"
+  },
+  {
+    "case_id": 30,
+    "self_representation": "我是被理解、被接纳的女儿",
+    "object_representation": "咨询师是理想的妈妈、稳定的支持者",
+    "linking_affect": "温暖、依恋",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "b22a174d42c0a3df9a074e93131c4174"
+  },
+  {
+    "case_id": 31,
+    "self_representation": "内疚、夹在父母之间的女儿，接受父爱就像“对不起妈妈”。",
+    "object_representation": "父亲既是曾伤害母亲的人，又是关心自己、表达父爱的温暖者。",
+    "linking_affect": "矛盾、爱与内疚",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "99924eb2b35bfb60c16c8d389b2ef18b"
+  },
+  {
+    "case_id": 31,
+    "self_representation": "需要忠诚与安抚母亲的女儿，害怕被母亲不要。",
+    "object_representation": "母亲是受伤、可能会拒绝或抛弃自己的重要他人。",
+    "linking_affect": "害怕、担心、愧疚",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "70e148767fb73579caa2d213cf6dfaf6"
+  },
+  {
+    "case_id": 32,
+    "self_representation": "“不行，不能像妈妈一样，这样就对不起爸爸了”",
+    "object_representation": "“爸爸非常爱我”",
+    "linking_affect": "恐慌、内疚",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "8df2ef979f188e5e051fe554b79d8c72"
+  },
+  {
+    "case_id": 32,
+    "self_representation": "“原来我不是没母亲爱的小孩！”",
+    "object_representation": "她的内心是深深渴望并依恋自己的亲生母亲",
+    "linking_affect": "思念、眷恋",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "1eaea63628a77df3e5ea5516fb4bfa83"
+  },
+  {
+    "case_id": 32,
+    "self_representation": "情愿将其压抑、封闭起来，不愿展现给外人",
+    "object_representation": "小柱印象中的母亲一直都是一个“不负责任、抛弃家庭、不守妇德”的负面形象（来自父亲与亲友）",
+    "linking_affect": "矛盾、抗拒",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Likely paternal/maternal transference patterns",
+    "extraction_hash": "4480d97a21cc1ebda41d8dec85ba8c5a"
+  },
+  {
+    "case_id": 33,
+    "self_representation": "我是未能以更好的成绩来回报他们的孩子",
+    "object_representation": "她（母亲）是强势的责骂者，凡事都得顺着她的意",
+    "linking_affect": "内疚、自责与不悦交织，伴随害怕被责骂",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "3e374c9b48151641d92922ff64482bb3"
+  },
+  {
+    "case_id": 33,
+    "self_representation": "我是不被父亲牵手、也不习惯被父亲牵手的孩子",
+    "object_representation": "他（父亲）是游手好闲、未承担家庭责任、对弟弟有管制的人",
+    "linking_affect": "怨恨、失望、无奈",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "0decd2143882988c125c449a802ca362"
+  },
+  {
+    "case_id": 33,
+    "self_representation": "我和他们不一样，基本没什么朋友，独来独往",
+    "object_representation": "他们（同学/他人）是在细碎的谈话里说我、可能带来伤害的人",
+    "linking_affect": "敏感、猜疑、疏离",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "73c2bf37c61072e937f6fa527fb54054"
+  },
+  {
+    "case_id": 34,
+    "self_representation": "必须时刻警觉、不能生病的孝顺女儿",
+    "object_representation": "脆弱且易因自己健康而恐慌的父母",
+    "linking_affect": "不安、恐惧、内疚",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "30413088dd5a697710036b0be57d588a"
+  },
+  {
+    "case_id": 34,
+    "self_representation": "在学校能自在、被接纳的学生",
+    "object_representation": "同学与老师是友好、可接纳的他人",
+    "linking_affect": "放松、安全感",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "b08405306911d4ebd24605bbe77e28f8"
+  },
+  {
+    "case_id": 35,
+    "self_representation": "我是不被喜欢的、被忽视的女孩。",
+    "object_representation": "重要他人（如外婆）是重男轻女、冷漠偏心的拒绝者。",
+    "linking_affect": "伤心与愤怒",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Likely paternal/maternal transference patterns",
+    "extraction_hash": "d9b85508a20e3df3d4966246e4509c44"
+  },
+  {
+    "case_id": 35,
+    "self_representation": "我是容易被同伴欺负的受害者。",
+    "object_representation": "同学是挑衅和霸凌的加害者。",
+    "linking_affect": "恐惧与愤怒",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "d7aa9ef0b186545868ce7caacc3d5c9d"
+  },
+  {
+    "case_id": 35,
+    "self_representation": "我是被照料不足、需要被理解与安抚的孩子。",
+    "object_representation": "母亲是忙碌、疏离、难以提供稳定关爱的照顾者。",
+    "linking_affect": "失望与渴望",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "0037b4493f8899367894bff714ded314"
+  },
+  {
+    "case_id": 36,
+    "self_representation": "我是可耻、会被看穿的被羞辱者",
+    "object_representation": "他是能看穿并辱骂我的男性、冷酷的指责者",
+    "linking_affect": "恐惧、羞耻、敏感、多疑",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "993ee6cd575013b7429a3f09fe1a51a9"
+  },
+  {
+    "case_id": 36,
+    "self_representation": "我是不守本分、可能被瞧不起的人",
+    "object_representation": "咨询员会评价我、瞧不起我",
+    "linking_affect": "羞耻、担心被否定",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "cd5e6a05e03d89c99e459ac80138e621"
+  },
+  {
+    "case_id": 37,
+    "self_representation": "我是会脸红、难为情的孩子",
+    "object_representation": "她是“太不道德”“太让人受不了”的成人",
+    "linking_affect": "羞耻、难为情",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "31861a142b929225a63803b25e69c5e3"
+  },
+  {
+    "case_id": 37,
+    "self_representation": "我是不由自主会注意或想象其阴部、紧张不自在的女孩",
+    "object_representation": "他是令我紧张不安的男性形象",
+    "linking_affect": "紧张、不自在、羞耻",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "998f1af1e1db7942f10da70817251160"
+  },
+  {
+    "case_id": 38,
+    "self_representation": "我是有罪、幼稚、需要自我克制的“小男孩”，在学校被称为“冷血动物”，在工作中是“一心扑在工作上的‘工作狂’”。",
+    "object_representation": "女性（母亲/妻子/姑姑）是不可碰触、会带来羞耻与罪过的对象；妻子在想象中等同于“母亲”。",
+    "linking_affect": "羞耻、负罪感、焦虑、紧张",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "e50095fe6b811a9e940bf7d123a776f4"
+  },
+  {
+    "case_id": 38,
+    "self_representation": "我是对女性冷若冰霜、不与人接触的人。",
+    "object_representation": "女工是“大胆地想接近我”的诱惑者与潜在危险源。",
+    "linking_affect": "回避、冷漠、不安",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "fa492199d2d754998357f26e49045ab9"
+  },
+  {
+    "case_id": 39,
+    "self_representation": "在面对死亡时我是一个无助、害怕的“小孩子”",
+    "object_representation": "医院、死人、重病人/灾难性场面是令我恐惧的威胁者",
+    "linking_affect": "恐惧、崩溃感",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "f4e8a33965d32e58723bc51964cb81e0"
+  },
+  {
+    "case_id": 39,
+    "self_representation": "需要他人陪伴才能感到安全的依赖者",
+    "object_representation": "母亲（在一边渲染）是强化恐惧的他人",
+    "linking_affect": "害怕、紧张",
+    "relational_pattern": "Dependent Attachment with Idealization",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "fe080ac73cda77a72b93daf4a2f3694c"
+  },
+  {
+    "case_id": 4,
+    "self_representation": "无助、脆弱、容易被指责和看穿的孩子",
+    "object_representation": "严厉、可怕、带有审视与批评目光的成人（老师/权威）",
+    "linking_affect": "恐惧、羞耻、委屈",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "3467692874aca634a46c921ef01fb206"
+  },
+  {
+    "case_id": 4,
+    "self_representation": "渴望亲近却被疏离的孩子",
+    "object_representation": "难以亲近、敏感多疑的母亲",
+    "linking_affect": "不安全、疏离、渴望",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "5e951e75fe06d85eb7168900373ba145"
+  },
+  {
+    "case_id": 4,
+    "self_representation": "自卑、怕被嘲笑和否定的同学",
+    "object_representation": "敌意与嘲弄的同伴",
+    "linking_affect": "紧张、羞辱、恐惧",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "339866f3fb6a19e405012bda4422c1ba"
+  },
+  {
+    "case_id": 4,
+    "self_representation": "在异性面前不大方、觉得自己很丑且矮小的少年",
+    "object_representation": "美丽并具有评判性的女孩/陌生异性",
+    "linking_affect": "自卑、慌乱、逃避",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "b331ce639af69a638aa8f1a21cb88789"
+  },
+  {
+    "case_id": 40,
+    "self_representation": "“像走在钢丝上，不能走错一步”的必须严格自控者；“不相信自己也不相信他人”",
+    "object_representation": "母亲是严格、掌控欲强、惩罚式的权威；后期成为被依赖的正确答案提供者",
+    "linking_affect": "恐惧、紧绷、依赖",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "f525d879b85b9012788ea5cb74061be1"
+  },
+  {
+    "case_id": 40,
+    "self_representation": "“宁愿被人认为是书呆子，也不想与人相处”，需要待在狭窄的安全之地的人",
+    "object_representation": "同学/他人是可能冷落、滥用（如照片）、会议论和疏远的不可信他者",
+    "linking_affect": "不信任、担忧、厌恶",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "3b5beb2d9e9aa947140c3c0abef7a3ba"
+  },
+  {
+    "case_id": 40,
+    "self_representation": "需要被支持、肯定和确认的来访者",
+    "object_representation": "咨询师是可以提供支持、肯定与确认的依赖客体",
+    "linking_affect": "渴望安全、依赖、紧迫感",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "69d016eb656abcb286ba530031cd5e4f"
+  },
+  {
+    "case_id": 41,
+    "self_representation": "我是会在一旁吓得发抖的无助小女孩，遇到亲近的人冲突就紧张、坐立不安。",
+    "object_representation": "亲近的人发生矛盾冲突的他人令人紧张、让人有不安全感。",
+    "linking_affect": "紧张、不安全感、恐惧",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "06f2ebf61b074db30c71ebd6f66062a3"
+  },
+  {
+    "case_id": 41,
+    "self_representation": "我是对不安全的环境特别敏感、容易因冲突而失眠的人。",
+    "object_representation": "舍友夜里大吵、宿舍两派冷战的他人与环境是压迫性的、让人难以放松。",
+    "linking_affect": "压抑、焦虑",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "a1bf065abe68162a48d11f5f5a4291ee"
+  },
+  {
+    "case_id": 42,
+    "self_representation": "我是比别人差、会被嘲笑的脆弱者",
+    "object_representation": "老师/同学是可能点名、评判并让人难堪的嘲笑者",
+    "linking_affect": "羞耻与恐惧",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "87258cbf4555fde6f7424ca908a19258"
+  },
+  {
+    "case_id": 42,
+    "self_representation": "我是随时可能生病、不可掌控的受害者",
+    "object_representation": "亲人/重要他者是不可依靠的疏离照护者（物质照顾但情感缺位）",
+    "linking_affect": "无助与失望",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "3a870300c083e3b315151eb78b57b2c3"
+  },
+  {
+    "case_id": 42,
+    "self_representation": "我不够好、需要不断努力以免被淘汰的人",
+    "object_representation": "学校/班级是苛刻的评判系统，随时会剔除表现不突出者",
+    "linking_affect": "焦虑与不安全感",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "ba76c9056c8f80084978e77595a4a00f"
+  },
+  {
+    "case_id": 43,
+    "self_representation": "我是“不够好”的、不配被关注的孩子",
+    "object_representation": "他是冷漠偏爱的拒绝者或权威的评判者",
+    "linking_affect": "被抛弃感、怨恨、不安",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Likely paternal/maternal transference patterns",
+    "extraction_hash": "7f6e15f3b9a701669485249cea613ed6"
+  },
+  {
+    "case_id": 43,
+    "self_representation": "我需要讨好、随时被责怪的孩子",
+    "object_representation": "她是不可预测、易迁怒且令人害怕的母亲",
+    "linking_affect": "恐惧、紧张、无助",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "693ecf3bfd17371628ac1c380bf52087"
+  },
+  {
+    "case_id": 43,
+    "self_representation": "我是焦虑而需要安慰的依赖者",
+    "object_representation": "他是耐心的安抚者与保护者",
+    "linking_affect": "依恋、安心、感激",
+    "relational_pattern": "Dependent Attachment with Idealization",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "a0e7140f09d344d39e0aa09ac1302a7c"
+  },
+  {
+    "case_id": 43,
+    "self_representation": "我是需要被重视又害怕被拒的求助者",
+    "object_representation": "他/她是设限的权威、可能冷漠的评判者",
+    "linking_affect": "试探、紧张、被拒感与期待",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Likely paternal/maternal transference patterns",
+    "extraction_hash": "d7cfe7adeb5d0cdfb3df9d213c57e5da"
+  },
+  {
+    "case_id": 44,
+    "self_representation": "我是被别人当做是怪物的被欺负者",
+    "object_representation": "他们是嘲笑我、嫌弃我、找人打我的人",
+    "linking_affect": "恐惧与羞耻",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "13226fec09cdf430a1d80695a3e429fe"
+  },
+  {
+    "case_id": 44,
+    "self_representation": "我是让父母担心、对不起父母的女儿",
+    "object_representation": "父母是疼爱我、为我找药并担忧我的人",
+    "linking_affect": "愧疚与依恋",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "02288afef3ac3601deb1bdda1e43baf5"
+  },
+  {
+    "case_id": 45,
+    "self_representation": "“不够好、易犯错”的被督促者，内含愧疚与自责",
+    "object_representation": "父母与姥爷是严格的督促者、评判者（高标准的期望与监督）",
+    "linking_affect": "愧疚、焦虑、恐惧",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "d1de5f0f774d19853efcd953983b6e0f"
+  },
+  {
+    "case_id": 45,
+    "self_representation": "需要被安抚和帮助的求助者",
+    "object_representation": "咨询师是可信的帮助者与容纳者",
+    "linking_affect": "好奇、安心、依赖",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "f96d26943973fbe6b9775b51cd659ee0"
+  },
+  {
+    "case_id": 46,
+    "self_representation": "内在还不稳定，处于飘忽的感受",
+    "object_representation": "蛇象征男性的权威，男性的力量",
+    "linking_affect": "恐惧",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "88b42a43579cf4691d5ee79bc3aeea7a"
+  },
+  {
+    "case_id": 46,
+    "self_representation": "有很大的情绪体感受",
+    "object_representation": "咨询师不是评判自己对错，而且可以与自己共同去面对的可信任的人",
+    "linking_affect": "感受很舒服",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "609e131e891332a155017b9c3ee6d23d"
+  },
+  {
+    "case_id": 46,
+    "self_representation": "我开始慢慢上升，然后俯视小船",
+    "object_representation": "黑压压的人头变成黑灰色的大鱼",
+    "linking_affect": "恐惧",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "93d6015507220789aaddbee9e7aa825e"
+  },
+  {
+    "case_id": 47,
+    "self_representation": "我是有污点的、可耻的、和正常人不同的。",
+    "object_representation": "他是会贬低我、不能满足我、可能抛弃的“坏”客体（例如妻子、治疗师、领导）。",
+    "linking_affect": "羞耻、焦虑、愤怒",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Likely negative transference with devaluation",
+    "extraction_hash": "309ba032536b2391c0178132154157c6"
+  },
+  {
+    "case_id": 47,
+    "self_representation": "我是小有成就，被人景仰的。",
+    "object_representation": "他是理想化的“好”客体（新的性伴侣、能够倾听而不看清我的人）。",
+    "linking_affect": "轻松、解脱、安心",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Likely positive transference with idealization risk",
+    "extraction_hash": "a5d133b6f74b01cda41e8fafc4be8c23"
+  },
+  {
+    "case_id": 48,
+    "self_representation": "我是对父亲（老年男性）充满羡慕与冲动的孩子。",
+    "object_representation": "他是“很大、很粗、很有男人味儿”的强大男性客体，令人着迷。",
+    "linking_affect": "羡慕与兴奋",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "40d899af08a6255f75e2e8719373faa0"
+  },
+  {
+    "case_id": 48,
+    "self_representation": "我是在成人婚姻中“勉强”的丈夫。",
+    "object_representation": "妻子是成人性生活的对象，但“对妻子的思念渐少”，关系疏离。",
+    "linking_affect": "勉强与疏离",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "7266d53eaf0dcfbf99afc5d3b2810364"
+  },
+  {
+    "case_id": 49,
+    "self_representation": "我是令人嫌弃、容易被抛弃的孩子/无助的受害者",
+    "object_representation": "他是具有攻击性与控制欲的加害者（父亲）；她是冷漠的拒绝者（母亲）",
+    "linking_affect": "恐惧、愤怒、无助、被遗弃感",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Likely paternal/maternal transference patterns",
+    "extraction_hash": "10018f51ffba06b508159d8a89e3f21f"
+  },
+  {
+    "case_id": 49,
+    "self_representation": "我是需要被照顾的依赖者",
+    "object_representation": "她是理想的、可以托付秘密的母性化保护者",
+    "linking_affect": "依恋、安心、害怕失去",
+    "relational_pattern": "Dependent Attachment with Idealization",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "0275ed4efcb02a18629547326200e6dd"
+  },
+  {
+    "case_id": 49,
+    "self_representation": "我是渴望被看见与接纳的乖顺者",
+    "object_representation": "他/她是可能理解也可能批评的权威评判者",
+    "linking_affect": "焦虑、期待、不信任",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "77ea4a4f00e41e1fa69617a91dd9be07"
+  },
+  {
+    "case_id": 5,
+    "self_representation": "我是会因自己的错误被抛弃的孩子，需要忍气吞声的“老好人”。",
+    "object_representation": "父母/重要他人是审视、会责骂并随时可能抛弃我的人。",
+    "linking_affect": "恐惧、自责、悲伤",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "3dfec39e22ee8ac57728339b5f6db53d"
+  },
+  {
+    "case_id": 5,
+    "self_representation": "我是被当枪使、寄人篱下、必须讨好才能被接纳的人。",
+    "object_representation": "同学是虚伪、会出卖、在背后说三道四并审视我的人。",
+    "linking_affect": "羞耻、不安、愤怒",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "57a2a17d87bd3d4405791f37d9a08838"
+  },
+  {
+    "case_id": 50,
+    "self_representation": "我是羞耻的、不够好的、容易被议论的人",
+    "object_representation": "他人是苛刻的评判者与传播者，会盯着我并曝光我的不好",
+    "linking_affect": "羞耻、恐惧、焦虑",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "312544ed7ec51c8109c3c31607e05281"
+  },
+  {
+    "case_id": 50,
+    "self_representation": "我是需要自我保护、不能过于亲近的人",
+    "object_representation": "亲密他人（如父亲/同伴）是不负责任、可能令我失望的人",
+    "linking_affect": "失望、警惕",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Likely paternal/maternal transference patterns",
+    "extraction_hash": "791fe5972641f5d5252d684c74a9727d"
+  },
+  {
+    "case_id": 6,
+    "self_representation": "我是被忽视、需要通过竞争才能被看见的人。",
+    "object_representation": "他是偏心、严苛、会评价我的客体（父母/重要他人）。",
+    "linking_affect": "愤怒与委屈",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "2a0a2e563ac471849c610147b729b591"
+  },
+  {
+    "case_id": 6,
+    "self_representation": "我是容易被攻击的受害者。",
+    "object_representation": "同龄人/男性是会羞辱和伤害我的人。",
+    "linking_affect": "恐惧与不信任",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "52a74474e56bec493fcbc1701859919a"
+  },
+  {
+    "case_id": 6,
+    "self_representation": "我是不被允许表达需求的人。",
+    "object_representation": "他是不回应或“不存在”的照顾者（父亲）。",
+    "linking_affect": "失望与空虚",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "16de21c507099483d5b833f6ee7b854e"
+  },
+  {
+    "case_id": 7,
+    "self_representation": "不被关心、被打骂与忽视的受害者/女儿",
+    "object_representation": "冷漠、指责、否认与打骂的母亲",
+    "linking_affect": "怨恨、愤怒、失望",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Likely paternal/maternal transference patterns",
+    "extraction_hash": "50a5a585c59bf5a72b97e06f6fb4e706"
+  },
+  {
+    "case_id": 7,
+    "self_representation": "紧张、不被认同、容易焦虑的学生",
+    "object_representation": "让人紧张且不被认同的老师/权威",
+    "linking_affect": "不满、抗拒、紧张",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "fdba0c5c287e67eba2fbe7e37c5ba462"
+  },
+  {
+    "case_id": 8,
+    "self_representation": "我是弱小的、我是没有依靠的、我不能轻易表达观点、我只有乖巧才能获得爱。",
+    "object_representation": "他是刻板而因循守旧、家长式作风的控制者，长辈说话下辈只能听着。",
+    "linking_affect": "委屈、羞耻、无力",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "1e77782695ef40074df6094b107790b1"
+  },
+  {
+    "case_id": 8,
+    "self_representation": "我是瘦小而自卑、容易被欺凌的人。",
+    "object_representation": "他们是敷衍、嘲笑、挑衅的同学。",
+    "linking_affect": "羞辱、愤怒、孤独",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "a004385753aea70d949379218e5e7942"
+  },
+  {
+    "case_id": 8,
+    "self_representation": "我是需要依靠与被欣赏的人，向往有一技之长。",
+    "object_representation": "他是有才华、有能力、可依靠的理想客体（舅舅）。",
+    "linking_affect": "渴望、安心、依恋",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "54e18aa273adb538f4d73ac04ed4b572"
+  },
+  {
+    "case_id": 9,
+    "self_representation": "A guilty, inadequate, terrified boy who must submit.",
+    "object_representation": "A domineering, omnipotent, punitive mother who is jealous of his masculinity and demands a sexual kind of submission.",
+    "linking_affect": "Terror, shame, and guilt.",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "8bdfd19ba3de3527d08afc2bf5a33406"
+  },
+  {
+    "case_id": 9,
+    "self_representation": "A humiliated, unworthy son whose real successes do not count.",
+    "object_representation": "Devaluing, dismissive parents who withhold approval and cut him down.",
+    "linking_affect": "Rage, despair, and longing.",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "6fe09fe7475900fbb046d66ce2340170"
+  },
+  {
+    "case_id": 9,
+    "self_representation": "A dependent husband who feels like a rapist during intimacy.",
+    "object_representation": "Wife confused at times with his mother, seen as jealous and demanding sexual submission.",
+    "linking_affect": "Ambivalence (need and hate), guilt.",
+    "relational_pattern": "Complex Relational Ambivalence",
+    "transference_potential": "Complex transference patterns requiring exploration",
+    "extraction_hash": "638d3e4c365efcc7714cbc102c44bc18"
+  }
+]

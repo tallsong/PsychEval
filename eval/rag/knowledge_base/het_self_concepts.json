@@ -1,0 +1,564 @@
+[
+  {
+    "case_id": 1,
+    "conditions_of_worth": [
+      "父母总是对她有很高的要求，只有考试成绩好时才能得到肯定，否则就是“不够努力”、“让他们丢脸”。",
+      "成长过程中可能存在的条件性积极关注（如只有表现好才被认可）。"
+    ],
+    "current_self_perception": "工作压力大，情绪低落，人际关系紧张，感觉生活缺乏意义",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [
+      "Avoidance"
+    ],
+    "growth_potential": "探索人生意义，建立自我价值感",
+    "extraction_hash": "d5261f615795285066fceae688bdf07f"
+  },
+  {
+    "case_id": 10,
+    "conditions_of_worth": [
+      "来访者家人及亲属对其常常寄予厚望，在经历做不好哥哥就会打骂等童年事件后，产生了自己必须做到完美的不合理信念。"
+    ],
+    "current_self_perception": "感觉到生活没有意义，不知道以后做什么，有过轻生的想法，对很多事情无法提起兴趣。参加考试的时候会十分焦虑、紧张，生活压力大，在考试出成绩前焦虑症状更加严重，甚至会感到胸闷。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "增进自我认识，减少内在冲突",
+    "extraction_hash": "75d4b9e96ffff63e30f9e91eb1d1088f"
+  },
+  {
+    "case_id": 11,
+    "conditions_of_worth": [],
+    "current_self_perception": "感觉很苦恼，很烦躁，学不进去，头脑里面一团乱麻，上课注意力不集中，总是想一些有的没的事情，而且易怒，控制不住自己的情绪……只要看到男生女生在一起，不管是在一起吃饭，还是在一起走路，或是合作做什么事情，只要在一起走得近些，就会觉得莫名烦躁，会用手握成拳头捶桌子，有打人的冲动。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "8709c8df89806317f0bdc0af4c77358b"
+  },
+  {
+    "case_id": 12,
+    "conditions_of_worth": [],
+    "current_self_perception": "来访者提到了5个月前报名参加了学校的平面模特社团，那时称了一次体质量，为74kg，社团要求体质量在60kg左右。于是开始减肥，加大运动量，控制饮食，一个月后体质量达到社团的要求。做了一周平面模特赚了一千多元，很开心，但同时又觉得要一直严格控制体质量是一种病态，退出社团。第二天和同学去吃中饭，尝了一块曲奇饼干，感觉一下找到了兴奋点。接下来吃光了一桌子菜（八菜一汤），吃完后撑到上厕所都看不到自己的脚了，肚子胀得很难受，于是吐了，吐完后仍然难受，上了一晚上的厕所。之后情绪很糟糕，在寝室躺了7d没出门，点外卖吃，不停地吃甜甜圈，直到呕吐才停止进食。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [
+      "Avoidance"
+    ],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "b0fa162d6e1add115860581e0e9c861b"
+  },
+  {
+    "case_id": 13,
+    "conditions_of_worth": [],
+    "current_self_perception": "近半年，来访者因学习压力大而感到焦虑和抑郁，失眠，学习动力不足，不想去实验室，科研任务没有进展，担心自己无法毕业，找不到工作，心里很绝望，觉得活着没有意义，想自杀，服用了过量精神类药物，后因同学及时将其送至医院洗胃，脱离生命危险。之后送综合性医院精神科就诊，诊断为重度抑郁症，稳定服药治疗。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "增进自我认识，减少内在冲突",
+    "extraction_hash": "285827a793f0d0ddde5d57a34f7e46ab"
+  },
+  {
+    "case_id": 14,
+    "conditions_of_worth": [],
+    "current_self_perception": "近三个月来感觉很焦虑紧张，严重失眠，逃避上学。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "增进自我认识，减少内在冲突",
+    "extraction_hash": "8a2a7b19f49fc6abe12bd951bcdf6f85"
+  },
+  {
+    "case_id": 15,
+    "conditions_of_worth": [],
+    "current_self_perception": "来访者是因为失恋导致的自我怀疑前来寻求心理咨询",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "7a3dd02d6c22c5a0300f55de9f4550d7"
+  },
+  {
+    "case_id": 16,
+    "conditions_of_worth": [
+      "性格较内向、比较自卑，对自己要求严格，经常压抑自己的本性；存在自我否定、怀疑自己有病和认为自己童年是糟糕的等不合理信念。"
+    ],
+    "current_self_perception": "心情低落，内心冲突，睡眠不好，不能与他人目光和身体接触，有身体右腹发凉的反应，有焦虑和抑郁情绪，持续时间一周。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [
+      "Self-protection"
+    ],
+    "growth_potential": "增进自我认识，减少内在冲突",
+    "extraction_hash": "b62707815385e96b94a86ea1dd558c0b"
+  },
+  {
+    "case_id": 17,
+    "conditions_of_worth": [
+      "高三被父母强烈要求复读，母亲哭闹并发动亲朋连哄带骗迫使其复读，复读一年“所有的快乐都消失了”，像“机器人”一样学习，首次出现失眠，靠自己硬扛；此后习惯听从父母，逐渐将达到父母的期待作为主要目标。",
+      "成长于父母高控制、高要求、低支持的环境，未达成期待时被苛刻对待，逐渐形成高自控与低自我效能感的冲突与持续焦虑。"
+    ],
+    "current_self_perception": "来访者因长时间失眠前来咨询，高三复读时曾出现过失眠情况,自述当时未做任何处理，而是硬扛了过去，高考结束后睡眠恢复正常。进入大学后睡眠情况正常，但在2019年5月（大二下学期）时出现变化。2019年5月的某一天晚上，来访者赶着完成一项学生社团的紧急任务，但中途电脑死机，导致工作成果全部丢失，最后来访者熬夜到凌晨四点完成了工作任务，但自那天起来访者开始出现失眠，并伴随抑郁焦虑情绪。随后的那个暑假，来访者表示假期在家时睡眠状态好转，但9月份开学返校后又变严重，自述凌晨三四点才能入睡，情绪也较差；当失眠严重时，有自杀念头，认为如果自己崩溃了，可能会真的实施自杀行为。来访者自述因为失眠和情绪差，自己已经开始不愿社交，学习状态变差，且时有无缘由的哭泣，在生活中经常感到烦躁和苦闷，上述状态持续时间近半年。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "增进自我认识，减少内在冲突",
+    "extraction_hash": "13451f876ce0cc9d18b881afc4ebaaf4"
+  },
+  {
+    "case_id": 18,
+    "conditions_of_worth": [],
+    "current_self_perception": "因与舍友、小组成员关系不和，遭受排挤，从而产生抑郁、焦虑、紧张等负性情绪，一个多月以来，睡眠不好，爱胡思乱想，夜里两点才能入睡，经常做噩梦，上课时注意力不集中。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "增进自我认识，减少内在冲突",
+    "extraction_hash": "2906232ad17fe3ad4e22704b928fead0"
+  },
+  {
+    "case_id": 19,
+    "conditions_of_worth": [],
+    "current_self_perception": "小军表现出来的主要问题是心理自控力比较差，人际关系不良。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "a4cf449c64c4278892b848b3490c5159"
+  },
+  {
+    "case_id": 2,
+    "conditions_of_worth": [
+      "父亲是军人，主要心思扑在工作上，对其关注不多，但对她非常严厉和高要求。",
+      "研究生入学后适应新环境困难，加之感情纠纷，经常感到非常疲惫；男友失业、变得敏感多疑，经常有诸多无理要求，甚至电话要求她必须打开视频确认位置。"
+    ],
+    "current_self_perception": "来访者由于情感困扰前来咨询，诉说与男友的感情处于相互折磨状态，感到混乱且无力；同时情感问题严重影响学习状态，在学习上无法集中注意力，必须强迫自己才能完成学业任务，希望能得到专业帮助。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "8e8964597284e9309a0d75c7d4f2cae0"
+  },
+  {
+    "case_id": 20,
+    "conditions_of_worth": [],
+    "current_self_perception": "来访者进入大学学习一个多月，希望能够像高三及复读两年期间那样全身心投入看书学习，却总被其它负面的想法和情绪所干扰，无法排除，认为这些学习之外的事物会妨碍自己高效率的学习，阻碍自己理想的实现。主动前来学校心理咨询中心求助。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "419f86ba5c76f7ee341853d8e64a94f9"
+  },
+  {
+    "case_id": 21,
+    "conditions_of_worth": [],
+    "current_self_perception": "近段时间与寝室同学的关系比较紧张，觉得别人都嫌弃她，再加之考研和择业的困扰，情绪低落，而这种糟糕的心情在身体上也有反应。近期出现明显的入睡困难，早醒且伴有头痛，希望通过咨询让自己的心情有所好转，症状能够减轻。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "83adc17b6f2a5dca151fd02b88713b53"
+  },
+  {
+    "case_id": 22,
+    "conditions_of_worth": [],
+    "current_self_perception": "主诉2周以来，睡眠质量差，心情低落，对大学有心理落差。没有能讲心事的朋友，孤独害怕，在人际交往方面自我评价较低。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "建立真诚的人际关系和连接",
+    "extraction_hash": "c92a32ae6eabe9a4b5c8d397511f518d"
+  },
+  {
+    "case_id": 23,
+    "conditions_of_worth": [
+      "家庭中爱的表达和亲人之间亲密的互动很少，父母对自己专治严厉，姐姐对自己也很理性，D逐渐形成“我不够好、要更理性更强大”的自我要求。",
+      "小时候妈妈没有兑现承诺（承诺考好了买自行车和MP3却未买），D开始彻底不信任妈妈，再也不期待，因为期待就会失望；开始怀疑爸爸妈妈是不是真的爱自己，并对父母与自己的互动产生选择性知觉。"
+    ],
+    "current_self_perception": "我有点强迫型人格障碍，心理问题已经在一定程度上影响到生理层面了，主要是睡眠和身体的反馈，大脑停不下来应该是核心症状。因此D希望咨询能帮助自己找到真实的我，而不是理性的自己。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "77a7e2a68d3a7a0a97fc0efd48e41282"
+  },
+  {
+    "case_id": 24,
+    "conditions_of_worth": [],
+    "current_self_perception": "近一年来，与室友关系不断恶化，最近一个月连续发生几次剧烈冲突，因此情绪波动很大，严重影响正常学习和生活。不知道该如何做才能与朋友友好相处，也不知道如何调整情绪。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "dc30569320a8bd87c29b0d891044cdbb"
+  },
+  {
+    "case_id": 25,
+    "conditions_of_worth": [],
+    "current_self_perception": "求助者因父母强烈意愿学医，小王拗不过父母只能答应，在上医学院学习专业后，更加坚定了小王不想当医生的想法，在几次和父母提出想成为小说家的理想后均遭到父母强烈的斥责，加上医学院学业压力极重，小王上学期又有两门学科不及格，慢慢开始产生厌学情绪，到了本学期开学不愿意去学校，萌生退学之意，在被父母强行送往学校后，不上课，不参与集体活动，整日呆在寝室里。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "14af6c2981a91e238d9d7e77e3739537"
+  },
+  {
+    "case_id": 26,
+    "conditions_of_worth": [],
+    "current_self_perception": "H为被动求助，咨询记录册上主诉问题一栏为空白，初见咨询师时，H表示自己没有明确的求助目标，不知道为什么出现在这里，感到不知所措。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [
+      "Avoidance"
+    ],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "0171cc02a1ef8ed83e702f0b55fa612c"
+  },
+  {
+    "case_id": 27,
+    "conditions_of_worth": [],
+    "current_self_perception": "来访者哭诉最近在一场“优秀团干部”的竞选上失利，自己很不能接受，心里不服气，心情很郁闷，连续几天不想吃饭，晚上难以人睡。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "77dca31f740cd2caf78392d7f4c2358b"
+  },
+  {
+    "case_id": 28,
+    "conditions_of_worth": [
+      "爸爸工作地点离家远，一般只有周末回家，平时对他要求比较严格；妈妈温柔并督促学习；奶奶照顾其日常起居。"
+    ],
+    "current_self_perception": "因学习压力大，不想上学，想要出去打工。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "df3a8805e236dc8490579ee765151f01"
+  },
+  {
+    "case_id": 29,
+    "conditions_of_worth": [
+      "高考报志愿准备报考数学专业，但因数学专业要求分数较高，只能被调剂到了物理专业。"
+    ],
+    "current_self_perception": "李某因为竞选学生会主席落选，心情不佳,现在对学习没兴趣,对所选专业不喜欢,导致情绪低落、焦虑。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "增进自我认识，减少内在冲突",
+    "extraction_hash": "ba9e992e47d7a2e36ec2b0f4be9e6980"
+  },
+  {
+    "case_id": 3,
+    "conditions_of_worth": [],
+    "current_self_perception": "小A体会不到自己存在的意义，因此只想逃离所在的集体。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "60bd8fcc66550c323786db40f83cbbf4"
+  },
+  {
+    "case_id": 30,
+    "conditions_of_worth": [],
+    "current_self_perception": "反复主诉胸口闷、气喘、呼吸困难、晚上失眠，坐卧不安，反复要求医生进行全面检查，查出病因对症治疗。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "4a106ac3263a83ce8d66dcea22d323f0"
+  },
+  {
+    "case_id": 31,
+    "conditions_of_worth": [],
+    "current_self_perception": "“我媳妇平时性格好强，自从这次生娃后跟变了个人一样。整天哭哭啼啼的，开始没有在意，但直到现在要出院了还这样。而且这两天饭也不吃，觉也不睡，有时你问话也不理，有时又莫名其妙的大发脾气，不给娃喂奶不说，连看都不看娃一眼，把娃往她跟前一放，她就象怕娃咬她一样。”",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "2174b68b3a10e2ad09dcb957add62cbb"
+  },
+  {
+    "case_id": 32,
+    "conditions_of_worth": [],
+    "current_self_perception": "最近八、九年一直都情绪低落,总是快乐不起来，找不到生活的目标和意义，认为人活着就是受苦，一直活得很卑微、封闭,经常想一死了之，有过自杀行为，现在还有自杀念头，但又没有勇气实施。觉得自己是抑郁症,对什么都不感兴趣，觉得过去整个人生都是失败的。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "b8e2b4acd713133197499ee2b8fcaf95"
+  },
+  {
+    "case_id": 33,
+    "conditions_of_worth": [],
+    "current_self_perception": "自述从高中起，情绪低落，偶尔有割手腕等自残行为，且经常不自觉地发呆，曾因为走路时发呆，摔下楼梯导致骨折。如今上了大学，依旧无法专心上课，课后完全记不起课堂内容，在宿舍里或者在操场跑步时会忍不住痛哭，晚上经常失眠，家附近有座桥，自己时常到那里待着，考虑是否跳下去。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [
+      "Avoidance",
+      "Self-protection"
+    ],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "104e7b9b858f27e999a770ccc9bfce0b"
+  },
+  {
+    "case_id": 34,
+    "conditions_of_worth": [],
+    "current_self_perception": "我觉得我的人际关系存在严重问题。我不敢与人交流，无法主动与其他人说话，面对别人主动发起的谈话只能做极简短的回应。从初中开始害怕与他人对视的情况逐渐加重，只要有其他人在的场合就会感觉非常不舒服。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "80c1a320513bc2b3abddae7f3ec2741d"
+  },
+  {
+    "case_id": 35,
+    "conditions_of_worth": [
+      "父亲是教师，父亲对我的学习要求很严格，为了得到父亲的赞赏，我很努力学习，保持优异的成绩。",
+      "同学和邻居总是跟我说，我父亲是教师，可以辅导学业，学习成绩肯定不错。"
+    ],
+    "current_self_perception": "主诉：近两周出现胸闷、焦虑、心烦、疲惫，最近一周常失眠，睡眠质量不好，情绪低落。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "增进自我认识，减少内在冲突",
+    "extraction_hash": "24b0ce4e0594948fafa69c4a6c9d50c7"
+  },
+  {
+    "case_id": 36,
+    "conditions_of_worth": [
+      "母亲“溺爱”，父亲对他要求严格，曾评论他“不像个男孩子”，与家人之间有隔阂、不亲密，与父母沟通很少且不涉及内心想法。"
+    ],
+    "current_self_perception": "认为自己无法处理好人际关系，不能交到真心朋友。由于情绪状态的影响,他近期睡眠、饮食都不太规律。希望通过咨询改善人际关系。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "9a9e54329c79fdd386f1f667d050eac1"
+  },
+  {
+    "case_id": 37,
+    "conditions_of_worth": [
+      "原来觉得班里前十肯定有她现在变成了“班里后十肯定有她”"
+    ],
+    "current_self_perception": "上课时不能集中注意力听课，经常感到焦虑紧张.学习和生活中表现出越来越多的拖延行为.",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "增进自我认识，减少内在冲突",
+    "extraction_hash": "9713496c1611b04f6b26a48f0c722189"
+  },
+  {
+    "case_id": 38,
+    "conditions_of_worth": [],
+    "current_self_perception": "来访者为男性，18岁，有洁癖，持续半年时间。在宿舍反反复复洗手洗衣服，经常为此而上课迟到，被老师批评。同学关系不良。不想住宿舍，想死。班主任劝其休学。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "1c3f11ea24ab6352eb57ef2bff09c76b"
+  },
+  {
+    "case_id": 39,
+    "conditions_of_worth": [
+      "妈妈经常会对L提很多要求，特别是在学习方面，但是当L取得好的成绩时，妈妈并不会赞扬她，而是让L继续努力，取得更好的成绩，这让L有一种“我不够好，我要做得更好才值得被爱”的感觉。",
+      "即使自己考了全区第一名，母亲却说用得着这么高兴吗？这让L形成了他人对自己的要求很高，自己不会令对方满意，自己也对自己不满意，这种想法持续影响着L的人际关系。"
+    ],
+    "current_self_perception": "L因和男友的关系问题前来咨询。L感觉到似乎只有自己付出的时候，男友才会对自己表现出爱和赞赏，而当自己情绪不佳寻求男友的帮助时，男友只会否定自己。L感觉自己变得越来越敏感、不自信、对自身有更多的否定，随着两个人吵架的频率越来越频繁，L的情绪也越来越容易崩溃，L感觉非常痛苦，想分手，但每次都是自己又主动讨好男友，两个人又会重归于好，然后继续重复之前的模式，L的自我厌恶感越来越强烈，陷在这段关系中无法自拔。L在生活中和朋友的相处也有类似的感觉，常感觉自己被忽略，不被喜欢，而自己要经常很费劲地去做一些事情来讨好身边的人。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "4fd3160d9e8a816561a2b7f418beedd8"
+  },
+  {
+    "case_id": 4,
+    "conditions_of_worth": [],
+    "current_self_perception": "我想死。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "36689bd895bfb58606d1504f840ff3bf"
+  },
+  {
+    "case_id": 40,
+    "conditions_of_worth": [],
+    "current_self_perception": "主诉：在聚餐的场合感到焦虑，一说话就紧张、脸红、冒汗、呼吸急促。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "增进自我认识，减少内在冲突",
+    "extraction_hash": "31aa21786f3a2ea2cf9e7d9c2521a74f"
+  },
+  {
+    "case_id": 41,
+    "conditions_of_worth": [],
+    "current_self_perception": "主诉：持续的情绪低落，身边没有知心朋友。临近放假，不想回家，不愿意面对家人。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [
+      "Avoidance"
+    ],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "633d28c1ef3769e6af55fd3a7323f046"
+  },
+  {
+    "case_id": 42,
+    "conditions_of_worth": [],
+    "current_self_perception": "因为和弟弟、父母经常吵架，导致个体情绪低落，意志减退，也有比较偏激的言语和行为发生，想要改变，而后因失恋受到打击前来咨询，咨询次数共13次。来访者与伴侣分手，沉浸在失恋的重大事件刺激中，而因两者均为女性，所以引出了许多的问题，比如说伴侣实际上在和她交往的时候和别的男孩子在一起了，而伴侣为了稳住两边的恋情，无数次地骗来访者，这导致来访者的心理状态一直非常不好。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "1bb0834f85015c2ca66ddb58fa7503f3"
+  },
+  {
+    "case_id": 43,
+    "conditions_of_worth": [
+      "我妈认为我不应该告诉我爸关于她的事情……还曾经骂我说：“你就是白眼狼，怎么不去死，都是因为你才会这样的。”",
+      "在学校有时上课也会走神，最近一段时间感觉学不进去，特别烦躁的时候甚至不想来学校，但我又觉得这样的想法是不应该的。"
+    ],
+    "current_self_perception": "首先，情绪不稳定，波动大。晓玥在上完亲子关系主题的心理健康课后，突然全身发抖，失声痛哭，在情绪得到安抚之后，由心理老师带到心理咨询室，在心理咨询室，来访者表现出情绪低落、微微抽泣、双手紧扣的情况，且左手手臂上有轻微的抓痕。其次，自我评价消极。来访者与母亲关系不好，觉得自己不会被别人所喜欢，不会得到妈妈的爱，在学校特别在意他人对自己的评价。最后，学习上专注力不够，学习效率低下。来访者在上课时会想到和家庭有关的事情，无法集中注意力在学习上，但注意力分散后又觉得内疚和后悔，导致来访者内心陷入纠结和自我矛盾。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "0629b676d7ec2610920f251d2560c547"
+  },
+  {
+    "case_id": 44,
+    "conditions_of_worth": [
+      "小Y长期遭受家人不认可和贬低的态度，使她形成了“自己不被爱、不值得爱”的消极自我认知，这种认知深深植根于她的内心，成为心理问题的主要根源之一。"
+    ],
+    "current_self_perception": "小Y主要求助的问题是怎么在自己遇到不能承受的事情时避免出现自杀想法。“自己不能承受的事情”是指对于一些不符合自己期待的事情出现后放大的一种感受，例如对现有专业不感兴趣、和舍友关系不好等，反刍和自我否定，认为自己是不被爱的，继而出现持续性的情绪低落，并多次出现自杀意念。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "ef39d96a2275181f96549ebd73cf7341"
+  },
+  {
+    "case_id": 45,
+    "conditions_of_worth": [],
+    "current_self_perception": "主诉：因“网络成瘾”而就诊。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "41bbece743a5700a69d32a25eedb901c"
+  },
+  {
+    "case_id": 46,
+    "conditions_of_worth": [],
+    "current_self_perception": "主诉：近2个月来，由于外婆去世，出现情绪低落、兴趣减退和社会功能受损，主动求询。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "5235b4c054b3791da917810566748a05"
+  },
+  {
+    "case_id": 47,
+    "conditions_of_worth": [
+      "独自去外地上大学后无法从家里获得温暖和支持，开始从朋友身上寻求关爱，结交了与自己有类似经历的闺蜜和一位有“带头大哥”气质的男朋友；因这段不被母亲认可且男友不负责任的关系，引发内心压抑已久的不满如火山般躁动，焦躁不安。"
+    ],
+    "current_self_perception": "近两个月以来，虽然饮食正常，但体重明显上升。作息规律已经完全紊乱，常常玩手机到凌晨才有睡意，但入睡还是困难，而且睡眠很浅，稍有动静就会醒来。不愿意跟人交往，尤其不愿意跟家人沟通，感到孤单和莫名的焦虑，只有与闺蜜待在一起或者离家外出时焦虑感才会减轻。认为母亲不理解自己，常感觉父母有针对她的敌意。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [
+      "Self-protection"
+    ],
+    "growth_potential": "增进自我认识，减少内在冲突",
+    "extraction_hash": "b1d8083353d8c869ae23de7f53d29a48"
+  },
+  {
+    "case_id": 48,
+    "conditions_of_worth": [],
+    "current_self_perception": "来访者为男性，18岁，有洁癖，持续半年时间。在宿舍反反复复洗手洗衣服，经常为此而上课迟到，被老师批评。同学关系不良。不想住宿舍，想死。班主任劝其休学。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "82f5d5e110328e267cdff6619e80793d"
+  },
+  {
+    "case_id": 49,
+    "conditions_of_worth": [],
+    "current_self_perception": "在班上很孤僻，没有朋友，学习成绩很差。自我价值低，自卑，缺少安全感；不能接受家庭的破裂，非常渴望父母能复合，总觉得心里空荡荡的，缺乏归属感。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "a0172fb71963f16c471de52e5949a5e4"
+  },
+  {
+    "case_id": 5,
+    "conditions_of_worth": [
+      "童年时期多接受爷爷奶奶以及亲戚的照料，感觉自己是“特别”的，为了满足家人的期待努力学习,成绩不错。"
+    ],
+    "current_self_perception": "做事没有动力,常常会沉浸在一个状态中,难以从一个状态顺利转变到另一个状态。有时明明知道应该这样做,但是身体却付诸不了行动，感觉很累，好多事情都是被动地去做。最近频繁梦到奶奶，心情低落觉得生活没有意义。来访者无宗教信仰,否认家族有精神疾病史，主动前来咨询。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "65c73aa7e0c403fb872cef2e04d536af"
+  },
+  {
+    "case_id": 50,
+    "conditions_of_worth": [],
+    "current_self_perception": "高考后至考试结果公布前，考生处于“高考应试后未完成事件”中，因考试成绩和录取标准的不确定性带来的紧张、焦虑情绪，及对即将来临的大学生活产生的焦虑、迷茫的心态。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "增进自我认识，减少内在冲突",
+    "extraction_hash": "e07ada67b3460b8488495a05b35188a6"
+  },
+  {
+    "case_id": 6,
+    "conditions_of_worth": [],
+    "current_self_perception": "我性格敏感、多疑，追求完美，遇事容易急躁和情绪化，同时，我很在意他人对自己的评价和看法，想要融入集体，但在心理上又排斥和他们相处。……我总觉得自己与他们格格不入，但又无法做到独自学习和生活，不知道应该如何处理这种关系，感到十分苦闷。最近一个月，来自学习和工作的双重压力让我的大脑一直处在紧绷的状态下，面对人际关系问题，很容易与人发生争执，这严重影响了自己的上课效率，还出现了夜间失眠、白天乏力、注意力不集中等问题。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "7080da3c6393927124899721d7e01b69"
+  },
+  {
+    "case_id": 7,
+    "conditions_of_worth": [
+      "独生女，家教比较严格，要求对父母的话言听计从；从小父母更多是语言上的否定（如小时候想成为宇航员被否定），长大后对父母和他人的批评过度敏感，自卑，做事紧张不安、担心做不好。"
+    ],
+    "current_self_perception": "刚人学时来访者表示对大学生活充满期待。但是入学1个月以后，发现大学的生活也不是想象中的那么美好，觉得大学的校园关系更加复杂，不像高中时候那么纯洁，出现情绪低落、厌学的状态。同时，交往了一年半左右的男友认为双方不合适，提出分手。情绪低落的状态下，有时会不自觉地流眼泪，吃饭没有胃口，失眠，对任何事情都没有兴趣。出现过自杀的念头，但是因为觉得自杀是一件很不负责任的行为，会给自己的家庭带来极大的痛苦（后来描述是觉得自己没有勇气），所以没有采取实质上的行为。生活上也较为懒散，生活不规律，经常不吃饭，偶尔吃饭也只是吃一点。体重从原来的95斤左右减为90斤左右，时间持续大约2周。来访表示自己想要走出这个困境，于是主动进行心理咨询。",
+    "ideal_self": "",
+    "self_incongruence": [
+      "在咨询中能坦诚讲述成长经历和当下困扰，配合度较高；常以绝对化、过分概括的表达进行自我否定（如“我真的很差劲”“各方面都不如别人”“所有人都比我优秀”）；在咨询对话中能在提示下觉察并修正前后矛盾的陈述；自尊心较强但以自卑情绪为主导。"
+    ],
+    "defensive_behaviors": [],
+    "growth_potential": "自我实现和个人成长",
+    "extraction_hash": "5ea201ed6fc8ac3fe7ee81ca6c5a366c"
+  },
+  {
+    "case_id": 8,
+    "conditions_of_worth": [
+      "中学以后到陌生环境，因瘦小且无熟悉朋友，被班上几个男生霸凌、排挤，从推搡发展到动拳头、用脚踢，语言挖苦打击（被说故作清高、装模作样）。向妈妈求助被要求自己忍着，未告知老师。中考前父亲要求必须考上好学校，压力太大开始自暴自弃，严重时用手打墙，压抑时躲在被子里哭，之前的朋友也不能理解。"
+    ],
+    "current_self_perception": "自述目前最大的困扰是与同学格格不入，无法正常相处。从初中以来一直存在睡眠问题，晚睡早醒，经常只能睡5～6h，容易胡思乱想。情绪有时莫名低落，有时焦虑。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [
+      "Avoidance"
+    ],
+    "growth_potential": "增进自我认识，减少内在冲突",
+    "extraction_hash": "c9ec71740582315d648cd732d7439f38"
+  },
+  {
+    "case_id": 9,
+    "conditions_of_worth": [],
+    "current_self_perception": "被焦虑情绪困扰。焦虑主要在恋爱和自我发展两个方面。表述近来纠结是否要结束恋爱关系，因为对方让自己很失望，体现在对方消极应对生活，也不愿与自己沟通方面。自己已经持续一周失眠，情绪低落，但没有朋友可倾诉。人际关系中，存在一定的容貌焦虑，认为别人会因为自己外形的缺点而不喜欢自己。同时不满意自己的学习状态，担心毕业后能否找到工作。",
+    "ideal_self": "",
+    "self_incongruence": [],
+    "defensive_behaviors": [],
+    "growth_potential": "增进自我认识，减少内在冲突",
+    "extraction_hash": "b9eecc193adaa14e544bb32f0be307ff"
+  }
+]
