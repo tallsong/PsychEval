@@ -87,7 +87,7 @@ class CBTRetriever:
         
         Args:
             client_problem: Description of client's main problem
-            current_cognitive_patterns: List of identified cognitive patterns
+            current_cognitive_patterns: List of identified cognitive patterns (e.g. "Perfectionism", "Catastrophizing")
             therapy_stage: Current stage (initial_conceptualization, core_intervention, consolidation)
             client_topic: Topic category (e.g., "职业发展", "情绪管理")
             top_k: Number of top results to return per category

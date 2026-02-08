@@ -85,3 +85,4 @@ if __name__ == "__main__":
 
     out = query_rag(args.modality, args.question, args.top_k)
     print(json.dumps(out, ensure_ascii=False, indent=2))
+# python test_rag_query.py --modality cbt --question "我对换工作感到非常焦虑" --top_k 1
