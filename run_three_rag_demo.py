@@ -20,7 +20,7 @@ from eval.rag import (
     CBTRetriever,
     CBTCounselorAgent,
 )
-from het_knowledge_extractor import HETKnowledgeEretrievextractor
+from het_knowledge_extractor import HETKnowledgeExtractor
 from het_retriever import HETRetriever
 from het_counselor_agent import HETCounselorAgent
 

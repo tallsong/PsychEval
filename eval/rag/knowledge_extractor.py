@@ -10,7 +10,7 @@ Extract structured knowledge from CBT JSON cases:
 import json
 import os
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Union
 from dataclasses import dataclass, asdict
 import hashlib
 
@@ -155,6 +155,7 @@ class CBTKnowledgeExtractor:
     def _extract_intervention_strategies(self, case_id: int, case_data: Dict[str, Any]) -> None:
         """Extract intervention strategies from global plan"""
         global_plan = case_data.get("global_plan", [])
+        client_info = case_data.get("client_info", {})
         
         for stage in global_plan:
             stage_number = stage.get("stage_number", 0)
@@ -174,7 +175,12 @@ class CBTKnowledgeExtractor:
                         
                         # Extract technique from theme or rationale
                         technique = self._extract_technique(theme, rationale)
-                        target_pattern = self._extract_cognitive_pattern(theme, rationale)
+                        target_pattern = self._extract_cognitive_pattern_from_special_situations(
+                            theme, client_info.get("special_situations", [])
+                        )
+                        expected_outcome = self._extract_expected_outcome_from_rationale(
+                            rationale, technique, theme
+                        )
                         
                         strategy = InterventionStrategy(
                             case_id=case_id,
@@ -186,7 +192,7 @@ class CBTKnowledgeExtractor:
                             rationale=rationale,
                             case_material=case_material,
                             target_cognitive_pattern=target_pattern,
-                            expected_outcome=session_content.get("expected_outcome", None),
+                            expected_outcome=expected_outcome,
                         )
                         self.intervention_strategies.append(strategy)
     
@@ -233,32 +239,159 @@ class CBTKnowledgeExtractor:
     
     def _extract_technique(self, theme: str, rationale: str) -> str:
         """Extract CBT technique name from theme and rationale"""
-        techniques = [
-            "guided_discovery", "socratic_questioning", "behavioral_experiment",
-            "cognitive_restructuring", "thought_record", "exposure", "relaxation",
-            "problem_solving", "assertiveness", "activity_scheduling", "homework"
-        ]
+        # 中文技术关键词映射
+        technique_keywords = {
+            "guided_discovery": ["苏格拉底", "开放式", "开放式提问", "探索", "引导性"],
+            "socratic_questioning": ["苏格拉底", "问答", "质问", "质证"],
+            "behavioral_experiment": ["行为实验", "实验", "检验"],
+            "cognitive_restructuring": ["重构", "重评", "修正", "修通"],
+            "thought_record": ["三栏表", "思维记录", "情绪记录", "思维捕捉"],
+            "exposure": ["暴露", "面对", "接触"],
+            "relaxation": ["放松", "腹式呼吸", "呼吸", "肌肉放松", "放松训练"],
+            "problem_solving": ["问题解决", "解决问题", "解决方案"],
+            "assertiveness": ["自信", "沟通", "沟通脚本", "技能排演"],
+            "activity_scheduling": ["行为激活", "激活", "日程安排"],
+            "attention_training": ["注意控制", "正念", "专注"],
+            "safety_planning": ["安全计划", "风险评估", "安全"],
+            "psychoeducation": ["心理教育", "ABC模型", "ABC框架"],
+            "cognitive_modeling": ["认知建模", "认知模式"],
+            "behavioral_activation": ["行为激活", "功能恢复", "行为改变"],
+            "emotion_management": ["情绪管理", "情绪调节"],
+            "mindfulness": ["正念", "冥想"],
+            "coping_skills": ["应对技能", "自我效能", "应对"],
+            "goal_setting": ["目标设定", "目标对齐", "可操作化"],
+            "assessment_interview": ["评估", "初始评估", "摄入", "建立联盟"],
+            "relapse_prevention": ["复发预防", "维持", "化解", "保持改变", "自我领导"],
+            "values_clarification": ["价值澄清", "价值观", "方向", "内在动机"],
+        }
         
-        combined = f"{theme} {rationale}".lower()
-        for technique in techniques:
-            if technique.replace("_", " ") in combined:
-                return technique
+        # 组合theme和rationale（处理rationale可能是列表的情况）
+        if isinstance(rationale, list):
+            combined_text = f"{theme} {' '.join(rationale)}"
+        else:
+            combined_text = f"{theme} {rationale}"
+        
+        combined_lower = combined_text.lower()
+        
+        # 依据关键词出现次数和顺序进行加权匹配
+        technique_scores = {}
+        for technique, keywords in technique_keywords.items():
+            score = 0
+            for keyword in keywords:
+                if keyword.lower() in combined_lower:
+                    score += 1
+            if score > 0:
+                technique_scores[technique] = score
+        
+        # 返回最高分的技术，如果没有匹配则返回general_intervention
+        if technique_scores:
+            best_technique = max(technique_scores, key=technique_scores.get)
+            return best_technique
+        
+        # 作为备选，检查一些更通用的模式
+        if any(keyword in combined_lower for keyword in ["认知", "思维", "信念", "想法"]):
+            return "cognitive_restructuring"
+        elif any(keyword in combined_lower for keyword in ["行为", "激活", "活动"]):
+            return "behavioral_activation"
+        elif any(keyword in combined_lower for keyword in ["放松", "呼吸", "训练"]):
+            return "relaxation"
+        elif any(keyword in combined_lower for keyword in ["复发", "维持", "维持改变"]):
+            return "relapse_prevention"
+        elif any(keyword in combined_lower for keyword in ["价值", "澄清", "方向"]):
+            return "values_clarification"
         
         return "general_intervention"
     
-    def _extract_cognitive_pattern(self, theme: str, rationale: str) -> Optional[str]:
-        """Extract target cognitive pattern"""
-        patterns = [
-            "All-or-Nothing Thinking", "Overgeneralization", "Mental Filter",
-            "Disqualifying the Positive", "Jumping to Conclusions", "Magnification",
-            "Emotional Reasoning", "Should Statements", "Labeling", "Personalization",
-            "Comparing and Despairing", "Fortune Telling"
-        ]
+    def _extract_cognitive_pattern_from_special_situations(
+        self, theme: str, special_situations: List[Dict[str, Any]]
+    ) -> Optional[str]:
+        """Extract cognitive pattern from special_situations based on theme"""
+        if not special_situations:
+            return None
         
-        combined = f"{theme} {rationale}"
-        for pattern in patterns:
-            if pattern in combined or pattern.replace("-", " ").lower() in combined.lower():
-                return pattern
+        # Try to match theme with special situations
+        theme_lower = theme.lower()
+        for situation in special_situations:
+            event = situation.get("event", "").lower()
+            cognitive_pattern = situation.get("cognitive_pattern")
+            
+            # Simple matching: if event keywords appear in theme
+            event_keywords = event.split()
+            matching_keywords = [kw for kw in event_keywords if len(kw) > 2 and kw in theme_lower]
+            
+            if matching_keywords:
+                return cognitive_pattern
+        
+        # If no match, return the first cognitive pattern as default
+        if special_situations and special_situations[0].get("cognitive_pattern"):
+            return special_situations[0].get("cognitive_pattern")
+        
+        return None
+    
+    def _extract_expected_outcome_from_rationale(
+        self, rationale: Union[str, List[str]], technique: str, theme: str
+    ) -> Optional[str]:
+        """Extract expected outcome from rationale"""
+        if isinstance(rationale, list):
+            rationale_text = " ".join(rationale)
+        else:
+            rationale_text = rationale
+        
+        # Define outcome mappings based on technique
+        outcome_keywords = {
+            "guided_discovery": "通过开放式、合作式提问建立治疗联盟",
+            "relaxation": "通过放松训练降低生理唤醒，改善情绪和睡眠",
+            "activity_scheduling": "通过行为激活减少回避，提升自我效能",
+            "behavioral_experiment": "通过现实测试检验认知假设，促进经验性修正",
+            "cognitive_restructuring": "通过辩论和重评修正不合理认知",
+            "exposure_therapy": "通过渐进暴露降低恐惧和避免反应",
+            "exposure": "通过渐进暴露降低恐惧和避免反应",
+            "problem_solving": "通过系统化步骤解决具体问题",
+            "values_clarification": "通过澄清个人价值增强生活意义",
+            "relapse_prevention": "通过预防策略维持治疗成果",
+            "psychoeducation": "通过心理教育增进对问题的认识和理解",
+            "coping_skills": "通过习得新的应对技能改善心理和生理功能",
+            "safety_planning": "通过建立安全计划提高危机应对能力",
+            "assertiveness": "通过提升自信和表达能力改善人际关系",
+            "goal_setting": "通过制定明确目标和计划促进心理改变",
+            "general_intervention": "通过综合干预促进心理健康和功能改善",
+        }
+        
+        if technique in outcome_keywords:
+            return outcome_keywords[technique]
+        
+        # If rationale mentions specific goals, extract them
+        combined_text = f"{theme} {rationale_text}".lower()
+        
+        if "降低" in combined_text or "改善" in combined_text or "缓解" in combined_text:
+            if "睡眠" in combined_text:
+                return "改善睡眠质量和情绪状态"
+            elif "焦虑" in combined_text or "恐惧" in combined_text:
+                return "降低焦虑和恐惧反应"
+            else:
+                return "改善症状和提升心理功能"
+        elif "识别" in combined_text:
+            if "自动化" in combined_text:
+                return "识别和记录自动化思维"
+            else:
+                return "识别心理过程和认知模式"
+        elif "修正" in combined_text or "改变" in combined_text:
+            return "修正不合理认知和信念"
+        elif "巩固" in combined_text or "维持" in combined_text:
+            return "巩固治疗成果和维持心理改变"
+        elif "建立" in combined_text:
+            return "建立积极的心理资源和支持系统"
+        elif "提升" in combined_text or "增强" in combined_text:
+            if "自信" in combined_text or "效能" in combined_text:
+                return "提升自我效能感和心理韧性"
+            else:
+                return "增进自我理解和心理成长"
+        elif "梳理" in combined_text or "回顾" in combined_text:
+            return "梳理个人历史和认知模式"
+        elif "规划" in combined_text:
+            return "制定具体的行为计划和目标"
+        elif "沟通" in combined_text or "关系" in combined_text:
+            return "改善人际沟通和关系质量"
         
         return None
     
