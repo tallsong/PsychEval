@@ -5,11 +5,9 @@ Usage:
   python langchaindemo.py
     python langchaindemo.py --question "我总是担心失败，怎么做认知重评？"
     python langchaindemo.py --question "我总是担心失败" --top-k 8
-    python langchaindemo.py --question "我总是担心失败" --retrieval-mode tfidf
-    python langchaindemo.py --question "我总是担心失败" --retrieval-mode hybrid
     python langchaindemo.py --question "我总是担心失败" --doc-type special_situation
     python langchaindemo.py --question "考研焦虑怎么做" --doc-type session
-    python langchaindemo.py --question "职业规划焦虑" --retrieval-mode hybrid --doc-type global_plan --top-k 5
+        python langchaindemo.py --question "职业规划焦虑" --doc-type global_plan --top-k 5
 
 This script runs retrieval only (no LLM generation).
 """
@@ -224,16 +222,13 @@ def _format_chat_history(history: Iterable[Tuple[str, str]]) -> str:
 
 
 class LangChainTherapyRAGRetriever:
-    def __init__(self, top_k: int = DEFAULT_TOP_K, retrieval_mode: str = "bm25"):
+    def __init__(self, top_k: int = DEFAULT_TOP_K):
         deps = _import_langchain_dependencies()
         bm25_retriever_cls = deps["BM25Retriever"]
         tfidf_retriever_cls = deps["TFIDFRetriever"]
 
-        if retrieval_mode not in {"bm25", "tfidf", "hybrid"}:
-            raise ValueError("retrieval_mode 必须是 bm25、tfidf 或 hybrid")
-
         self.top_k = top_k
-        self.retrieval_mode = retrieval_mode
+        self.retrieval_mode = "hybrid"
 
         docs = load_cbt_documents(CBT_DATA_DIR, max_files=148)
         chunks = _split_documents(docs)
@@ -269,12 +264,6 @@ class LangChainTherapyRAGRetriever:
         return unique_docs
 
     def _retrieve_docs(self, query: str) -> List[Any]:
-        if self.retrieval_mode == "bm25":
-            return self.bm25_retriever.invoke(query)
-
-        if self.retrieval_mode == "tfidf":
-            return self.tfidf_retriever.invoke(query)
-
         bm25_docs = self.bm25_retriever.invoke(query)
         tfidf_docs = self.tfidf_retriever.invoke(query)
 
@@ -318,13 +307,13 @@ class LangChainTherapyRAGRetriever:
         }
 
 
-def run_cli(question: str | None, top_k: int, retrieval_mode: str, doc_type: str) -> None:
+def run_cli(question: str | None, top_k: int, doc_type: str) -> None:
 
     print(
         f"\n初始化 LangChain CBT RAG 检索器（仅检索，不调用LLM，"
-        f"mode={retrieval_mode}，doc_type={doc_type}）..."
+        f"mode=hybrid，doc_type={doc_type}）..."
     )
-    retriever = LangChainTherapyRAGRetriever(top_k=top_k, retrieval_mode=retrieval_mode)
+    retriever = LangChainTherapyRAGRetriever(top_k=top_k)
     print("初始化完成。已加载 data/cbt 前 148 个 JSON。\n")
 
     if question:
@@ -376,17 +365,7 @@ def parse_args() -> argparse.Namespace:
     # 值越大，召回更广但可能噪声更多。
     parser.add_argument("--top-k", type=int, default=DEFAULT_TOP_K, help="检索返回文档数量")
 
-    # --retrieval-mode:
-    # bm25   : 关键词匹配，速度快、可解释性强。
-    # tfidf  : 基于词频-逆文档频率，突出区分性词项。
-    # hybrid : BM25 + TF-IDF 交错合并后去重，通常更稳健。
-    parser.add_argument(
-        "--retrieval-mode",
-        type=str,
-        default="bm25",
-        choices=["bm25", "tfidf", "hybrid"],
-        help="检索模式：bm25（默认）、tfidf、hybrid",
-    )
+    # 检索模式固定为 hybrid（BM25 + TF-IDF 交错合并后去重）。
 
     # --doc-type:
     # 检索后结果的文档类型过滤器。
@@ -407,6 +386,5 @@ if __name__ == "__main__":
     run_cli(
         question=args.question,
         top_k=args.top_k,
-        retrieval_mode=args.retrieval_mode,
         doc_type=args.doc_type,
     )
