@@ -1,28 +1,31 @@
 """
-LangChain CBT RAG Demo (148 JSON files)
+LangChain Therapy Technique RAG (Agent Tool Schema)
 
 Usage:
-  python langchaindemo.py
-    python langchaindemo.py --question "我总是担心失败，怎么做认知重评？"
-    python langchaindemo.py --question "我总是担心失败" --top-k 8
-    python langchaindemo.py --question "我总是担心失败" --doc-type special_situation
-    python langchaindemo.py --question "考研焦虑怎么做" --doc-type session
-        python langchaindemo.py --question "职业规划焦虑" --doc-type global_plan --top-k 5
+  python langchaindemo.py \
+    --question "我总是担心失败，怎么做认知重评？" \
+    --conversation-summary "近一周因考试反复焦虑、睡眠变差" \
+    --focus-tags 焦虑,认知重评 \
+    --stage-hint intervention \
+    --top-k 4
 
 This script runs retrieval only (no LLM generation).
+Output is JSON designed for agent tool consumption.
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
+from collections import defaultdict
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Tuple
+from typing import Any, Dict, List, Tuple
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 CBT_DATA_DIR = PROJECT_ROOT / "data" / "cbt"
-DEFAULT_TOP_K = 6
+DEFAULT_TOP_K = 4
 
 
 class Document:
@@ -39,9 +42,6 @@ def _ensure_runtime_compatibility() -> None:
             f"{pyver}，LangChain 在该版本上存在兼容性问题。"
             "请切换到 Python 3.10-3.13 后再运行本脚本。"
         )
-
-
-
 
 
 def _import_langchain_dependencies() -> Dict[str, Any]:
@@ -66,7 +66,12 @@ def _safe_text(value: Any) -> str:
     if isinstance(value, (str, int, float, bool)):
         return str(value)
     if isinstance(value, list):
-        return "；".join(_safe_text(item) for item in value if _safe_text(item))
+        parts: List[str] = []
+        for item in value:
+            item_text = _safe_text(item)
+            if item_text:
+                parts.append(item_text)
+        return "；".join(parts)
     if isinstance(value, dict):
         parts: List[str] = []
         for key, sub in value.items():
@@ -90,97 +95,113 @@ def _iter_cbt_json_files(data_dir: Path, max_files: int = 148) -> List[Path]:
 
 def _build_case_documents(case_data: Dict[str, Any], file_name: str) -> List[Document]:
     docs: List[Document] = []
-    client_id = case_data.get("client_id", "unknown")
-    client_info = case_data.get("client_info", {})
 
-    profile_text = (
-        f"案例ID: {client_id}\n"
-        f"主题: {_safe_text(client_info.get('topic'))}\n"
-        f"主要问题: {_safe_text(client_info.get('main_problem'))}\n"
-        f"核心诉求: {_safe_text(client_info.get('core_demands'))}\n"
-        f"核心信念: {_safe_text(client_info.get('core_beliefs'))}\n"
-        f"静态特征: {_safe_text(client_info.get('static_traits'))}\n"
-        f"成长经历: {_safe_text(client_info.get('growth_experiences'))}\n"
-    )
-    docs.append(
-        Document(
-            page_content=profile_text,
-            metadata={
-                "source": file_name,
-                "client_id": client_id,
-                "doc_type": "client_profile",
-                "topic": _safe_text(client_info.get("topic")),
-            },
-        )
-    )
+    technique_include_keys = {
+        "theme",
+        "case_material",
+        "rationale",
+        "meta_skill",
+        "skill_name",
+        "skill_description",
+        "when_to_use",
+        "trigger",
+        "strategy",
+        "objective_recap",
+        "homework",
+        "session_focus",
+        "next_session_plan",
+        "method",
+        "technique",
+    }
+    technique_exclude_keys = {
+        "client_info",
+        "intake_profile",
+        "static_traits",
+        "family_status",
+        "growth_experiences",
+        "special_situations",
+        "persona_links",
+        "dialogue",
+        "name",
+        "client_id",
+    }
 
-    for idx, item in enumerate(client_info.get("special_situations", []), start=1):
-        situation_text = (
-            f"案例ID: {client_id}\n"
-            f"认知情境#{idx}\n"
-            f"事件: {_safe_text(item.get('event'))}\n"
-            f"条件性假设: {_safe_text(item.get('conditional_assumptions'))}\n"
-            f"自动化思维: {_safe_text(item.get('automatic_thoughts'))}\n"
-            f"认知模式: {_safe_text(item.get('cognitive_pattern'))}\n"
-            f"补偿策略: {_safe_text(item.get('compensatory_strategies'))}\n"
-        )
-        docs.append(
-            Document(
-                page_content=situation_text,
-                metadata={
-                    "source": file_name,
-                    "client_id": client_id,
-                    "doc_type": "special_situation",
-                    "topic": _safe_text(client_info.get("topic")),
-                    "cognitive_pattern": _safe_text(item.get("cognitive_pattern")),
-                },
-            )
-        )
+    def collect_technique_text(obj: Any) -> List[str]:
+        results: List[str] = []
+        if isinstance(obj, dict):
+            for key, value in obj.items():
+                if key in technique_exclude_keys:
+                    continue
+
+                if key in technique_include_keys:
+                    if isinstance(value, (str, int, float, bool)):
+                        text = _safe_text(value).strip()
+                        if text:
+                            results.append(f"{key}: {text}")
+                    elif isinstance(value, list):
+                        for item in value:
+                            item_text = _safe_text(item).strip()
+                            if item_text:
+                                results.append(f"{key}: {item_text}")
+                    elif isinstance(value, dict):
+                        nested_text = _safe_text(value).strip()
+                        if nested_text:
+                            results.append(f"{key}: {nested_text}")
+
+                results.extend(collect_technique_text(value))
+
+        elif isinstance(obj, list):
+            for item in obj:
+                results.extend(collect_technique_text(item))
+
+        return results
 
     for stage in case_data.get("global_plan", []):
         stage_name = _safe_text(stage.get("stage_name"))
         sessions_desc = _safe_text(stage.get("sessions"))
-        stage_content = _safe_text(stage.get("content"))
-        plan_text = (
-            f"案例ID: {client_id}\n"
-            f"治疗计划阶段: {stage_name}\n"
+        technique_lines = collect_technique_text(stage.get("content", {}))
+        if not technique_lines:
+            continue
+
+        technique_area = f"global_plan::{stage_name or 'unknown'}"
+        technique_text = (
+            f"技术域: {technique_area}\n"
             f"会谈范围: {sessions_desc}\n"
-            f"阶段内容: {stage_content}\n"
+            f"技术要点:\n- " + "\n- ".join(technique_lines)
         )
+
         docs.append(
             Document(
-                page_content=plan_text,
+                page_content=technique_text,
                 metadata={
                     "source": file_name,
-                    "client_id": client_id,
-                    "doc_type": "global_plan",
-                    "topic": _safe_text(client_info.get("topic")),
-                    "stage_name": stage_name,
+                    "doc_type": "technique",
+                    "technique_area": technique_area,
+                    "title": stage_name or "global_plan_technique",
                 },
             )
         )
 
     for session in case_data.get("sessions", []):
-        session_no = session.get("session_number", "unknown")
-        goals = _safe_text(session.get("session_goals"))
-        dialogue = _safe_text(session.get("dialogue"))
-        session_summary = _safe_text(session.get("session_summary"))
-        session_text = (
-            f"案例ID: {client_id}\n"
-            f"会谈编号: {session_no}\n"
-            f"会谈目标: {goals}\n"
-            f"关键对话: {dialogue}\n"
-            f"会谈总结: {session_summary}\n"
+        session_no = _safe_text(session.get("session_number", "unknown"))
+        technique_lines = collect_technique_text(session)
+        if not technique_lines:
+            continue
+
+        technique_area = f"session::{session_no}"
+        technique_text = (
+            f"技术域: {technique_area}\n"
+            f"技术要点:\n- " + "\n- ".join(technique_lines)
         )
+
         docs.append(
             Document(
-                page_content=session_text,
+                page_content=technique_text,
                 metadata={
                     "source": file_name,
-                    "client_id": client_id,
-                    "doc_type": "session",
-                    "topic": _safe_text(client_info.get("topic")),
-                    "session_number": str(session_no),
+                    "doc_type": "technique",
+                    "technique_area": technique_area,
+                    "title": f"session_{session_no}",
                 },
             )
         )
@@ -191,13 +212,13 @@ def _build_case_documents(case_data: Dict[str, Any], file_name: str) -> List[Doc
 def load_cbt_documents(data_dir: Path = CBT_DATA_DIR, max_files: int = 148) -> List[Document]:
     all_docs: List[Document] = []
     for file_path in _iter_cbt_json_files(data_dir, max_files=max_files):
-        with open(file_path, "r", encoding="utf-8") as f:
-            case_data = json.load(f)
+        with open(file_path, "r", encoding="utf-8") as file:
+            case_data = json.load(file)
         all_docs.extend(_build_case_documents(case_data, file_path.name))
     return all_docs
 
 
-def _split_documents(documents: List[Document]) -> List[Document]:
+def _split_documents(documents: List[Document]) -> List[Any]:
     deps = _import_langchain_dependencies()
     lc_document_cls = deps["Document"]
 
@@ -211,14 +232,16 @@ def _split_documents(documents: List[Document]) -> List[Document]:
         chunk_overlap=180,
         separators=["\n\n", "\n", "。", "；", "，", " "],
     )
-    return splitter.split_documents(lc_documents)
+    split_docs = splitter.split_documents(lc_documents)
 
+    for idx, doc in enumerate(split_docs):
+        meta = doc.metadata or {}
+        source = meta.get("source", "unknown")
+        area = meta.get("technique_area", "unknown")
+        meta["chunk_id"] = f"{source}::{area}::chunk_{idx}"
+        doc.metadata = meta
 
-def _format_chat_history(history: Iterable[Tuple[str, str]]) -> str:
-    lines: List[str] = []
-    for role, content in history:
-        lines.append(f"{role}: {content}")
-    return "\n".join(lines)
+    return split_docs
 
 
 class LangChainTherapyRAGRetriever:
@@ -228,156 +251,265 @@ class LangChainTherapyRAGRetriever:
         tfidf_retriever_cls = deps["TFIDFRetriever"]
 
         self.top_k = top_k
-        self.retrieval_mode = "hybrid"
+        self.retrieval_mode = "hybrid_rrf_rerank"
+        self.doc_type = "technique"
 
         docs = load_cbt_documents(CBT_DATA_DIR, max_files=148)
         chunks = _split_documents(docs)
+
         self.bm25_retriever = bm25_retriever_cls.from_documents(chunks)
-        self.bm25_retriever.k = max(top_k * 5, 10)
-
         self.tfidf_retriever = tfidf_retriever_cls.from_documents(chunks)
-        self.tfidf_retriever.k = max(top_k * 5, 10)
 
     @staticmethod
-    def _filter_by_doc_type(documents: List[Any], doc_type: str) -> List[Any]:
-        if doc_type == "all":
-            return documents
-        return [doc for doc in documents if doc.metadata.get("doc_type") == doc_type]
+    def _tokenize_text(text: str) -> List[str]:
+        return re.findall(r"[\u4e00-\u9fff]{2,}|[a-zA-Z]{3,}|\d+", (text or "").lower())
 
     @staticmethod
-    def _dedupe_documents(documents: List[Any], max_k: int) -> List[Any]:
-        seen = set()
-        unique_docs: List[Any] = []
-        for doc in documents:
-            key = (
-                doc.metadata.get("source", ""),
-                str(doc.metadata.get("client_id", "")),
-                doc.metadata.get("doc_type", ""),
-                doc.page_content[:160],
-            )
-            if key in seen:
-                continue
-            seen.add(key)
-            unique_docs.append(doc)
-            if len(unique_docs) >= max_k:
-                break
-        return unique_docs
+    def _extract_keywords(text: str) -> List[str]:
+        stop_words = {
+            "的", "了", "和", "是", "在", "我", "也", "就", "都", "很", "与", "及", "并",
+            "一个", "一些", "这个", "那个", "因为", "所以", "如果", "但是", "然后", "自己",
+        }
+        tokens = re.findall(r"[\u4e00-\u9fff]{2,}|[a-zA-Z]{3,}|\d+", (text or "").lower())
+        return [token for token in tokens if token not in stop_words][:12]
 
-    def _retrieve_docs(self, query: str) -> List[Any]:
-        bm25_docs = self.bm25_retriever.invoke(query)
-        tfidf_docs = self.tfidf_retriever.invoke(query)
+    @staticmethod
+    def _doc_key(doc: Any) -> str:
+        meta = doc.metadata or {}
+        return str(meta.get("chunk_id") or hash(doc.page_content[:300]))
 
-        merged: List[Any] = []
-        max_len = max(len(bm25_docs), len(tfidf_docs))
-        for idx in range(max_len):
-            if idx < len(bm25_docs):
-                merged.append(bm25_docs[idx])
-            if idx < len(tfidf_docs):
-                merged.append(tfidf_docs[idx])
-
-        return self._dedupe_documents(merged, self.top_k)
-
-    def retrieve(
+    def _build_final_query(
         self,
-        user_input: str,
-        chat_history: List[Tuple[str, str]],
-        doc_type_filter: str = "all",
-    ) -> Dict[str, Any]:
-        history_text = _format_chat_history(chat_history)
-        query = user_input if not history_text else f"{history_text}\n当前问题: {user_input}"
-        context_docs = self._retrieve_docs(query)
-        context_docs = self._filter_by_doc_type(context_docs, doc_type_filter)
+        query: str,
+        conversation_summary: str,
+        focus_tags: List[str] | None,
+        stage_hint: str | None,
+    ) -> str:
+        tag_text = " ".join((focus_tags or [])[:8]).strip()
+        keyword_text = " ".join(
+            self._extract_keywords(f"{conversation_summary} {query} {tag_text} {stage_hint or ''}")
+        )
+        return (
+            f"当前问题: {query}\n"
+            f"近期摘要: {conversation_summary or '无'}\n"
+            f"聚焦标签: {tag_text or '无'}\n"
+            f"阶段提示: {stage_hint or 'intervention'}\n"
+            f"关键词: {keyword_text}"
+        )
 
-        references = []
-        for doc in context_docs[: self.top_k]:
-            references.append(
+    def _rrf_fuse(
+        self,
+        bm25_docs: List[Any],
+        tfidf_docs: List[Any],
+        rrf_k: int = 60,
+        bm25_weight: float = 1.0,
+        tfidf_weight: float = 1.0,
+    ) -> List[Tuple[Any, float]]:
+        scores: Dict[str, float] = defaultdict(float)
+        doc_map: Dict[str, Any] = {}
+
+        for rank, doc in enumerate(bm25_docs, start=1):
+            key = self._doc_key(doc)
+            scores[key] += bm25_weight / (rrf_k + rank)
+            doc_map[key] = doc
+
+        for rank, doc in enumerate(tfidf_docs, start=1):
+            key = self._doc_key(doc)
+            scores[key] += tfidf_weight / (rrf_k + rank)
+            doc_map[key] = doc
+
+        if not scores:
+            return []
+
+        min_score = min(scores.values())
+        max_score = max(scores.values())
+        denom = max(max_score - min_score, 1e-12)
+
+        normalized_ranked: List[Tuple[Any, float]] = []
+        for key, score in scores.items():
+            normalized_ranked.append((doc_map[key], (score - min_score) / denom))
+
+        normalized_ranked.sort(key=lambda item: item[1], reverse=True)
+        return normalized_ranked[: max(self.top_k * 8, 20)]
+
+    def _rerank_candidates(self, query: str, fused_docs: List[Tuple[Any, float]]) -> List[Dict[str, Any]]:
+        if not fused_docs:
+            return []
+
+        query_tokens = self._tokenize_text(query)
+        if not query_tokens:
+            return []
+
+        query_set = set(query_tokens)
+        reranked: List[Dict[str, Any]] = []
+
+        for doc, fusion_score in fused_docs:
+            doc_tokens = self._tokenize_text(doc.page_content)
+            if not doc_tokens:
+                continue
+
+            doc_set = set(doc_tokens)
+            overlap = query_set & doc_set
+            overlap_count = len(overlap)
+            coverage = overlap_count / max(len(query_set), 1)
+            precision = overlap_count / max(len(doc_set), 1)
+            lexical_score = 0.7 * coverage + 0.3 * precision
+            final_score = 0.7 * fusion_score + 0.3 * lexical_score
+
+            reranked.append(
                 {
-                    "source": doc.metadata.get("source", "unknown"),
-                    "client_id": doc.metadata.get("client_id", "unknown"),
-                    "doc_type": doc.metadata.get("doc_type", "unknown"),
-                    "topic": doc.metadata.get("topic", ""),
-                    "content": doc.page_content[:300],
+                    "doc": doc,
+                    "rrf_score": float(fusion_score),
+                    "lexical_score": float(lexical_score),
+                    "final_score": float(final_score),
+                    "matched_keywords": sorted(list(overlap))[:10],
                 }
             )
 
-        return {
-            "mode": self.retrieval_mode,
-            "doc_type_filter": doc_type_filter,
+        reranked.sort(key=lambda item: item["final_score"], reverse=True)
+        return reranked[: self.top_k]
+
+    def _retrieve_docs(self, final_query: str, top_k: int) -> List[Dict[str, Any]]:
+        self.top_k = top_k
+        candidate_k = max(top_k * 5, 10)
+        self.bm25_retriever.k = candidate_k
+        self.tfidf_retriever.k = candidate_k
+
+        bm25_docs = self.bm25_retriever.invoke(final_query)
+        tfidf_docs = self.tfidf_retriever.invoke(final_query)
+
+        fused_docs = self._rrf_fuse(
+            bm25_docs=bm25_docs,
+            tfidf_docs=tfidf_docs,
+            rrf_k=60,
+            bm25_weight=1.0,
+            tfidf_weight=1.0,
+        )
+        return self._rerank_candidates(final_query, fused_docs)
+
+    def retrieve(
+        self,
+        query: str,
+        conversation_summary: str,
+        top_k: int = DEFAULT_TOP_K,
+        focus_tags: List[str] | None = None,
+        stage_hint: str | None = None,
+        safety_level: str = "low",
+        language: str = "zh",
+        debug: bool = False,
+    ) -> Dict[str, Any]:
+        final_query = self._build_final_query(
+            query=query,
+            conversation_summary=conversation_summary,
+            focus_tags=focus_tags,
+            stage_hint=stage_hint,
+        )
+        ranked_docs = self._retrieve_docs(final_query=final_query, top_k=top_k)
+
+        references: List[Dict[str, Any]] = []
+        score_values: List[float] = []
+
+        for index, item in enumerate(ranked_docs, start=1):
+            doc = item["doc"]
+            meta = doc.metadata or {}
+            final_score = float(item["final_score"])
+            score_values.append(final_score)
+
+            references.append(
+                {
+                    "id": meta.get("chunk_id") or f"tech::{meta.get('technique_area', 'unknown')}::chunk_{index}",
+                    "title": meta.get("title") or meta.get("technique_area") or "technique",
+                    "technique_area": meta.get("technique_area", "unknown"),
+                    "content": doc.page_content[:600],
+                    "score": round(final_score, 4),
+                    "score_breakdown": {
+                        "rrf_score": round(float(item["rrf_score"]), 4),
+                        "lexical_score": round(float(item["lexical_score"]), 4),
+                    },
+                    "matched_keywords": item["matched_keywords"],
+                }
+            )
+
+        max_score = max(score_values) if score_values else 0.0
+        avg_score = (sum(score_values) / len(score_values)) if score_values else 0.0
+        low_confidence = max_score < 0.45
+        need_clarification = low_confidence or avg_score < 0.35
+
+        result: Dict[str, Any] = {
+            "query_meta": {
+                "final_query": final_query,
+                "top_k": top_k,
+                "mode": self.retrieval_mode,
+                "doc_type": self.doc_type,
+                "safety_level": safety_level,
+                "language": language,
+            },
             "references": references,
+            "retrieval_quality": {
+                "max_score": round(max_score, 4),
+                "avg_score": round(avg_score, 4),
+                "low_confidence": low_confidence,
+                "need_clarification": need_clarification,
+            },
         }
 
+        if debug:
+            result["debug"] = {
+                "returned_count": len(references),
+            }
 
-def run_cli(question: str | None, top_k: int, doc_type: str) -> None:
+        return result
 
-    print(
-        f"\n初始化 LangChain CBT RAG 检索器（仅检索，不调用LLM，"
-        f"mode=hybrid，doc_type={doc_type}）..."
-    )
+
+def run_cli(
+    question: str,
+    conversation_summary: str,
+    top_k: int,
+    focus_tags: str,
+    stage_hint: str,
+    safety_level: str,
+    language: str,
+    debug: bool,
+) -> None:
+    tag_list = [tag.strip() for tag in focus_tags.split(",") if tag.strip()] if focus_tags else []
+
     retriever = LangChainTherapyRAGRetriever(top_k=top_k)
-    print("初始化完成。已加载 data/cbt 前 148 个 JSON。\n")
+    result = retriever.retrieve(
+        query=question,
+        conversation_summary=conversation_summary,
+        top_k=top_k,
+        focus_tags=tag_list,
+        stage_hint=stage_hint,
+        safety_level=safety_level,
+        language=language,
+        debug=debug,
+    )
 
-    if question:
-        result = retriever.retrieve(question, chat_history=[], doc_type_filter=doc_type)
-        print(f"检索结果（mode={result['mode']}，doc_type={result['doc_type_filter']}）:")
-        if not result["references"]:
-            print("- 未命中结果，请尝试放宽 doc_type 或调整问题关键词。")
-            return
-        for ref in result["references"]:
-            print(f"- {ref['source']} | case={ref['client_id']} | type={ref['doc_type']} | topic={ref['topic']}")
-            print(f"  内容片段: {ref['content']}")
-        return
-
-    print("进入检索模式（输入 /exit 退出）")
-    history: List[Tuple[str, str]] = []
-    while True:
-        user_input = input("\n来访者: ").strip()
-        if not user_input:
-            continue
-        if user_input in {"/exit", "exit", "quit"}:
-            print("\n会话结束。")
-            break
-
-        result = retriever.retrieve(user_input, chat_history=history, doc_type_filter=doc_type)
-        print(f"\n检索结果（mode={result['mode']}，doc_type={result['doc_type_filter']}）:")
-        if result["references"]:
-            for ref in result["references"]:
-                print(
-                    f"- {ref['source']} | case={ref['client_id']} | "
-                    f"type={ref['doc_type']} | topic={ref['topic']}"
-                )
-                print(f"  内容片段: {ref['content']}")
-        else:
-            print("- 未命中结果，请尝试放宽 doc_type 或调整问题关键词。")
-
-        history.append(("user", user_input))
-        history.append(("retriever", json.dumps(result["references"], ensure_ascii=False)))
+    print(json.dumps(result, ensure_ascii=False, indent=2))
 
 
 def parse_args() -> argparse.Namespace:
-    # --question:
-    # 单轮提问文本；传入后执行一次检索并退出。
-    # 不传时进入交互检索模式（可连续输入）。
-    parser = argparse.ArgumentParser(description="CBT 148 JSON LangChain RAG Retriever (No LLM)")
-    parser.add_argument("--question", type=str, default=None, help="单轮提问")
-
-    # --top-k:
-    # 最终返回给用户的结果数量上限。
-    # 值越大，召回更广但可能噪声更多。
-    parser.add_argument("--top-k", type=int, default=DEFAULT_TOP_K, help="检索返回文档数量")
-
-    # 检索模式固定为 hybrid（BM25 + TF-IDF 交错合并后去重）。
-
-    # --doc-type:
-    # 检索后结果的文档类型过滤器。
-    # all 不过滤；其余仅返回指定类型。
-    # 可选：client_profile / special_situation / global_plan / session。
+    parser = argparse.ArgumentParser(description="Therapy technique-only RAG retriever (Agent Tool Output)")
+    parser.add_argument("--question", type=str, required=True, help="当前用户问题")
+    parser.add_argument("--conversation-summary", type=str, default="", help="最近3-5轮会话摘要")
+    parser.add_argument("--top-k", type=int, default=DEFAULT_TOP_K, help="返回条数，建议1-8")
+    parser.add_argument("--focus-tags", type=str, default="", help="可选标签，逗号分隔，例如: 焦虑,回避,认知重评")
     parser.add_argument(
-        "--doc-type",
+        "--stage-hint",
         type=str,
-        default="all",
-        choices=["all", "client_profile", "special_situation", "global_plan", "session"],
-        help="文档类型过滤：all（默认）或指定类型",
+        default="intervention",
+        choices=["assessment", "intervention", "homework"],
+        help="会谈阶段提示",
     )
+    parser.add_argument(
+        "--safety-level",
+        type=str,
+        default="low",
+        choices=["low", "medium", "high"],
+        help="风险等级提示",
+    )
+    parser.add_argument("--language", type=str, default="zh", help="语言")
+    parser.add_argument("--debug", action="store_true", help="输出调试信息")
     return parser.parse_args()
 
 
@@ -385,6 +517,11 @@ if __name__ == "__main__":
     args = parse_args()
     run_cli(
         question=args.question,
+        conversation_summary=args.conversation_summary,
         top_k=args.top_k,
-        doc_type=args.doc_type,
+        focus_tags=args.focus_tags,
+        stage_hint=args.stage_hint,
+        safety_level=args.safety_level,
+        language=args.language,
+        debug=args.debug,
     )
