@@ -7,7 +7,7 @@ based on client presentation and current therapy stage.
 
 import json
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple, Set
 from dataclasses import dataclass
 import re
 
@@ -44,24 +44,105 @@ class CBTRetriever:
         self.therapy_progress: List[Dict[str, Any]] = []
         self.case_metadata: Dict[int, Dict[str, Any]] = {}
         
+        # Pre-computed indices
+        self.framework_indices: List[Dict[str, Set[str]]] = []
+        self.strategy_indices: List[Dict[str, Set[str]]] = []
+        self.progress_indices: List[Dict[str, Set[str]]] = []
+
         self._load_knowledge_base()
     
+    def _tokenize(self, text: Any, filter_short: bool = True) -> Set[str]:
+        """
+        Tokenize text into a set of keywords.
+        Handles string and list inputs.
+        """
+        if isinstance(text, list):
+            # Join list elements with space
+            text_str = " ".join(str(x) for x in text)
+        else:
+            text_str = str(text) if text is not None else ""
+
+        # Lowercase and split
+        tokens = text_str.lower().split()
+
+        if filter_short:
+            return set(w for w in tokens if len(w) > 2)
+        else:
+            return set(tokens)
+
     def _load_knowledge_base(self) -> None:
-        """Load knowledge base from JSON files"""
+        """Load knowledge base from JSON files and pre-compute indices"""
         frameworks_file = self.kb_dir / "cognitive_frameworks.json"
         if frameworks_file.exists():
             with open(frameworks_file, 'r', encoding='utf-8') as f:
                 self.cognitive_frameworks = json.load(f)
+
+            # Pre-compute framework indices
+            for fw in self.cognitive_frameworks:
+                # 1. Event keywords (for _text_similarity)
+                event_keywords = self._tokenize(fw.get("event", ""))
+
+                # 2. Combined keywords (for _keyword_overlap)
+                at = fw.get("automatic_thoughts", [])
+                at_str = " ".join(at) if isinstance(at, list) else " ".join(str(at))
+
+                cs = fw.get("compensatory_strategies", [])
+                cs_str = " ".join(cs) if isinstance(cs, list) else " ".join(str(cs))
+
+                combined_text = f"{str(fw.get('event', ''))} {at_str} {cs_str}"
+                combined_keywords = self._tokenize(combined_text)
+
+                self.framework_indices.append({
+                    "event_keywords": event_keywords,
+                    "combined_keywords": combined_keywords
+                })
         
         strategies_file = self.kb_dir / "intervention_strategies.json"
         if strategies_file.exists():
             with open(strategies_file, 'r', encoding='utf-8') as f:
                 self.intervention_strategies = json.load(f)
+
+            # Pre-compute strategy indices
+            for strategy in self.intervention_strategies:
+                # 1. Theme + Rationale keywords
+                theme = strategy.get('theme', '')
+                rationale = strategy.get('rationale', '')
+                theme_rationale_text = f"{theme} {rationale}"
+                theme_rationale_keywords = self._tokenize(theme_rationale_text)
+
+                # 2. Theme keywords
+                theme_keywords = self._tokenize(theme)
+
+                self.strategy_indices.append({
+                    "theme_rationale_keywords": theme_rationale_keywords,
+                    "theme_keywords": theme_keywords
+                })
         
         progress_file = self.kb_dir / "therapy_progress.json"
         if progress_file.exists():
             with open(progress_file, 'r', encoding='utf-8') as f:
                 self.therapy_progress = json.load(f)
+
+            # Pre-compute progress indices
+            for progress in self.therapy_progress:
+                # 1. Focus areas (for overlap check without len>2 filter)
+                focus_areas = progress.get("focus_areas", [])
+                if isinstance(focus_areas, list):
+                    focus_keywords = set(str(f).lower() for f in focus_areas)
+                else:
+                    focus_keywords = set(str(focus_areas).lower().split())
+
+                # 2. Stage name keywords
+                stage_name_keywords = self._tokenize(progress.get("stage_name", ""))
+
+                # 3. Therapy content keywords
+                content_keywords = self._tokenize(progress.get("therapy_content", ""))
+
+                self.progress_indices.append({
+                    "focus_keywords": focus_keywords,
+                    "stage_name_keywords": stage_name_keywords,
+                    "content_keywords": content_keywords
+                })
         
         metadata_file = self.kb_dir / "case_metadata.json"
         if metadata_file.exists():
@@ -97,9 +178,17 @@ class CBTRetriever:
         """
         relevance_scores = {}
         
+        # Pre-compute query tokens
+        problem_keywords = self._tokenize(client_problem)
+        # For focus areas, we use tokens without length filter
+        problem_tokens_raw = self._tokenize(client_problem, filter_short=False)
+
+        topic_keywords = self._tokenize(client_topic) if client_topic else set()
+
         # Retrieve cognitive frameworks
         frameworks = self._retrieve_cognitive_frameworks(
             client_problem,
+            problem_keywords,
             current_cognitive_patterns,
             client_topic,
             top_k,
@@ -109,6 +198,8 @@ class CBTRetriever:
         # Retrieve intervention strategies
         strategies = self._retrieve_intervention_strategies(
             client_problem,
+            problem_keywords,
+            topic_keywords,
             current_cognitive_patterns,
             therapy_stage,
             client_topic,
@@ -119,6 +210,9 @@ class CBTRetriever:
         # Retrieve therapy progress examples
         examples = self._retrieve_therapy_examples(
             client_problem,
+            problem_keywords,
+            problem_tokens_raw,
+            topic_keywords,
             therapy_stage,
             client_topic,
             top_k,
@@ -135,6 +229,7 @@ class CBTRetriever:
     def _retrieve_cognitive_frameworks(
         self,
         client_problem: str,
+        problem_keywords: Set[str],
         cognitive_patterns: Optional[List[str]],
         client_topic: Optional[str],
         top_k: int,
@@ -143,26 +238,44 @@ class CBTRetriever:
         """Retrieve relevant cognitive frameworks"""
         scores = []
         
-        for idx, framework in enumerate(self.cognitive_frameworks):
+        for idx, (framework, indices) in enumerate(zip(self.cognitive_frameworks, self.framework_indices)):
             score = 0.0
             
             # Match by problem category/topic
             if client_topic and framework.get("problem_category") == client_topic:
                 score += 0.3
             
-            # Match by automatic thoughts
-            if self._text_similarity(client_problem, framework.get("event", "")):
+            # Match by automatic thoughts (using event keywords)
+            # Original: _text_similarity(client_problem, framework.get("event", ""))
+            # _text_similarity checks if overlap > 0
+            if not problem_keywords.isdisjoint(indices["event_keywords"]):
                 score += 0.25
             
             # Match by cognitive patterns
             if cognitive_patterns:
                 framework_patterns = framework.get("cognitive_patterns", [])
-                matched_patterns = set(cognitive_patterns) & set(framework_patterns)
+                # Handle string vs list for cognitive_patterns if needed, though original code implies it works as iterable or string
+                # original: matched_patterns = set(cognitive_patterns) & set(framework_patterns)
+                # If framework_patterns is string, set("ABC") is {'A', 'B', 'C'}.
+                # If it's a list, set(["A", "B"]) is {'A', 'B'}.
+                # The data shows "cognitive_patterns": "All-or-Nothing Thinking" (string).
+                # But original code was `matched_patterns = set(cognitive_patterns) & set(framework_patterns)`.
+                # If framework_patterns is "All-or-Nothing Thinking", set() splits it into chars?
+                # set("All") -> {'A', 'l'}.
+                # cognitive_patterns (input) is list of strings: ["All-or-Nothing Thinking"].
+                # Overlap: {'A', 'l'} & {"All-or-Nothing Thinking"} -> Empty.
+                # So original code for patterns might also be buggy if data is string.
+                # However, I must preserve existing functionality.
+                # I will copy the logic exactly as it was inside the loop.
+                framework_patterns_val = framework.get("cognitive_patterns", [])
+                matched_patterns = set(cognitive_patterns) & set(framework_patterns_val)
                 if matched_patterns:
                     score += 0.25 * (len(matched_patterns) / len(cognitive_patterns))
             
             # Match by keywords in problem
-            if self._keyword_overlap(client_problem, framework):
+            # Original: _keyword_overlap(client_problem, framework)
+            # _keyword_overlap checks if len(problem_keywords & framework_keywords) > 0
+            if not problem_keywords.isdisjoint(indices["combined_keywords"]):
                 score += 0.2
             
             if score > 0:
@@ -181,6 +294,8 @@ class CBTRetriever:
     def _retrieve_intervention_strategies(
         self,
         client_problem: str,
+        problem_keywords: Set[str],
+        topic_keywords: Set[str],
         cognitive_patterns: Optional[List[str]],
         therapy_stage: str,
         client_topic: Optional[str],
@@ -190,7 +305,7 @@ class CBTRetriever:
         """Retrieve relevant intervention strategies"""
         scores = []
         
-        for idx, strategy in enumerate(self.intervention_strategies):
+        for idx, (strategy, indices) in enumerate(zip(self.intervention_strategies, self.strategy_indices)):
             score = 0.0
             
             # Match by therapy stage
@@ -210,14 +325,13 @@ class CBTRetriever:
                     score += 0.3
             
             # Match by theme/technique relevance to problem
-            if self._text_similarity(
-                client_problem,
-                f"{strategy.get('theme', '')} {strategy.get('rationale', '')}"
-            ):
+            # Original: _text_similarity(client_problem, f"{theme} {rationale}")
+            if not problem_keywords.isdisjoint(indices["theme_rationale_keywords"]):
                 score += 0.25
             
             # Match by problem category
-            if client_topic and self._text_similarity(client_topic, strategy.get("theme", "")):
+            # Original: _text_similarity(client_topic, strategy.get("theme", ""))
+            if client_topic and not topic_keywords.isdisjoint(indices["theme_keywords"]):
                 score += 0.15
             
             # Bonus for explicit technique match
@@ -242,6 +356,9 @@ class CBTRetriever:
     def _retrieve_therapy_examples(
         self,
         client_problem: str,
+        problem_keywords: Set[str],
+        problem_tokens_raw: Set[str],
+        topic_keywords: Set[str],
         therapy_stage: str,
         client_topic: Optional[str],
         top_k: int,
@@ -257,7 +374,7 @@ class CBTRetriever:
         }
         target_stage = stage_mapping.get(therapy_stage, 2)
         
-        for idx, progress in enumerate(self.therapy_progress):
+        for idx, (progress, indices) in enumerate(zip(self.therapy_progress, self.progress_indices)):
             score = 0.0
             
             # Match by stage
@@ -268,19 +385,20 @@ class CBTRetriever:
             # Match by focus areas
             focus_areas = progress.get("focus_areas", [])
             if focus_areas:
-                problem_keywords = set(client_problem.lower().split())
-                focus_keywords = set(f.lower() for f in focus_areas)
-                overlap = problem_keywords & focus_keywords
-                if overlap:
+                # Original: problem_keywords = set(client_problem.lower().split()) (NO len filter)
+                # focus_keywords = set(f.lower() for f in focus_areas)
+                # We use problem_tokens_raw for this.
+                if not problem_tokens_raw.isdisjoint(indices["focus_keywords"]):
                     score += 0.4
             
             # Match by topic
-            progress_stage_name = progress.get("stage_name", "")
-            if client_topic and self._text_similarity(client_topic, progress_stage_name):
+            # Original: _text_similarity(client_topic, progress_stage_name)
+            if client_topic and not topic_keywords.isdisjoint(indices["stage_name_keywords"]):
                 score += 0.2
             
             # Match by therapy content
-            if self._text_similarity(client_problem, progress.get("therapy_content", "")):
+            # Original: _text_similarity(client_problem, therapy_content)
+            if not problem_keywords.isdisjoint(indices["content_keywords"]):
                 score += 0.1
             
             if score > 0:
@@ -298,6 +416,7 @@ class CBTRetriever:
     
     def _text_similarity(self, text1: str, text2: str) -> bool:
         """Simple text similarity check based on keyword overlap"""
+        # This method is kept for compatibility but not used in optimized loops
         if not text1 or not text2:
             return False
         
@@ -317,6 +436,7 @@ class CBTRetriever:
     
     def _keyword_overlap(self, problem: str, framework: Dict[str, Any]) -> bool:
         """Check keyword overlap between problem and framework"""
+        # This method is kept for compatibility but not used in optimized loops
         problem_keywords = set(w.lower() for w in problem.split() if len(w) > 2)
         
         # Check against various framework fields
