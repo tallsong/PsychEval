@@ -51,6 +51,25 @@ class HETRetriever:
         if strategies_file.exists():
             with open(strategies_file, 'r', encoding='utf-8') as f:
                 self.strategies = json.load(f)
+
+        # Precompute for self concepts
+        for c in self.self_concepts:
+            c["_current_self_perception_keywords"] = set(re.findall(r'\w+', c.get('current_self_perception', '').lower()))
+            c["_growth_potential_keywords"] = set(re.findall(r'\w+', c.get('growth_potential', '').lower()))
+
+        # Precompute for existential themes
+        for t in self.existential_themes:
+            manifestations = t.get('manifestations', [])
+            t["_manifestation_keywords"] = [set(re.findall(r'\w+', m.lower())) for m in manifestations]
+
+        # Precompute for strategies
+        for s in self.strategies:
+            s["_situation_keywords"] = set(re.findall(r'\w+', s.get('situation', '').lower()))
+            s["_counselor_approach_keywords"] = set(re.findall(r'\w+', s.get('counselor_approach', '').lower()))
+
+    def _clean_result(self, result: Dict) -> Dict:
+        """Remove precomputed keys starting with _ and ending with _keywords"""
+        return {k: v for k, v in result.items() if not (k.startswith('_') and k.endswith('_keywords'))}
     
     def retrieve(
         self,
@@ -103,20 +122,26 @@ class HETRetriever:
     ) -> List[Dict]:
         """Retrieve relevant self-concept frameworks"""
         query = " ".join(filter(None, [client_problem, self_perception]))
+        query_words = set(re.findall(r'\w+', query.lower()))
         
         scored_results = []
         for concept in self.self_concepts:
             score = 0.0
             
             # Topic match
-            problem_sim = self._text_similarity(
-                query, 
-                concept.get('current_self_perception', '')
-            )
+            current_perception_kws = concept.get("_current_self_perception_keywords")
+            if current_perception_kws is not None:
+                problem_sim = self._text_similarity(query_words, current_perception_kws)
+            else:
+                problem_sim = self._text_similarity(query, concept.get('current_self_perception', ''))
             score += problem_sim * 0.4
             
             # Growth potential match
-            growth_sim = self._text_similarity(query, concept.get('growth_potential', ''))
+            growth_potential_kws = concept.get("_growth_potential_keywords")
+            if growth_potential_kws is not None:
+                growth_sim = self._text_similarity(query_words, growth_potential_kws)
+            else:
+                growth_sim = self._text_similarity(query, concept.get('growth_potential', ''))
             score += growth_sim * 0.3
             
             # Incongruence relevance
@@ -124,12 +149,13 @@ class HETRetriever:
             if incongruence and any(kw in query for kw in ['矛盾', '冲突', '不一致']):
                 score += 0.2
             
-            concept['relevance_score'] = score
-            scored_results.append((score, concept))
+            concept_res = concept.copy()
+            concept_res['relevance_score'] = score
+            scored_results.append((score, concept_res))
         
         # Sort by score and return top-k
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
     def _retrieve_existential_themes(
         self,
@@ -138,6 +164,7 @@ class HETRetriever:
     ) -> List[Dict]:
         """Retrieve relevant existential themes"""
         scored_results = []
+        query_words = set(re.findall(r'\w+', existential_concern.lower()))
         
         theme_keywords = {
             '无意义': ['无意义', '意义'],
@@ -157,16 +184,23 @@ class HETRetriever:
                         score += 0.5
             
             # Manifestation match
-            manifestations = theme.get('manifestations', [])
-            for manif in manifestations:
-                if self._text_similarity(existential_concern, manif) > 0.3:
-                    score += 0.25
+            manifestation_kws_list = theme.get("_manifestation_keywords")
+            if manifestation_kws_list is not None:
+                for manif_kws in manifestation_kws_list:
+                    if self._text_similarity(query_words, manif_kws) > 0.3:
+                        score += 0.25
+            else:
+                manifestations = theme.get('manifestations', [])
+                for manif in manifestations:
+                    if self._text_similarity(existential_concern, manif) > 0.3:
+                        score += 0.25
             
-            theme['relevance_score'] = score
-            scored_results.append((score, theme))
+            theme_res = theme.copy()
+            theme_res['relevance_score'] = score
+            scored_results.append((score, theme_res))
         
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
     def _retrieve_strategies(
         self,
@@ -176,14 +210,19 @@ class HETRetriever:
     ) -> List[Dict]:
         """Retrieve relevant client-centered strategies"""
         query = " ".join(filter(None, [client_problem, self_perception]))
+        query_words = set(re.findall(r'\w+', query.lower()))
         
         scored_results = []
         for strategy in self.strategies:
             score = 0.0
             
             # Situation match
-            situation = strategy.get('situation', '')
-            situation_sim = self._text_similarity(query, situation)
+            situation_kws = strategy.get("_situation_keywords")
+            if situation_kws is not None:
+                situation_sim = self._text_similarity(query_words, situation_kws)
+            else:
+                situation = strategy.get('situation', '')
+                situation_sim = self._text_similarity(query, situation)
             score += situation_sim * 0.35
             
             # Strategy type match (prefer unconditional positive regard, empathy)
@@ -192,8 +231,12 @@ class HETRetriever:
                 score += 0.15
             
             # Approach match
-            approach = strategy.get('counselor_approach', '')
-            approach_sim = self._text_similarity(query, approach)
+            approach_kws = strategy.get("_counselor_approach_keywords")
+            if approach_kws is not None:
+                approach_sim = self._text_similarity(query_words, approach_kws)
+            else:
+                approach = strategy.get('counselor_approach', '')
+                approach_sim = self._text_similarity(query, approach)
             score += approach_sim * 0.25
             
             # Expected outcome (growth-oriented)
@@ -201,19 +244,27 @@ class HETRetriever:
             if any(kw in outcome for kw in ['自我', '理解', '成长', '认识']):
                 score += 0.15
             
-            strategy['relevance_score'] = score
-            scored_results.append((score, strategy))
+            strategy_res = strategy.copy()
+            strategy_res['relevance_score'] = score
+            scored_results.append((score, strategy_res))
         
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
-    def _text_similarity(self, text1: str, text2: str) -> float:
+    def _text_similarity(self, text_or_words1, text_or_words2) -> float:
         """Simple keyword overlap similarity"""
-        if not text1 or not text2:
+        if not text_or_words1 or not text_or_words2:
             return 0.0
         
-        words1 = set(re.findall(r'\w+', text1.lower()))
-        words2 = set(re.findall(r'\w+', text2.lower()))
+        if isinstance(text_or_words1, str):
+            words1 = set(re.findall(r'\w+', text_or_words1.lower()))
+        else:
+            words1 = text_or_words1
+
+        if isinstance(text_or_words2, str):
+            words2 = set(re.findall(r'\w+', text_or_words2.lower()))
+        else:
+            words2 = text_or_words2
         
         if not words1 or not words2:
             return 0.0
