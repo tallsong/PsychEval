@@ -32,6 +32,11 @@ class HETRetriever:
         
         self._load_knowledge_base()
     
+    def _extract_keywords(self, text: str) -> set:
+        if not text:
+            return set()
+        return set(re.findall(r'\w+', str(text).lower()))
+
     def _load_knowledge_base(self) -> None:
         """Load all knowledge base files"""
         # Load self-concepts
@@ -39,18 +44,36 @@ class HETRetriever:
         if self_concepts_file.exists():
             with open(self_concepts_file, 'r', encoding='utf-8') as f:
                 self.self_concepts = json.load(f)
+                for item in self.self_concepts:
+                    item['_perception_keywords'] = self._extract_keywords(item.get('current_self_perception', ''))
+                    item['_growth_keywords'] = self._extract_keywords(item.get('growth_potential', ''))
         
         # Load existential themes
         existential_file = self.kb_dir / "het_existential_themes.json"
         if existential_file.exists():
             with open(existential_file, 'r', encoding='utf-8') as f:
                 self.existential_themes = json.load(f)
+                for item in self.existential_themes:
+                    item['_manifestation_keywords'] = [self._extract_keywords(m) for m in item.get('manifestations', [])]
         
         # Load strategies
         strategies_file = self.kb_dir / "het_client_centered_strategies.json"
         if strategies_file.exists():
             with open(strategies_file, 'r', encoding='utf-8') as f:
                 self.strategies = json.load(f)
+                for item in self.strategies:
+                    item['_situation_keywords'] = self._extract_keywords(item.get('situation', ''))
+                    item['_approach_keywords'] = self._extract_keywords(item.get('counselor_approach', ''))
+
+    def _clean_result(self, result_list: List[Dict]) -> List[Dict]:
+        cleaned = []
+        for item in result_list:
+            clean_item = item.copy()
+            for key in list(clean_item.keys()):
+                if key.startswith('_') and key.endswith('_keywords'):
+                    del clean_item[key]
+            cleaned.append(clean_item)
+        return cleaned
     
     def retrieve(
         self,
@@ -85,9 +108,9 @@ class HETRetriever:
         )
         
         return RetrievalResult(
-            self_concepts=self_concept_results,
-            existential_themes=existential_results,
-            strategies=strategy_results,
+            self_concepts=self._clean_result(self_concept_results),
+            existential_themes=self._clean_result(existential_results),
+            strategies=self._clean_result(strategy_results),
             relevance_scores={
                 'self_concepts': [r.get('relevance_score', 0) for r in self_concept_results],
                 'existential_themes': [r.get('relevance_score', 0) for r in existential_results],
@@ -111,12 +134,12 @@ class HETRetriever:
             # Topic match
             problem_sim = self._text_similarity(
                 query, 
-                concept.get('current_self_perception', '')
+                concept.get('_perception_keywords', concept.get('current_self_perception', ''))
             )
             score += problem_sim * 0.4
             
             # Growth potential match
-            growth_sim = self._text_similarity(query, concept.get('growth_potential', ''))
+            growth_sim = self._text_similarity(query, concept.get('_growth_keywords', concept.get('growth_potential', '')))
             score += growth_sim * 0.3
             
             # Incongruence relevance
@@ -157,10 +180,15 @@ class HETRetriever:
                         score += 0.5
             
             # Manifestation match
-            manifestations = theme.get('manifestations', [])
-            for manif in manifestations:
-                if self._text_similarity(existential_concern, manif) > 0.3:
-                    score += 0.25
+            if '_manifestation_keywords' in theme:
+                for manif_kw in theme['_manifestation_keywords']:
+                    if self._text_similarity(existential_concern, manif_kw) > 0.3:
+                        score += 0.25
+            else:
+                manifestations = theme.get('manifestations', [])
+                for manif in manifestations:
+                    if self._text_similarity(existential_concern, manif) > 0.3:
+                        score += 0.25
             
             theme['relevance_score'] = score
             scored_results.append((score, theme))
@@ -182,8 +210,7 @@ class HETRetriever:
             score = 0.0
             
             # Situation match
-            situation = strategy.get('situation', '')
-            situation_sim = self._text_similarity(query, situation)
+            situation_sim = self._text_similarity(query, strategy.get('_situation_keywords', strategy.get('situation', '')))
             score += situation_sim * 0.35
             
             # Strategy type match (prefer unconditional positive regard, empathy)
@@ -192,8 +219,7 @@ class HETRetriever:
                 score += 0.15
             
             # Approach match
-            approach = strategy.get('counselor_approach', '')
-            approach_sim = self._text_similarity(query, approach)
+            approach_sim = self._text_similarity(query, strategy.get('_approach_keywords', strategy.get('counselor_approach', '')))
             score += approach_sim * 0.25
             
             # Expected outcome (growth-oriented)
@@ -207,13 +233,20 @@ class HETRetriever:
         scored_results.sort(key=lambda x: x[0], reverse=True)
         return [r[1] for r in scored_results[:top_k]]
     
-    def _text_similarity(self, text1: str, text2: str) -> float:
+    def _text_similarity(self, text1: any, text2: any) -> float:
         """Simple keyword overlap similarity"""
         if not text1 or not text2:
             return 0.0
-        
-        words1 = set(re.findall(r'\w+', text1.lower()))
-        words2 = set(re.findall(r'\w+', text2.lower()))
+
+        if isinstance(text1, set):
+            words1 = text1
+        else:
+            words1 = set(re.findall(r'\w+', str(text1).lower()))
+
+        if isinstance(text2, set):
+            words2 = text2
+        else:
+            words2 = set(re.findall(r'\w+', str(text2).lower()))
         
         if not words1 or not words2:
             return 0.0
