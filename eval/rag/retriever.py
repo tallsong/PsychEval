@@ -69,10 +69,44 @@ class CBTRetriever:
                 metadata = json.load(f)
                 self.case_metadata = {int(k): v for k, v in metadata.items()}
         
+        # Precompute keywords for faster retrieval (O(1) set intersections instead of O(N) string processing)
+        for fw in self.cognitive_frameworks:
+            event = str(fw.get("event", ""))
+            fw["_event_keywords"] = set(w for w in event.lower().split() if len(w) > 2)
+
+            framework_text = " ".join([
+                str(fw.get("event", "")),
+                " ".join(fw.get("automatic_thoughts", []) if isinstance(fw.get("automatic_thoughts"), list) else [str(fw.get("automatic_thoughts", ""))]),
+                " ".join(fw.get("compensatory_strategies", []) if isinstance(fw.get("compensatory_strategies"), list) else [str(fw.get("compensatory_strategies", ""))]),
+            ]).lower()
+            fw["_framework_keywords"] = set(w for w in framework_text.split() if len(w) > 2)
+
+        for st in self.intervention_strategies:
+            theme_rationale = f"{st.get('theme', '')} {st.get('rationale', '')}"
+            st["_theme_rationale_keywords"] = set(w for w in theme_rationale.lower().split() if len(w) > 2)
+            theme = str(st.get("theme", ""))
+            st["_theme_keywords"] = set(w for w in theme.lower().split() if len(w) > 2)
+
+        for tp in self.therapy_progress:
+            focus_areas = tp.get("focus_areas", [])
+            tp["_focus_areas_keywords"] = set(f.lower() for f in focus_areas) if focus_areas else set()
+            stage_name = str(tp.get("stage_name", ""))
+            tp["_stage_name_keywords"] = set(w for w in stage_name.lower().split() if len(w) > 2)
+            therapy_content = str(tp.get("therapy_content", ""))
+            tp["_therapy_content_keywords"] = set(w for w in therapy_content.lower().split() if len(w) > 2)
+
         print(f"Loaded knowledge base:")
         print(f"  - {len(self.cognitive_frameworks)} cognitive frameworks")
         print(f"  - {len(self.intervention_strategies)} intervention strategies")
         print(f"  - {len(self.therapy_progress)} therapy progress records")
+
+    def _clean_result(self, item: Dict[str, Any]) -> Dict[str, Any]:
+        """Remove precomputed internal keys to prevent JSON serialization errors or leaking."""
+        cleaned = item.copy()
+        for key in list(cleaned.keys()):
+            if key.startswith("_") and key.endswith("_keywords"):
+                del cleaned[key]
+        return cleaned
     
     def retrieve(
         self,
@@ -126,9 +160,9 @@ class CBTRetriever:
         )
         
         return RetrievalResult(
-            cognitive_frameworks=frameworks,
-            intervention_strategies=strategies,
-            therapy_progress_examples=examples,
+            cognitive_frameworks=[self._clean_result(fw) for fw in frameworks],
+            intervention_strategies=[self._clean_result(st) for st in strategies],
+            therapy_progress_examples=[self._clean_result(ex) for ex in examples],
             relevance_scores=relevance_scores,
         )
     
@@ -143,6 +177,8 @@ class CBTRetriever:
         """Retrieve relevant cognitive frameworks"""
         scores = []
         
+        problem_keywords = set(w for w in client_problem.lower().split() if len(w) > 2)
+
         for idx, framework in enumerate(self.cognitive_frameworks):
             score = 0.0
             
@@ -150,8 +186,8 @@ class CBTRetriever:
             if client_topic and framework.get("problem_category") == client_topic:
                 score += 0.3
             
-            # Match by automatic thoughts
-            if self._text_similarity(client_problem, framework.get("event", "")):
+            # Match by automatic thoughts (event similarity)
+            if problem_keywords & framework.get("_event_keywords", set()):
                 score += 0.25
             
             # Match by cognitive patterns
@@ -161,8 +197,8 @@ class CBTRetriever:
                 if matched_patterns:
                     score += 0.25 * (len(matched_patterns) / len(cognitive_patterns))
             
-            # Match by keywords in problem
-            if self._keyword_overlap(client_problem, framework):
+            # Match by keywords in problem (framework keyword overlap)
+            if problem_keywords & framework.get("_framework_keywords", set()):
                 score += 0.2
             
             if score > 0:
@@ -190,6 +226,9 @@ class CBTRetriever:
         """Retrieve relevant intervention strategies"""
         scores = []
         
+        problem_keywords = set(w for w in client_problem.lower().split() if len(w) > 2)
+        topic_keywords = set(w for w in client_topic.lower().split() if len(w) > 2) if client_topic else set()
+
         for idx, strategy in enumerate(self.intervention_strategies):
             score = 0.0
             
@@ -210,14 +249,11 @@ class CBTRetriever:
                     score += 0.3
             
             # Match by theme/technique relevance to problem
-            if self._text_similarity(
-                client_problem,
-                f"{strategy.get('theme', '')} {strategy.get('rationale', '')}"
-            ):
+            if problem_keywords & strategy.get("_theme_rationale_keywords", set()):
                 score += 0.25
             
             # Match by problem category
-            if client_topic and self._text_similarity(client_topic, strategy.get("theme", "")):
+            if topic_keywords and (topic_keywords & strategy.get("_theme_keywords", set())):
                 score += 0.15
             
             # Bonus for explicit technique match
@@ -257,6 +293,10 @@ class CBTRetriever:
         }
         target_stage = stage_mapping.get(therapy_stage, 2)
         
+        problem_keywords_all = set(client_problem.lower().split())
+        problem_keywords_filtered = set(w for w in client_problem.lower().split() if len(w) > 2)
+        topic_keywords = set(w for w in client_topic.lower().split() if len(w) > 2) if client_topic else set()
+
         for idx, progress in enumerate(self.therapy_progress):
             score = 0.0
             
@@ -266,21 +306,16 @@ class CBTRetriever:
                 score += 0.3
             
             # Match by focus areas
-            focus_areas = progress.get("focus_areas", [])
-            if focus_areas:
-                problem_keywords = set(client_problem.lower().split())
-                focus_keywords = set(f.lower() for f in focus_areas)
-                overlap = problem_keywords & focus_keywords
-                if overlap:
-                    score += 0.4
+            overlap = problem_keywords_all & progress.get("_focus_areas_keywords", set())
+            if overlap:
+                score += 0.4
             
             # Match by topic
-            progress_stage_name = progress.get("stage_name", "")
-            if client_topic and self._text_similarity(client_topic, progress_stage_name):
+            if topic_keywords and (topic_keywords & progress.get("_stage_name_keywords", set())):
                 score += 0.2
             
             # Match by therapy content
-            if self._text_similarity(client_problem, progress.get("therapy_content", "")):
+            if problem_keywords_filtered & progress.get("_therapy_content_keywords", set()):
                 score += 0.1
             
             if score > 0:
