@@ -7,7 +7,7 @@ based on client presentation and current therapy stage.
 
 import json
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple, Set
 from dataclasses import dataclass
 import re
 
@@ -46,22 +46,54 @@ class CBTRetriever:
         
         self._load_knowledge_base()
     
+    def _extract_keywords(self, text: str) -> Set[str]:
+        """Extract keywords from text"""
+        if not text:
+            return set()
+        if not isinstance(text, str):
+            text = str(text)
+        return set(w for w in text.lower().split() if len(w) > 2)
+
     def _load_knowledge_base(self) -> None:
         """Load knowledge base from JSON files"""
         frameworks_file = self.kb_dir / "cognitive_frameworks.json"
         if frameworks_file.exists():
             with open(frameworks_file, 'r', encoding='utf-8') as f:
                 self.cognitive_frameworks = json.load(f)
+
+            # Pre-compute keywords for frameworks
+            for fw in self.cognitive_frameworks:
+                fw['_event_keywords'] = self._extract_keywords(fw.get("event", ""))
+                # For _keyword_overlap
+                framework_text = " ".join([
+                    str(fw.get("event", "")),
+                    " ".join(fw.get("automatic_thoughts", [])),
+                    " ".join(fw.get("compensatory_strategies", [])),
+                ]).lower()
+                fw['_full_keywords'] = self._extract_keywords(framework_text)
         
         strategies_file = self.kb_dir / "intervention_strategies.json"
         if strategies_file.exists():
             with open(strategies_file, 'r', encoding='utf-8') as f:
                 self.intervention_strategies = json.load(f)
+
+            # Pre-compute keywords for strategies
+            for strategy in self.intervention_strategies:
+                strategy['_theme_keywords'] = self._extract_keywords(strategy.get("theme", ""))
+                strategy['_theme_rationale_keywords'] = self._extract_keywords(
+                    f"{strategy.get('theme', '')} {strategy.get('rationale', '')}"
+                )
         
         progress_file = self.kb_dir / "therapy_progress.json"
         if progress_file.exists():
             with open(progress_file, 'r', encoding='utf-8') as f:
                 self.therapy_progress = json.load(f)
+
+            # Pre-compute keywords for progress
+            for progress in self.therapy_progress:
+                progress['_stage_name_keywords'] = self._extract_keywords(progress.get("stage_name", ""))
+                progress['_content_keywords'] = self._extract_keywords(progress.get("therapy_content", ""))
+                progress['_focus_keywords'] = set(f.lower() for f in progress.get("focus_areas", []))
         
         metadata_file = self.kb_dir / "case_metadata.json"
         if metadata_file.exists():
@@ -97,9 +129,15 @@ class CBTRetriever:
         """
         relevance_scores = {}
         
+        # Pre-compute keywords for request
+        problem_keywords = self._extract_keywords(client_problem)
+        problem_keywords_simple = set(client_problem.lower().split()) if client_problem else set()
+        topic_keywords = self._extract_keywords(client_topic) if client_topic else set()
+
         # Retrieve cognitive frameworks
         frameworks = self._retrieve_cognitive_frameworks(
             client_problem,
+            problem_keywords,
             current_cognitive_patterns,
             client_topic,
             top_k,
@@ -109,6 +147,8 @@ class CBTRetriever:
         # Retrieve intervention strategies
         strategies = self._retrieve_intervention_strategies(
             client_problem,
+            problem_keywords,
+            topic_keywords,
             current_cognitive_patterns,
             therapy_stage,
             client_topic,
@@ -119,6 +159,9 @@ class CBTRetriever:
         # Retrieve therapy progress examples
         examples = self._retrieve_therapy_examples(
             client_problem,
+            problem_keywords,
+            problem_keywords_simple,
+            topic_keywords,
             therapy_stage,
             client_topic,
             top_k,
@@ -135,6 +178,7 @@ class CBTRetriever:
     def _retrieve_cognitive_frameworks(
         self,
         client_problem: str,
+        problem_keywords: Set[str],
         cognitive_patterns: Optional[List[str]],
         client_topic: Optional[str],
         top_k: int,
@@ -151,7 +195,7 @@ class CBTRetriever:
                 score += 0.3
             
             # Match by automatic thoughts
-            if self._text_similarity(client_problem, framework.get("event", "")):
+            if len(problem_keywords & framework.get('_event_keywords', set())) > 0:
                 score += 0.25
             
             # Match by cognitive patterns
@@ -162,7 +206,7 @@ class CBTRetriever:
                     score += 0.25 * (len(matched_patterns) / len(cognitive_patterns))
             
             # Match by keywords in problem
-            if self._keyword_overlap(client_problem, framework):
+            if len(problem_keywords & framework.get('_full_keywords', set())) > 0:
                 score += 0.2
             
             if score > 0:
@@ -181,6 +225,8 @@ class CBTRetriever:
     def _retrieve_intervention_strategies(
         self,
         client_problem: str,
+        problem_keywords: Set[str],
+        topic_keywords: Set[str],
         cognitive_patterns: Optional[List[str]],
         therapy_stage: str,
         client_topic: Optional[str],
@@ -210,14 +256,11 @@ class CBTRetriever:
                     score += 0.3
             
             # Match by theme/technique relevance to problem
-            if self._text_similarity(
-                client_problem,
-                f"{strategy.get('theme', '')} {strategy.get('rationale', '')}"
-            ):
+            if len(problem_keywords & strategy.get('_theme_rationale_keywords', set())) > 0:
                 score += 0.25
             
             # Match by problem category
-            if client_topic and self._text_similarity(client_topic, strategy.get("theme", "")):
+            if client_topic and len(topic_keywords & strategy.get('_theme_keywords', set())) > 0:
                 score += 0.15
             
             # Bonus for explicit technique match
@@ -242,6 +285,9 @@ class CBTRetriever:
     def _retrieve_therapy_examples(
         self,
         client_problem: str,
+        problem_keywords: Set[str],
+        problem_keywords_simple: Set[str],
+        topic_keywords: Set[str],
         therapy_stage: str,
         client_topic: Optional[str],
         top_k: int,
@@ -268,19 +314,16 @@ class CBTRetriever:
             # Match by focus areas
             focus_areas = progress.get("focus_areas", [])
             if focus_areas:
-                problem_keywords = set(client_problem.lower().split())
-                focus_keywords = set(f.lower() for f in focus_areas)
-                overlap = problem_keywords & focus_keywords
+                overlap = problem_keywords_simple & progress.get('_focus_keywords', set())
                 if overlap:
                     score += 0.4
             
             # Match by topic
-            progress_stage_name = progress.get("stage_name", "")
-            if client_topic and self._text_similarity(client_topic, progress_stage_name):
+            if client_topic and len(topic_keywords & progress.get('_stage_name_keywords', set())) > 0:
                 score += 0.2
             
             # Match by therapy content
-            if self._text_similarity(client_problem, progress.get("therapy_content", "")):
+            if len(problem_keywords & progress.get('_content_keywords', set())) > 0:
                 score += 0.1
             
             if score > 0:
