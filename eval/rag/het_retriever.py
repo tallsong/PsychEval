@@ -51,6 +51,19 @@ class HETRetriever:
         if strategies_file.exists():
             with open(strategies_file, 'r', encoding='utf-8') as f:
                 self.strategies = json.load(f)
+
+        # Pre-compute keyword sets for O(1) retrieval
+        for concept in self.self_concepts:
+            concept['_perception_keywords'] = set(re.findall(r'\w+', str(concept.get('current_self_perception', '')).lower()))
+            concept['_growth_keywords'] = set(re.findall(r'\w+', str(concept.get('growth_potential', '')).lower()))
+
+        for theme in self.existential_themes:
+            manifestations = theme.get('manifestations', [])
+            theme['_manifestation_keywords'] = [set(re.findall(r'\w+', str(m).lower())) for m in manifestations]
+
+        for strategy in self.strategies:
+            strategy['_situation_keywords'] = set(re.findall(r'\w+', str(strategy.get('situation', '')).lower()))
+            strategy['_approach_keywords'] = set(re.findall(r'\w+', str(strategy.get('counselor_approach', '')).lower()))
     
     def retrieve(
         self,
@@ -105,18 +118,18 @@ class HETRetriever:
         query = " ".join(filter(None, [client_problem, self_perception]))
         
         scored_results = []
+        query_kws = set(re.findall(r'\w+', str(query).lower()))
         for concept in self.self_concepts:
             score = 0.0
             
             # Topic match
-            problem_sim = self._text_similarity(
-                query, 
-                concept.get('current_self_perception', '')
-            )
+            perc_kws = concept.get('_perception_keywords', set())
+            problem_sim = len(query_kws & perc_kws) / len(query_kws | perc_kws) if query_kws and perc_kws else 0.0
             score += problem_sim * 0.4
             
             # Growth potential match
-            growth_sim = self._text_similarity(query, concept.get('growth_potential', ''))
+            growth_kws = concept.get('_growth_keywords', set())
+            growth_sim = len(query_kws & growth_kws) / len(query_kws | growth_kws) if query_kws and growth_kws else 0.0
             score += growth_sim * 0.3
             
             # Incongruence relevance
@@ -129,7 +142,7 @@ class HETRetriever:
         
         # Sort by score and return top-k
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
     def _retrieve_existential_themes(
         self,
@@ -138,6 +151,7 @@ class HETRetriever:
     ) -> List[Dict]:
         """Retrieve relevant existential themes"""
         scored_results = []
+        query_kws = set(re.findall(r'\w+', str(existential_concern).lower()))
         
         theme_keywords = {
             '无意义': ['无意义', '意义'],
@@ -157,16 +171,17 @@ class HETRetriever:
                         score += 0.5
             
             # Manifestation match
-            manifestations = theme.get('manifestations', [])
-            for manif in manifestations:
-                if self._text_similarity(existential_concern, manif) > 0.3:
+            manifestation_kws_list = theme.get('_manifestation_keywords', [])
+            for manif_kws in manifestation_kws_list:
+                sim = len(query_kws & manif_kws) / len(query_kws | manif_kws) if query_kws and manif_kws else 0.0
+                if sim > 0.3:
                     score += 0.25
             
             theme['relevance_score'] = score
             scored_results.append((score, theme))
         
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
     def _retrieve_strategies(
         self,
@@ -178,12 +193,13 @@ class HETRetriever:
         query = " ".join(filter(None, [client_problem, self_perception]))
         
         scored_results = []
+        query_kws = set(re.findall(r'\w+', str(query).lower()))
         for strategy in self.strategies:
             score = 0.0
             
             # Situation match
-            situation = strategy.get('situation', '')
-            situation_sim = self._text_similarity(query, situation)
+            sit_kws = strategy.get('_situation_keywords', set())
+            situation_sim = len(query_kws & sit_kws) / len(query_kws | sit_kws) if query_kws and sit_kws else 0.0
             score += situation_sim * 0.35
             
             # Strategy type match (prefer unconditional positive regard, empathy)
@@ -192,8 +208,8 @@ class HETRetriever:
                 score += 0.15
             
             # Approach match
-            approach = strategy.get('counselor_approach', '')
-            approach_sim = self._text_similarity(query, approach)
+            app_kws = strategy.get('_approach_keywords', set())
+            approach_sim = len(query_kws & app_kws) / len(query_kws | app_kws) if query_kws and app_kws else 0.0
             score += approach_sim * 0.25
             
             # Expected outcome (growth-oriented)
@@ -205,8 +221,16 @@ class HETRetriever:
             scored_results.append((score, strategy))
         
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
+    def _clean_result(self, item: Dict) -> Dict:
+        """Remove internal pre-computed keys before returning"""
+        cleaned = item.copy()
+        keys_to_remove = [k for k in cleaned.keys() if k.startswith('_') and k.endswith('_keywords')]
+        for k in keys_to_remove:
+            del cleaned[k]
+        return cleaned
+
     def _text_similarity(self, text1: str, text2: str) -> float:
         """Simple keyword overlap similarity"""
         if not text1 or not text2:
