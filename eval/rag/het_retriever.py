@@ -51,7 +51,29 @@ class HETRetriever:
         if strategies_file.exists():
             with open(strategies_file, 'r', encoding='utf-8') as f:
                 self.strategies = json.load(f)
+
+        # ⚡ Bolt: Pre-compute keyword sets for performance
+        def _extract_kw(text):
+            if isinstance(text, list):
+                text = ' '.join(str(t) for t in text)
+            return set(re.findall(r'\w+', str(text).lower()))
+
+        for concept in self.self_concepts:
+            concept['_perception_keywords'] = _extract_kw(concept.get('current_self_perception', ''))
+            concept['_growth_keywords'] = _extract_kw(concept.get('growth_potential', ''))
+
+        for theme in self.existential_themes:
+            manifestations = theme.get('manifestations', [])
+            theme['_manifestations_keywords_list'] = [_extract_kw(m) for m in manifestations]
+
+        for strategy in self.strategies:
+            strategy['_situation_keywords'] = _extract_kw(strategy.get('situation', ''))
+            strategy['_approach_keywords'] = _extract_kw(strategy.get('counselor_approach', ''))
     
+    def _clean_result(self, d: Dict) -> Dict:
+        """Remove internal precomputed keys before returning"""
+        return {k: v for k, v in d.items() if not k.startswith('_')}
+
     def retrieve(
         self,
         client_problem: str,
@@ -103,20 +125,18 @@ class HETRetriever:
     ) -> List[Dict]:
         """Retrieve relevant self-concept frameworks"""
         query = " ".join(filter(None, [client_problem, self_perception]))
+        query_keywords = set(re.findall(r'\w+', query.lower())) if query else set()
         
         scored_results = []
         for concept in self.self_concepts:
             score = 0.0
             
             # Topic match
-            problem_sim = self._text_similarity(
-                query, 
-                concept.get('current_self_perception', '')
-            )
+            problem_sim = self._text_similarity(query_keywords, concept.get('_perception_keywords', set()))
             score += problem_sim * 0.4
             
             # Growth potential match
-            growth_sim = self._text_similarity(query, concept.get('growth_potential', ''))
+            growth_sim = self._text_similarity(query_keywords, concept.get('_growth_keywords', set()))
             score += growth_sim * 0.3
             
             # Incongruence relevance
@@ -129,7 +149,7 @@ class HETRetriever:
         
         # Sort by score and return top-k
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
     def _retrieve_existential_themes(
         self,
@@ -138,6 +158,7 @@ class HETRetriever:
     ) -> List[Dict]:
         """Retrieve relevant existential themes"""
         scored_results = []
+        query_keywords = set(re.findall(r'\w+', str(existential_concern).lower())) if existential_concern else set()
         
         theme_keywords = {
             '无意义': ['无意义', '意义'],
@@ -157,16 +178,15 @@ class HETRetriever:
                         score += 0.5
             
             # Manifestation match
-            manifestations = theme.get('manifestations', [])
-            for manif in manifestations:
-                if self._text_similarity(existential_concern, manif) > 0.3:
+            for manif_kws in theme.get('_manifestations_keywords_list', []):
+                if self._text_similarity(query_keywords, manif_kws) > 0.3:
                     score += 0.25
             
             theme['relevance_score'] = score
             scored_results.append((score, theme))
         
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
     def _retrieve_strategies(
         self,
@@ -176,14 +196,14 @@ class HETRetriever:
     ) -> List[Dict]:
         """Retrieve relevant client-centered strategies"""
         query = " ".join(filter(None, [client_problem, self_perception]))
+        query_keywords = set(re.findall(r'\w+', query.lower())) if query else set()
         
         scored_results = []
         for strategy in self.strategies:
             score = 0.0
             
             # Situation match
-            situation = strategy.get('situation', '')
-            situation_sim = self._text_similarity(query, situation)
+            situation_sim = self._text_similarity(query_keywords, strategy.get('_situation_keywords', set()))
             score += situation_sim * 0.35
             
             # Strategy type match (prefer unconditional positive regard, empathy)
@@ -192,8 +212,7 @@ class HETRetriever:
                 score += 0.15
             
             # Approach match
-            approach = strategy.get('counselor_approach', '')
-            approach_sim = self._text_similarity(query, approach)
+            approach_sim = self._text_similarity(query_keywords, strategy.get('_approach_keywords', set()))
             score += approach_sim * 0.25
             
             # Expected outcome (growth-oriented)
@@ -205,19 +224,13 @@ class HETRetriever:
             scored_results.append((score, strategy))
         
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
-    def _text_similarity(self, text1: str, text2: str) -> float:
-        """Simple keyword overlap similarity"""
-        if not text1 or not text2:
-            return 0.0
-        
-        words1 = set(re.findall(r'\w+', text1.lower()))
-        words2 = set(re.findall(r'\w+', text2.lower()))
-        
+    def _text_similarity(self, words1: set, words2: set) -> float:
+        """Simple keyword overlap similarity using pre-computed sets"""
         if not words1 or not words2:
             return 0.0
-        
+
         overlap = len(words1 & words2)
         total = len(words1 | words2)
         
