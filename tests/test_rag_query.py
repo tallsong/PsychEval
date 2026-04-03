@@ -1,5 +1,5 @@
 import json
-from test_rag_query import query_rag
+from root_test_rag_query import query_rag
 
 
 def test_cbt_returns_frameworks():
