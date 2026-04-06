@@ -34,6 +34,10 @@ class PDTRetriever:
         
         self._load_knowledge_base()
     
+    def _clean_result(self, item: Dict) -> Dict:
+        """Remove internally pre-computed keys before returning"""
+        return {k: v for k, v in item.items() if not k.startswith('_')}
+
     def _load_knowledge_base(self) -> None:
         """Load all knowledge base files"""
         # Load core conflicts
@@ -41,24 +45,38 @@ class PDTRetriever:
         if conflicts_file.exists():
             with open(conflicts_file, 'r', encoding='utf-8') as f:
                 self.core_conflicts = json.load(f)
+                for item in self.core_conflicts:
+                    item['_wish_keywords'] = set(re.findall(r'\w+', str(item.get('wish', '')).lower()))
+                    item['_fear_keywords'] = set(re.findall(r'\w+', str(item.get('fear', '')).lower()))
+                    behaviors = item.get('behavioral_manifestations', [])
+                    if isinstance(behaviors, str): behaviors = [behaviors]
+                    item['_behaviors_keywords_list'] = [set(re.findall(r'\w+', str(b).lower())) for b in behaviors]
         
         # Load object relations
         relations_file = self.kb_dir / "pdt_object_relations.json"
         if relations_file.exists():
             with open(relations_file, 'r', encoding='utf-8') as f:
                 self.object_relations = json.load(f)
+                for item in self.object_relations:
+                    item['_self_rep_keywords'] = set(re.findall(r'\w+', str(item.get('self_representation', '')).lower()))
+                    item['_obj_rep_keywords'] = set(re.findall(r'\w+', str(item.get('object_representation', '')).lower()))
+                    item['_pattern_keywords'] = set(re.findall(r'\w+', str(item.get('relational_pattern', '')).lower()))
         
         # Load unconscious patterns
         patterns_file = self.kb_dir / "pdt_unconscious_patterns.json"
         if patterns_file.exists():
             with open(patterns_file, 'r', encoding='utf-8') as f:
                 self.unconscious_patterns = json.load(f)
+                for item in self.unconscious_patterns:
+                    item['_manifestation_keywords'] = set(re.findall(r'\w+', str(item.get('current_manifestation', '')).lower()))
         
         # Load interventions
         interventions_file = self.kb_dir / "pdt_psychodynamic_interventions.json"
         if interventions_file.exists():
             with open(interventions_file, 'r', encoding='utf-8') as f:
                 self.interventions = json.load(f)
+                for item in self.interventions:
+                    item['_situation_keywords'] = set(re.findall(r'\w+', str(item.get('situation', '')).lower()))
     
     def retrieve(
         self,
@@ -118,22 +136,21 @@ class PDTRetriever:
     ) -> List[Dict]:
         """Retrieve relevant core conflict patterns"""
         scored_results = []
+        problem_words = set(re.findall(r'\w+', str(client_problem).lower()))
         
-        for conflict in self.core_conflicts:
+        for item in self.core_conflicts:
+            conflict = item.copy()
             score = 0.0
             
             # Problem match (fear, wish)
-            wish = conflict.get('wish', '')
-            fear = conflict.get('fear', '')
-            
-            wish_sim = self._text_similarity(client_problem, wish)
-            fear_sim = self._text_similarity(client_problem, fear)
+            wish_sim = self._set_similarity(problem_words, conflict.get('_wish_keywords', set()))
+            fear_sim = self._set_similarity(problem_words, conflict.get('_fear_keywords', set()))
             score += max(wish_sim, fear_sim) * 0.4
             
             # Behavioral manifestation match
-            behaviors = conflict.get('behavioral_manifestations', [])
-            for behavior in behaviors:
-                if self._text_similarity(client_problem, behavior) > 0.2:
+            behaviors_word_sets = conflict.get('_behaviors_keywords_list', [])
+            for behavior_words in behaviors_word_sets:
+                if self._set_similarity(problem_words, behavior_words) > 0.2:
                     score += 0.15
             
             # Defense mechanism relevance
@@ -145,7 +162,7 @@ class PDTRetriever:
             scored_results.append((score, conflict))
         
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
     def _retrieve_object_relations(
         self,
@@ -155,18 +172,20 @@ class PDTRetriever:
     ) -> List[Dict]:
         """Retrieve relevant object relations"""
         scored_results = []
+        problem_words = set(re.findall(r'\w+', str(client_problem).lower()))
+
+        relational_pattern_words = [set(re.findall(r'\w+', str(p).lower())) for p in relational_patterns] if relational_patterns else []
         
-        for relation in self.object_relations:
+        for item in self.object_relations:
+            relation = item.copy()
             score = 0.0
             
             # Self representation match
-            self_rep = relation.get('self_representation', '')
-            self_sim = self._text_similarity(client_problem, self_rep)
+            self_sim = self._set_similarity(problem_words, relation.get('_self_rep_keywords', set()))
             score += self_sim * 0.3
             
             # Object representation match (others)
-            obj_rep = relation.get('object_representation', '')
-            obj_sim = self._text_similarity(client_problem, obj_rep)
+            obj_sim = self._set_similarity(problem_words, relation.get('_obj_rep_keywords', set()))
             score += obj_sim * 0.3
             
             # Linking affect relevance
@@ -176,17 +195,17 @@ class PDTRetriever:
                     score += 0.2
             
             # Relational pattern match
-            pattern = relation.get('relational_pattern', '')
-            if relational_patterns:
-                for p in relational_patterns:
-                    if self._text_similarity(p, pattern) > 0.2:
+            pattern_keywords = relation.get('_pattern_keywords', set())
+            if relational_pattern_words:
+                for p_words in relational_pattern_words:
+                    if self._set_similarity(p_words, pattern_keywords) > 0.2:
                         score += 0.15
             
             relation['relevance_score'] = score
             scored_results.append((score, relation))
         
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
     def _retrieve_unconscious_patterns(
         self,
@@ -195,6 +214,7 @@ class PDTRetriever:
     ) -> List[Dict]:
         """Retrieve relevant unconscious patterns"""
         scored_results = []
+        problem_words = set(re.findall(r'\w+', str(client_problem).lower()))
         
         pattern_keywords = {
             'Abandonment': ['离开', '抛弃', '分离', '空虚'],
@@ -203,7 +223,8 @@ class PDTRetriever:
             'Ambivalent': ['矛盾', '冲突', '爱恨'],
         }
         
-        for pattern in self.unconscious_patterns:
+        for item in self.unconscious_patterns:
+            pattern = item.copy()
             score = 0.0
             
             # Pattern theme match
@@ -214,8 +235,7 @@ class PDTRetriever:
                         score += 0.35
             
             # Current manifestation match
-            manifestation = pattern.get('current_manifestation', '')
-            manif_sim = self._text_similarity(client_problem, manifestation)
+            manif_sim = self._set_similarity(problem_words, pattern.get('_manifestation_keywords', set()))
             score += manif_sim * 0.3
             
             # Early origin relevance (developmental sensitivity)
@@ -232,7 +252,7 @@ class PDTRetriever:
             scored_results.append((score, pattern))
         
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
     def _retrieve_interventions(
         self,
@@ -242,13 +262,14 @@ class PDTRetriever:
     ) -> List[Dict]:
         """Retrieve relevant psychodynamic interventions"""
         scored_results = []
+        problem_words = set(re.findall(r'\w+', str(client_problem).lower()))
         
-        for intervention in self.interventions:
+        for item in self.interventions:
+            intervention = item.copy()
             score = 0.0
             
             # Situation match
-            situation = intervention.get('situation', '')
-            situation_sim = self._text_similarity(client_problem, situation)
+            situation_sim = self._set_similarity(problem_words, intervention.get('_situation_keywords', set()))
             score += situation_sim * 0.35
             
             # Intervention type appropriateness
@@ -271,8 +292,18 @@ class PDTRetriever:
             scored_results.append((score, intervention))
         
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
+    def _set_similarity(self, words1: set, words2: set) -> float:
+        """Similarity check based on keyword overlap using sets directly"""
+        if not words1 or not words2:
+            return 0.0
+
+        overlap = len(words1 & words2)
+        total = len(words1 | words2)
+
+        return overlap / total if total > 0 else 0.0
+
     def _text_similarity(self, text1: str, text2: str) -> float:
         """Simple keyword overlap similarity"""
         if not text1 or not text2:
