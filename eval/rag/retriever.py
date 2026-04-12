@@ -52,6 +52,14 @@ class CBTRetriever:
         if frameworks_file.exists():
             with open(frameworks_file, 'r', encoding='utf-8') as f:
                 self.cognitive_frameworks = json.load(f)
+                # Pre-compute framework keywords for faster overlap checks
+                for fw in self.cognitive_frameworks:
+                    fw_text = " ".join([
+                        str(fw.get("event", "")),
+                        " ".join(fw.get("automatic_thoughts", [])),
+                        " ".join(fw.get("compensatory_strategies", [])),
+                    ]).lower()
+                    fw["_framework_keywords"] = set(w for w in fw_text.split() if len(w) > 2)
         
         strategies_file = self.kb_dir / "intervention_strategies.json"
         if strategies_file.exists():
@@ -170,7 +178,15 @@ class CBTRetriever:
         
         # Sort by score and return top_k
         scores.sort(key=lambda x: x[1], reverse=True)
-        results = [framework for _, score, framework in scores[:top_k]]
+
+        results = []
+        for _, score, framework in scores[:top_k]:
+            fw_copy = framework.copy()
+            # Clean up internal pre-computed fields
+            for k in list(fw_copy.keys()):
+                if k.startswith('_'):
+                    fw_copy.pop(k)
+            results.append(fw_copy)
         
         # Store relevance scores
         for idx, score, _ in scores[:top_k]:
@@ -319,14 +335,7 @@ class CBTRetriever:
         """Check keyword overlap between problem and framework"""
         problem_keywords = set(w.lower() for w in problem.split() if len(w) > 2)
         
-        # Check against various framework fields
-        framework_text = " ".join([
-            str(framework.get("event", "")),
-            " ".join(framework.get("automatic_thoughts", [])),
-            " ".join(framework.get("compensatory_strategies", [])),
-        ]).lower()
-        
-        framework_keywords = set(w for w in framework_text.split() if len(w) > 2)
+        framework_keywords = framework.get("_framework_keywords", set())
         
         return len(problem_keywords & framework_keywords) > 0
     
