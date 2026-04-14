@@ -32,6 +32,30 @@ class HETRetriever:
         
         self._load_knowledge_base()
     
+
+    def _extract_keywords_het(self, text: str) -> set:
+        if not text:
+            return set()
+        if not isinstance(text, str):
+            text = str(text)
+        return set(re.findall(r'\w+', text.lower()))
+
+    def _text_similarity_precomputed(self, keywords1: set, keywords2: set) -> float:
+        if not keywords1 or not keywords2:
+            return 0.0
+        overlap = len(keywords1 & keywords2)
+        total = len(keywords1 | keywords2)
+        return overlap / total if total > 0 else 0.0
+
+    def _clean_result(self, result_dict: dict) -> dict:
+        if not result_dict:
+            return result_dict
+        res = result_dict.copy()
+        for k in list(res.keys()):
+            if k.startswith('_'):
+                del res[k]
+        return res
+
     def _load_knowledge_base(self) -> None:
         """Load all knowledge base files"""
         # Load self-concepts
@@ -39,18 +63,27 @@ class HETRetriever:
         if self_concepts_file.exists():
             with open(self_concepts_file, 'r', encoding='utf-8') as f:
                 self.self_concepts = json.load(f)
+                for concept in self.self_concepts:
+                    concept['_current_self_perception_keywords'] = self._extract_keywords_het(concept.get('current_self_perception', ''))
+                    concept['_growth_potential_keywords'] = self._extract_keywords_het(concept.get('growth_potential', ''))
         
         # Load existential themes
         existential_file = self.kb_dir / "het_existential_themes.json"
         if existential_file.exists():
             with open(existential_file, 'r', encoding='utf-8') as f:
                 self.existential_themes = json.load(f)
+                for theme in self.existential_themes:
+                    manifestations = theme.get('manifestations', [])
+                    theme['_manifestations_keywords_list'] = [self._extract_keywords_het(manif) for manif in manifestations]
         
         # Load strategies
         strategies_file = self.kb_dir / "het_client_centered_strategies.json"
         if strategies_file.exists():
             with open(strategies_file, 'r', encoding='utf-8') as f:
                 self.strategies = json.load(f)
+                for strategy in self.strategies:
+                    strategy['_situation_keywords'] = self._extract_keywords_het(strategy.get('situation', ''))
+                    strategy['_approach_keywords'] = self._extract_keywords_het(strategy.get('counselor_approach', ''))
     
     def retrieve(
         self,
@@ -103,20 +136,21 @@ class HETRetriever:
     ) -> List[Dict]:
         """Retrieve relevant self-concept frameworks"""
         query = " ".join(filter(None, [client_problem, self_perception]))
+        query_keywords = self._extract_keywords_het(query)
         
         scored_results = []
         for concept in self.self_concepts:
             score = 0.0
             
             # Topic match
-            problem_sim = self._text_similarity(
-                query, 
-                concept.get('current_self_perception', '')
+            problem_sim = self._text_similarity_precomputed(
+                query_keywords,
+                concept.get('_current_self_perception_keywords', set())
             )
             score += problem_sim * 0.4
             
             # Growth potential match
-            growth_sim = self._text_similarity(query, concept.get('growth_potential', ''))
+            growth_sim = self._text_similarity_precomputed(query_keywords, concept.get('_growth_potential_keywords', set()))
             score += growth_sim * 0.3
             
             # Incongruence relevance
@@ -124,12 +158,13 @@ class HETRetriever:
             if incongruence and any(kw in query for kw in ['矛盾', '冲突', '不一致']):
                 score += 0.2
             
-            concept['relevance_score'] = score
-            scored_results.append((score, concept))
+            concept_copy = concept.copy()
+            concept_copy['relevance_score'] = score
+            scored_results.append((score, concept_copy))
         
         # Sort by score and return top-k
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
     def _retrieve_existential_themes(
         self,
@@ -138,6 +173,7 @@ class HETRetriever:
     ) -> List[Dict]:
         """Retrieve relevant existential themes"""
         scored_results = []
+        existential_concern_keywords = self._extract_keywords_het(existential_concern)
         
         theme_keywords = {
             '无意义': ['无意义', '意义'],
@@ -157,16 +193,16 @@ class HETRetriever:
                         score += 0.5
             
             # Manifestation match
-            manifestations = theme.get('manifestations', [])
-            for manif in manifestations:
-                if self._text_similarity(existential_concern, manif) > 0.3:
+            for manif_kws in theme.get('_manifestations_keywords_list', []):
+                if self._text_similarity_precomputed(existential_concern_keywords, manif_kws) > 0.3:
                     score += 0.25
             
-            theme['relevance_score'] = score
-            scored_results.append((score, theme))
+            theme_copy = theme.copy()
+            theme_copy['relevance_score'] = score
+            scored_results.append((score, theme_copy))
         
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
     def _retrieve_strategies(
         self,
@@ -176,14 +212,14 @@ class HETRetriever:
     ) -> List[Dict]:
         """Retrieve relevant client-centered strategies"""
         query = " ".join(filter(None, [client_problem, self_perception]))
+        query_keywords = self._extract_keywords_het(query)
         
         scored_results = []
         for strategy in self.strategies:
             score = 0.0
             
             # Situation match
-            situation = strategy.get('situation', '')
-            situation_sim = self._text_similarity(query, situation)
+            situation_sim = self._text_similarity_precomputed(query_keywords, strategy.get('_situation_keywords', set()))
             score += situation_sim * 0.35
             
             # Strategy type match (prefer unconditional positive regard, empathy)
@@ -192,8 +228,7 @@ class HETRetriever:
                 score += 0.15
             
             # Approach match
-            approach = strategy.get('counselor_approach', '')
-            approach_sim = self._text_similarity(query, approach)
+            approach_sim = self._text_similarity_precomputed(query_keywords, strategy.get('_approach_keywords', set()))
             score += approach_sim * 0.25
             
             # Expected outcome (growth-oriented)
@@ -201,24 +236,10 @@ class HETRetriever:
             if any(kw in outcome for kw in ['自我', '理解', '成长', '认识']):
                 score += 0.15
             
-            strategy['relevance_score'] = score
-            scored_results.append((score, strategy))
+            strategy_copy = strategy.copy()
+            strategy_copy['relevance_score'] = score
+            scored_results.append((score, strategy_copy))
         
         scored_results.sort(key=lambda x: x[0], reverse=True)
-        return [r[1] for r in scored_results[:top_k]]
+        return [self._clean_result(r[1]) for r in scored_results[:top_k]]
     
-    def _text_similarity(self, text1: str, text2: str) -> float:
-        """Simple keyword overlap similarity"""
-        if not text1 or not text2:
-            return 0.0
-        
-        words1 = set(re.findall(r'\w+', text1.lower()))
-        words2 = set(re.findall(r'\w+', text2.lower()))
-        
-        if not words1 or not words2:
-            return 0.0
-        
-        overlap = len(words1 & words2)
-        total = len(words1 | words2)
-        
-        return overlap / total if total > 0 else 0.0
