@@ -29,6 +29,7 @@ class HETRetriever:
         self.self_concepts = []
         self.existential_themes = []
         self.strategies = []
+        self._word_pattern = re.compile(r'\w+')
         
         self._load_knowledge_base()
     
@@ -212,8 +213,8 @@ class HETRetriever:
         if not text1 or not text2:
             return 0.0
         
-        words1 = set(re.findall(r'\w+', text1.lower()))
-        words2 = set(re.findall(r'\w+', text2.lower()))
+        words1 = set(self._word_pattern.findall(text1.lower()))
+        words2 = set(self._word_pattern.findall(text2.lower()))
         
         if not words1 or not words2:
             return 0.0
