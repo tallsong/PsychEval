@@ -31,6 +31,7 @@ class PDTRetriever:
         self.object_relations = []
         self.unconscious_patterns = []
         self.interventions = []
+        self._word_pattern = re.compile(r"\w+")
         
         self._load_knowledge_base()
     
@@ -118,6 +119,7 @@ class PDTRetriever:
     ) -> List[Dict]:
         """Retrieve relevant core conflict patterns"""
         scored_results = []
+        client_problem_set = set(self._word_pattern.findall(client_problem.lower()))
         
         for conflict in self.core_conflicts:
             score = 0.0
@@ -126,14 +128,14 @@ class PDTRetriever:
             wish = conflict.get('wish', '')
             fear = conflict.get('fear', '')
             
-            wish_sim = self._text_similarity(client_problem, wish)
-            fear_sim = self._text_similarity(client_problem, fear)
+            wish_sim = self._text_similarity(client_problem_set, wish)
+            fear_sim = self._text_similarity(client_problem_set, fear)
             score += max(wish_sim, fear_sim) * 0.4
             
             # Behavioral manifestation match
             behaviors = conflict.get('behavioral_manifestations', [])
             for behavior in behaviors:
-                if self._text_similarity(client_problem, behavior) > 0.2:
+                if self._text_similarity(client_problem_set, behavior) > 0.2:
                     score += 0.15
             
             # Defense mechanism relevance
@@ -155,18 +157,19 @@ class PDTRetriever:
     ) -> List[Dict]:
         """Retrieve relevant object relations"""
         scored_results = []
+        client_problem_set = set(self._word_pattern.findall(client_problem.lower()))
         
         for relation in self.object_relations:
             score = 0.0
             
             # Self representation match
             self_rep = relation.get('self_representation', '')
-            self_sim = self._text_similarity(client_problem, self_rep)
+            self_sim = self._text_similarity(client_problem_set, self_rep)
             score += self_sim * 0.3
             
             # Object representation match (others)
             obj_rep = relation.get('object_representation', '')
-            obj_sim = self._text_similarity(client_problem, obj_rep)
+            obj_sim = self._text_similarity(client_problem_set, obj_rep)
             score += obj_sim * 0.3
             
             # Linking affect relevance
@@ -242,13 +245,14 @@ class PDTRetriever:
     ) -> List[Dict]:
         """Retrieve relevant psychodynamic interventions"""
         scored_results = []
+        client_problem_set = set(self._word_pattern.findall(client_problem.lower()))
         
         for intervention in self.interventions:
             score = 0.0
             
             # Situation match
             situation = intervention.get('situation', '')
-            situation_sim = self._text_similarity(client_problem, situation)
+            situation_sim = self._text_similarity(client_problem_set, situation)
             score += situation_sim * 0.35
             
             # Intervention type appropriateness
@@ -273,18 +277,24 @@ class PDTRetriever:
         scored_results.sort(key=lambda x: x[0], reverse=True)
         return [r[1] for r in scored_results[:top_k]]
     
-    def _text_similarity(self, text1: str, text2: str) -> float:
+    def _text_similarity(self, text1, text2) -> float:
         """Simple keyword overlap similarity"""
         if not text1 or not text2:
             return 0.0
         
-        if isinstance(text1, list):
-            text1 = ' '.join(str(t) for t in text1)
-        if isinstance(text2, list):
-            text2 = ' '.join(str(t) for t in text2)
-        
-        words1 = set(re.findall(r'\w+', str(text1).lower()))
-        words2 = set(re.findall(r'\w+', str(text2).lower()))
+        if isinstance(text1, set):
+            words1 = text1
+        else:
+            if isinstance(text1, list):
+                text1 = ' '.join(str(t) for t in text1)
+            words1 = set(self._word_pattern.findall(str(text1).lower()))
+
+        if isinstance(text2, set):
+            words2 = text2
+        else:
+            if isinstance(text2, list):
+                text2 = ' '.join(str(t) for t in text2)
+            words2 = set(self._word_pattern.findall(str(text2).lower()))
         
         if not words1 or not words2:
             return 0.0
