@@ -32,6 +32,7 @@ class PDTRetriever:
         self.unconscious_patterns = []
         self.interventions = []
         
+        self._word_pattern = re.compile(r'\w+')
         self._load_knowledge_base()
     
     def _load_knowledge_base(self) -> None:
@@ -283,8 +284,8 @@ class PDTRetriever:
         if isinstance(text2, list):
             text2 = ' '.join(str(t) for t in text2)
         
-        words1 = set(re.findall(r'\w+', str(text1).lower()))
-        words2 = set(re.findall(r'\w+', str(text2).lower()))
+        words1 = set(self._word_pattern.findall(str(text1).lower()))
+        words2 = set(self._word_pattern.findall(str(text2).lower()))
         
         if not words1 or not words2:
             return 0.0
