@@ -7,7 +7,7 @@ Retrieves relevant self-concepts, existential themes, and client-centered strate
 
 import json
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Union
 from dataclasses import dataclass
 import re
 
@@ -29,6 +29,7 @@ class HETRetriever:
         self.self_concepts = []
         self.existential_themes = []
         self.strategies = []
+        self._word_pattern = re.compile(r'\w+')
         
         self._load_knowledge_base()
     
@@ -103,20 +104,22 @@ class HETRetriever:
     ) -> List[Dict]:
         """Retrieve relevant self-concept frameworks"""
         query = " ".join(filter(None, [client_problem, self_perception]))
+        query_set = set(self._word_pattern.findall(query.lower()))
         
         scored_results = []
         for concept in self.self_concepts:
+            concept = concept.copy()
             score = 0.0
             
             # Topic match
             problem_sim = self._text_similarity(
-                query, 
+                query_set,
                 concept.get('current_self_perception', '')
             )
             score += problem_sim * 0.4
             
             # Growth potential match
-            growth_sim = self._text_similarity(query, concept.get('growth_potential', ''))
+            growth_sim = self._text_similarity(query_set, concept.get('growth_potential', ''))
             score += growth_sim * 0.3
             
             # Incongruence relevance
@@ -137,6 +140,7 @@ class HETRetriever:
         top_k: int
     ) -> List[Dict]:
         """Retrieve relevant existential themes"""
+        query_set = set(self._word_pattern.findall(existential_concern.lower()))
         scored_results = []
         
         theme_keywords = {
@@ -147,6 +151,7 @@ class HETRetriever:
         }
         
         for theme in self.existential_themes:
+            theme = theme.copy()
             score = 0.0
             theme_type = theme.get('theme_type', '')
             
@@ -159,7 +164,7 @@ class HETRetriever:
             # Manifestation match
             manifestations = theme.get('manifestations', [])
             for manif in manifestations:
-                if self._text_similarity(existential_concern, manif) > 0.3:
+                if self._text_similarity(query_set, manif) > 0.3:
                     score += 0.25
             
             theme['relevance_score'] = score
@@ -176,14 +181,16 @@ class HETRetriever:
     ) -> List[Dict]:
         """Retrieve relevant client-centered strategies"""
         query = " ".join(filter(None, [client_problem, self_perception]))
+        query_set = set(self._word_pattern.findall(query.lower()))
         
         scored_results = []
         for strategy in self.strategies:
+            strategy = strategy.copy()
             score = 0.0
             
             # Situation match
             situation = strategy.get('situation', '')
-            situation_sim = self._text_similarity(query, situation)
+            situation_sim = self._text_similarity(query_set, situation)
             score += situation_sim * 0.35
             
             # Strategy type match (prefer unconditional positive regard, empathy)
@@ -193,7 +200,7 @@ class HETRetriever:
             
             # Approach match
             approach = strategy.get('counselor_approach', '')
-            approach_sim = self._text_similarity(query, approach)
+            approach_sim = self._text_similarity(query_set, approach)
             score += approach_sim * 0.25
             
             # Expected outcome (growth-oriented)
@@ -207,13 +214,13 @@ class HETRetriever:
         scored_results.sort(key=lambda x: x[0], reverse=True)
         return [r[1] for r in scored_results[:top_k]]
     
-    def _text_similarity(self, text1: str, text2: str) -> float:
+    def _text_similarity(self, text1: Union[str, set], text2: Union[str, set]) -> float:
         """Simple keyword overlap similarity"""
         if not text1 or not text2:
             return 0.0
         
-        words1 = set(re.findall(r'\w+', text1.lower()))
-        words2 = set(re.findall(r'\w+', text2.lower()))
+        words1 = text1 if isinstance(text1, set) else set(self._word_pattern.findall(str(text1).lower()))
+        words2 = text2 if isinstance(text2, set) else set(self._word_pattern.findall(str(text2).lower()))
         
         if not words1 or not words2:
             return 0.0
