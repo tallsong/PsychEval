@@ -31,6 +31,7 @@ class PDTRetriever:
         self.object_relations = []
         self.unconscious_patterns = []
         self.interventions = []
+        self._word_pattern = re.compile(r'\w+')
         
         self._load_knowledge_base()
     
@@ -59,6 +60,11 @@ class PDTRetriever:
         if interventions_file.exists():
             with open(interventions_file, 'r', encoding='utf-8') as f:
                 self.interventions = json.load(f)
+
+        # Precompute keywords for fast retrieval
+        for conflict in self.core_conflicts:
+            conflict['_wish_keywords'] = set(self._word_pattern.findall(str(conflict.get('wish', '')).lower()))
+            conflict['_fear_keywords'] = set(self._word_pattern.findall(str(conflict.get('fear', '')).lower()))
     
     def retrieve(
         self,
@@ -118,31 +124,32 @@ class PDTRetriever:
     ) -> List[Dict]:
         """Retrieve relevant core conflict patterns"""
         scored_results = []
+        problem_words = set(self._word_pattern.findall(str(client_problem).lower()))
         
         for conflict in self.core_conflicts:
             score = 0.0
             
             # Problem match (fear, wish)
-            wish = conflict.get('wish', '')
-            fear = conflict.get('fear', '')
-            
-            wish_sim = self._text_similarity(client_problem, wish)
-            fear_sim = self._text_similarity(client_problem, fear)
+            wish_sim = self._text_similarity(problem_words, conflict.get('_wish_keywords', conflict.get('wish', '')))
+            fear_sim = self._text_similarity(problem_words, conflict.get('_fear_keywords', conflict.get('fear', '')))
             score += max(wish_sim, fear_sim) * 0.4
             
             # Behavioral manifestation match
             behaviors = conflict.get('behavioral_manifestations', [])
             for behavior in behaviors:
-                if self._text_similarity(client_problem, behavior) > 0.2:
+                if self._text_similarity(problem_words, behavior) > 0.2:
                     score += 0.15
             
             # Defense mechanism relevance
             defenses = conflict.get('defense_mechanisms', [])
-            if defenses and any('防御' in p or '保护' in p for p in relational_patterns):
+            if defenses and any('防御' in p or '保护' in p for p in (relational_patterns or [])):
                 score += 0.15
             
-            conflict['relevance_score'] = score
-            scored_results.append((score, conflict))
+            c_copy = conflict.copy()
+            c_copy.pop('_wish_keywords', None)
+            c_copy.pop('_fear_keywords', None)
+            c_copy['relevance_score'] = score
+            scored_results.append((score, c_copy))
         
         scored_results.sort(key=lambda x: x[0], reverse=True)
         return [r[1] for r in scored_results[:top_k]]
@@ -277,18 +284,24 @@ class PDTRetriever:
         """Simple keyword overlap similarity"""
         if not text1 or not text2:
             return 0.0
-        
-        if isinstance(text1, list):
-            text1 = ' '.join(str(t) for t in text1)
-        if isinstance(text2, list):
-            text2 = ' '.join(str(t) for t in text2)
-        
-        words1 = set(re.findall(r'\w+', str(text1).lower()))
-        words2 = set(re.findall(r'\w+', str(text2).lower()))
-        
+
+        if isinstance(text1, set):
+            words1 = text1
+        else:
+            if isinstance(text1, list):
+                text1 = ' '.join(str(t) for t in text1)
+            words1 = set(self._word_pattern.findall(str(text1).lower()))
+
+        if isinstance(text2, set):
+            words2 = text2
+        else:
+            if isinstance(text2, list):
+                text2 = ' '.join(str(t) for t in text2)
+            words2 = set(self._word_pattern.findall(str(text2).lower()))
+
         if not words1 or not words2:
             return 0.0
-        
+
         overlap = len(words1 & words2)
         total = len(words1 | words2)
         
