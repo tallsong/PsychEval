@@ -29,6 +29,7 @@ class HETRetriever:
         self.self_concepts = []
         self.existential_themes = []
         self.strategies = []
+        self._word_pattern = re.compile(r'\w+')
         
         self._load_knowledge_base()
     
@@ -103,6 +104,7 @@ class HETRetriever:
     ) -> List[Dict]:
         """Retrieve relevant self-concept frameworks"""
         query = " ".join(filter(None, [client_problem, self_perception]))
+        query_set = set(self._word_pattern.findall(query.lower())) if query else set()
         
         scored_results = []
         for concept in self.self_concepts:
@@ -110,13 +112,13 @@ class HETRetriever:
             
             # Topic match
             problem_sim = self._text_similarity(
-                query, 
+                query_set,
                 concept.get('current_self_perception', '')
             )
             score += problem_sim * 0.4
             
             # Growth potential match
-            growth_sim = self._text_similarity(query, concept.get('growth_potential', ''))
+            growth_sim = self._text_similarity(query_set, concept.get('growth_potential', ''))
             score += growth_sim * 0.3
             
             # Incongruence relevance
@@ -124,6 +126,7 @@ class HETRetriever:
             if incongruence and any(kw in query for kw in ['矛盾', '冲突', '不一致']):
                 score += 0.2
             
+            concept = concept.copy()
             concept['relevance_score'] = score
             scored_results.append((score, concept))
         
@@ -138,6 +141,7 @@ class HETRetriever:
     ) -> List[Dict]:
         """Retrieve relevant existential themes"""
         scored_results = []
+        concern_set = set(self._word_pattern.findall(existential_concern.lower())) if existential_concern else set()
         
         theme_keywords = {
             '无意义': ['无意义', '意义'],
@@ -159,9 +163,10 @@ class HETRetriever:
             # Manifestation match
             manifestations = theme.get('manifestations', [])
             for manif in manifestations:
-                if self._text_similarity(existential_concern, manif) > 0.3:
+                if self._text_similarity(concern_set, manif) > 0.3:
                     score += 0.25
             
+            theme = theme.copy()
             theme['relevance_score'] = score
             scored_results.append((score, theme))
         
@@ -176,6 +181,7 @@ class HETRetriever:
     ) -> List[Dict]:
         """Retrieve relevant client-centered strategies"""
         query = " ".join(filter(None, [client_problem, self_perception]))
+        query_set = set(self._word_pattern.findall(query.lower())) if query else set()
         
         scored_results = []
         for strategy in self.strategies:
@@ -183,7 +189,7 @@ class HETRetriever:
             
             # Situation match
             situation = strategy.get('situation', '')
-            situation_sim = self._text_similarity(query, situation)
+            situation_sim = self._text_similarity(query_set, situation)
             score += situation_sim * 0.35
             
             # Strategy type match (prefer unconditional positive regard, empathy)
@@ -193,7 +199,7 @@ class HETRetriever:
             
             # Approach match
             approach = strategy.get('counselor_approach', '')
-            approach_sim = self._text_similarity(query, approach)
+            approach_sim = self._text_similarity(query_set, approach)
             score += approach_sim * 0.25
             
             # Expected outcome (growth-oriented)
@@ -201,6 +207,7 @@ class HETRetriever:
             if any(kw in outcome for kw in ['自我', '理解', '成长', '认识']):
                 score += 0.15
             
+            strategy = strategy.copy()
             strategy['relevance_score'] = score
             scored_results.append((score, strategy))
         
@@ -212,8 +219,15 @@ class HETRetriever:
         if not text1 or not text2:
             return 0.0
         
-        words1 = set(re.findall(r'\w+', text1.lower()))
-        words2 = set(re.findall(r'\w+', text2.lower()))
+        if isinstance(text1, set):
+            words1 = text1
+        else:
+            words1 = set(self._word_pattern.findall(str(text1).lower()))
+
+        if isinstance(text2, set):
+            words2 = text2
+        else:
+            words2 = set(self._word_pattern.findall(str(text2).lower()))
         
         if not words1 or not words2:
             return 0.0
