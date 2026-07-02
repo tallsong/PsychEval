@@ -26,6 +26,8 @@ class PDTRetriever:
     """RAG retriever for PDT knowledge base"""
     
     def __init__(self, knowledge_base_dir: str):
+        # Performance optimization: Pre-compile regex to avoid dict lookup overhead during repeated tight loop text similarity scoring
+        self._word_pattern = re.compile(r"\w+")
         self.kb_dir = Path(knowledge_base_dir)
         self.core_conflicts = []
         self.object_relations = []
@@ -283,8 +285,8 @@ class PDTRetriever:
         if isinstance(text2, list):
             text2 = ' '.join(str(t) for t in text2)
         
-        words1 = set(re.findall(r'\w+', str(text1).lower()))
-        words2 = set(re.findall(r'\w+', str(text2).lower()))
+        words1 = set(self._word_pattern.findall(str(text1).lower()))
+        words2 = set(self._word_pattern.findall(str(text2).lower()))
         
         if not words1 or not words2:
             return 0.0
