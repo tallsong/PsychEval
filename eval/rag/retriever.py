@@ -143,6 +143,9 @@ class CBTRetriever:
         """Retrieve relevant cognitive frameworks"""
         scores = []
         
+        # Performance optimization: pre-tokenize client problem to avoid repeated string processing in loop
+        client_problem_keywords = set(w for w in client_problem.lower().split() if len(w) > 2)
+
         for idx, framework in enumerate(self.cognitive_frameworks):
             score = 0.0
             
@@ -151,7 +154,7 @@ class CBTRetriever:
                 score += 0.3
             
             # Match by automatic thoughts
-            if self._text_similarity(client_problem, framework.get("event", "")):
+            if self._text_similarity(client_problem_keywords, framework.get("event", "")):
                 score += 0.25
             
             # Match by cognitive patterns
@@ -162,7 +165,7 @@ class CBTRetriever:
                     score += 0.25 * (len(matched_patterns) / len(cognitive_patterns))
             
             # Match by keywords in problem
-            if self._keyword_overlap(client_problem, framework):
+            if self._keyword_overlap(client_problem_keywords, framework):
                 score += 0.2
             
             if score > 0:
@@ -190,6 +193,9 @@ class CBTRetriever:
         """Retrieve relevant intervention strategies"""
         scores = []
         
+        # Performance optimization: pre-tokenize client problem to avoid repeated string processing in loop
+        client_problem_keywords = set(w for w in client_problem.lower().split() if len(w) > 2)
+
         for idx, strategy in enumerate(self.intervention_strategies):
             score = 0.0
             
@@ -211,7 +217,7 @@ class CBTRetriever:
             
             # Match by theme/technique relevance to problem
             if self._text_similarity(
-                client_problem,
+                client_problem_keywords,
                 f"{strategy.get('theme', '')} {strategy.get('rationale', '')}"
             ):
                 score += 0.25
@@ -250,6 +256,10 @@ class CBTRetriever:
         """Retrieve therapy progress examples from similar cases"""
         scores = []
         
+        # Performance optimization: pre-tokenize client problem to avoid repeated string processing in loop
+        client_problem_keywords = set(w for w in client_problem.lower().split() if len(w) > 2)
+        client_problem_keywords_all = set(client_problem.lower().split())
+
         stage_mapping = {
             "initial_conceptualization": 1,
             "core_intervention": 2,
@@ -268,7 +278,7 @@ class CBTRetriever:
             # Match by focus areas
             focus_areas = progress.get("focus_areas", [])
             if focus_areas:
-                problem_keywords = set(client_problem.lower().split())
+                problem_keywords = client_problem_keywords_all
                 focus_keywords = set(f.lower() for f in focus_areas)
                 overlap = problem_keywords & focus_keywords
                 if overlap:
@@ -280,7 +290,7 @@ class CBTRetriever:
                 score += 0.2
             
             # Match by therapy content
-            if self._text_similarity(client_problem, progress.get("therapy_content", "")):
+            if self._text_similarity(client_problem_keywords, progress.get("therapy_content", "")):
                 score += 0.1
             
             if score > 0:
@@ -296,28 +306,37 @@ class CBTRetriever:
         
         return results
     
-    def _text_similarity(self, text1: str, text2: str) -> bool:
+    def _text_similarity(self, text1: Any, text2: Any) -> bool:
         """Simple text similarity check based on keyword overlap"""
         if not text1 or not text2:
             return False
         
-        # Convert to string if necessary
-        if not isinstance(text1, str):
-            text1 = str(text1)
-        if not isinstance(text2, str):
-            text2 = str(text2)
-        
-        # Extract keywords (length > 2)
-        keywords1 = set(w for w in text1.lower().split() if len(w) > 2)
-        keywords2 = set(w for w in text2.lower().split() if len(w) > 2)
+        # Performance optimization: support pre-tokenized sets
+        if isinstance(text1, set):
+            keywords1 = text1
+        else:
+            if not isinstance(text1, str):
+                text1 = str(text1)
+            keywords1 = set(w for w in text1.lower().split() if len(w) > 2)
+
+        if isinstance(text2, set):
+            keywords2 = text2
+        else:
+            if not isinstance(text2, str):
+                text2 = str(text2)
+            keywords2 = set(w for w in text2.lower().split() if len(w) > 2)
         
         # Check for overlap
         overlap = keywords1 & keywords2
         return len(overlap) > 0
     
-    def _keyword_overlap(self, problem: str, framework: Dict[str, Any]) -> bool:
+    def _keyword_overlap(self, problem: Any, framework: Dict[str, Any]) -> bool:
         """Check keyword overlap between problem and framework"""
-        problem_keywords = set(w.lower() for w in problem.split() if len(w) > 2)
+        # Performance optimization: support pre-tokenized sets
+        if isinstance(problem, set):
+            problem_keywords = problem
+        else:
+            problem_keywords = set(w.lower() for w in problem.split() if len(w) > 2)
         
         # Check against various framework fields
         framework_text = " ".join([
