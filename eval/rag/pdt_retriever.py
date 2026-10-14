@@ -321,6 +321,12 @@ class PDTRetriever:
     
     def _text_similarity(self, text1, text2) -> float:
         """Simple keyword overlap similarity"""
+        # Performance optimization: explicit fast path for pre-computed sets
+        if type(text1) is set and type(text2) is set:
+            if not text1 or not text2:
+                return 0.0
+            return len(text1 & text2) / len(text1 | text2)
+
         # Performance optimization: support pre-tokenized sets
         if isinstance(text1, set):
             words1 = text1
