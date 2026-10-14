@@ -3,3 +3,4 @@
 eval/rag/knowledge_base/*
 *.pyc
 __pycache__/
+multi_therapy_output.log
